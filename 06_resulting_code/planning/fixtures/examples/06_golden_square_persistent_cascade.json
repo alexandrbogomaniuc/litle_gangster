@@ -1,0 +1,1422 @@
+{
+  "fixtureType": "non_production_renderer_fixture",
+  "gameKey": "little-gangster",
+  "schemaVersion": "v0.3",
+  "fixtureId": "06_golden_square_persistent_cascade",
+  "fixtureName": "Golden square persistent cascade",
+  "purpose": "Preview golden-square before/after persistence through a cascade.",
+  "runtimeEnvelopeStatus": "candidate_unproven",
+  "presentationPayloadExtensionStatus": "pending_schema_review",
+  "runtimeEnvelope": {
+    "runtimeEnvelopeStatus": "candidate_unproven",
+    "ok": true,
+    "requestId": "operation_fixture_001",
+    "sessionId": "session_fixture_001",
+    "requestCounter": 1,
+    "stateVersion": "fixture_state_001",
+    "wallet": {
+      "displayOnly": true,
+      "currencyCode": "FUN",
+      "balanceIncluded": false,
+      "accountingAuthority": "backend_runtime_only_not_fixture"
+    },
+    "round": {
+      "roundId": "round_fixture_001",
+      "status": "final",
+      "betMinor": 100,
+      "winMinor": 2000,
+      "outcomeAuthority": "backend_runtime_only_not_fixture"
+    },
+    "feature": {
+      "mode": "BASE",
+      "nextAllowedActions": [
+        "playround"
+      ],
+      "authority": "backend_runtime_only_not_fixture"
+    },
+    "presentationPayload": {
+      "extensionPointer": "presentationPayload.gamePayload",
+      "presentationPayloadExtensionStatus": "pending_schema_review"
+    },
+    "restore": {
+      "hasOpenRound": false,
+      "roundId": null,
+      "stateVersion": null,
+      "restoreSource": "non_production_fixture"
+    },
+    "idempotency": {
+      "clientOperationId": "operation_fixture_001",
+      "duplicate": false,
+      "replaySafe": true
+    },
+    "retry": {
+      "retryable": false,
+      "reason": null
+    },
+    "history": {
+      "historyIncluded": false,
+      "historyAuthority": "backend_runtime_only_not_fixture"
+    }
+  },
+  "presentationPayload": {
+    "presentationPayloadExtensionStatus": "pending_schema_review",
+    "featureMode": "BASE",
+    "reelStops": [],
+    "symbolGrid": [
+      [
+        "new_cash",
+        "new_badge",
+        "car",
+        "vault",
+        "badge",
+        "rainbow"
+      ],
+      [
+        "cash",
+        "new_thief",
+        "coin",
+        "car",
+        "vault",
+        "badge"
+      ],
+      [
+        "car",
+        "coin",
+        "new_vault",
+        "thief",
+        "cash",
+        "vault"
+      ],
+      [
+        "badge",
+        "vault",
+        "car",
+        "coin",
+        "thief",
+        "cash"
+      ],
+      [
+        "vault",
+        "badge",
+        "rainbow",
+        "cash",
+        "car",
+        "coin"
+      ]
+    ],
+    "uiMessages": [],
+    "animationCues": [
+      "golden_square_overlay.before",
+      "cascade_sequence.step_0",
+      "golden_square_overlay.after"
+    ],
+    "audioCues": [],
+    "counters": [
+      {
+        "name": "totalWin",
+        "value": 20,
+        "source": "v0_3_payload"
+      },
+      {
+        "name": "winRatio",
+        "value": 20,
+        "source": "v0_3_payload"
+      }
+    ],
+    "labels": {
+      "winTier": "small",
+      "fixtureOnly": "true"
+    },
+    "gamePayload": {
+      "gameKey": "little-gangster",
+      "schemaVersion": "v0.3",
+      "payload": {
+        "gameId": "8001_fixture",
+        "roundId": "round_fixture_001",
+        "spinId": "round_fixture_001",
+        "operationId": "operation_fixture_001",
+        "stateVersion": "fixture_state_001",
+        "clientOperationId": "operation_fixture_001",
+        "mathVersion": "v0.3_donor_feature_parity_provisional",
+        "rtpVariant": "rtp_96",
+        "bet": 1.0,
+        "totalWin": 20,
+        "total_win_x_bet": 20,
+        "winRatio": 20,
+        "winTier": "small",
+        "win_tier_source": "non_production_fixture_threshold_label",
+        "base_game": {
+          "grid_before": [
+            [
+              "thief",
+              "cash",
+              "car",
+              "vault",
+              "badge",
+              "rainbow"
+            ],
+            [
+              "cash",
+              "thief",
+              "coin",
+              "car",
+              "vault",
+              "badge"
+            ],
+            [
+              "car",
+              "coin",
+              "cash",
+              "thief",
+              "cash",
+              "vault"
+            ],
+            [
+              "badge",
+              "vault",
+              "car",
+              "coin",
+              "thief",
+              "cash"
+            ],
+            [
+              "vault",
+              "badge",
+              "rainbow",
+              "cash",
+              "car",
+              "coin"
+            ]
+          ],
+          "initial_grid": [
+            [
+              "thief",
+              "cash",
+              "car",
+              "vault",
+              "badge",
+              "rainbow"
+            ],
+            [
+              "cash",
+              "thief",
+              "coin",
+              "car",
+              "vault",
+              "badge"
+            ],
+            [
+              "car",
+              "coin",
+              "cash",
+              "thief",
+              "cash",
+              "vault"
+            ],
+            [
+              "badge",
+              "vault",
+              "car",
+              "coin",
+              "thief",
+              "cash"
+            ],
+            [
+              "vault",
+              "badge",
+              "rainbow",
+              "cash",
+              "car",
+              "coin"
+            ]
+          ],
+          "cascade_steps": [
+            {
+              "cascade_index": 0,
+              "grid_before": [
+                [
+                  "cash",
+                  "cash",
+                  "cash",
+                  "vault",
+                  "badge",
+                  "rainbow"
+                ],
+                [
+                  "car",
+                  "thief",
+                  "coin",
+                  "vault",
+                  "vault",
+                  "badge"
+                ],
+                [
+                  "car",
+                  "coin",
+                  "cash",
+                  "thief",
+                  "cash",
+                  "vault"
+                ],
+                [
+                  "badge",
+                  "vault",
+                  "car",
+                  "coin",
+                  "thief",
+                  "cash"
+                ],
+                [
+                  "vault",
+                  "badge",
+                  "rainbow",
+                  "cash",
+                  "car",
+                  "coin"
+                ]
+              ],
+              "clusters": [
+                {
+                  "cluster_id": "fixture_cluster_1",
+                  "symbol": "cash",
+                  "cells": [
+                    {
+                      "column": 1,
+                      "row": 1
+                    },
+                    {
+                      "column": 2,
+                      "row": 1
+                    },
+                    {
+                      "column": 3,
+                      "row": 1
+                    }
+                  ],
+                  "win": 12.5
+                }
+              ],
+              "winning_clusters": [
+                {
+                  "cluster_id": "fixture_cluster_1",
+                  "symbol": "cash",
+                  "cells": [
+                    {
+                      "column": 1,
+                      "row": 1
+                    },
+                    {
+                      "column": 2,
+                      "row": 1
+                    },
+                    {
+                      "column": 3,
+                      "row": 1
+                    }
+                  ],
+                  "win": 12.5
+                }
+              ],
+              "removed_cells": [
+                {
+                  "column": 1,
+                  "row": 1
+                },
+                {
+                  "column": 2,
+                  "row": 1
+                },
+                {
+                  "column": 3,
+                  "row": 1
+                }
+              ],
+              "dropped_cells": [
+                {
+                  "from": {
+                    "column": 1,
+                    "row": 2
+                  },
+                  "to": {
+                    "column": 1,
+                    "row": 1
+                  }
+                },
+                {
+                  "from": {
+                    "column": 2,
+                    "row": 2
+                  },
+                  "to": {
+                    "column": 2,
+                    "row": 1
+                  }
+                }
+              ],
+              "new_symbols": [
+                {
+                  "position": {
+                    "column": 1,
+                    "row": 5
+                  },
+                  "symbol": "new_cash"
+                },
+                {
+                  "position": {
+                    "column": 2,
+                    "row": 5
+                  },
+                  "symbol": "new_badge"
+                }
+              ],
+              "grid_after": [
+                [
+                  "new_cash",
+                  "new_badge",
+                  "car",
+                  "vault",
+                  "badge",
+                  "rainbow"
+                ],
+                [
+                  "cash",
+                  "new_thief",
+                  "coin",
+                  "car",
+                  "vault",
+                  "badge"
+                ],
+                [
+                  "car",
+                  "coin",
+                  "new_vault",
+                  "thief",
+                  "cash",
+                  "vault"
+                ],
+                [
+                  "badge",
+                  "vault",
+                  "car",
+                  "coin",
+                  "thief",
+                  "cash"
+                ],
+                [
+                  "vault",
+                  "badge",
+                  "rainbow",
+                  "cash",
+                  "car",
+                  "coin"
+                ]
+              ],
+              "cascade_win": 12.5,
+              "total_cascade_win": 12.5,
+              "golden_squares_before": [],
+              "golden_squares_after": [],
+              "rainbow_activation_events": [],
+              "coin_reveals": [],
+              "special_reveals": [],
+              "animation_hint_ids": [
+                "fixture_cascade_step"
+              ]
+            }
+          ],
+          "removed_cells": [
+            {
+              "column": 1,
+              "row": 1
+            },
+            {
+              "column": 2,
+              "row": 1
+            },
+            {
+              "column": 3,
+              "row": 1
+            }
+          ],
+          "dropped_cells": [
+            {
+              "from": {
+                "column": 1,
+                "row": 2
+              },
+              "to": {
+                "column": 1,
+                "row": 1
+              }
+            },
+            {
+              "from": {
+                "column": 2,
+                "row": 2
+              },
+              "to": {
+                "column": 2,
+                "row": 1
+              }
+            }
+          ],
+          "new_symbols": [
+            {
+              "position": {
+                "column": 1,
+                "row": 5
+              },
+              "symbol": "new_cash"
+            },
+            {
+              "position": {
+                "column": 2,
+                "row": 5
+              },
+              "symbol": "new_badge"
+            }
+          ],
+          "clusters": [
+            {
+              "cluster_id": "fixture_cluster_1",
+              "symbol": "cash",
+              "cells": [
+                {
+                  "column": 1,
+                  "row": 1
+                },
+                {
+                  "column": 2,
+                  "row": 1
+                },
+                {
+                  "column": 3,
+                  "row": 1
+                }
+              ],
+              "win": 12.5
+            }
+          ],
+          "cascade_index": 0,
+          "cascade_win": 12.5,
+          "total_cascade_win": 12.5,
+          "final_grid": [
+            [
+              "new_cash",
+              "new_badge",
+              "car",
+              "vault",
+              "badge",
+              "rainbow"
+            ],
+            [
+              "cash",
+              "new_thief",
+              "coin",
+              "car",
+              "vault",
+              "badge"
+            ],
+            [
+              "car",
+              "coin",
+              "new_vault",
+              "thief",
+              "cash",
+              "vault"
+            ],
+            [
+              "badge",
+              "vault",
+              "car",
+              "coin",
+              "thief",
+              "cash"
+            ],
+            [
+              "vault",
+              "badge",
+              "rainbow",
+              "cash",
+              "car",
+              "coin"
+            ]
+          ],
+          "golden_squares_before": [
+            {
+              "column": 3,
+              "row": 3
+            }
+          ],
+          "golden_squares_after": [
+            {
+              "column": 3,
+              "row": 3
+            },
+            {
+              "column": 2,
+              "row": 2
+            }
+          ],
+          "golden_square_events": [
+            {
+              "event_type": "persisted",
+              "position": {
+                "column": 3,
+                "row": 3
+              },
+              "source": "cascade",
+              "cascade_index": 0
+            }
+          ],
+          "golden_square_positions": [
+            {
+              "column": 3,
+              "row": 3
+            },
+            {
+              "column": 2,
+              "row": 2
+            }
+          ],
+          "persistence_scope": "fixture_round_only",
+          "rainbow_positions": [],
+          "rainbow_activation_events": [],
+          "affected_golden_squares": [],
+          "activation_source": null,
+          "coin_reveals": [],
+          "special_reveals": [],
+          "feature_triggers": []
+        },
+        "feature_mode_state": {
+          "active": false,
+          "mode_key": "none",
+          "mode_name": "none",
+          "entry_source": "none",
+          "trigger_condition": "none",
+          "spins_or_rounds_remaining": 0,
+          "golden_square_behavior": "base_persistence_only",
+          "rainbow_behavior": "base_activation_only",
+          "coin_reveal_behavior": "base_reveal_only",
+          "multiplier_behavior": "none",
+          "feature_complete": true
+        },
+        "bonus_buy_state": {
+          "available": true,
+          "selected_mode": "none",
+          "cost_x_bet": null,
+          "betType_or_current_gs_equivalent": "fixture_not_selected",
+          "ev_status": "not_reviewed",
+          "wallet_accounting_boundary": "backend_runtime_only_not_fixture",
+          "confirmation_required": true,
+          "purchased_feature_start_state": null
+        },
+        "max_win_cap": {
+          "max_win_cap_x_bet": 10000,
+          "possible_max_win_credits": null,
+          "possible_max_win_without_bonus_buy_credits": null,
+          "cap_reached": false,
+          "pre_cap_win": 20,
+          "pre_cap_win_x_bet": 20,
+          "capped_win": 20,
+          "capped_win_x_bet": 20,
+          "cap_reached_at_step": null,
+          "cap_applies_to_base": true,
+          "cap_applies_to_feature_modes": true,
+          "cap_applies_to_bonus_buy": true
+        },
+        "round_completion": {
+          "base_spin_complete": true,
+          "cascade_complete": true,
+          "feature_spin_complete": true,
+          "bonus_buy_purchased_feature_complete": true,
+          "max_win_cap_complete": true,
+          "no_pending_cascade": true,
+          "no_pending_reveal": true,
+          "no_pending_feature_transition": true,
+          "final_state_ready": true,
+          "round_finished": true,
+          "roundFinished_or_equivalent": true,
+          "endRoundSignature_or_helper_status": "not_applicable_to_fixture",
+          "current_gs_equivalent_status": "planning_fixture_only"
+        },
+        "state_persistence": {
+          "roundId": "round_fixture_001",
+          "spinId": "round_fixture_001",
+          "stateVersion": "fixture_state_001",
+          "clientOperationId": "operation_fixture_001",
+          "idempotencyKey": "operation_fixture_001",
+          "current_grid": [
+            [
+              "new_cash",
+              "new_badge",
+              "car",
+              "vault",
+              "badge",
+              "rainbow"
+            ],
+            [
+              "cash",
+              "new_thief",
+              "coin",
+              "car",
+              "vault",
+              "badge"
+            ],
+            [
+              "car",
+              "coin",
+              "new_vault",
+              "thief",
+              "cash",
+              "vault"
+            ],
+            [
+              "badge",
+              "vault",
+              "car",
+              "coin",
+              "thief",
+              "cash"
+            ],
+            [
+              "vault",
+              "badge",
+              "rainbow",
+              "cash",
+              "car",
+              "coin"
+            ]
+          ],
+          "pending_cascades": [],
+          "golden_square_state": [
+            {
+              "column": 3,
+              "row": 3
+            },
+            {
+              "column": 2,
+              "row": 2
+            }
+          ],
+          "feature_mode": {
+            "active": false,
+            "mode_key": "none",
+            "mode_name": "none",
+            "entry_source": "none",
+            "trigger_condition": "none",
+            "spins_or_rounds_remaining": 0,
+            "golden_square_behavior": "base_persistence_only",
+            "rainbow_behavior": "base_activation_only",
+            "coin_reveal_behavior": "base_reveal_only",
+            "multiplier_behavior": "none",
+            "feature_complete": true
+          },
+          "free_spins_remaining": 0,
+          "bonus_buy_purchase_state": {
+            "selected_mode": "none",
+            "purchased": false,
+            "accountingAuthority": "backend_runtime_only_not_fixture"
+          },
+          "cap_state": {
+            "max_win_cap_x_bet": 10000,
+            "possible_max_win_credits": null,
+            "possible_max_win_without_bonus_buy_credits": null,
+            "cap_reached": false,
+            "pre_cap_win": 20,
+            "pre_cap_win_x_bet": 20,
+            "capped_win": 20,
+            "capped_win_x_bet": 20,
+            "cap_reached_at_step": null,
+            "cap_applies_to_base": true,
+            "cap_applies_to_feature_modes": true,
+            "cap_applies_to_bonus_buy": true
+          },
+          "lastAction_or_current_gs_equivalent": {
+            "type": "fixture_render_state",
+            "operationId": "operation_fixture_001"
+          },
+          "recovery_state": {
+            "recoverable": false,
+            "restoreRequired": false,
+            "source": "non_production_fixture"
+          }
+        },
+        "wallet_accounting_boundary": {
+          "status": "not_wallet_payload",
+          "authority": "backend_runtime_only",
+          "fixtureBalanceIncluded": false,
+          "notes": "Fixture contains no real wallet balance or settlement instruction."
+        },
+        "registration_metadata_boundary": {
+          "status": "not_registration_metadata",
+          "authority": "GS configuration only after separate approval",
+          "notes": "Fixture does not register or configure game 8001."
+        },
+        "animationHints": [
+          "golden_square_persist"
+        ],
+        "rngDebug": null,
+        "doubleUp": {
+          "status": "removed_from_active_scope"
+        },
+        "jackpot": null
+      }
+    },
+    "extensionOptions": {
+      "preferred": "presentationPayload.gamePayload",
+      "fallback": "presentationPayload.littleGangsterV03",
+      "selectedForFixture": "presentationPayload.gamePayload",
+      "approvalStatus": "pending_schema_review"
+    }
+  },
+  "v0_3_payload": {
+    "gameId": "8001_fixture",
+    "roundId": "round_fixture_001",
+    "spinId": "round_fixture_001",
+    "operationId": "operation_fixture_001",
+    "stateVersion": "fixture_state_001",
+    "clientOperationId": "operation_fixture_001",
+    "mathVersion": "v0.3_donor_feature_parity_provisional",
+    "rtpVariant": "rtp_96",
+    "bet": 1.0,
+    "totalWin": 20,
+    "total_win_x_bet": 20,
+    "winRatio": 20,
+    "winTier": "small",
+    "win_tier_source": "non_production_fixture_threshold_label",
+    "base_game": {
+      "grid_before": [
+        [
+          "thief",
+          "cash",
+          "car",
+          "vault",
+          "badge",
+          "rainbow"
+        ],
+        [
+          "cash",
+          "thief",
+          "coin",
+          "car",
+          "vault",
+          "badge"
+        ],
+        [
+          "car",
+          "coin",
+          "cash",
+          "thief",
+          "cash",
+          "vault"
+        ],
+        [
+          "badge",
+          "vault",
+          "car",
+          "coin",
+          "thief",
+          "cash"
+        ],
+        [
+          "vault",
+          "badge",
+          "rainbow",
+          "cash",
+          "car",
+          "coin"
+        ]
+      ],
+      "initial_grid": [
+        [
+          "thief",
+          "cash",
+          "car",
+          "vault",
+          "badge",
+          "rainbow"
+        ],
+        [
+          "cash",
+          "thief",
+          "coin",
+          "car",
+          "vault",
+          "badge"
+        ],
+        [
+          "car",
+          "coin",
+          "cash",
+          "thief",
+          "cash",
+          "vault"
+        ],
+        [
+          "badge",
+          "vault",
+          "car",
+          "coin",
+          "thief",
+          "cash"
+        ],
+        [
+          "vault",
+          "badge",
+          "rainbow",
+          "cash",
+          "car",
+          "coin"
+        ]
+      ],
+      "cascade_steps": [
+        {
+          "cascade_index": 0,
+          "grid_before": [
+            [
+              "cash",
+              "cash",
+              "cash",
+              "vault",
+              "badge",
+              "rainbow"
+            ],
+            [
+              "car",
+              "thief",
+              "coin",
+              "vault",
+              "vault",
+              "badge"
+            ],
+            [
+              "car",
+              "coin",
+              "cash",
+              "thief",
+              "cash",
+              "vault"
+            ],
+            [
+              "badge",
+              "vault",
+              "car",
+              "coin",
+              "thief",
+              "cash"
+            ],
+            [
+              "vault",
+              "badge",
+              "rainbow",
+              "cash",
+              "car",
+              "coin"
+            ]
+          ],
+          "clusters": [
+            {
+              "cluster_id": "fixture_cluster_1",
+              "symbol": "cash",
+              "cells": [
+                {
+                  "column": 1,
+                  "row": 1
+                },
+                {
+                  "column": 2,
+                  "row": 1
+                },
+                {
+                  "column": 3,
+                  "row": 1
+                }
+              ],
+              "win": 12.5
+            }
+          ],
+          "winning_clusters": [
+            {
+              "cluster_id": "fixture_cluster_1",
+              "symbol": "cash",
+              "cells": [
+                {
+                  "column": 1,
+                  "row": 1
+                },
+                {
+                  "column": 2,
+                  "row": 1
+                },
+                {
+                  "column": 3,
+                  "row": 1
+                }
+              ],
+              "win": 12.5
+            }
+          ],
+          "removed_cells": [
+            {
+              "column": 1,
+              "row": 1
+            },
+            {
+              "column": 2,
+              "row": 1
+            },
+            {
+              "column": 3,
+              "row": 1
+            }
+          ],
+          "dropped_cells": [
+            {
+              "from": {
+                "column": 1,
+                "row": 2
+              },
+              "to": {
+                "column": 1,
+                "row": 1
+              }
+            },
+            {
+              "from": {
+                "column": 2,
+                "row": 2
+              },
+              "to": {
+                "column": 2,
+                "row": 1
+              }
+            }
+          ],
+          "new_symbols": [
+            {
+              "position": {
+                "column": 1,
+                "row": 5
+              },
+              "symbol": "new_cash"
+            },
+            {
+              "position": {
+                "column": 2,
+                "row": 5
+              },
+              "symbol": "new_badge"
+            }
+          ],
+          "grid_after": [
+            [
+              "new_cash",
+              "new_badge",
+              "car",
+              "vault",
+              "badge",
+              "rainbow"
+            ],
+            [
+              "cash",
+              "new_thief",
+              "coin",
+              "car",
+              "vault",
+              "badge"
+            ],
+            [
+              "car",
+              "coin",
+              "new_vault",
+              "thief",
+              "cash",
+              "vault"
+            ],
+            [
+              "badge",
+              "vault",
+              "car",
+              "coin",
+              "thief",
+              "cash"
+            ],
+            [
+              "vault",
+              "badge",
+              "rainbow",
+              "cash",
+              "car",
+              "coin"
+            ]
+          ],
+          "cascade_win": 12.5,
+          "total_cascade_win": 12.5,
+          "golden_squares_before": [],
+          "golden_squares_after": [],
+          "rainbow_activation_events": [],
+          "coin_reveals": [],
+          "special_reveals": [],
+          "animation_hint_ids": [
+            "fixture_cascade_step"
+          ]
+        }
+      ],
+      "removed_cells": [
+        {
+          "column": 1,
+          "row": 1
+        },
+        {
+          "column": 2,
+          "row": 1
+        },
+        {
+          "column": 3,
+          "row": 1
+        }
+      ],
+      "dropped_cells": [
+        {
+          "from": {
+            "column": 1,
+            "row": 2
+          },
+          "to": {
+            "column": 1,
+            "row": 1
+          }
+        },
+        {
+          "from": {
+            "column": 2,
+            "row": 2
+          },
+          "to": {
+            "column": 2,
+            "row": 1
+          }
+        }
+      ],
+      "new_symbols": [
+        {
+          "position": {
+            "column": 1,
+            "row": 5
+          },
+          "symbol": "new_cash"
+        },
+        {
+          "position": {
+            "column": 2,
+            "row": 5
+          },
+          "symbol": "new_badge"
+        }
+      ],
+      "clusters": [
+        {
+          "cluster_id": "fixture_cluster_1",
+          "symbol": "cash",
+          "cells": [
+            {
+              "column": 1,
+              "row": 1
+            },
+            {
+              "column": 2,
+              "row": 1
+            },
+            {
+              "column": 3,
+              "row": 1
+            }
+          ],
+          "win": 12.5
+        }
+      ],
+      "cascade_index": 0,
+      "cascade_win": 12.5,
+      "total_cascade_win": 12.5,
+      "final_grid": [
+        [
+          "new_cash",
+          "new_badge",
+          "car",
+          "vault",
+          "badge",
+          "rainbow"
+        ],
+        [
+          "cash",
+          "new_thief",
+          "coin",
+          "car",
+          "vault",
+          "badge"
+        ],
+        [
+          "car",
+          "coin",
+          "new_vault",
+          "thief",
+          "cash",
+          "vault"
+        ],
+        [
+          "badge",
+          "vault",
+          "car",
+          "coin",
+          "thief",
+          "cash"
+        ],
+        [
+          "vault",
+          "badge",
+          "rainbow",
+          "cash",
+          "car",
+          "coin"
+        ]
+      ],
+      "golden_squares_before": [
+        {
+          "column": 3,
+          "row": 3
+        }
+      ],
+      "golden_squares_after": [
+        {
+          "column": 3,
+          "row": 3
+        },
+        {
+          "column": 2,
+          "row": 2
+        }
+      ],
+      "golden_square_events": [
+        {
+          "event_type": "persisted",
+          "position": {
+            "column": 3,
+            "row": 3
+          },
+          "source": "cascade",
+          "cascade_index": 0
+        }
+      ],
+      "golden_square_positions": [
+        {
+          "column": 3,
+          "row": 3
+        },
+        {
+          "column": 2,
+          "row": 2
+        }
+      ],
+      "persistence_scope": "fixture_round_only",
+      "rainbow_positions": [],
+      "rainbow_activation_events": [],
+      "affected_golden_squares": [],
+      "activation_source": null,
+      "coin_reveals": [],
+      "special_reveals": [],
+      "feature_triggers": []
+    },
+    "feature_mode_state": {
+      "active": false,
+      "mode_key": "none",
+      "mode_name": "none",
+      "entry_source": "none",
+      "trigger_condition": "none",
+      "spins_or_rounds_remaining": 0,
+      "golden_square_behavior": "base_persistence_only",
+      "rainbow_behavior": "base_activation_only",
+      "coin_reveal_behavior": "base_reveal_only",
+      "multiplier_behavior": "none",
+      "feature_complete": true
+    },
+    "bonus_buy_state": {
+      "available": true,
+      "selected_mode": "none",
+      "cost_x_bet": null,
+      "betType_or_current_gs_equivalent": "fixture_not_selected",
+      "ev_status": "not_reviewed",
+      "wallet_accounting_boundary": "backend_runtime_only_not_fixture",
+      "confirmation_required": true,
+      "purchased_feature_start_state": null
+    },
+    "max_win_cap": {
+      "max_win_cap_x_bet": 10000,
+      "possible_max_win_credits": null,
+      "possible_max_win_without_bonus_buy_credits": null,
+      "cap_reached": false,
+      "pre_cap_win": 20,
+      "pre_cap_win_x_bet": 20,
+      "capped_win": 20,
+      "capped_win_x_bet": 20,
+      "cap_reached_at_step": null,
+      "cap_applies_to_base": true,
+      "cap_applies_to_feature_modes": true,
+      "cap_applies_to_bonus_buy": true
+    },
+    "round_completion": {
+      "base_spin_complete": true,
+      "cascade_complete": true,
+      "feature_spin_complete": true,
+      "bonus_buy_purchased_feature_complete": true,
+      "max_win_cap_complete": true,
+      "no_pending_cascade": true,
+      "no_pending_reveal": true,
+      "no_pending_feature_transition": true,
+      "final_state_ready": true,
+      "round_finished": true,
+      "roundFinished_or_equivalent": true,
+      "endRoundSignature_or_helper_status": "not_applicable_to_fixture",
+      "current_gs_equivalent_status": "planning_fixture_only"
+    },
+    "state_persistence": {
+      "roundId": "round_fixture_001",
+      "spinId": "round_fixture_001",
+      "stateVersion": "fixture_state_001",
+      "clientOperationId": "operation_fixture_001",
+      "idempotencyKey": "operation_fixture_001",
+      "current_grid": [
+        [
+          "new_cash",
+          "new_badge",
+          "car",
+          "vault",
+          "badge",
+          "rainbow"
+        ],
+        [
+          "cash",
+          "new_thief",
+          "coin",
+          "car",
+          "vault",
+          "badge"
+        ],
+        [
+          "car",
+          "coin",
+          "new_vault",
+          "thief",
+          "cash",
+          "vault"
+        ],
+        [
+          "badge",
+          "vault",
+          "car",
+          "coin",
+          "thief",
+          "cash"
+        ],
+        [
+          "vault",
+          "badge",
+          "rainbow",
+          "cash",
+          "car",
+          "coin"
+        ]
+      ],
+      "pending_cascades": [],
+      "golden_square_state": [
+        {
+          "column": 3,
+          "row": 3
+        },
+        {
+          "column": 2,
+          "row": 2
+        }
+      ],
+      "feature_mode": {
+        "active": false,
+        "mode_key": "none",
+        "mode_name": "none",
+        "entry_source": "none",
+        "trigger_condition": "none",
+        "spins_or_rounds_remaining": 0,
+        "golden_square_behavior": "base_persistence_only",
+        "rainbow_behavior": "base_activation_only",
+        "coin_reveal_behavior": "base_reveal_only",
+        "multiplier_behavior": "none",
+        "feature_complete": true
+      },
+      "free_spins_remaining": 0,
+      "bonus_buy_purchase_state": {
+        "selected_mode": "none",
+        "purchased": false,
+        "accountingAuthority": "backend_runtime_only_not_fixture"
+      },
+      "cap_state": {
+        "max_win_cap_x_bet": 10000,
+        "possible_max_win_credits": null,
+        "possible_max_win_without_bonus_buy_credits": null,
+        "cap_reached": false,
+        "pre_cap_win": 20,
+        "pre_cap_win_x_bet": 20,
+        "capped_win": 20,
+        "capped_win_x_bet": 20,
+        "cap_reached_at_step": null,
+        "cap_applies_to_base": true,
+        "cap_applies_to_feature_modes": true,
+        "cap_applies_to_bonus_buy": true
+      },
+      "lastAction_or_current_gs_equivalent": {
+        "type": "fixture_render_state",
+        "operationId": "operation_fixture_001"
+      },
+      "recovery_state": {
+        "recoverable": false,
+        "restoreRequired": false,
+        "source": "non_production_fixture"
+      }
+    },
+    "wallet_accounting_boundary": {
+      "status": "not_wallet_payload",
+      "authority": "backend_runtime_only",
+      "fixtureBalanceIncluded": false,
+      "notes": "Fixture contains no real wallet balance or settlement instruction."
+    },
+    "registration_metadata_boundary": {
+      "status": "not_registration_metadata",
+      "authority": "GS configuration only after separate approval",
+      "notes": "Fixture does not register or configure game 8001."
+    },
+    "animationHints": [
+      "golden_square_persist"
+    ],
+    "rngDebug": null,
+    "doubleUp": {
+      "status": "removed_from_active_scope"
+    },
+    "jackpot": null
+  },
+  "expectedSceneStates": [
+    "golden_square_overlay.before",
+    "cascade_sequence.step_0",
+    "golden_square_overlay.after"
+  ],
+  "expectedObjectStates": [
+    {
+      "objectId": "scene.base.grid.cell.c3.r3.golden_overlay",
+      "state": "golden_square_persist"
+    }
+  ],
+  "nonProduction": true,
+  "authoritativeOutcome": false,
+  "browserGenerated": false,
+  "notes": [
+    "Static renderer fixture for planning only.",
+    "Not production runtime proof and not backend implementation.",
+    "Client remains renderer-only and must not generate RNG or outcomes."
+  ]
+}

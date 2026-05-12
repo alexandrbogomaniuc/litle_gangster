@@ -1,0 +1,60 @@
+{
+  "id": "little_gangster_rtp_92_donor_parity_contract_v0.3",
+  "project": {
+    "project_name": "little-gangster",
+    "future_game_name": "Little Gangster",
+    "future_game_id": 8001
+  },
+  "game_type": "slot",
+  "status": "PROVISIONAL_CONTRACT_ASSUMPTION_NOT_RELEASE_APPROVED",
+  "target_rtp_percent": 92.0,
+  "grid": {
+    "columns": 6,
+    "rows": 5
+  },
+  "pay_model": "adjacent_cluster_pays_orthogonal_connectivity_with_cascades",
+  "minimum_cluster_size": "PROVISIONAL_ASSUMPTION_5_plus",
+  "max_cascade_steps": 12,
+  "volatility_target": "high",
+  "max_win": {
+    "max_win_cap_x_bet": 10000,
+    "possible_max_win_credits": "UNKNOWN_PENDING_FULL_MODEL_VALIDATION",
+    "possible_max_win_without_bonus_buy_credits": "UNKNOWN_PENDING_FULL_MODEL_VALIDATION"
+  },
+  "rng_policy": {
+    "browser_result_authority_allowed": false,
+    "production_rng_owner": "UNKNOWN_UNPROVEN_SERVER_BACKEND_REQUIRED",
+    "simulation_rng": "deterministic_local_only_if_validation_run"
+  },
+  "current_gs_boundary": {
+    "registration_imports_executable_math": false,
+    "runtime_owner_proven": false,
+    "gamesv1_slot_browser_v1_status": "candidate_not_final"
+  },
+  "symbols": {
+    "wild": "LG_WILD",
+    "rainbow": "LG_RAINBOW",
+    "coin_tiers": [
+      "bronze",
+      "silver",
+      "gold"
+    ],
+    "special_reveals": [
+      "pot_of_gold",
+      "four_leaf_clover"
+    ],
+    "low": [
+      "TEN",
+      "JACK",
+      "QUEEN",
+      "KING",
+      "ACE"
+    ],
+    "premium": [
+      "LOOKOUT",
+      "RUNNER",
+      "SAFE_CRACKER",
+      "TOP_BOSS"
+    ]
+  }
+}

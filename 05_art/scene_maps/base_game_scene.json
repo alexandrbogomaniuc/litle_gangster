@@ -1,0 +1,1503 @@
+{
+  "asset_policy": {
+    "all_objects_replacement_required": true,
+    "release_assets_approved": false,
+    "scaffold_assets_release_status": "blocked_from_release",
+    "scaffold_assets_used_for_preview": true
+  },
+  "blockers": [
+    "runtime_result_owner_unproven",
+    "result_api_contract_review_required_before_full_client_build",
+    "final_original_assets_missing"
+  ],
+  "dependencies": {
+    "math_package": "04_math/alternatives/v0_3_donor_feature_parity_provisional/math_package.json",
+    "math_result_fields": [
+      "base_game",
+      "base_game.cascade_steps",
+      "base_game.total_cascade_win",
+      "winRatio",
+      "winTier",
+      "round_completion"
+    ],
+    "math_result_schema": "04_math/alternatives/v0_3_donor_feature_parity_provisional/result_schema.json",
+    "protocol_runtime_dependencies": [
+      "slot_v1_result_owner_unknown",
+      "runtime_math_integration_pending"
+    ],
+    "runtime_boundary": "04_math/alternatives/v0_3_donor_feature_parity_provisional/current_gs_runtime_boundary.md",
+    "wallet_boundary": "Wallet/accounting is separate from animation rendering; no wallet call in scene mapper.",
+    "math_result_contract": "04_math/alternatives/v0_3_donor_feature_parity_provisional/donor_parity_result_contract.md",
+    "registration_boundary": "04_math/alternatives/v0_3_donor_feature_parity_provisional/registration_metadata_boundary.md",
+    "rng_boundary": "04_math/alternatives/v0_3_donor_feature_parity_provisional/rng_result_owner_boundary.md"
+  },
+  "expected_layers": [
+    "background",
+    "foreground",
+    "grid_frame",
+    "grid_cells",
+    "win_highlights",
+    "ui_panel",
+    "ui_controls",
+    "ui_overlay"
+  ],
+  "five_by_three_used_for_target_mapping": false,
+  "grid": {
+    "cluster_evaluation": "provisional",
+    "columns": 6,
+    "rows": 5,
+    "symbol_cells": 30
+  },
+  "metadata": {
+    "release_assets_approved": false,
+    "scaffold_assets_blocked_from_release": true,
+    "supplemental_scaffold_preview_run_id": "playwright_20260510T094437Z",
+    "updated_for": "v0.3_donor_feature_parity_provisional",
+    "updated_at": "2026-05-11 11:35:57 "
+  },
+  "objects": [
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 1,
+        "unit": "normalized",
+        "width": 1,
+        "x": 0,
+        "y": 0
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "dimensions": "1x1 normalized",
+      "layer": "background",
+      "math_result_dependencies": [],
+      "notes": "Original gangster/street background pending. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.background",
+      "object_type": "background",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 0
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.08,
+        "unit": "normalized",
+        "width": 0.28,
+        "x": 0.36,
+        "y": 0.02
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "dimensions": "0.28x0.08 normalized",
+      "layer": "foreground",
+      "math_result_dependencies": [],
+      "notes": "Logo placement placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.logo",
+      "object_type": "logo",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 20
+    },
+    {
+      "animation_states": [
+        "idle",
+        "win_highlight"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.58,
+        "unit": "normalized",
+        "width": 0.64,
+        "x": 0.18,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.64x0.58 normalized",
+      "layer": "grid_frame",
+      "math_result_dependencies": [
+        "base_game.grid_before",
+        "base_game.clusters"
+      ],
+      "notes": "Selected v0.2 6x5 cluster grid container. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.container",
+      "object_type": "6x5_grid_container",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 40
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.18,
+        "unit": "normalized",
+        "width": 0.88,
+        "x": 0.06,
+        "y": 0.78
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.88x0.18 normalized",
+      "layer": "ui_panel",
+      "math_result_dependencies": [],
+      "notes": "Bottom control panel placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.root",
+      "object_type": "control_panel",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 100
+    },
+    {
+      "animation_states": [
+        "idle",
+        "update"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.06,
+        "unit": "normalized",
+        "width": 0.15,
+        "x": 0.34,
+        "y": 0.84
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "dimensions": "0.15x0.06 normalized",
+      "layer": "ui_panel",
+      "math_result_dependencies": [
+        "wallet_accounting_boundary"
+      ],
+      "notes": "Display-only balance area. Wallet/accounting owned by GS/wallet, not browser math. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.balance_display",
+      "object_type": "balance_display_placeholder",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 120
+    },
+    {
+      "animation_states": [
+        "idle",
+        "update"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.06,
+        "unit": "normalized",
+        "width": 0.12,
+        "x": 0.51,
+        "y": 0.84
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "dimensions": "0.12x0.06 normalized",
+      "layer": "ui_panel",
+      "math_result_dependencies": [
+        "bet"
+      ],
+      "notes": "Bet display uses validated runtime bet state. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.bet_display",
+      "object_type": "bet_display",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 121
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.06,
+        "unit": "normalized",
+        "width": 0.03,
+        "x": 0.48,
+        "y": 0.84
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.03x0.06 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Bet decrease control placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.bet_decrease",
+      "object_type": "bet_stepper",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 125
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.06,
+        "unit": "normalized",
+        "width": 0.03,
+        "x": 0.63,
+        "y": 0.84
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.03x0.06 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Bet increase control placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.bet_increase",
+      "object_type": "bet_stepper",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 126
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.13,
+        "unit": "normalized",
+        "width": 0.1,
+        "x": 0.72,
+        "y": 0.79
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.1x0.13 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Main spin button placeholder. Enabled by runtime state only. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.spin_button",
+      "object_type": "spin_button",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 130
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.11,
+        "unit": "normalized",
+        "width": 0.07,
+        "x": 0.82,
+        "y": 0.8
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.07x0.11 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Optional stop/quick-stop button placeholder; final behavior pending runtime UX. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.stop_button",
+      "object_type": "stop_button_optional",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 131
+    },
+    {
+      "animation_states": [
+        "idle",
+        "attention"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.13,
+        "unit": "normalized",
+        "width": 0.11,
+        "x": 0.11,
+        "y": 0.79
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "dimensions": "0.11x0.13 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [
+        "bonus_buy_state"
+      ],
+      "notes": "Bonus buy entry button. Feature is provisional and requires product/math review. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.buy_feature_button",
+      "object_type": "buy_feature_button",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 132
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.08,
+        "unit": "normalized",
+        "width": 0.055,
+        "x": 0.25,
+        "y": 0.82
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.055x0.08 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Menu/settings entry placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.menu_button",
+      "object_type": "menu_button",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 133
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_click.mp4",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.07,
+        "unit": "normalized",
+        "width": 0.055,
+        "x": 0.88,
+        "y": 0.05
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_click.mp4",
+      "dimensions": "0.055x0.07 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Sound toggle placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.sound_toggle",
+      "object_type": "sound_toggle",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 134
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.08,
+        "unit": "normalized",
+        "width": 0.055,
+        "x": 0.66,
+        "y": 0.82
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.055x0.08 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Autoplay entry placeholder; execution not observed. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.autoplay_button",
+      "object_type": "autoplay_button",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "optional_placeholder",
+      "z_index": 135
+    },
+    {
+      "animation_states": [
+        "idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.07,
+        "unit": "normalized",
+        "width": 0.055,
+        "x": 0.88,
+        "y": 0.14
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.055x0.07 normalized",
+      "layer": "ui_controls",
+      "math_result_dependencies": [],
+      "notes": "Turbo toggle placeholder; labels observed, behavior not tested. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.panel.turbo_toggle",
+      "object_type": "turbo_toggle",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "optional_placeholder",
+      "z_index": 136
+    },
+    {
+      "animation_states": [
+        "idle",
+        "count_up"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.05,
+        "unit": "normalized",
+        "width": 0.16,
+        "x": 0.42,
+        "y": 0.72
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "dimensions": "0.16x0.05 normalized",
+      "layer": "ui_overlay",
+      "math_result_dependencies": [
+        "totalWin"
+      ],
+      "notes": "Win amount display driven by backend-authored result totalWin. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.win_amount",
+      "object_type": "win_amount_display",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 150
+    },
+    {
+      "animation_states": [
+        "cluster_flash",
+        "cluster_collect"
+      ],
+      "asset_reference": "placeholder://scene.base.cluster_highlight_layer",
+      "asset_source": "placeholder",
+      "bounds": {
+        "height": 0.58,
+        "unit": "normalized",
+        "width": 0.64,
+        "x": 0.18,
+        "y": 0.16
+      },
+      "dimensions": "0.64x0.58 normalized",
+      "layer": "win_highlights",
+      "math_result_dependencies": [
+        "base_game.clusters",
+        "animationHints"
+      ],
+      "notes": "Overlay layer for connected-cluster win highlights.",
+      "object_id": "scene.base.cluster_highlight_layer",
+      "object_type": "cluster_highlight_layer",
+      "ownership_status": "placeholder",
+      "release_status": "pending_replacement",
+      "replacement_required": true,
+      "scene_id": "scene.base",
+      "status": "mapped_placeholder",
+      "z_index": 80
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.18,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 1, row 1. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c1.r1",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.28667,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 2, row 1. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c2.r1",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.39333,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 3, row 1. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c3.r1",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.5,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 4, row 1. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c4.r1",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.60667,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 5, row 1. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c5.r1",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.71333,
+        "y": 0.16
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 6, row 1. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c6.r1",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.18,
+        "y": 0.276
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 1, row 2. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c1.r2",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.28667,
+        "y": 0.276
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 2, row 2. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c2.r2",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.39333,
+        "y": 0.276
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 3, row 2. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c3.r2",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.5,
+        "y": 0.276
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 4, row 2. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c4.r2",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.60667,
+        "y": 0.276
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 5, row 2. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c5.r2",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.71333,
+        "y": 0.276
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 6, row 2. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c6.r2",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.18,
+        "y": 0.392
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 1, row 3. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c1.r3",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.28667,
+        "y": 0.392
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 2, row 3. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c2.r3",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.39333,
+        "y": 0.392
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 3, row 3. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c3.r3",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.5,
+        "y": 0.392
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 4, row 3. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c4.r3",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.60667,
+        "y": 0.392
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 5, row 3. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c5.r3",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.71333,
+        "y": 0.392
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 6, row 3. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c6.r3",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.18,
+        "y": 0.508
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 1, row 4. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c1.r4",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.28667,
+        "y": 0.508
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 2, row 4. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c2.r4",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.39333,
+        "y": 0.508
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 3, row 4. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c3.r4",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.5,
+        "y": 0.508
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 4, row 4. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c4.r4",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.60667,
+        "y": 0.508
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 5, row 4. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c5.r4",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.71333,
+        "y": 0.508
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 6, row 4. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c6.r4",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.18,
+        "y": 0.624
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 1, row 5. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c1.r5",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.28667,
+        "y": 0.624
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 2, row 5. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c2.r5",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.39333,
+        "y": 0.624
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 3, row 5. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c3.r5",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.5,
+        "y": 0.624
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 4, row 5. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c4.r5",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.60667,
+        "y": 0.624
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 5, row 5. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c5.r5",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    },
+    {
+      "animation_states": [
+        "idle",
+        "symbol_land",
+        "cluster_win"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.116,
+        "unit": "normalized",
+        "width": 0.10667,
+        "x": 0.71333,
+        "y": 0.624
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.10667x0.116 normalized",
+      "layer": "grid_cells",
+      "math_result_dependencies": [
+        "base_game.grid_before"
+      ],
+      "notes": "Base-game grid cell column 6, row 5. Stable 6x5 target cell. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.base.grid.cell.c6.r5",
+      "object_type": "grid_cell",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.base.grid",
+      "status": "mapped_placeholder",
+      "z_index": 50
+    }
+  ],
+  "purpose": "Main 6x5 cluster game surface and controls.",
+  "scene_id": "scene.base",
+  "scene_name": "Base game scene",
+  "selected_math_layout": "6x5_cluster_provisional",
+  "selected_math_model_version": "v0.3_donor_feature_parity_provisional",
+  "status": "mapped_v0_3_update",
+  "viewport_applicability": [
+    "desktop",
+    "mobile"
+  ],
+  "v0_3_result_fields_consumed": [
+    "base_game",
+    "base_game.cascade_steps",
+    "base_game.total_cascade_win",
+    "winRatio",
+    "winTier",
+    "round_completion"
+  ],
+  "current_gs_boundary": {
+    "client_role": "renderer_only",
+    "client_does_not_generate_production_rng": true,
+    "client_does_not_calculate_authoritative_win_outcome": true,
+    "wallet_accounting_is_separate_from_animation_rendering": true,
+    "registration_metadata_is_not_animation_or_result_schema": true,
+    "current_gs_result_owner_proven": false,
+    "full_game_client_builder_blocked_until_runtime_owner_and_result_api_review": true
+  },
+  "ownership_release_status": {
+    "donor_scaffold_assets_allowed_in_release": false,
+    "scaffold_assets_release_status": "blocked_from_release",
+    "new_v0_3_objects_release_status": "pending_replacement",
+    "replacement_required": true,
+    "final_assets_approved": false
+  },
+  "scaffold_reference_status": "internal_reference_only_blocked_from_release"
+}

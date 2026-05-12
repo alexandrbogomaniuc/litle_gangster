@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "rainbow-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Candidate rainbow activation hook.",
+  "simulationImpact": "Adds feature-event contribution in local smoke report.",
+  "blockerStatus": "final_rainbow_activation_pending_math_decision",
+  "exactValuesFinal": false,
+  "activationChancePerRound": 0.035,
+  "activationEffect": "symbol_transform_candidate"
+}

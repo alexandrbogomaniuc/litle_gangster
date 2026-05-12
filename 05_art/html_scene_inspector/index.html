@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Gangster Scene Inspector</title>
+  <link rel="stylesheet" href="scene_inspector.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Little Gangster Scene Inspector</h1>
+      <p>6x5 cluster provisional scene map <span class="mode-pill">v0.3 result-state planner</span></p>
+    </div>
+    <div class="status-pill">Internal scaffold</div>
+  </header>
+
+  <section class="warning-banner">
+    Internal donor/scaffold preview only. Not approved for release. All scaffold assets require replacement or explicit approval.
+  </section>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <label class="control-label" for="searchBox">Search object ID</label>
+      <input id="searchBox" type="search" placeholder="scene.base.grid.cell.c1.r1">
+
+      <label class="control-label" for="previewMode">Preview mode</label>
+      <select id="previewMode">
+        <option value="placeholder">Placeholders</option>
+        <option value="scaffold">Scaffold previews</option>
+      </select>
+
+      <div class="layer-panel">
+        <div class="panel-title">Layers</div>
+        <div id="layerToggles"></div>
+      </div>
+
+      <div class="detail-panel">
+        <div class="panel-title">Selected Object</div>
+        <dl id="details">
+          <dt>Object ID</dt><dd>Select an object</dd>
+        </dl>
+      </div>
+
+      <div class="notes-panel">
+        <div class="panel-title">Notes</div>
+        <textarea id="notesBox" placeholder="Temporary inspector notes stay in this browser only."></textarea>
+        <button id="exportNotes" type="button">Export Notes JSON</button>
+        <pre id="notesOutput"></pre>
+      </div>
+    </aside>
+
+    <section class="stage-wrap">
+      <div id="sceneTitle" class="scene-title"></div>
+      <div id="stage" class="stage" aria-label="6x5 scene preview"></div>
+    </section>
+  </main>
+
+  <script src="scene_inspector.js"></script>
+</body>
+</html>

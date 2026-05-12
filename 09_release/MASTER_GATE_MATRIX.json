@@ -1,0 +1,97 @@
+{
+  "gates": [
+    {
+      "gate": "GATE_0_PROJECT_CREATED",
+      "required_for": ["AuthorizedReferenceResearcher", "ProtocolAndSchemaMapper"],
+      "required_manifest_flags": ["approval_gates.project_created"],
+      "blocks": ["donor research", "protocol mapping"],
+      "notes": "Project folder, manifest, assumptions, decisions, and initial blockers must exist."
+    },
+    {
+      "gate": "GATE_1_DONOR_CAPTURED",
+      "required_for": ["ReferenceAssetInventory", "MathModelDesigner"],
+      "required_outputs": ["01_reference_research/donor_feature_settings_matrix.csv"],
+      "blocks": ["feature parity lock", "math finalization"],
+      "notes": "Donor feature/settings parity must be observed or explicitly blocked/rejected."
+    },
+    {
+      "gate": "GATE_2_FEATURE_PARITY_LOCKED",
+      "required_for": ["MathModelDesigner", "ArtSceneMapper"],
+      "required_outputs": ["01_reference_research/donor_feature_settings_parity_report.md"],
+      "blocks": ["math contract", "scene mapping"],
+      "notes": "Donor features/settings must be matched, blocked, or user-rejected."
+    },
+    {
+      "gate": "GATE_3_RUNTIME_LANE_LOCKED",
+      "required_for": ["GameClientBuilder implementation", "GameServerRegistrar"],
+      "required_manifest_flags": ["runtime_owner_proven", "result_api_contract_proven"],
+      "blocks": ["client implementation", "registration generation"],
+      "notes": "Prior-agent candidate lanes do not satisfy this gate."
+    },
+    {
+      "gate": "GATE_4_MATH_CONTRACT_LOCKED",
+      "required_for": ["ArtSceneMapper", "GameClientBuilder planning"],
+      "required_outputs": ["04_math/alternatives/v0_3_donor_feature_parity_provisional/result_schema.json"],
+      "blocks": ["scene result mapping", "client consumption mapping"],
+      "notes": "Release math approval is separate from planning contract readiness."
+    },
+    {
+      "gate": "GATE_5_ART_REPLACEMENT_LOCKED",
+      "required_for": ["GameClientBuilder implementation"],
+      "required_manifest_flags": ["final_assets_approved"],
+      "blocks": ["release asset packaging"],
+      "notes": "Scaffold assets may support internal preview only and remain blocked from release."
+    },
+    {
+      "gate": "GATE_6_CLIENT_BUILD_ALLOWED",
+      "required_for": ["GameClientBuilder implementation"],
+      "required_manifest_flags": [
+        "runtime_owner_proven",
+        "result_api_contract_proven",
+        "approved_assets_strategy_exists",
+        "explicit_user_approval_for_client_code"
+      ],
+      "blocks": ["client code generation"],
+      "notes": "Planning allowed does not imply implementation allowed."
+    },
+    {
+      "gate": "GATE_7_REGISTRATION_GENERATE_ALLOWED",
+      "required_for": ["GameServerRegistrar"],
+      "required_manifest_flags": [
+        "registration_lane_proven",
+        "game_id_selected",
+        "bank_source_selected",
+        "rollback_strategy_exists"
+      ],
+      "required_status_values": {
+        "scn_serializer_status": ["proven", "workaround_defined"]
+      },
+      "blocks": ["registration artifact generation"],
+      "notes": "Registration apply is a separate explicit approval gate."
+    },
+    {
+      "gate": "GATE_8_WALLET_TEST_ALLOWED",
+      "required_for": ["WalletAndLaunchTester"],
+      "required_manifest_flags": [
+        "launch_url_or_test_environment_available",
+        "safe_test_user_secret_reference_exists",
+        "wallet_mock_or_stage_mode_selected"
+      ],
+      "blocks": ["wallet/API calls"],
+      "notes": "Raw secrets must never be requested or stored."
+    },
+    {
+      "gate": "GATE_9_RELEASE_AUDIT_ALLOWED",
+      "required_for": ["RTPAndReleaseAuditor"],
+      "required_manifest_flags": [
+        "math_approved",
+        "client_build_approved",
+        "registration_approved",
+        "wallet_tests_approved",
+        "final_assets_approved"
+      ],
+      "blocks": ["release approval"],
+      "notes": "Release cannot be approved until all prior gates and validators pass."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "currency": "multiples_of_total_bet",
+  "id": "little_gangster_provisional_paytable_v0.1",
+  "line_pays_x_bet": {
+    "ACE": {
+      "3": 0.5,
+      "4": 2,
+      "5": 12
+    },
+    "JACK": {
+      "3": 0.25,
+      "4": 1,
+      "5": 5.5
+    },
+    "KING": {
+      "3": 0.4,
+      "4": 1.6,
+      "5": 9
+    },
+    "LG_WILD": {
+      "3": 2,
+      "4": 20,
+      "5": 120
+    },
+    "LOOKOUT": {
+      "3": 0.8,
+      "4": 4,
+      "5": 24
+    },
+    "QUEEN": {
+      "3": 0.3,
+      "4": 1.3,
+      "5": 7
+    },
+    "RUNNER": {
+      "3": 1.0,
+      "4": 5,
+      "5": 32
+    },
+    "SAFE_CRACKER": {
+      "3": 1.2,
+      "4": 6,
+      "5": 45
+    },
+    "TEN": {
+      "3": 0.2,
+      "4": 0.8,
+      "5": 4
+    },
+    "TOP_BOSS": {
+      "3": 1.5,
+      "4": 8,
+      "5": 70
+    }
+  },
+  "scatter_pays_x_bet": {
+    "3": 2,
+    "4": 20,
+    "5": 100
+  },
+  "status": "PROVISIONAL_ASSUMPTION",
+  "wild_substitution": "LG_WILD substitutes for all symbols except LG_SCATTER."
+}

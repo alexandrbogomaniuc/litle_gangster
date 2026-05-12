@@ -1,0 +1,29 @@
+{
+  "confidential_raw_mantis_text_persisted": false,
+  "created_reports": [
+    "03_protocol/extgame_external_collaboration_lessons.md",
+    "03_protocol/extgame_api_requirements_matrix.md",
+    "03_protocol/extgame_template_parameter_checklist.md",
+    "03_protocol/extgame_transaction_state_contract.md",
+    "03_protocol/extgame_vba_history_requirements.md",
+    "04_math/extgame_math_runtime_requirements.md",
+    "08_qa/extgame_testing_certification_requirements.md"
+  ],
+  "db_or_cassandra_action_occurred": false,
+  "donor_browsing_occurred": false,
+  "extgame_requirements_status": "sanitized_prompt_requirements_created_exact_mantis_evidence_pending",
+  "math_model_implementation_run": false,
+  "public_github_push_occurred": false,
+  "raw_endpoints_or_secrets_persisted": false,
+  "selected_math_package_changed": false,
+  "skill": "ExtGameRequirementsPatch",
+  "suggested_next_prompt_summary": "Provide sanitized ExtGame/Mantis excerpts or run a future ProtocolAndSchemaMapper ExtGame evidence sprint to verify exact processTransactions, gameState, roundFinishedHelper, restartGame, template parameter, VBA, FRB, and OCB requirements.",
+  "unresolved_blockers": [
+    "raw_mantis_source_not_provided_this_sprint",
+    "exact_extgame_api_fields_pending_sanitized_evidence",
+    "extgame_template_parameter_values_pending_sanitized_evidence",
+    "vba_frb_ocb_meanings_pending_sanitized_evidence"
+  ],
+  "wallet_calls_occurred": false
+}
+

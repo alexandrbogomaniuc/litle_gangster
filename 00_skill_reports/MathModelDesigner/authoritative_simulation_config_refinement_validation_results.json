@@ -1,0 +1,455 @@
+{
+  "checks": [
+    {
+      "name": "project_manifest.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rtp_model_profiles.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rtp_model_profiles.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "game_settings_profiles.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "game_settings_profiles.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "symbol_weights.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "symbol_weights.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cluster_paytable.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cluster_paytable.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "feature_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "feature_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cascade_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cascade_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "golden_square_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "golden_square_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rainbow_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rainbow_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "coin_reveal_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "coin_reveal_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "special_reveal_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "special_reveal_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "free_spin_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "free_spin_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "feature_mode_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "feature_mode_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bonus_buy_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bonus_buy_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "jackpot_hook_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "jackpot_hook_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "max_win_cap_rules.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "max_win_cap_rules.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation_config.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation_config.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation_report_template.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation_report_template.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "vabs_replay_snapshot_template.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "vabs_replay_snapshot_template.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "certification_report_templates.json exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "certification_report_templates.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "math_config_refinement_summary.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "math_config_refinement_blockers.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gl_settings_mapping_notes.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rtp_flexibility_notes.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bonus_buy_ev_notes.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "free_spins_feature_modes_notes.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "jackpot_disabled_notes.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "vabs_lasthands_replay_notes.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "math_configuration_completeness_audit.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rtp_model_output_requirements.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation_and_certification_plan.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "authoritative_math_blockers.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gl_settings_registration_dependency_audit.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "math_config_to_registration_field_map.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rtp_model_registration_field_map.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "vabs_history_screenshot_replay_decision.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "vabs_replay_payload_from_math_config.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "math_config_to_backend_adapter_input.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "authoritative_simulation_smoke_test_matrix.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "math_config_registration_consistency_test_matrix.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "vabs_replay_payload_validation_matrix.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bonus_buy_ev_validation_matrix.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "authoritative_simulation_config_refinement_skill_report.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "authoritative_simulation_config_refinement_validation_checklist.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "authoritative_simulation_config_refinement_blockers.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff.json exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff.json exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation_config references RTP 96/94/92",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rtp_model_profiles includes RTP 96/94/92",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "game_settings_profiles includes RTP 96/94/92",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all GL fields represented",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "VABS replay snapshot template exists and parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "certification report templates exist and parse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulate_authoritative_math.py compiles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sample_report.json exists and parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulator ran",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sample report includes all three models",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sample report includes VABS replay sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reports state exact values are not final/certified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bonus-buy EV status explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "jackpot enabled status explicit and false by default",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "screenshot requirement remains unverified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no package.json under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no src/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no public/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no dist/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no build/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no raw URL/token/secret patterns in sprint outputs",
+      "passed": true,
+      "detail": "[]"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "sample-simulation-report-v1",
+  "simulationStatus": "deterministic_smoke_simulation",
+  "exactValuesFinal": false,
+  "certificationClaim": false,
+  "walletUsed": false,
+  "gsApiUsed": false,
+  "browserRngUsed": false,
+  "runConfig": {
+    "schemaVersion": "sample-run-config-v1",
+    "simulationStatus": "deterministic_smoke_simulation",
+    "seed": 8001,
+    "roundCount": 75,
+    "models": [
+      "rtp_96",
+      "rtp_94",
+      "rtp_92"
+    ],
+    "bonusBuyEnabled": false,
+    "jackpotEnabled": false,
+    "maxWinCapMultiplier": 10000,
+    "writeReplaySample": true,
+    "exactValuesFinal": false,
+    "certificationClaim": false
+  },
+  "models": {
+    "rtp_96": {
+      "roundCount": 75,
+      "observedReturnMultiplierPerRound": 0.254667,
+      "targetRtp": 96.0,
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 0.828701,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "none": 56,
+        "small": 19
+      },
+      "featureContributionSummary": {
+        "baseGame": 6.1,
+        "coinReveal": 13.0,
+        "featureModes": 1.65
+      }
+    },
+    "rtp_94": {
+      "roundCount": 75,
+      "observedReturnMultiplierPerRound": 0.13248,
+      "targetRtp": 94.0,
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 0.594772,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "none": 62,
+        "small": 13
+      },
+      "featureContributionSummary": {
+        "baseGame": 3.936,
+        "coinReveal": 6.0,
+        "featureModes": 1.85
+      }
+    },
+    "rtp_92": {
+      "roundCount": 75,
+      "observedReturnMultiplierPerRound": 0.06424,
+      "targetRtp": 92.0,
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 0.170578,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "none": 63,
+        "small": 12
+      },
+      "featureContributionSummary": {
+        "baseGame": 3.818,
+        "coinReveal": 1.0,
+        "featureModes": 2.0
+      }
+    }
+  },
+  "vabsReplaySample": {
+    "roundId": "sample-round-rtp_96-0000",
+    "modelId": "rtp_96",
+    "startingGrid": [
+      [
+        "mid_1",
+        "high_1",
+        "mid_2",
+        "low_2",
+        "mid_1",
+        "mid_2"
+      ],
+      [
+        "low_3",
+        "low_3",
+        "low_2",
+        "high_1",
+        "low_2",
+        "low_1"
+      ],
+      [
+        "mid_2",
+        "low_1",
+        "mid_1",
+        "low_3",
+        "low_2",
+        "low_1"
+      ],
+      [
+        "high_1",
+        "high_1",
+        "low_1",
+        "mid_2",
+        "low_3",
+        "rainbow"
+      ],
+      [
+        "mid_2",
+        "high_1",
+        "low_2",
+        "mid_2",
+        "low_1",
+        "low_3"
+      ]
+    ],
+    "cascadeSteps": [],
+    "finalGrid": [
+      [
+        "mid_1",
+        "high_1",
+        "mid_2",
+        "low_2",
+        "mid_1",
+        "mid_2"
+      ],
+      [
+        "low_3",
+        "low_3",
+        "low_2",
+        "high_1",
+        "low_2",
+        "low_1"
+      ],
+      [
+        "mid_2",
+        "low_1",
+        "mid_1",
+        "low_3",
+        "low_2",
+        "low_1"
+      ],
+      [
+        "high_1",
+        "high_1",
+        "low_1",
+        "mid_2",
+        "low_3",
+        "rainbow"
+      ],
+      [
+        "mid_2",
+        "high_1",
+        "low_2",
+        "mid_2",
+        "low_1",
+        "low_3"
+      ]
+    ],
+    "winSummary": {
+      "preCapWinMultiplier": 0.0,
+      "totalWinMultiplier": 0.0
+    },
+    "winTier": "none",
+    "capState": {
+      "capMultiplier": 10000.0,
+      "capped": false,
+      "preCapWinMultiplier": 0.0,
+      "cappedWinMultiplier": 0.0
+    },
+    "featureState": {
+      "events": [
+        {
+          "type": "golden_square",
+          "status": "candidate"
+        }
+      ],
+      "featureModesEnabled": true
+    },
+    "bonusBuyState": {
+      "bonusBuyEnabledForRun": false,
+      "authoritativePurchase": false
+    },
+    "rngDrawReferences": [
+      {
+        "drawGroup": "feature_event_smoke",
+        "drawCount": 3,
+        "rawRngStored": false
+      }
+    ],
+    "stateVersion": 1,
+    "roundCompletion": {
+      "complete": true,
+      "reason": "smoke_round_finished"
+    },
+    "replayPayload": {
+      "replayPreferred": true,
+      "screenshotRequirementStatus": "unverified",
+      "screenshotBinaryStored": false
+    }
+  },
+  "blockers": [
+    "large_scale_rtp_calibration_pending",
+    "bonus_buy_cost_ev_pending",
+    "certification_pending"
+  ]
+}

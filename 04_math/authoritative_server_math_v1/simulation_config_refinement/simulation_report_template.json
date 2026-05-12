@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "simulation-report-template-v1",
+  "simulationStatus": "deterministic_smoke_simulation_or_larger_calibration",
+  "exactValuesFinal": false,
+  "certificationClaim": false,
+  "requiredSections": [
+    "runConfig",
+    "rtpSummary",
+    "volatilitySummary",
+    "featureContributionSummary",
+    "capFrequency",
+    "winTierDistribution",
+    "bonusBuyEvSummary",
+    "jackpotDisabledSummary",
+    "historyReplayValidation"
+  ]
+}

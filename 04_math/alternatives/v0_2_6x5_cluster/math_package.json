@@ -1,0 +1,71 @@
+{
+  "blockers": [
+    "new_games_server_source_path_missing",
+    "core_protocol_package_not_inspected",
+    "slot_v1_result_owner_unknown",
+    "game_8001_registration_missing",
+    "scn_serializer_missing",
+    "approved_release_assets_missing",
+    "wallet_launch_tests_missing",
+    "runtime_math_integration_pending",
+    "independent_multi_seed_certification_pending",
+    "bonus_buy_ev_needs_review",
+    "double_up_product_decision_pending"
+  ],
+  "created_by_skill": "MathModelDesigner",
+  "math_version": "v0.2_6x5_cluster_provisional",
+  "max_win_proposed_x_bet": 10000,
+  "model_summary": "Original provisional 6x5 adjacent-cluster high-volatility slot model aligned to observed/reference layout evidence, with wilds, scatters, free spins, optional bonus buy, and optional neutral double-up placeholder.",
+  "not_donor_true_math": true,
+  "project": {
+    "future_game_id": 8001,
+    "future_game_name": "Little Gangster",
+    "project_name": "little-gangster"
+  },
+  "rtp_variants": {
+    "rtp_92": {
+      "feature_rules": "target_models/rtp_92/feature_rules.json",
+      "model_config": "target_models/rtp_92/model_config.json",
+      "paytable": "target_models/rtp_92/paytable.json",
+      "reel_weights": "target_models/rtp_92/reel_weights.json",
+      "simulation_summary": "target_models/rtp_92/simulation_summary.json",
+      "target_rtp_percent": 92.0
+    },
+    "rtp_94": {
+      "feature_rules": "target_models/rtp_94/feature_rules.json",
+      "model_config": "target_models/rtp_94/model_config.json",
+      "paytable": "target_models/rtp_94/paytable.json",
+      "reel_weights": "target_models/rtp_94/reel_weights.json",
+      "simulation_summary": "target_models/rtp_94/simulation_summary.json",
+      "target_rtp_percent": 94.0
+    },
+    "rtp_96": {
+      "feature_rules": "target_models/rtp_96/feature_rules.json",
+      "model_config": "target_models/rtp_96/model_config.json",
+      "paytable": "target_models/rtp_96/paytable.json",
+      "reel_weights": "target_models/rtp_96/reel_weights.json",
+      "simulation_summary": "target_models/rtp_96/simulation_summary.json",
+      "target_rtp_percent": 96.0
+    }
+  },
+  "runtime_integration": {
+    "browser_result_authority_allowed": false,
+    "intended_owner": "proven server/backend runtime once current GS source/config/docs identify owner",
+    "math_imported_by_gs_registration": false,
+    "runtime_owner_proven": false
+  },
+  "selected_for_art_scene_mapping": true,
+  "simulator_audit": {
+    "rtp_emergent_from_reel_weights_paytable_and_features": true,
+    "simulator_scaling_detected": false,
+    "target_rtp_used_for_reporting_only": true
+  },
+  "status": "selected_provisional_layout_for_art_scene_mapping_not_release_approved",
+  "supersedes_for_selection": "little-gangster-provisional-math-v0.1",
+  "target_rtps": [
+    96.0,
+    94.0,
+    92.0
+  ],
+  "volatility_target": "high"
+}

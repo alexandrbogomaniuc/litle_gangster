@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "special-reveal-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Candidate pot-of-gold and four-leaf-clover reveal hooks.",
+  "simulationImpact": "Creates special reveal event samples; no certified EV claim.",
+  "blockerStatus": "final_special_reveal_rules_pending_product_math_decision",
+  "exactValuesFinal": false,
+  "reveals": [
+    {
+      "type": "pot_of_gold",
+      "weight": 60
+    },
+    {
+      "type": "four_leaf_clover",
+      "weight": 40
+    }
+  ]
+}

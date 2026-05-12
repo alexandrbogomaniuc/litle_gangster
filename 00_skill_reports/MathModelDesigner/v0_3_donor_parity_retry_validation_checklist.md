@@ -1,0 +1,33 @@
+# MathModelDesigner v0.3 Donor-Parity Retry Validation Checklist
+
+- [x] `project_manifest.json` parses.
+- [x] MathModelDesigner `handoff.json` parses.
+- [x] v0.3 `math_package.json` parses.
+- [x] v0.3 `result_schema.json` parses.
+- [x] v0.3 `simulation_config.json` parses.
+- [x] All v0.3 target model JSON files parse.
+- [x] Required v0.3 Markdown contract files exist and are non-empty.
+- [x] Result schema includes cascade steps.
+- [x] Result schema includes golden-square state.
+- [x] Result schema includes rainbow activation events.
+- [x] Result schema includes coin reveal events.
+- [x] Result schema includes feature mode state.
+- [x] Result schema includes max-win cap state.
+- [x] Result schema includes winRatio and winTier.
+- [x] Result schema includes round-completion state.
+- [x] Result schema includes state-persistence/backend handoff fields.
+- [x] `math_to_registration_metadata.md` explicitly separates registration metadata from executable math.
+- [x] `current_gs_runtime_boundary.md` states RNG/result owner is unproven.
+- [x] Browser result authority is false.
+- [x] Double-up/gamble is removed from active scope.
+- [x] Bonus-buy EV remains pending.
+- [x] No browser work occurred.
+- [x] No donor asset capture occurred.
+- [x] No donor asset bodies were inspected.
+- [x] No DB/Cassandra action occurred.
+- [x] No wallet call occurred.
+- [x] No client code was generated.
+- [x] No registration artifact was generated.
+- [x] No release approval occurred.
+- [x] Redaction scan passed for new/updated outputs.
+- [x] Reports state GameClientBuilder remains blocked until ArtSceneMapper update/runtime review.

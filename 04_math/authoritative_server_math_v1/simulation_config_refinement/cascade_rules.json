@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "cascade-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Caps local cascade loop and records removed/drop/refill states.",
+  "simulationImpact": "Controls cascade count and replay payload size.",
+  "blockerStatus": "final_cascade_distribution_pending_simulation",
+  "exactValuesFinal": false,
+  "maxCascadesPerRound": 8,
+  "dropDirection": "down",
+  "refillDirection": "top"
+}

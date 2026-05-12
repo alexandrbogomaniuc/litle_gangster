@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "golden-square-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Candidate persistent overlay generated from wins or feature events.",
+  "simulationImpact": "Affects replay markers and feature-state persistence.",
+  "blockerStatus": "final_golden_square_rules_pending_math_decision",
+  "exactValuesFinal": false,
+  "creationChanceOnWinningCluster": 0.12,
+  "persistence": "round_or_feature_scope_candidate"
+}

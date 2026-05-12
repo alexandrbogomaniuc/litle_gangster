@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "sample-run-config-v1",
+  "simulationStatus": "deterministic_smoke_simulation",
+  "seed": 8001,
+  "roundCount": 75,
+  "models": [
+    "rtp_96",
+    "rtp_94",
+    "rtp_92"
+  ],
+  "bonusBuyEnabled": false,
+  "jackpotEnabled": false,
+  "maxWinCapMultiplier": 10000,
+  "writeReplaySample": true,
+  "exactValuesFinal": false,
+  "certificationClaim": false
+}

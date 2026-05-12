@@ -1,0 +1,15 @@
+.DS_Store
+.npm-cache/
+.playwright-tool/
+.playwright-browsers/
+node_modules/
+dist/
+build/
+*.har
+*.zip
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp

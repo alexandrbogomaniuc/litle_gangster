@@ -1,0 +1,135 @@
+{
+  "asset_policy": {
+    "all_objects_replacement_required": true,
+    "release_assets_approved": false,
+    "scaffold_assets_release_status": "blocked_from_release",
+    "scaffold_assets_used_for_preview": true
+  },
+  "blockers": [
+    "runtime_result_owner_unproven",
+    "result_api_contract_review_required_before_full_client_build",
+    "final_original_assets_missing"
+  ],
+  "dependencies": {
+    "math_package": "04_math/alternatives/v0_3_donor_feature_parity_provisional/math_package.json",
+    "math_result_fields": [
+      "round_completion.current_gs_equivalent_status",
+      "state_persistence.recovery_state",
+      "wallet_accounting_boundary"
+    ],
+    "math_result_schema": "04_math/alternatives/v0_3_donor_feature_parity_provisional/result_schema.json",
+    "protocol_runtime_dependencies": [
+      "slot_v1_result_owner_unknown",
+      "runtime_math_integration_pending"
+    ],
+    "runtime_boundary": "04_math/alternatives/v0_3_donor_feature_parity_provisional/current_gs_runtime_boundary.md",
+    "wallet_boundary": "Wallet/accounting is separate from animation rendering; no wallet call in scene mapper.",
+    "math_result_contract": "04_math/alternatives/v0_3_donor_feature_parity_provisional/donor_parity_result_contract.md",
+    "registration_boundary": "04_math/alternatives/v0_3_donor_feature_parity_provisional/registration_metadata_boundary.md",
+    "rng_boundary": "04_math/alternatives/v0_3_donor_feature_parity_provisional/rng_result_owner_boundary.md"
+  },
+  "expected_layers": [
+    "modal",
+    "modal_text"
+  ],
+  "five_by_three_used_for_target_mapping": false,
+  "grid": null,
+  "metadata": {
+    "release_assets_approved": false,
+    "scaffold_assets_blocked_from_release": true,
+    "supplemental_scaffold_preview_run_id": "playwright_20260510T094437Z",
+    "updated_for": "v0.3_donor_feature_parity_provisional",
+    "updated_at": "2026-05-11 11:35:57 "
+  },
+  "objects": [
+    {
+      "animation_states": [
+        "open",
+        "close"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.58,
+        "unit": "normalized",
+        "width": 0.5,
+        "x": 0.25,
+        "y": 0.18
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.5x0.58 normalized",
+      "layer": "modal",
+      "math_result_dependencies": [
+        "animationHints"
+      ],
+      "notes": "Error modal placeholder for runtime/wallet/client errors. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.error.modal.root",
+      "object_type": "error_modal",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "error.modal",
+      "status": "mapped_placeholder",
+      "z_index": 200
+    },
+    {
+      "animation_states": [
+        "show"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.12,
+        "unit": "normalized",
+        "width": 0.38,
+        "x": 0.31,
+        "y": 0.4
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "dimensions": "0.38x0.12 normalized",
+      "layer": "modal_text",
+      "math_result_dependencies": [],
+      "notes": "Error message text area placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.error.modal.message",
+      "object_type": "error_message",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.error",
+      "status": "mapped_placeholder",
+      "z_index": 230
+    }
+  ],
+  "purpose": "Runtime/wallet/client error modal.",
+  "scene_id": "scene.error",
+  "scene_name": "Error modal",
+  "selected_math_layout": "6x5_cluster_provisional",
+  "selected_math_model_version": "v0.3_donor_feature_parity_provisional",
+  "status": "mapped_v0_3_update",
+  "viewport_applicability": [
+    "desktop",
+    "mobile"
+  ],
+  "v0_3_result_fields_consumed": [
+    "round_completion.current_gs_equivalent_status",
+    "state_persistence.recovery_state",
+    "wallet_accounting_boundary"
+  ],
+  "current_gs_boundary": {
+    "client_role": "renderer_only",
+    "client_does_not_generate_production_rng": true,
+    "client_does_not_calculate_authoritative_win_outcome": true,
+    "wallet_accounting_is_separate_from_animation_rendering": true,
+    "registration_metadata_is_not_animation_or_result_schema": true,
+    "current_gs_result_owner_proven": false,
+    "full_game_client_builder_blocked_until_runtime_owner_and_result_api_review": true
+  },
+  "ownership_release_status": {
+    "donor_scaffold_assets_allowed_in_release": false,
+    "scaffold_assets_release_status": "blocked_from_release",
+    "new_v0_3_objects_release_status": "pending_replacement",
+    "replacement_required": true,
+    "final_assets_approved": false
+  },
+  "scaffold_reference_status": "internal_reference_only_blocked_from_release"
+}

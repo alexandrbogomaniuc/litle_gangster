@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "free-spin-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Candidate free spin loop settings.",
+  "simulationImpact": "Supports feature spin smoke states and replay snapshots.",
+  "blockerStatus": "final_free_spin_counts_retrigger_rules_pending_math_decision",
+  "exactValuesFinal": false,
+  "startingSpins": {
+    "mode_1": 8,
+    "mode_2": 10,
+    "mode_3": 12
+  },
+  "retrigger": "blocked_pending_product_or_math_decision"
+}

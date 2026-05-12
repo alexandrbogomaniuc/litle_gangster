@@ -1,0 +1,290 @@
+canonical_result_field,referenced_field,referenced_in_file,status,classification,patch_applied,notes
+base_game.activation_source,activation_source,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.activation_source.
+base_game.affected_golden_squares,affected_golden_squares,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.affected_golden_squares.
+animationHints,animationHints.desktop_layout,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field animationHints.
+animationHints,animationHints.mobile_layout,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field animationHints.
+animationHints,animationHints.superTurbo,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field animationHints.
+animationHints,animationHints.turbo,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field animationHints.
+base_game.clusters,baseGame.clusters,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.clusters.
+base_game.feature_triggers,baseGame.featureTriggers,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.feature_triggers.
+base_game.grid_before,baseGame.grid,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.grid_before.
+bet,bet.amount,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field bet.
+bonus_buy_state,bonusBuy,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field bonus_buy_state.
+bonus_buy_state.selected_mode,bonus_buy_state.mode_selection,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field bonus_buy_state.selected_mode.
+bonus_buy_state.cost_x_bet,bonus_buy_state.purchase_cost_x_bet,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field bonus_buy_state.cost_x_bet.
+base_game.cascade_steps,cascade_steps,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps.
+base_game.cascade_steps[].cascade_index,cascade_steps[].cascade_index,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].cascade_index.
+base_game.cascade_steps[].cascade_win,cascade_steps[].cascade_win,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].cascade_win.
+base_game.cascade_steps[].clusters,cascade_steps[].clusters,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].clusters.
+base_game.cascade_steps[].dropped_cells,cascade_steps[].dropped_cells,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].dropped_cells.
+base_game.cascade_steps[].golden_square_events,cascade_steps[].golden_square_events,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].golden_square_events.
+base_game.cascade_steps[].golden_squares_after,cascade_steps[].golden_squares_after,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].golden_squares_after.
+base_game.cascade_steps[].golden_squares_before,cascade_steps[].golden_squares_before,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].golden_squares_before.
+base_game.cascade_steps[].new_symbols,cascade_steps[].new_symbols,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].new_symbols.
+base_game.cascade_steps[].removed_cells,cascade_steps[].removed_cells,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.cascade_steps[].removed_cells.
+base_game.coin_reveals,coin_reveals,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.coin_reveals.
+base_game.coin_reveals[].cascade_index,coin_reveals[].cascade_index,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.coin_reveals[].cascade_index.
+base_game.coin_reveals[].position,coin_reveals[].position,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.coin_reveals[].position.
+base_game.coin_reveals[].source_event,coin_reveals[].source_event,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.coin_reveals[].source_event.
+base_game.coin_reveals[].tier,coin_reveals[].tier,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.coin_reveals[].tier.
+base_game.coin_reveals[].value_x_bet,coin_reveals[].value_x_bet,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.coin_reveals[].value_x_bet.
+feature_mode_state.feature_complete,feature_mode_state.mode_status,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field feature_mode_state.feature_complete.
+feature_mode_state.spins_or_rounds_remaining,feature_mode_state.spins_awarded,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field feature_mode_state.spins_or_rounds_remaining.
+feature_mode_state.spins_or_rounds_remaining,feature_mode_state.spins_remaining,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field feature_mode_state.spins_or_rounds_remaining.
+base_game.final_grid,final_grid,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.final_grid.
+feature_mode_state,freeSpins,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field feature_mode_state.
+base_game.golden_square_events,golden_square_events,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.golden_square_events.
+base_game.golden_square_positions,golden_square_positions,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.golden_square_positions.
+base_game.golden_squares_after,golden_squares_after,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.golden_squares_after.
+base_game.golden_squares_before,golden_squares_before,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.golden_squares_before.
+base_game.grid_before,grid_before,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.grid_before.
+state_persistence.lastAction_or_current_gs_equivalent,lastAction,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field state_persistence.lastAction_or_current_gs_equivalent.
+base_game.persistence_scope,persistence_scope,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.persistence_scope.
+base_game.rainbow_activation_events,rainbow_activation_events,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.rainbow_activation_events.
+base_game.activation_source,rainbow_activation_events[].activation_source,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.activation_source.
+base_game.affected_golden_squares,rainbow_activation_events[].affected_golden_squares,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.affected_golden_squares.
+base_game.rainbow_positions,rainbow_positions,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.rainbow_positions.
+round_completion.current_gs_equivalent_status,round_completion.error_state,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field round_completion.current_gs_equivalent_status.
+round_completion.final_state_ready,round_completion.ready,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field round_completion.final_state_ready.
+base_game.special_reveals,special_reveals,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.special_reveals.
+base_game.special_reveals[].confidence,special_reveals[].confidence,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.special_reveals[].confidence.
+base_game.special_reveals[].position,special_reveals[].position,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.special_reveals[].position.
+base_game.special_reveals[].reveal_type,special_reveals[].reveal_type,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.special_reveals[].reveal_type.
+state_persistence.lastAction_or_current_gs_equivalent,state_persistence.lastAction,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field state_persistence.lastAction_or_current_gs_equivalent.
+base_game.total_cascade_win,total_cascade_win,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field base_game.total_cascade_win.
+wallet_accounting_boundary,walletAccounting,pre-audit field-context references,patched,alias_needs_documentation,true,Patched to canonical field wallet_accounting_boundary.
+,help_rules.cluster_rules,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,help_rules.feature_modes,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,help_rules.max_win_cap,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,help_rules.win_tiers,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,runtime_result_owner,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,settings,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,settings.music,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+,settings.sound,pre-audit/helper references,documented_helper,acceptable_renderer_helper,false,"Documented as renderer/developer helper, not authoritative result schema."
+animationHints,animationHints,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/autoplay_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/big_win_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/desktop_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/error_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/mobile_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/reconnect_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/settings_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+animationHints,animationHints,05_art/scene_maps/turbo_toggle.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game,base_game,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.activation_source,base_game.activation_source,05_art/scene_maps/rainbow_activation_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.activation_source,base_game.activation_source,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.affected_golden_squares,base_game.affected_golden_squares,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.affected_golden_squares,base_game.affected_golden_squares,05_art/scene_maps/rainbow_activation_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.affected_golden_squares,base_game.affected_golden_squares,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps,base_game.cascade_steps,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps,base_game.cascade_steps,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps,base_game.cascade_steps,05_art/scene_maps/desktop_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps,base_game.cascade_steps,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps,base_game.cascade_steps,05_art/scene_maps/mobile_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].cascade_index,base_game.cascade_steps[].cascade_index,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].cascade_index,base_game.cascade_steps[].cascade_index,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].cascade_index,base_game.cascade_steps[].cascade_index,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].cascade_win,base_game.cascade_steps[].cascade_win,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].cascade_win,base_game.cascade_steps[].cascade_win,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].clusters,base_game.cascade_steps[].clusters,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].clusters,base_game.cascade_steps[].clusters,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].clusters,base_game.cascade_steps[].clusters,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].clusters,base_game.cascade_steps[].clusters,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].dropped_cells,base_game.cascade_steps[].dropped_cells,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].dropped_cells,base_game.cascade_steps[].dropped_cells,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].dropped_cells,base_game.cascade_steps[].dropped_cells,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].dropped_cells,base_game.cascade_steps[].dropped_cells,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_square_events,base_game.cascade_steps[].golden_square_events,05_art/scene_maps/golden_square_overlay.json,patched,alias_needs_documentation,true,Patched to canonical field base_game.golden_square_events.
+base_game.cascade_steps[].golden_squares_after,base_game.cascade_steps[].golden_squares_after,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].golden_squares_after,base_game.cascade_steps[].golden_squares_after,05_art/scene_maps/golden_square_overlay.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].golden_squares_after,base_game.cascade_steps[].golden_squares_after,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].golden_squares_before,base_game.cascade_steps[].golden_squares_before,05_art/scene_maps/golden_square_overlay.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].new_symbols,base_game.cascade_steps[].new_symbols,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].new_symbols,base_game.cascade_steps[].new_symbols,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].new_symbols,base_game.cascade_steps[].new_symbols,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].new_symbols,base_game.cascade_steps[].new_symbols,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].removed_cells,base_game.cascade_steps[].removed_cells,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].removed_cells,base_game.cascade_steps[].removed_cells,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].removed_cells,base_game.cascade_steps[].removed_cells,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.cascade_steps[].removed_cells,base_game.cascade_steps[].removed_cells,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.clusters,base_game.clusters,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.clusters,base_game.clusters,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.clusters,base_game.clusters,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals,base_game.coin_reveals,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals,base_game.coin_reveals,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals,base_game.coin_reveals,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].cascade_index,base_game.coin_reveals[].cascade_index,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].cascade_index,base_game.coin_reveals[].cascade_index,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].position,base_game.coin_reveals[].position,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].position,base_game.coin_reveals[].position,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].source_event,base_game.coin_reveals[].source_event,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].tier,base_game.coin_reveals[].tier,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].tier,base_game.coin_reveals[].tier,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].tier,base_game.coin_reveals[].tier,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].tier,base_game.coin_reveals[].tier,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].value_x_bet,base_game.coin_reveals[].value_x_bet,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.coin_reveals[].value_x_bet,base_game.coin_reveals[].value_x_bet,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.feature_triggers,base_game.feature_triggers,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.feature_triggers,base_game.feature_triggers,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.final_grid,base_game.final_grid,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.final_grid,base_game.final_grid,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_square_events,base_game.golden_square_events,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_square_events,base_game.golden_square_events,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_square_events,base_game.golden_square_events,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_square_positions,base_game.golden_square_positions,05_art/scene_maps/golden_square_overlay.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_square_positions,base_game.golden_square_positions,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_after,base_game.golden_squares_after,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_after,base_game.golden_squares_after,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_after,base_game.golden_squares_after,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_before,base_game.golden_squares_before,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_before,base_game.golden_squares_before,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_before,base_game.golden_squares_before,05_art/scene_maps/golden_square_overlay.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.golden_squares_before,base_game.golden_squares_before,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/scene_maps/desktop_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.grid_before,base_game.grid_before,05_art/scene_maps/mobile_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.persistence_scope,base_game.persistence_scope,05_art/scene_maps/golden_square_overlay.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_activation_events,base_game.rainbow_activation_events,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_activation_events,base_game.rainbow_activation_events,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_activation_events,base_game.rainbow_activation_events,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_activation_events,base_game.rainbow_activation_events,05_art/scene_maps/rainbow_activation_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_activation_events,base_game.rainbow_activation_events,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_activation_events,base_game.rainbow_activation_events,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_positions,base_game.rainbow_positions,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_positions,base_game.rainbow_positions,05_art/scene_maps/base_game_grid_6x5.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_positions,base_game.rainbow_positions,05_art/scene_maps/rainbow_activation_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.rainbow_positions,base_game.rainbow_positions,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.special_reveals,base_game.special_reveals,05_art/scene_maps/coin_reveal_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.special_reveals[].confidence,base_game.special_reveals[].confidence,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.special_reveals[].position,base_game.special_reveals[].position,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.special_reveals[].reveal_type,base_game.special_reveals[].reveal_type,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.special_reveals[].reveal_type,base_game.special_reveals[].reveal_type,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.special_reveals[].reveal_type,base_game.special_reveals[].reveal_type,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.total_cascade_win,base_game.total_cascade_win,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.total_cascade_win,base_game.total_cascade_win,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.total_cascade_win,base_game.total_cascade_win,05_art/scene_maps/cascade_sequence.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.total_cascade_win,base_game.total_cascade_win,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+base_game.total_cascade_win,base_game.total_cascade_win,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+bet,bet,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bet,bet,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bet,bet,05_art/scene_maps/bet_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state,bonus_buy_state,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state,bonus_buy_state,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state,bonus_buy_state,05_art/scene_maps/bonus_buy_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.available,bonus_buy_state.available,05_art/scene_maps/bonus_buy_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.cost_x_bet,bonus_buy_state.cost_x_bet,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.cost_x_bet,bonus_buy_state.cost_x_bet,05_art/scene_maps/bonus_buy_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.purchased_feature_start_state,bonus_buy_state.purchased_feature_start_state,05_art/scene_maps/bonus_buy_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.selected_mode,bonus_buy_state.selected_mode,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.selected_mode,bonus_buy_state.selected_mode,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.selected_mode,bonus_buy_state.selected_mode,05_art/scene_maps/bonus_buy_panel.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.selected_mode,bonus_buy_state.selected_mode,05_art/scene_maps/feature_mode_selection.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.selected_mode,bonus_buy_state.selected_mode,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+bonus_buy_state.selected_mode,bonus_buy_state.selected_mode,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+doubleUp,doubleUp,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+doubleUp,doubleUp,05_art/scene_maps/double_up_placeholder.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state,feature_mode_state,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state,feature_mode_state,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state,feature_mode_state,05_art/scene_maps/free_spins_outro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.entry_source,feature_mode_state.entry_source,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.entry_source,feature_mode_state.entry_source,05_art/scene_maps/feature_mode_selection.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.entry_source,feature_mode_state.entry_source,05_art/scene_maps/free_spins_intro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.entry_source,feature_mode_state.entry_source,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.feature_complete,feature_mode_state.feature_complete,05_art/scene_maps/feature_mode_selection.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.feature_complete,feature_mode_state.feature_complete,05_art/scene_maps/free_spins_outro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.mode_key,feature_mode_state.mode_key,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.mode_key,feature_mode_state.mode_key,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.mode_key,feature_mode_state.mode_key,05_art/scene_maps/feature_mode_selection.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.mode_key,feature_mode_state.mode_key,05_art/scene_maps/free_spins_intro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.mode_key,feature_mode_state.mode_key,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.mode_key,feature_mode_state.mode_key,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.spins_or_rounds_remaining,feature_mode_state.spins_or_rounds_remaining,05_art/scene_maps/feature_mode_selection.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.spins_or_rounds_remaining,feature_mode_state.spins_or_rounds_remaining,05_art/scene_maps/free_spins_intro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+feature_mode_state.spins_or_rounds_remaining,feature_mode_state.spins_or_rounds_remaining,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap,max_win_cap,05_art/scene_maps/free_spins_active.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_applies_to_bonus_buy,max_win_cap.cap_applies_to_bonus_buy,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_applies_to_feature_modes,max_win_cap.cap_applies_to_feature_modes,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached,max_win_cap.cap_reached,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached,max_win_cap.cap_reached,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached,max_win_cap.cap_reached,05_art/scene_maps/big_win_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached,max_win_cap.cap_reached,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached,max_win_cap.cap_reached,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached,max_win_cap.cap_reached,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached_at_step,max_win_cap.cap_reached_at_step,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached_at_step,max_win_cap.cap_reached_at_step,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.cap_reached_at_step,max_win_cap.cap_reached_at_step,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.capped_win,max_win_cap.capped_win,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.capped_win,max_win_cap.capped_win,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.capped_win,max_win_cap.capped_win,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.capped_win,max_win_cap.capped_win,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.capped_win,max_win_cap.capped_win,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.max_win_cap_x_bet,max_win_cap.max_win_cap_x_bet,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.pre_cap_win,max_win_cap.pre_cap_win,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.pre_cap_win,max_win_cap.pre_cap_win,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.pre_cap_win,max_win_cap.pre_cap_win,05_art/scene_maps/max_win_cap_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.pre_cap_win,max_win_cap.pre_cap_win,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+max_win_cap.pre_cap_win,max_win_cap.pre_cap_win,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+registration_metadata_boundary,registration_metadata_boundary,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+registration_metadata_boundary,registration_metadata_boundary,05_art/scene_maps/round_completion_state.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+registration_metadata_boundary,registration_metadata_boundary,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion,round_completion,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion,round_completion,05_art/scene_maps/free_spins_outro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion,round_completion,05_art/scene_maps/reconnect_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion,round_completion,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.current_gs_equivalent_status,round_completion.current_gs_equivalent_status,05_art/scene_maps/error_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.final_state_ready,round_completion.final_state_ready,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.final_state_ready,round_completion.final_state_ready,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.final_state_ready,round_completion.final_state_ready,05_art/scene_maps/round_completion_state.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.final_state_ready,round_completion.final_state_ready,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.no_pending_cascade,round_completion.no_pending_cascade,05_art/scene_maps/round_completion_state.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.no_pending_feature_transition,round_completion.no_pending_feature_transition,05_art/scene_maps/round_completion_state.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+round_completion.no_pending_reveal,round_completion.no_pending_reveal,05_art/scene_maps/round_completion_state.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+rtpVariant,rtpVariant,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+rtpVariant,rtpVariant,05_art/scene_maps/help_rules_paytable_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+,runtime_result_owner,05_art/v0_3_object_state_requirements.csv,documented_helper,acceptable_renderer_helper,false,"Renderer/developer helper, documented as non-authoritative."
+state_persistence,state_persistence,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence,state_persistence,05_art/scene_maps/reconnect_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence,state_persistence,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.cap_state,state_persistence.cap_state,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.clientOperationId,state_persistence.clientOperationId,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.current_grid,state_persistence.current_grid,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.feature_mode,state_persistence.feature_mode,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.golden_square_state,state_persistence.golden_square_state,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.lastAction_or_current_gs_equivalent,state_persistence.lastAction_or_current_gs_equivalent,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.lastAction_or_current_gs_equivalent,state_persistence.lastAction_or_current_gs_equivalent,05_art/scene_maps/reconnect_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.lastAction_or_current_gs_equivalent,state_persistence.lastAction_or_current_gs_equivalent,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.lastAction_or_current_gs_equivalent,state_persistence.lastAction_or_current_gs_equivalent,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.pending_cascades,state_persistence.pending_cascades,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.recovery_state,state_persistence.recovery_state,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.recovery_state,state_persistence.recovery_state,05_art/scene_maps/error_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.recovery_state,state_persistence.recovery_state,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.roundId,state_persistence.roundId,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.spinId,state_persistence.spinId,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+state_persistence.stateVersion,state_persistence.stateVersion,05_art/scene_maps/state_recovery_reconnect_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+totalWin,totalWin,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+totalWin,totalWin,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+totalWin,totalWin,05_art/scene_maps/big_win_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+totalWin,totalWin,05_art/scene_maps/free_spins_outro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+wallet_accounting_boundary,wallet_accounting_boundary,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+wallet_accounting_boundary,wallet_accounting_boundary,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+wallet_accounting_boundary,wallet_accounting_boundary,05_art/scene_maps/error_modal.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winRatio,winRatio,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+winRatio,winRatio,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winRatio,winRatio,05_art/scene_maps/big_win_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winRatio,winRatio,05_art/scene_maps/free_spins_outro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winRatio,winRatio,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/html_scene_inspector/scene_inspector.js,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/object_id_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/scene_maps/base_game_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/scene_maps/big_win_scene.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/scene_maps/desktop_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/scene_maps/free_spins_outro.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/scene_maps/mobile_layout.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.
+winTier,winTier,05_art/v0_3_object_state_requirements.csv,matched_after_patch,matched,false,Canonical field present after audit patch.
+win_tier_source,win_tier_source,05_art/v0_3_animation_state_map.json,matched_after_patch,matched,false,Canonical field present after audit patch.

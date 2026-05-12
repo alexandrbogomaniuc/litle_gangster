@@ -1,0 +1,26 @@
+{
+  "math_version": "v0.3_donor_feature_parity_provisional",
+  "simulation_scope": "contract_schema_only_this_sprint",
+  "validation_status": "not_run_contract_only",
+  "reason_not_run": "Sprint goal was to complete donor-feature-parity result contract and current-GS boundaries; release-grade math validation remains pending.",
+  "preferred_rounds_per_variant": 1000000,
+  "minimum_workflow_rounds_if_later_run": {
+    "primary_seed_rounds": 200000,
+    "secondary_seed_count": 2,
+    "secondary_seed_rounds": 100000
+  },
+  "seeds_if_later_run": [
+    2026051101,
+    2026051102,
+    2026051103
+  ],
+  "workflow_tolerance_percentage_points": 0.5,
+  "payout_scaling_during_run": false,
+  "post_simulation_normalization": false,
+  "rtp_is_not_forced": true,
+  "no_network": true,
+  "no_donor_assets": true,
+  "no_wallet_calls": true,
+  "no_db_calls": true,
+  "release_math_approved": false
+}

@@ -1,0 +1,25 @@
+{
+  "skill": "GameServerRegistrar",
+  "sprint": "ConsolidationGateMathConfigHistory",
+  "gl_template_settings_dependency_audit_completed": true,
+  "artifacts_generated": false,
+  "db_actions_executed": false,
+  "registration_metadata_separated_from_executable_math": true,
+  "runtime_payload_separated_from_registration_metadata": true,
+  "wallet_accounting_separated_from_presentation_data": true,
+  "math_config_gl_dependency_matrix_created": true,
+  "generation_allowed": false,
+  "gameserverregistrar_generation_allowed": false,
+  "unresolved_blockers": [
+    "game_8001_registration_missing",
+    "selected_runtime_lane_not_final",
+    "scn_serializer_missing",
+    "math_import_not_proven",
+    "runtime_result_owner_unproven",
+    "production_client_path_missing",
+    "approved_release_assets_missing",
+    "wallet_launch_tests_missing"
+  ],
+  "suggested_next_skill": "MathModelDesigner authoritative simulation/config refinement",
+  "suggested_next_prompt_summary": "Run MathModelDesigner authoritative simulation/config refinement. Define exact model profiles, cluster bet mapping, RTP/volatility reports, bonus-buy blockers or values, feature-mode rules, cap reporting, and certification outputs. Do not implement backend/client/registration, modify Staging, call wallet/DB, public export, or approve release."
+}

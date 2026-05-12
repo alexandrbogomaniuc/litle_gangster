@@ -1,0 +1,1230 @@
+{
+  "final_assets_approved": false,
+  "generated_at": "2026-05-10T10:50:13+01:00",
+  "mapped_object_count": 135,
+  "mappings": [
+    {
+      "confidence": "medium",
+      "object_id": "scene.autoplay.panel.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "autoplay.panel"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.autoplay.panel.start_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.autoplay"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.background",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c1.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c1.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c1.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c1.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c1.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c2.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c2.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c2.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c2.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c2.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c3.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c3.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c3.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c3.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c3.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c4.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c4.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c4.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c4.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c4.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c5.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c5.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c5.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c5.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c5.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c6.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c6.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c6.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c6.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.cell.c6.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.grid.container",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.logo",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.autoplay_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.balance_display",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.bet_decrease",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.bet_display",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.bet_increase",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.buy_feature_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.menu_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.sound_toggle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_click.mp4",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.spin_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.stop_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.panel.turbo_toggle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.ace.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.ace.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.jack.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.jack.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.king.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.king.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.lg_scatter.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_special.json",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.lg_scatter.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_special.json",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.lg_wild.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_wild.json",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.lg_wild.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_wild.json",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.lookout.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.lookout.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.queen.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.queen.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.runner.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.runner.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.safe_cracker.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.safe_cracker.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.ten.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.ten.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.top_boss.idle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.symbol.top_boss.win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "scene_id": "scene.base.symbols"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.base.win_amount",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "scene_id": "scene.base"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.bet_panel.max_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.bet_panel"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.bet_panel.min_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.bet_panel"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.bet_panel.modal.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "bet.panel"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.big_win.counter.amount",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_win_tiers.json",
+      "scene_id": "scene.big_win"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.big_win.overlay.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_win_tiers.json",
+      "scene_id": "big.win.scene"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.bonus_buy.panel.buy_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "scene_id": "scene.bonus_buy.panel"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.bonus_buy.panel.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "scene_id": "bonus.buy.panel"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.double_up.modal.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "double.up.placeholder"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.error.modal.message",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.error"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.error.modal.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "error.modal"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.active.background",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "scene_id": "scene.free_spins.active"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.active.title",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "scene_id": "scene.free_spins.active"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.counter.remaining",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_fs.json",
+      "scene_id": "scene.free_spins.active"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c1.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c1.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c1.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c1.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c1.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c2.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c2.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c2.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c2.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c2.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c3.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c3.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c3.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c3.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c3.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c4.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c4.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c4.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c4.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c4.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c5.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c5.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c5.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c5.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c5.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c6.r1",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c6.r2",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c6.r3",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c6.r4",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.grid.cell.c6.r5",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.free_spins.grid"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.intro.background",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "scene_id": "scene.free_spins.intro"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.intro.title",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "scene_id": "scene.free_spins.intro"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.multiplier_badge",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_fs.json",
+      "scene_id": "scene.free_spins.active"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.outro.background",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "scene_id": "scene.free_spins.outro"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.outro.title",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "scene_id": "scene.free_spins.outro"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.free_spins.outro.total_win",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_fs.json",
+      "scene_id": "scene.free_spins.outro"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.layout.desktop.safe_area.grid_slot",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "desktop.layout"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.layout.mobile.safe_area.grid_slot",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "mobile.layout"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.loading.background",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "scene_id": "scene.loading"
+    },
+    {
+      "confidence": "low",
+      "object_id": "scene.loading.continue_prompt",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "scene_id": "scene.loading"
+    },
+    {
+      "confidence": "low",
+      "object_id": "scene.loading.feature_cards",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "scene_id": "scene.loading"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.loading.logo",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "scene_id": "scene.loading"
+    },
+    {
+      "confidence": "low",
+      "object_id": "scene.loading.progress",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "scene_id": "scene.loading"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.reconnect.modal.retry_button",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "scene.reconnect"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.reconnect.modal.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "reconnect.modal"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.rules.feature_rules.tab",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_desc.json",
+      "scene_id": "scene.rules"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.rules.modal.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_desc.json",
+      "scene_id": "help.rules.paytable.modal"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.rules.paytable.tab",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_desc.json",
+      "scene_id": "scene.rules"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.settings.modal.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "settings.modal"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.settings.music_toggle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_music_intro.mp4",
+      "scene_id": "scene.settings"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.settings.sound_toggle",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_click.mp4",
+      "scene_id": "scene.settings"
+    },
+    {
+      "confidence": "medium",
+      "object_id": "scene.turbo.toggle.root",
+      "reason": "Scene/object map contains a scaffold_reference asset path after supplemental matching.",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scaffold_asset_path": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "scene_id": "turbo.toggle"
+    }
+  ],
+  "new_assets_captured_this_sprint": 113,
+  "object_count": 140,
+  "placeholder_object_count": 5,
+  "run_id": "playwright_20260510T094437Z",
+  "scaffold_assets_release_status": "blocked_from_release",
+  "selected_scene_layout": "6x5_cluster_provisional",
+  "status": "scaffold_preview_updated_from_fresh_authorized_capture",
+  "total_scaffold_assets_inventoried": 142
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "feature-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Defines candidate feature trigger and contribution buckets.",
+  "simulationImpact": "Feeds smoke feature contribution metrics.",
+  "blockerStatus": "final_feature_odds_pending_math_calibration",
+  "exactValuesFinal": false,
+  "featureTrigger": {
+    "minimumScatterOrEquivalent": 3,
+    "probabilityCandidate": 0.018,
+    "status": "provisional_pending_simulation"
+  },
+  "featureModes": [
+    "mode_1",
+    "mode_2",
+    "mode_3"
+  ]
+}

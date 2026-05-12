@@ -1,0 +1,45 @@
+{
+  "skill": "ProjectCreator",
+  "status": "complete",
+  "completed_at": "2026-05-07T09:42:35+0100",
+  "outputs": [
+    "project_manifest.json",
+    "decisions_log.md",
+    "assumptions.md",
+    "AGENTS.md",
+    ".gitignore",
+    "00_skill_reports/ProjectCreator/skill_report.md",
+    "00_skill_reports/ProjectCreator/validation_checklist.md",
+    "00_skill_reports/ProjectCreator/blockers.md",
+    "00_skill_reports/ProjectCreator/handoff.json",
+    "NEXT_WORKFLOW_TEST_PLAN.md"
+  ],
+  "validations": [
+    "manifest_json_parse_passed",
+    "manifest_schema_validation_passed",
+    "required_folders_exist",
+    "donor_url_redacted_in_persisted_files",
+    "no_browser_launch",
+    "no_asset_capture",
+    "no_math_generation",
+    "no_client_build",
+    "no_cassandra_or_db_changes"
+  ],
+  "blockers": [
+    "client_source_root_unknown",
+    "game_server_source_root_unknown",
+    "template_game_path_unknown",
+    "launch_template_path_unknown",
+    "cassandra_config_path_unknown",
+    "default_bank_unknown",
+    "pass_key_secret_reference_unknown",
+    "test_user_secret_reference_unknown",
+    "coin_denominations_unknown"
+  ],
+  "assumptions": [
+    "Full donor URL is not persisted and must be requested again or accessed through the recorded secret reference in a future AuthorizedReferenceResearcher sprint.",
+    "Known client stack uses verified documentation defaults as explicitly requested by the user."
+  ],
+  "next_recommended_skill": "AuthorizedReferenceResearcher"
+}
+

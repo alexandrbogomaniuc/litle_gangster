@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "coin-reveal-rules-v1",
+  "status": "provisional_pending_simulation",
+  "rationale": "Candidate bronze/silver/gold reveal distribution.",
+  "simulationImpact": "Creates coin reveal event samples and contribution bucket.",
+  "blockerStatus": "final_coin_values_pending_math_decision",
+  "exactValuesFinal": false,
+  "tiers": [
+    {
+      "tier": "bronze",
+      "weight": 70,
+      "valueMultiplier": 1
+    },
+    {
+      "tier": "silver",
+      "weight": 25,
+      "valueMultiplier": 5
+    },
+    {
+      "tier": "gold",
+      "weight": 5,
+      "valueMultiplier": 20
+    }
+  ]
+}

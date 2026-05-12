@@ -1,0 +1,124 @@
+{
+  "id": "little_gangster_rtp_96_donor_parity_feature_rules_v0.3",
+  "status": "PROVISIONAL_CONTRACT_ASSUMPTION",
+  "cascade": {
+    "modeled": true,
+    "remove_winning_cells": true,
+    "drop_down_refill": true,
+    "repeat_until_no_win_or_guard": true,
+    "max_cascade_steps": 12
+  },
+  "golden_squares": {
+    "modeled": true,
+    "created_from_winning_cluster_cells": "PROVISIONAL_ASSUMPTION",
+    "persistence_scope": "within_round_or_feature_pending_source_proof",
+    "exact_persistence_blocked": true
+  },
+  "rainbow_activation": {
+    "modeled": true,
+    "symbol": "LG_RAINBOW",
+    "activates_golden_squares": "PROVISIONAL_ASSUMPTION",
+    "exact_behavior_blocked": true
+  },
+  "coin_reveals": {
+    "modeled": true,
+    "tiers": {
+      "bronze": {
+        "value_x_bet": "PROVISIONAL_PENDING_TUNING"
+      },
+      "silver": {
+        "value_x_bet": "PROVISIONAL_PENDING_TUNING"
+      },
+      "gold": {
+        "value_x_bet": "PROVISIONAL_PENDING_TUNING"
+      }
+    },
+    "exact_values_probabilities_blocked": true
+  },
+  "special_reveals": {
+    "modeled_as_candidates": true,
+    "types": [
+      "pot_of_gold",
+      "four_leaf_clover"
+    ],
+    "exact_values_probabilities_blocked": true
+  },
+  "feature_modes": {
+    "mode_1": {
+      "label": "mode_1",
+      "entry_source": "base_trigger_or_bonus_buy_unknown",
+      "trigger_condition": "PROVISIONAL_ASSUMPTION rainbow/golden-square condition pending source proof",
+      "spins_or_rounds": null,
+      "bonus_buy_available": true,
+      "golden_square_behavior": "standard persistence provisional",
+      "rainbow_behavior": "activates eligible golden squares provisional",
+      "coin_reveal_behavior": "bronze/silver/gold reveal candidate",
+      "multiplier_behavior": "unknown_blocked",
+      "max_win_cap_behavior": "applies_10000x"
+    },
+    "mode_2": {
+      "label": "mode_2",
+      "entry_source": "base_trigger_or_bonus_buy_unknown",
+      "trigger_condition": "PROVISIONAL_ASSUMPTION higher trigger condition pending source proof",
+      "spins_or_rounds": null,
+      "bonus_buy_available": true,
+      "golden_square_behavior": "enhanced persistence provisional",
+      "rainbow_behavior": "enhanced activation provisional",
+      "coin_reveal_behavior": "bronze/silver/gold reveal candidate",
+      "multiplier_behavior": "unknown_blocked",
+      "max_win_cap_behavior": "applies_10000x"
+    },
+    "mode_3": {
+      "label": "mode_3",
+      "entry_source": "base_trigger_or_bonus_buy_unknown",
+      "trigger_condition": "PROVISIONAL_ASSUMPTION highest trigger condition pending source proof",
+      "spins_or_rounds": null,
+      "bonus_buy_available": true,
+      "golden_square_behavior": "highest activation provisional",
+      "rainbow_behavior": "highest activation provisional",
+      "coin_reveal_behavior": "bronze/silver/gold plus special reveal candidate",
+      "multiplier_behavior": "unknown_blocked",
+      "max_win_cap_behavior": "applies_10000x"
+    }
+  },
+  "bonus_buy": {
+    "modeled_as_contract": true,
+    "buy_options": {
+      "mode_1": {
+        "cost_x_bet": "UNKNOWN_BLOCKED"
+      },
+      "mode_2": {
+        "cost_x_bet": "UNKNOWN_BLOCKED"
+      },
+      "mode_3": {
+        "cost_x_bet": "UNKNOWN_BLOCKED"
+      }
+    },
+    "betType_or_current_gs_equivalent": "UNKNOWN_UNLESS_SOURCE_PROVES",
+    "ev_status": "blocked_pending_cost_ev_runtime_wallet_confirmation",
+    "wallet_accounting_boundary": "backend_wallet_owner_not_browser"
+  },
+  "max_win_cap": {
+    "modeled": true,
+    "max_win_cap_x_bet": 10000,
+    "cap_applies_to_base": true,
+    "cap_applies_to_feature_modes": true,
+    "cap_applies_to_bonus_buy": true,
+    "possible_max_win_credits": "UNKNOWN_SEPARATE_FROM_CAP"
+  },
+  "win_tiers": {
+    "source": "Mantis_advisory_candidate_thresholds_not_certified",
+    "little": "0 < winRatio <= 1",
+    "small": "1 < winRatio < 4",
+    "medium": "4 <= winRatio < 8",
+    "large": "8 <= winRatio < 20",
+    "big": "20 <= winRatio < 45",
+    "huge": "45 <= winRatio < 75",
+    "mega": "75 <= winRatio"
+  },
+  "double_up": {
+    "modeled": false,
+    "status": "removed_from_active_scope",
+    "reason": "double_up_not_observed_in_donor_remove_unless_user_overrides"
+  }
+}

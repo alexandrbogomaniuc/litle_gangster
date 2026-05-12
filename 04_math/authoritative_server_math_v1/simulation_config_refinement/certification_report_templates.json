@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "certification-report-templates-v1",
+  "exactValuesFinal": false,
+  "certificationClaim": false,
+  "templates": {
+    "rtpReport": {
+      "status": "template_only",
+      "fields": [
+        "modelId",
+        "roundCount",
+        "observedRtp",
+        "confidenceInterval",
+        "targetRtp",
+        "status"
+      ]
+    },
+    "volatilityReport": {
+      "status": "template_only",
+      "fields": [
+        "modelId",
+        "standardDeviation",
+        "hitFrequency",
+        "winDistribution"
+      ]
+    },
+    "featureContributionReport": {
+      "status": "template_only",
+      "fields": [
+        "baseGame",
+        "freeSpins",
+        "featureModes",
+        "coinReveal",
+        "bonusBuy",
+        "jackpot"
+      ]
+    },
+    "capFrequencyReport": {
+      "status": "template_only",
+      "fields": [
+        "capMultiplier",
+        "capHitCount",
+        "preCapWin",
+        "cappedWin"
+      ]
+    },
+    "winTierDistributionReport": {
+      "status": "template_only",
+      "fields": [
+        "none",
+        "small",
+        "big",
+        "huge",
+        "mega",
+        "maxWin"
+      ]
+    },
+    "bonusBuyEvReport": {
+      "status": "template_only_pending_ev_validation",
+      "fields": [
+        "modeId",
+        "costMultiplier",
+        "observedEv",
+        "targetRtp"
+      ]
+    },
+    "jackpotDisabledReport": {
+      "status": "template_only",
+      "fields": [
+        "jackpotEnabled",
+        "contribution",
+        "productDecision"
+      ]
+    },
+    "historyReplayValidationReport": {
+      "status": "template_only",
+      "fields": [
+        "roundId",
+        "deterministicReplayValid",
+        "snapshotCompleteness",
+        "screenshotRequirementStatus"
+      ]
+    },
+    "labReplayEvidenceReport": {
+      "status": "template_only",
+      "fields": [
+        "seedReference",
+        "roundReference",
+        "stateVersion",
+        "replayPayloadHash"
+      ]
+    }
+  }
+}

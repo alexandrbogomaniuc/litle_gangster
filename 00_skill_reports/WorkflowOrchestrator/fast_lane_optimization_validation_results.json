@@ -1,0 +1,200 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "project_manifest.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff.json parses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAST_LANE_OPERATING_MODE.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SUBAGENT_USAGE_POLICY.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SPRINT_SIZE_LIMITS.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "NEXT_5_SPRINTS_FAST_PATH.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ONE_WEEK_DELIVERY_PLAYBOOK_V2.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CHECKPOINT_PUSH_POLICY.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "WorkflowOrchestrator skill file exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "WorkflowOrchestrator skill mentions fast-lane mode",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAST_LANE_RULES.md exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SUBAGENT_USAGE_POLICY.md exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "NEXT_5_SPRINTS_FAST_PATH lists exactly 5 sprints",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "name": "SPRINT_SIZE_LIMITS includes file-count guidance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "SPRINT_SIZE_LIMITS includes report-size guidance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Subagent policy says agent decides",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decide_next_skill.py compiles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validate_next_skill_allowed.py compiles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decide_next_skill.py runs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decide_next_skill recommends checkpoint",
+      "passed": true,
+      "detail": "WorkflowOrchestrator checkpoint git review/push"
+    },
+    {
+      "name": "decide_next_skill keeps implementation false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validate_next_skill_allowed allows checkpoint",
+      "passed": true,
+      "detail": "NEXT SKILL ALLOWED\nskill=WorkflowOrchestrator checkpoint git review/push\nfast_lane_mode=true\nimplementation_allowed=false\n"
+    },
+    {
+      "name": "fast_lane_optimization_skill_report.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fast_lane_optimization_validation_checklist.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fast_lane_optimization_blockers.md exists non-empty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no package.json under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no src/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no public/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no dist/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no build/ under 06_resulting_code",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "backend_adapter_implementation_allowed=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gameclientbuilder_implementation_allowed=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "gameserverregistrar_generation_allowed=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "client_build_approved=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "registration_approved=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "wallet_tests_approved=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "release_approved=false",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "compact_report_default=true",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "checkpoint_push_due=true",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

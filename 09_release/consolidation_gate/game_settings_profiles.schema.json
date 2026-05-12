@@ -1,0 +1,64 @@
+{
+  "title": "Little Gangster Game Settings Profile Planning Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "gameId",
+    "gameName",
+    "rtpModel",
+    "rtpDisplay",
+    "minBet",
+    "defaultBet",
+    "maxBet",
+    "coinDenominations",
+    "bonusBuyEnabled",
+    "bonusBuyOptions",
+    "freeSpinsEnabled",
+    "featureModesEnabled",
+    "jackpotEnabled",
+    "maxWinCapMultiplier",
+    "possibleMaxWinCredits",
+    "volatility",
+    "frbEnabled",
+    "ocbEnabled",
+    "historyEnabled",
+    "lasthandEnabled",
+    "vabsEnabled"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "gameId": { "type": "integer", "minimum": 1 },
+    "gameName": { "type": "string", "minLength": 1 },
+    "rtpModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modelId", "targetRtp", "valueStatus"],
+      "properties": {
+        "modelId": { "type": "string", "minLength": 1 },
+        "targetRtp": { "type": "number", "minimum": 0, "maximum": 100 },
+        "valueStatus": { "type": "string", "minLength": 1 }
+      }
+    },
+    "rtpDisplay": { "type": "number", "minimum": 0, "maximum": 100 },
+    "minBet": { "type": "number", "minimum": 0 },
+    "defaultBet": { "type": "number", "minimum": 0 },
+    "maxBet": { "type": "number", "minimum": 0 },
+    "coinDenominations": { "type": "array", "items": { "type": "number", "minimum": 0 } },
+    "bonusBuyEnabled": { "type": "boolean" },
+    "bonusBuyOptions": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+    "freeSpinsEnabled": { "type": "boolean" },
+    "featureModesEnabled": { "type": "boolean" },
+    "jackpotEnabled": { "type": "boolean" },
+    "maxWinCapMultiplier": { "type": "number", "minimum": 0 },
+    "possibleMaxWinCredits": { "type": "array", "items": { "type": "number", "minimum": 0 } },
+    "volatility": { "type": "string", "minLength": 1 },
+    "frbEnabled": { "type": "boolean" },
+    "ocbEnabled": { "type": "boolean" },
+    "historyEnabled": { "type": "boolean" },
+    "lasthandEnabled": { "type": "boolean" },
+    "vabsEnabled": { "type": "boolean" },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

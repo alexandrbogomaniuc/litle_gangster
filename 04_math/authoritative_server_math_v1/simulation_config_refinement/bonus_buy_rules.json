@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "bonus-buy-rules-v1",
+  "status": "blocked_pending_ev_validation",
+  "rationale": "Bonus buy represented but not finalized.",
+  "simulationImpact": "Allows smoke simulation toggles and EV placeholder reporting.",
+  "blockerStatus": "bonus_buy_cost_ev_pending",
+  "exactValuesFinal": false,
+  "enabled": true,
+  "costMultiplierCandidates": {
+    "mode_1": 100,
+    "mode_2": 125,
+    "mode_3": 150
+  },
+  "playerChoiceAllowed": "blocked_pending_product_decision",
+  "walletBoundary": "purchase accounting stays outside gamePayload"
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "cluster-paytable-v1",
+  "status": "provisional_pending_large_simulation",
+  "rationale": "Candidate cluster pay ranges for deterministic smoke simulation.",
+  "simulationImpact": "Controls symbol cluster payout samples; not certified RTP.",
+  "blockerStatus": "final_paytable_pending_rtp_calibration",
+  "minimumClusterSize": 5,
+  "payBySymbolAndClusterSize": {
+    "low_1": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 0.2
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 0.5
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 1.5
+      }
+    ],
+    "low_2": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 0.25
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 0.6
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 1.8
+      }
+    ],
+    "low_3": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 0.3
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 0.7
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 2.0
+      }
+    ],
+    "mid_1": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 0.4
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 1.0
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 3.0
+      }
+    ],
+    "mid_2": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 0.5
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 1.4
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 4.0
+      }
+    ],
+    "high_1": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 0.8
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 2.0
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 7.5
+      }
+    ],
+    "high_2": [
+      {
+        "min": 5,
+        "max": 7,
+        "pay": 1.0
+      },
+      {
+        "min": 8,
+        "max": 10,
+        "pay": 3.0
+      },
+      {
+        "min": 11,
+        "max": 30,
+        "pay": 10.0
+      }
+    ]
+  }
+}

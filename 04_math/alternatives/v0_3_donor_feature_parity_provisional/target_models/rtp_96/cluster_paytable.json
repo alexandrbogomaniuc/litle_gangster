@@ -1,0 +1,6 @@
+{
+  "status": "PROVISIONAL_CONTRACT_PLACEHOLDER_PENDING_TUNING",
+  "note": "Cluster paytable is executable math/runtime input, not registration metadata.",
+  "minimum_cluster_size": 5,
+  "pays_by_symbol_and_count": "PENDING_FULL_TUNING"
+}

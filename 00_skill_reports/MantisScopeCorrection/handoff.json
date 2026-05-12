@@ -1,0 +1,28 @@
+{
+  "mantis_lessons_assimilated_as_advisory_checklist": true,
+  "extgame_selected": false,
+  "current_gs_lane_validation_status": "partial",
+  "current_gs_extgame_support": "candidate_external_game_id_mapping_found_external_endpoint_not_proven",
+  "current_gs_new_games_support": "candidate_source_signals_found_not_selected_until_direct_current_gs_verification",
+  "current_gs_legacy_template_support": "proven_legacy_fallback_not_selected_for_little_gangster",
+  "vabs_lasthands_history_contract_status": "gs_concepts_proven_little_gangster_contract_unverified",
+  "process_transaction_equivalent_status": "current_lane_equivalent_required_extgame_processTransactions_not_proven",
+  "round_completion_contract_status": "current_gs_helper_concepts_found_8001_usage_unverified",
+  "restart_frb_contract_status": "restart_resume_frb_concepts_found_little_gangster_scope_unverified",
+  "math_v0_3_retry_requirements_updated": true,
+  "skill_suite_patched": true,
+  "public_push_performed": false,
+  "unresolved_blockers": [
+    "extgame_lane_unverified_for_current_gs",
+    "vabs_lasthands_history_contract_unverified",
+    "process_transaction_equivalent_unverified_for_current_gs",
+    "round_completion_contract_unverified_for_current_gs",
+    "production_rng_owner_unverified_for_current_gs",
+    "frb_ocb_promo_support_decision_pending",
+    "current_gs_expected_staging_paths_mismatch",
+    "slot_browser_v1_lane_requires_direct_current_gs_verification",
+    "math_parity_retry_required"
+  ],
+  "next_recommended_skill": "MathModelDesigner",
+  "suggested_next_prompt_summary": "Run MathModelDesigner retry/audit to incorporate the corrected current-GS advisory checklist into the v0.3/vNext result-state handoff without assuming ExtGame APIs unless current GS proves them."
+}

@@ -1,0 +1,1397 @@
+{
+  "approval_status": "no_final_assets_approved",
+  "approved_assets": [],
+  "blocked_assets_count": 140,
+  "blocked_scaffold_assets": [
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.autoplay.panel.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.autoplay.panel.start_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "object_id": "scene.base.background",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c1.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c1.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c1.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c1.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c1.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c2.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c2.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c2.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c2.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c2.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c3.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c3.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c3.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c3.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c3.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c4.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c4.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c4.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c4.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c4.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c5.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c5.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c5.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c5.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c5.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c6.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c6.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c6.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c6.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.cell.c6.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.grid.container",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "object_id": "scene.base.logo",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.autoplay_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "object_id": "scene.base.panel.balance_display",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.bet_decrease",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "object_id": "scene.base.panel.bet_display",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.bet_increase",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "object_id": "scene.base.panel.buy_feature_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.menu_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_click.mp4",
+      "object_id": "scene.base.panel.sound_toggle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.spin_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.stop_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.base.panel.turbo_toggle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.ace.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.ace.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.jack.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.jack.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.king.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.king.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_special.json",
+      "object_id": "scene.base.symbol.lg_scatter.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_special.json",
+      "object_id": "scene.base.symbol.lg_scatter.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_wild.json",
+      "object_id": "scene.base.symbol.lg_wild.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_wild.json",
+      "object_id": "scene.base.symbol.lg_wild.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.lookout.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.lookout.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.queen.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.queen.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.runner.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.runner.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.safe_cracker.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.safe_cracker.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.ten.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.ten.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.top_boss.idle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_symbols.atlas",
+      "object_id": "scene.base.symbol.top_boss.win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_digits_countup.atlas",
+      "object_id": "scene.base.win_amount",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.bet_panel.max_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.bet_panel.min_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.bet_panel.modal.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_win_tiers.json",
+      "object_id": "scene.big_win.counter.amount",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_win_tiers.json",
+      "object_id": "scene.big_win.overlay.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "object_id": "scene.bonus_buy.panel.buy_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_1/1309_1.23.0_ui_images_promotion_button.png",
+      "object_id": "scene.bonus_buy.panel.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.double_up.modal.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.error.modal.message",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.error.modal.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "object_id": "scene.free_spins.active.background",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "object_id": "scene.free_spins.active.title",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_fs.json",
+      "object_id": "scene.free_spins.counter.remaining",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c1.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c1.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c1.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c1.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c1.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c2.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c2.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c2.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c2.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c2.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c3.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c3.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c3.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c3.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c3.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c4.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c4.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c4.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c4.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c4.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c5.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c5.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c5.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c5.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c5.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c6.r1",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c6.r2",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c6.r3",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c6.r4",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.free_spins.grid.cell.c6.r5",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "object_id": "scene.free_spins.intro.background",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "object_id": "scene.free_spins.intro.title",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_fs.json",
+      "object_id": "scene.free_spins.multiplier_badge",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "object_id": "scene.free_spins.outro.background",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "object_id": "scene.free_spins.outro.title",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_spine_fs.json",
+      "object_id": "scene.free_spins.outro.total_win",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.layout.desktop.safe_area.grid_slot",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.layout.mobile.safe_area.grid_slot",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "object_id": "scene.loading.background",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "object_id": "scene.loading.continue_prompt",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "object_id": "scene.loading.feature_cards",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "object_id": "scene.loading.logo",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "object_id": "scene.loading.progress",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.reconnect.modal.retry_button",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.reconnect.modal.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_desc.json",
+      "object_id": "scene.rules.feature_rules.tab",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_desc.json",
+      "object_id": "scene.rules.modal.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_desc.json",
+      "object_id": "scene.rules.paytable.tab",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.settings.modal.root",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_music_intro.mp4",
+      "object_id": "scene.settings.music_toggle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_sound_click.mp4",
+      "object_id": "scene.settings.sound_toggle",
+      "release_status": "blocked_from_release"
+    },
+    {
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_misc.atlas",
+      "object_id": "scene.turbo.toggle.root",
+      "release_status": "blocked_from_release"
+    }
+  ],
+  "critical_replacements_count": 108,
+  "donor_feature_parity_status": "blocked_requires_math_revision",
+  "final_approved_assets_count": 0,
+  "future_game_name": "Little Gangster",
+  "generated_at": "2026-05-10T11:23:27+01:00",
+  "pending_assets": [
+    {
+      "object_id": "scene.autoplay.panel.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_autoplay_panel_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.autoplay.panel.start_button",
+      "priority": "high",
+      "replacement_asset_target": "lg_autoplay_panel_start_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.background",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_background_original_background_illustration"
+    },
+    {
+      "object_id": "scene.base.cluster_highlight_layer",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_cluster_highlight_layer_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c1.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c1_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c1.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c1_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c1.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c1_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c1.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c1_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c1.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c1_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c2.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c2_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c2.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c2_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c2.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c2_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c2.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c2_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c2.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c2_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c3.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c3_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c3.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c3_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c3.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c3_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c3.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c3_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c3.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c3_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c4.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c4_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c4.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c4_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c4.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c4_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c4.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c4_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c4.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c4_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c5.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c5_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c5.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c5_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c5.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c5_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c5.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c5_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c5.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c5_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c6.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c6_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c6.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c6_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c6.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c6_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c6.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c6_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.cell.c6.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_cell_c6_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.grid.container",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_grid_container_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.base.logo",
+      "priority": "medium",
+      "replacement_asset_target": "lg_base_logo_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.panel.autoplay_button",
+      "priority": "high",
+      "replacement_asset_target": "lg_base_panel_autoplay_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.panel.balance_display",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_balance_display_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.panel.bet_decrease",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_bet_decrease_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.panel.bet_display",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_bet_display_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.panel.bet_increase",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_bet_increase_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.panel.buy_feature_button",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_buy_feature_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.panel.menu_button",
+      "priority": "high",
+      "replacement_asset_target": "lg_base_panel_menu_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.panel.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_base_panel_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.base.panel.sound_toggle",
+      "priority": "high",
+      "replacement_asset_target": "lg_base_panel_sound_toggle_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.panel.spin_button",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_spin_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.panel.stop_button",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_panel_stop_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.panel.turbo_toggle",
+      "priority": "high",
+      "replacement_asset_target": "lg_base_panel_turbo_toggle_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.base.symbol.ace.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_ace_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.ace.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_ace_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.jack.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_jack_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.jack.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_jack_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.king.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_king_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.king.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_king_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.lg_scatter.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_symbol_scatter_vault_door_original"
+    },
+    {
+      "object_id": "scene.base.symbol.lg_scatter.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_symbol_scatter_vault_door_original"
+    },
+    {
+      "object_id": "scene.base.symbol.lg_wild.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_symbol_wild_neon_gangster_logo_original"
+    },
+    {
+      "object_id": "scene.base.symbol.lg_wild.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_symbol_wild_neon_gangster_logo_original"
+    },
+    {
+      "object_id": "scene.base.symbol.lookout.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_lookout_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.lookout.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_lookout_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.queen.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_queen_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.queen.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_queen_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.runner.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_runner_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.runner.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_runner_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.safe_cracker.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_safe_cracker_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.safe_cracker.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_safe_cracker_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.ten.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_ten_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.ten.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_ten_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.top_boss.idle",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_top_boss_idle_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.symbol.top_boss.win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_symbol_top_boss_win_original_symbol_sprite_or_spine"
+    },
+    {
+      "object_id": "scene.base.win_amount",
+      "priority": "critical",
+      "replacement_asset_target": "lg_base_win_amount_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.bet_panel.max_button",
+      "priority": "medium",
+      "replacement_asset_target": "lg_bet_panel_max_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.bet_panel.min_button",
+      "priority": "medium",
+      "replacement_asset_target": "lg_bet_panel_min_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.bet_panel.modal.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_bet_panel_modal_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.big_win.counter.amount",
+      "priority": "critical",
+      "replacement_asset_target": "lg_big_win_counter_amount_original_big_win_effect"
+    },
+    {
+      "object_id": "scene.big_win.overlay.root",
+      "priority": "critical",
+      "replacement_asset_target": "lg_big_win_overlay_root_original_big_win_effect"
+    },
+    {
+      "object_id": "scene.bonus_buy.panel.buy_button",
+      "priority": "critical",
+      "replacement_asset_target": "lg_bonus_buy_panel_buy_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.bonus_buy.panel.root",
+      "priority": "critical",
+      "replacement_asset_target": "lg_bonus_buy_panel_root_original_start_the_job_asset"
+    },
+    {
+      "object_id": "scene.double_up.modal.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_double_up_modal_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.error.modal.message",
+      "priority": "high",
+      "replacement_asset_target": "lg_error_modal_message_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.error.modal.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_error_modal_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.free_spins.active.background",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_active_background_original_background_illustration"
+    },
+    {
+      "object_id": "scene.free_spins.active.title",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_active_title_original_heist_mode_asset"
+    },
+    {
+      "object_id": "scene.free_spins.counter.remaining",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_counter_remaining_original_heist_mode_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c1.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c1_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c1.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c1_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c1.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c1_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c1.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c1_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c1.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c1_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c2.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c2_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c2.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c2_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c2.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c2_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c2.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c2_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c2.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c2_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c3.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c3_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c3.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c3_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c3.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c3_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c3.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c3_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c3.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c3_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c4.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c4_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c4.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c4_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c4.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c4_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c4.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c4_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c4.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c4_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c5.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c5_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c5.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c5_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c5.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c5_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c5.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c5_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c5.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c5_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c6.r1",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c6_r1_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c6.r2",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c6_r2_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c6.r3",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c6_r3_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c6.r4",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c6_r4_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.grid.cell.c6.r5",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_grid_cell_c6_r5_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.free_spins.intro.background",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_intro_background_original_background_illustration"
+    },
+    {
+      "object_id": "scene.free_spins.intro.title",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_intro_title_original_heist_mode_asset"
+    },
+    {
+      "object_id": "scene.free_spins.multiplier_badge",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_multiplier_badge_original_heist_mode_asset"
+    },
+    {
+      "object_id": "scene.free_spins.outro.background",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_outro_background_original_background_illustration"
+    },
+    {
+      "object_id": "scene.free_spins.outro.title",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_outro_title_original_heist_mode_asset"
+    },
+    {
+      "object_id": "scene.free_spins.outro.total_win",
+      "priority": "critical",
+      "replacement_asset_target": "lg_free_spins_outro_total_win_original_heist_mode_asset"
+    },
+    {
+      "object_id": "scene.layout.desktop.safe_area",
+      "priority": "medium",
+      "replacement_asset_target": "lg_layout_desktop_safe_area_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.layout.desktop.safe_area.control_slot",
+      "priority": "medium",
+      "replacement_asset_target": "lg_layout_desktop_safe_area_control_slot_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.layout.desktop.safe_area.grid_slot",
+      "priority": "medium",
+      "replacement_asset_target": "lg_layout_desktop_safe_area_grid_slot_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.layout.mobile.safe_area",
+      "priority": "medium",
+      "replacement_asset_target": "lg_layout_mobile_safe_area_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.layout.mobile.safe_area.control_slot",
+      "priority": "medium",
+      "replacement_asset_target": "lg_layout_mobile_safe_area_control_slot_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.layout.mobile.safe_area.grid_slot",
+      "priority": "medium",
+      "replacement_asset_target": "lg_layout_mobile_safe_area_grid_slot_original_grid_frame_or_cell_asset"
+    },
+    {
+      "object_id": "scene.loading.background",
+      "priority": "critical",
+      "replacement_asset_target": "lg_loading_background_original_background_illustration"
+    },
+    {
+      "object_id": "scene.loading.continue_prompt",
+      "priority": "medium",
+      "replacement_asset_target": "lg_loading_continue_prompt_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.loading.feature_cards",
+      "priority": "high",
+      "replacement_asset_target": "lg_loading_feature_cards_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.loading.logo",
+      "priority": "high",
+      "replacement_asset_target": "lg_loading_logo_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.loading.progress",
+      "priority": "medium",
+      "replacement_asset_target": "lg_loading_progress_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.reconnect.modal.retry_button",
+      "priority": "high",
+      "replacement_asset_target": "lg_reconnect_modal_retry_button_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.reconnect.modal.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_reconnect_modal_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.rules.feature_rules.tab",
+      "priority": "medium",
+      "replacement_asset_target": "lg_rules_feature_rules_tab_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.rules.modal.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_rules_modal_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.rules.paytable.tab",
+      "priority": "critical",
+      "replacement_asset_target": "lg_rules_paytable_tab_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.settings.modal.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_settings_modal_root_original_or_approved_replacement"
+    },
+    {
+      "object_id": "scene.settings.music_toggle",
+      "priority": "high",
+      "replacement_asset_target": "lg_settings_music_toggle_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.settings.sound_toggle",
+      "priority": "high",
+      "replacement_asset_target": "lg_settings_sound_toggle_original_ui_control_asset"
+    },
+    {
+      "object_id": "scene.turbo.toggle.root",
+      "priority": "high",
+      "replacement_asset_target": "lg_turbo_toggle_root_original_ui_control_asset"
+    }
+  ],
+  "project_name": "little-gangster",
+  "release_readiness_reason": "Feature parity math/result contract and final asset approvals remain blocked.",
+  "release_ready": false,
+  "replacement_required_asset_count": 140,
+  "scaffold_assets_blocked_from_release": true,
+  "selected_layout": "6x5_cluster_provisional",
+  "selected_theme": "Little Gangster: Neon Heist",
+  "target_feature_policy": "match_donor_features_and_settings"
+}

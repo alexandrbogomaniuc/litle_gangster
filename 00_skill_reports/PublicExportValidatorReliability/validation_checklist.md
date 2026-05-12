@@ -1,0 +1,29 @@
+# Public Export Validator Reliability Validation Checklist
+
+- [x] Public `README.md` rewritten as readable multiline Markdown.
+- [x] Public `README.md` has at least 12 non-empty lines.
+- [x] Public `README.md` has no line longer than 300 characters.
+- [x] Public `REVIEWER_START_HERE.md` rewritten as readable multiline Markdown.
+- [x] Public `REVIEWER_START_HERE.md` has at least 12 non-empty lines.
+- [x] Public `REVIEWER_START_HERE.md` has no line longer than 300 characters.
+- [x] `PUBLIC_EXPORT_NOTICE.md` is readable multiline Markdown.
+- [x] `EXPORT_MANIFEST.md` is readable multiline Markdown.
+- [x] `scripts/validate_public_export.py` rewritten as readable multiline Python.
+- [x] `python3 -m py_compile scripts/validate_public_export.py` passed.
+- [x] `python3 scripts/validate_public_export.py` passed before commit.
+- [x] `python3 -m json.tool project_manifest.json` passed.
+- [x] JSON parse sweep passed for 123 public JSON files.
+- [x] CSV parse sweep passed for 15 public CSV files.
+- [x] Python compile sweep passed for 4 public Python files.
+- [x] `node --check 05_art/html_scene_inspector/scene_inspector.js` passed.
+- [x] GitHub push succeeded.
+- [x] `python3 scripts/validate_public_export.py` passed after push.
+- [x] No donor browsing occurred.
+- [x] No asset capture occurred.
+- [x] No donor asset bodies were inspected.
+- [x] No client code was generated.
+- [x] No runtime implementation code was generated.
+- [x] No registration artifacts were generated.
+- [x] No DB/Cassandra action occurred.
+- [x] No wallet/API call occurred.
+- [x] No release approval occurred.

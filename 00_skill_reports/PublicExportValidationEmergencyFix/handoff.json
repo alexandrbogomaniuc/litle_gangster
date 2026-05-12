@@ -1,0 +1,29 @@
+{
+  "previous_public_validation_claim_false": true,
+  "public_github_raw_contradicted_report": true,
+  "previous_validator_sufficient": false,
+  "root_cause_status": "not_proven",
+  "readme_working_tree_line_count": 35,
+  "reviewer_working_tree_line_count": 41,
+  "validator_working_tree_line_count": 410,
+  "readme_git_blob_line_count": 35,
+  "reviewer_git_blob_line_count": 41,
+  "validator_git_blob_line_count": 410,
+  "readme_github_raw_line_count": 35,
+  "reviewer_github_raw_line_count": 41,
+  "validator_github_raw_line_count": 410,
+  "validate_public_export_compiles": true,
+  "validate_public_export_runs": true,
+  "git_blob_validator_passed": true,
+  "github_raw_validator_passed": false,
+  "github_raw_validator_passed_for_unpushed_commit_object": true,
+  "github_actions_workflow_created": true,
+  "github_push_succeeded": false,
+  "public_export_validation_passed": false,
+  "local_unpushed_commit_hash": "1f56f72e01a53513d9f42f03c3b3ede123d660f0",
+  "public_main_commit_hash": "2c3a1dac56bdc70362b53989d42b606ea0af324c",
+  "blockers": [
+    "github_workflow_scope_missing"
+  ],
+  "next_recommended_step": "ProtocolAndSchemaMapper runtime adapter planning after public export validation publication is resolved"
+}

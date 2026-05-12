@@ -1,0 +1,25 @@
+# Public Export Validation Emergency Fix Checklist
+
+- [x] Emergency report directory created.
+- [x] Previous validation claim recorded as false.
+- [x] Collapse root cause report created.
+- [x] Public `README.md` rewritten as multiline Markdown.
+- [x] Public `REVIEWER_START_HERE.md` rewritten as multiline Markdown.
+- [x] Public `PUBLIC_EXPORT_NOTICE.md` rewritten as multiline Markdown.
+- [x] Public `EXPORT_MANIFEST.md` rewritten as multiline Markdown.
+- [x] Public `scripts/validate_public_export.py` updated.
+- [x] Public `scripts/validate_git_blob_content.py` created.
+- [x] Public `scripts/validate_github_raw_commit.py` created.
+- [x] Public GitHub Actions workflow created locally.
+- [x] `python3 -m py_compile scripts/validate_public_export.py` passed.
+- [x] `python3 -m py_compile scripts/validate_git_blob_content.py` passed.
+- [x] `python3 -m py_compile scripts/validate_github_raw_commit.py` passed.
+- [x] `python3 scripts/validate_public_export.py` passed.
+- [x] Working-tree line counts met minimums.
+- [x] Local commit created.
+- [x] `python3 scripts/validate_git_blob_content.py` passed.
+- [x] Git blob line counts met minimums.
+- [x] GitHub raw validator passed for the local commit object.
+- [ ] Push to public `main` succeeded.
+- [ ] GitHub raw validation passed for a pushed `main` commit.
+- [ ] Public export validation can be claimed as passed.

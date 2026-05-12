@@ -1,0 +1,26 @@
+{
+  "desired_full_rounds_per_variant": 1000000,
+  "primary_validation_seed": 2026050801,
+  "release_certification": false,
+  "seed_policy": "deterministic seeds only; production RNG not represented",
+  "smoke_rounds_per_variant": 10000,
+  "status": "provisional_workflow_validation",
+  "tolerance_percent": 0.5,
+  "variants": {
+    "rtp_92": {
+      "rounds": 1000000,
+      "seed": 2026050801,
+      "target_rtp_percent": 92.0
+    },
+    "rtp_94": {
+      "rounds": 1000000,
+      "seed": 2026050801,
+      "target_rtp_percent": 94.0
+    },
+    "rtp_96": {
+      "rounds": 1000000,
+      "seed": 2026050801,
+      "target_rtp_percent": 96.0
+    }
+  }
+}
