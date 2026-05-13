@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "profile-stability-triage-v1",
+  "createdAt": "2026-05-13T10:44:29+00:00",
+  "triageCompleted": true,
+  "sourceRun": {
+    "profilesTestedCount": 9,
+    "seedsPerProfile": 3,
+    "roundsPerSeed": 10000,
+    "largeSampleLimitedByRuntime": true,
+    "tolerancePercentPoints": 2.0
+  },
+  "profileCount": 9,
+  "failedProfilesCount": 8,
+  "passedProfilesCount": 1,
+  "failedProfileIds": [
+    "LG_8001_RTP_LOW_VOL_LOW",
+    "LG_8001_RTP_LOW_VOL_MEDIUM",
+    "LG_8001_RTP_LOW_VOL_HIGH",
+    "LG_8001_RTP_MEDIUM_VOL_LOW",
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+    "LG_8001_RTP_MEDIUM_VOL_HIGH",
+    "LG_8001_RTP_HIGH_VOL_LOW",
+    "LG_8001_RTP_HIGH_VOL_MEDIUM"
+  ],
+  "passedProfileIds": [
+    "LG_8001_RTP_HIGH_VOL_HIGH"
+  ],
+  "perProfile": [
+    {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_LOW",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 92.0,
+      "meanObservedRtpPercent": 96.159839,
+      "rtpDeltaFromTarget": 4.159839,
+      "seedLevelObservedRtpPercent": [
+        93.285534,
+        97.214608,
+        97.979374
+      ],
+      "hitRate": 0.3283,
+      "standardDeviation": 1.996538,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.09516667,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "seed_spread_above_4_percentage_points",
+        "all_seed_results_same_side_of_target"
+      ],
+      "seedRtpSpan": 4.69384,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_MEDIUM",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 92.0,
+      "meanObservedRtpPercent": 84.761733,
+      "rtpDeltaFromTarget": -7.238267,
+      "seedLevelObservedRtpPercent": [
+        85.625175,
+        83.288975,
+        85.371049
+      ],
+      "hitRate": 0.27386667,
+      "standardDeviation": 2.086023,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.0784,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "all_seed_results_same_side_of_target",
+        "mean_delta_above_5_percentage_points"
+      ],
+      "seedRtpSpan": 2.3362,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_HIGH",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 92.0,
+      "meanObservedRtpPercent": 95.372517,
+      "rtpDeltaFromTarget": 3.372517,
+      "seedLevelObservedRtpPercent": [
+        95.661775,
+        96.353568,
+        94.102208
+      ],
+      "hitRate": 0.2147,
+      "standardDeviation": 3.06809,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.06163333,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "all_seed_results_same_side_of_target"
+      ],
+      "seedRtpSpan": 2.25136,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_LOW",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 94.0,
+      "meanObservedRtpPercent": 90.704672,
+      "rtpDeltaFromTarget": -3.295328,
+      "seedLevelObservedRtpPercent": [
+        93.210347,
+        91.73862,
+        87.165048
+      ],
+      "hitRate": 0.33023333,
+      "standardDeviation": 1.893017,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.0898,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "seed_spread_above_4_percentage_points",
+        "all_seed_results_same_side_of_target"
+      ],
+      "seedRtpSpan": 6.045299,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 94.0,
+      "meanObservedRtpPercent": 90.115414,
+      "rtpDeltaFromTarget": -3.884586,
+      "seedLevelObservedRtpPercent": [
+        88.937826,
+        89.946726,
+        91.46169
+      ],
+      "hitRate": 0.26796667,
+      "standardDeviation": 2.272876,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.07726667,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "all_seed_results_same_side_of_target"
+      ],
+      "seedRtpSpan": 2.523864,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_HIGH",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 94.0,
+      "meanObservedRtpPercent": 87.224039,
+      "rtpDeltaFromTarget": -6.775961,
+      "seedLevelObservedRtpPercent": [
+        85.870729,
+        84.32727,
+        91.474118
+      ],
+      "hitRate": 0.2185,
+      "standardDeviation": 2.835547,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.05806667,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "seed_spread_above_4_percentage_points",
+        "all_seed_results_same_side_of_target",
+        "mean_delta_above_5_percentage_points"
+      ],
+      "seedRtpSpan": 7.146848,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_LOW",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 96.0,
+      "meanObservedRtpPercent": 101.083091,
+      "rtpDeltaFromTarget": 5.083091,
+      "seedLevelObservedRtpPercent": [
+        101.388655,
+        102.801027,
+        99.059589
+      ],
+      "hitRate": 0.32826667,
+      "standardDeviation": 2.106775,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.08996667,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "all_seed_results_same_side_of_target",
+        "mean_delta_above_5_percentage_points"
+      ],
+      "seedRtpSpan": 3.741438,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_MEDIUM",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 96.0,
+      "meanObservedRtpPercent": 101.859882,
+      "rtpDeltaFromTarget": 5.859882,
+      "seedLevelObservedRtpPercent": [
+        104.277877,
+        102.782991,
+        98.518779
+      ],
+      "hitRate": 0.27033333,
+      "standardDeviation": 2.540705,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.07843333,
+      "passFail": "fail",
+      "likelyFailureCategory": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "failureSignals": [
+        "seed_spread_above_4_percentage_points",
+        "all_seed_results_same_side_of_target",
+        "mean_delta_above_5_percentage_points"
+      ],
+      "seedRtpSpan": 5.759098,
+      "passFailPriorWording": "fail",
+      "smallSampleSmokeToleranceStatus": "outside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "profile_specific_tuning_weakness_after_small_sample_overfit",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_HIGH",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 96.0,
+      "meanObservedRtpPercent": 96.941348,
+      "rtpDeltaFromTarget": 0.941348,
+      "seedLevelObservedRtpPercent": [
+        96.856333,
+        96.923631,
+        97.04408
+      ],
+      "hitRate": 0.21513333,
+      "standardDeviation": 3.077705,
+      "capFrequency": 0.0,
+      "featureTriggerRate": 0.05906667,
+      "passFail": "pass",
+      "likelyFailureCategory": "within_tolerance_no_failure",
+      "failureSignals": [],
+      "seedRtpSpan": 0.187747,
+      "passFailPriorWording": "pass",
+      "smallSampleSmokeToleranceStatus": "inside_small_sample_smoke_tolerance",
+      "likelyFailureCategoryPriorWording": "within_tolerance_no_failure",
+      "smokeInstabilityCategory": "small_sample_profile_stability_inconclusive"
+    }
+  ],
+  "systematicByVolatilityLevel": {
+    "LOW": {
+      "profileCount": 3,
+      "failedCount": 3,
+      "meanDelta": 1.982534,
+      "direction": "mixed_direction",
+      "deltasByProfile": {
+        "LG_8001_RTP_LOW_VOL_LOW": 4.159839,
+        "LG_8001_RTP_MEDIUM_VOL_LOW": -3.295328,
+        "LG_8001_RTP_HIGH_VOL_LOW": 5.083091
+      }
+    },
+    "MEDIUM": {
+      "profileCount": 3,
+      "failedCount": 3,
+      "meanDelta": -1.754324,
+      "direction": "mixed_direction",
+      "deltasByProfile": {
+        "LG_8001_RTP_LOW_VOL_MEDIUM": -7.238267,
+        "LG_8001_RTP_MEDIUM_VOL_MEDIUM": -3.884586,
+        "LG_8001_RTP_HIGH_VOL_MEDIUM": 5.859882
+      }
+    },
+    "HIGH": {
+      "profileCount": 3,
+      "failedCount": 2,
+      "meanDelta": -0.820699,
+      "direction": "mixed_direction",
+      "deltasByProfile": {
+        "LG_8001_RTP_LOW_VOL_HIGH": 3.372517,
+        "LG_8001_RTP_MEDIUM_VOL_HIGH": -6.775961,
+        "LG_8001_RTP_HIGH_VOL_HIGH": 0.941348
+      }
+    }
+  },
+  "systematicByRtpLevel": {
+    "LOW": {
+      "profileCount": 3,
+      "failedCount": 3,
+      "meanDelta": 0.09803,
+      "direction": "mixed_direction",
+      "deltasByProfile": {
+        "LG_8001_RTP_LOW_VOL_LOW": 4.159839,
+        "LG_8001_RTP_LOW_VOL_MEDIUM": -7.238267,
+        "LG_8001_RTP_LOW_VOL_HIGH": 3.372517
+      }
+    },
+    "MEDIUM": {
+      "profileCount": 3,
+      "failedCount": 3,
+      "meanDelta": -4.651958,
+      "direction": "under_target",
+      "deltasByProfile": {
+        "LG_8001_RTP_MEDIUM_VOL_LOW": -3.295328,
+        "LG_8001_RTP_MEDIUM_VOL_MEDIUM": -3.884586,
+        "LG_8001_RTP_MEDIUM_VOL_HIGH": -6.775961
+      }
+    },
+    "HIGH": {
+      "profileCount": 3,
+      "failedCount": 2,
+      "meanDelta": 3.96144,
+      "direction": "over_target",
+      "deltasByProfile": {
+        "LG_8001_RTP_HIGH_VOL_LOW": 5.083091,
+        "LG_8001_RTP_HIGH_VOL_MEDIUM": 5.859882,
+        "LG_8001_RTP_HIGH_VOL_HIGH": 0.941348
+      }
+    }
+  },
+  "profileCalibrationAdjustmentsAppliedCorrectly": true,
+  "profileAdjustmentCoverage": {
+    "matrixProfileIdsMatchStabilityResults": true,
+    "adjustmentProfileIdsMatchMatrix": true,
+    "calibrationResultProfileIdsMatchMatrix": true,
+    "missingAdjustmentProfileIds": []
+  },
+  "mathProfileIdResolutionCorrect": true,
+  "harnessBugFound": false,
+  "simulatorHarnessPatched": false,
+  "tuningValuesChanged": false,
+  "optionalVerificationRunPerformed": false,
+  "toleranceAssessment": {
+    "isPlusMinus2StrictFor10kHighVolatility": "possibly_strict_for_high_volatility_smoke_but_not_primary_cause",
+    "reason": "Failures occur across LOW, MEDIUM, and HIGH volatility levels, with several deltas above 3 to 7 percentage points and all-seed same-side misses for multiple profiles."
+  },
+  "likelyRootCauseCategory": "small_sample_profile_stability_inconclusive",
+  "secondaryRootCauseSignals": [
+    "larger_sample_runtime_limited_to_10k_rounds_per_seed",
+    "some_profiles_show_high_seed_spread",
+    "current_overlay_was fit_on_2_seeds_x_1000_rounds"
+  ],
+  "nextSafestMathStep": "Define confidence-scale simulation tiers and then run larger train/validation calibration only when explicitly approved; do not treat smoke variance as profile failure.",
+  "backendAdapterImplementationAllowed": false,
+  "gameserverregistrarGenerationAllowed": false,
+  "exactValuesFinal": false,
+  "certificationStatus": false,
+  "priorSmallSampleResultsReclassified": true,
+  "smallSampleStatus": "small_sample_profile_stability_inconclusive",
+  "failedProfilesCountPriorWording": 8,
+  "profilesOutsideSmallSampleSmokeToleranceCount": 8,
+  "failedProfileIdsPriorWording": [
+    "LG_8001_RTP_LOW_VOL_LOW",
+    "LG_8001_RTP_LOW_VOL_MEDIUM",
+    "LG_8001_RTP_LOW_VOL_HIGH",
+    "LG_8001_RTP_MEDIUM_VOL_LOW",
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+    "LG_8001_RTP_MEDIUM_VOL_HIGH",
+    "LG_8001_RTP_HIGH_VOL_LOW",
+    "LG_8001_RTP_HIGH_VOL_MEDIUM"
+  ],
+  "profilesOutsideSmallSampleSmokeToleranceIds": [
+    "LG_8001_RTP_LOW_VOL_LOW",
+    "LG_8001_RTP_LOW_VOL_MEDIUM",
+    "LG_8001_RTP_LOW_VOL_HIGH",
+    "LG_8001_RTP_MEDIUM_VOL_LOW",
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+    "LG_8001_RTP_MEDIUM_VOL_HIGH",
+    "LG_8001_RTP_HIGH_VOL_LOW",
+    "LG_8001_RTP_HIGH_VOL_MEDIUM"
+  ],
+  "likelyFailureCategoryPriorWording": "small_sample_calibration_overfit_and_profile_specific_tuning_weakness",
+  "smokeInstabilityCategory": "small_sample_variance_and_profile_overlay_instability_observed_not_true_rtp_failure"
+}

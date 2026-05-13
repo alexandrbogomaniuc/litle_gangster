@@ -1,38 +1,36 @@
-# Sprint Report - 3x3 Profile Calibration
+# Sprint Report - RTP Confidence Scale Correction
 
 Created: 2026-05-13
 
 ## Outcome
 
-3x3 RTP / volatility calibration completed in compact fast-lane mode. A reusable local calibration harness and profile-specific adjustment overlay were created. All 9 profiles ran through a bounded first-pass smoke calibration.
+Confidence-scale sprint completed. No simulations were run and no math values were tuned.
 
-## Results
+## Correction
 
-- Profiles tested: 9 / 9.
-- Profiles within +/-2.0 percentage points: 9.
-- Profiles outside +/-2.0 percentage points: 0.
-- Volatility ordering preserved: true.
-- Calibration iterations used: 2.
-- Seeds per profile: 2.
-- Rounds per seed: 1,000.
-- Bonus buy tuned: false.
-- Jackpot enabled: false.
-- Exact values final: false.
-- Certification status: false.
+The prior 10,000-round-per-seed 3x3 profile results are reclassified as `small_sample_profile_stability_inconclusive`. The correct wording is `profiles outside small-sample smoke tolerance`, not true RTP failures.
 
-## Blockers
+## Simulation Tiers
 
-- `profile_stability_large_sample_pending`
-- `bonus_buy_ev_pending`
-- `max_win_tail_frequency_unproven`
-- `standard_deviation_targets_pending_large_simulation`
-- `certification_pending`
+Defined tiers from wiring smoke through diagnostic smoke, calibration trend, calibration confidence, pre-certification, certification/lab scale, and tail/max-win discovery.
+
+## Confidence Estimate Summary
+
+- Worst-profile estimated rounds for +/-2.0 percentage points: 91,000 range.
+- Worst-profile estimated rounds for +/-1.0 percentage point: 363,000 range.
+- Worst-profile estimated rounds for +/-0.5 percentage point: 1.45M range.
+- Worst-profile estimated rounds for +/-0.25 percentage point: 5.8M range.
+
+These are normal-approximation estimates from smoke variance only. Tail, cap, bonus-buy, and jackpot behavior may require tens or hundreds of millions of rounds, or up to one billion rounds.
 
 ## Gates
 
-Backend adapter implementation, GameClientBuilder implementation, GameServerRegistrar generation, wallet/API work, DB work, donor browsing, asset capture, public GitHub export, and release approval remain blocked.
+- Small samples can approve RTP: false.
+- Backend adapter remains blocked: true.
+- Registration generation remains blocked: true.
+- Release remains blocked: true.
 
 ## Next Prompt
 
-Run a fast-lane MathModelDesigner large-sample stability and bonus-buy EV decision sprint for the 3x3 matrix; keep backend adapter, client, registration, wallet, DB, donor, asset, public GitHub, and release work blocked.
+Run a compact MathModelDesigner sprint to design larger train/validation simulation runs and confidence reporting before any tuning, backend adapter, or registration work.
 

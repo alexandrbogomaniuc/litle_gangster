@@ -15,9 +15,9 @@
   "game_settings_profiles_schema_created": true,
   "sample_game_settings_profiles_created": true,
   "one_week_delivery_plan_created": true,
-  "checkpoint_git_review_due": true,
-  "recommended_next_skill": "WorkflowOrchestrator checkpoint git review/push",
-  "recommended_next_sprint_reason": "Several meaningful local sprints have accumulated; checkpoint validation and optional push should happen before implementation-adjacent work.",
+  "checkpoint_git_review_due": false,
+  "recommended_next_skill": "MathModelDesigner large-sample stability and bonus-buy EV decision",
+  "recommended_next_sprint_reason": "Raw-safe checkpoint passed GitHub raw validation; next blocker is large-sample math/profile stability and bonus-buy EV decisioning.",
   "implementation_allowed": false,
   "backend_adapter_implementation_allowed": false,
   "gameclientbuilder_implementation_allowed": false,
@@ -25,7 +25,6 @@
   "wallet_tests_approved": false,
   "release_approved": false,
   "unresolved_blockers": [
-    "checkpoint_git_review_due",
     "backend_adapter_implementation_blocked",
     "gameclientbuilder_implementation_blocked",
     "gameserverregistrar_generation_blocked",
@@ -41,5 +40,6 @@
   "sprint_size_limits_created": true,
   "compact_report_default": true,
   "next_5_sprints_defined": true,
-  "checkpoint_push_due": true
+  "checkpoint_push_due": false,
+  "last_checkpoint_commit_hash": "b7b420ba0916af6f6073f5e714ab73e1d36d4f93"
 }

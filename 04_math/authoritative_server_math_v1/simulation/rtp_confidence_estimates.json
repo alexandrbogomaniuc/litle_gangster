@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "rtp-confidence-estimates-v1",
+  "createdAt": "2026-05-13T11:16:56+00:00",
+  "source": "profile_stability_results.json",
+  "noNewSimulationsRun": true,
+  "priorSmallSampleResultsReclassified": true,
+  "smallSampleStatus": "small_sample_profile_stability_inconclusive",
+  "formula": {
+    "standardError": "sample_standard_deviation / sqrt(rounds)",
+    "approx95ConfidenceInterval": "observed_return +/- 1.96 * standard_error",
+    "requiredRounds": "(1.96 * standardDeviation / desiredError)^2",
+    "desiredErrorUnits": "return_multiplier; percentage points divided by 100"
+  },
+  "estimateReliability": "limited_smoke_variance_only_not_tail_or_certification_grade",
+  "limitations": [
+    "Existing results provide aggregate per-round standard deviation but not full tail convergence evidence.",
+    "No cap hits were observed, so max-win tail confidence cannot be estimated from this run.",
+    "Bonus-buy and jackpot paths are excluded from the main stability run.",
+    "High-volatility rare feature behavior may require tens or hundreds of millions of rounds despite smaller normal-approximation estimates."
+  ],
+  "blockers": [
+    "insufficient_tail_variance_data_for_required_round_estimate",
+    "max_win_tail_frequency_unproven",
+    "bonus_buy_ev_pending",
+    "certification_pending"
+  ],
+  "summaryRequiredRoundsByWorstProfile": {
+    "maxRequiredRoundsPlusMinus2Pct": 90972,
+    "maxRequiredRoundsPlusMinus1Pct": 363887,
+    "maxRequiredRoundsPlusMinus0_5Pct": 1455547,
+    "maxRequiredRoundsPlusMinus0_25Pct": 5822187
+  },
+  "profiles": [
+    {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_LOW",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 96.159839,
+      "deltaFromTargetPercentPoints": 4.159839,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 1.996538,
+      "standardErrorReturnMultiplier": 0.0115270175,
+      "approx95CiHalfWidthPercentPoints": 2.259295,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 38284,
+        "plusMinus1_0PercentagePoints": 153133,
+        "plusMinus0_5PercentagePoints": 612530,
+        "plusMinus0_25PercentagePoints": 2450120
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_MEDIUM",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 84.761733,
+      "deltaFromTargetPercentPoints": -7.238267,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 2.086023,
+      "standardErrorReturnMultiplier": 0.0120436594,
+      "approx95CiHalfWidthPercentPoints": 2.360557,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 41792,
+        "plusMinus1_0PercentagePoints": 167167,
+        "plusMinus0_5PercentagePoints": 668668,
+        "plusMinus0_25PercentagePoints": 2674671
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_HIGH",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 95.372517,
+      "deltaFromTargetPercentPoints": 3.372517,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 3.06809,
+      "standardErrorReturnMultiplier": 0.0177136259,
+      "approx95CiHalfWidthPercentPoints": 3.471871,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 90405,
+        "plusMinus1_0PercentagePoints": 361617,
+        "plusMinus0_5PercentagePoints": 1446467,
+        "plusMinus0_25PercentagePoints": 5785866
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_LOW",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 90.704672,
+      "deltaFromTargetPercentPoints": -3.295328,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 1.893017,
+      "standardErrorReturnMultiplier": 0.0109293387,
+      "approx95CiHalfWidthPercentPoints": 2.14215,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 34417,
+        "plusMinus1_0PercentagePoints": 137665,
+        "plusMinus0_5PercentagePoints": 550657,
+        "plusMinus0_25PercentagePoints": 2202628
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 90.115414,
+      "deltaFromTargetPercentPoints": -3.884586,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 2.272876,
+      "standardErrorReturnMultiplier": 0.0131224557,
+      "approx95CiHalfWidthPercentPoints": 2.572001,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 49614,
+        "plusMinus1_0PercentagePoints": 198456,
+        "plusMinus0_5PercentagePoints": 793823,
+        "plusMinus0_25PercentagePoints": 3175292
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_HIGH",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 87.224039,
+      "deltaFromTargetPercentPoints": -6.775961,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 2.835547,
+      "standardErrorReturnMultiplier": 0.0163710382,
+      "approx95CiHalfWidthPercentPoints": 3.208723,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 77220,
+        "plusMinus1_0PercentagePoints": 308878,
+        "plusMinus0_5PercentagePoints": 1235509,
+        "plusMinus0_25PercentagePoints": 4942036
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_LOW",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 101.083091,
+      "deltaFromTargetPercentPoints": 5.083091,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 2.106775,
+      "standardErrorReturnMultiplier": 0.0121634711,
+      "approx95CiHalfWidthPercentPoints": 2.38404,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 42628,
+        "plusMinus1_0PercentagePoints": 170510,
+        "plusMinus0_5PercentagePoints": 682038,
+        "plusMinus0_25PercentagePoints": 2728152
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_MEDIUM",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 101.859882,
+      "deltaFromTargetPercentPoints": 5.859882,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 2.540705,
+      "standardErrorReturnMultiplier": 0.0146687672,
+      "approx95CiHalfWidthPercentPoints": 2.875078,
+      "smokeStatus": "outside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 61996,
+        "plusMinus1_0PercentagePoints": 247983,
+        "plusMinus0_5PercentagePoints": 991930,
+        "plusMinus0_25PercentagePoints": 3967717
+      }
+    },
+    {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_HIGH",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 96.941348,
+      "deltaFromTargetPercentPoints": 0.941348,
+      "roundsObserved": 30000,
+      "standardDeviationReturnMultiplier": 3.077705,
+      "standardErrorReturnMultiplier": 0.0177691381,
+      "approx95CiHalfWidthPercentPoints": 3.482751,
+      "smokeStatus": "inside_small_sample_smoke_tolerance",
+      "rtpConfidenceStatus": "small_sample_profile_stability_inconclusive",
+      "requiredRoundsByTargetErrorBand": {
+        "plusMinus2_0PercentagePoints": 90972,
+        "plusMinus1_0PercentagePoints": 363887,
+        "plusMinus0_5PercentagePoints": 1455547,
+        "plusMinus0_25PercentagePoints": 5822187
+      }
+    }
+  ]
+}

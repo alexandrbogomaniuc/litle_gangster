@@ -1,22 +1,20 @@
 # Public Export Notice
 
-This is a sanitized raw-safe public checkpoint.
-It is provided for review only.
+This is a sanitized raw-safe public review export.
 It is not a release build.
-It is not a production math package.
-It is not a backend implementation.
-It is not a client implementation.
-It is not a registration package.
+It contains no donor asset bodies.
+It contains no scaffold asset bodies.
+It contains no screenshots.
+It contains no HAR files.
+It contains no raw network logs.
+It contains no raw secrets.
+It contains no full donor URLs.
+It contains no tokenized URLs.
+It contains no client implementation.
+It contains no backend implementation.
+It contains no registration artifacts.
+It contains no DB or wallet execution outputs.
+It contains no release approval.
 
-Excluded content:
-Donor asset bodies are excluded.
-Scaffold asset bodies are excluded.
-Screenshots are excluded.
-HAR and raw network logs are excluded.
-Raw secrets and raw tokens are excluded.
-Full donor URLs and tokenized URLs are excluded.
-Private local paths are redacted.
-Binary media files are excluded.
-Build and dist folders are excluded.
-
-All implementation and release gates remain closed.
+Line breaks are intentionally preserved.
+Validation must include GitHub raw content checks after push.
