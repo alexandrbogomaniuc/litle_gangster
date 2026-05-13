@@ -35,7 +35,8 @@ The audit answered:
 - **Registration process:** PROVEN as configuration/cache registration through game template, game info, bank info, and serialized payload records.
 - **Executable math import during registration:** NOT_FOUND. No direct source evidence was found that registration imports reel strips, paytables, feature rules, or `math_package.json`.
 - **Math runtime location:** CANDIDATE/BLOCKED. The math package should be consumed by a proven server/backend runtime owner, not by registration and not by the browser.
-- **RNG/result owner:** CANDIDATE/BLOCKED. Classic GS has RNG utilities, WebGS internal bridge handles session/wallet/history, and New Games backend currently generates provisional/sample results. Little Gangster/8001 final owner is not proven.
+- **RNG/result owner:** CANDIDATE/BLOCKED. Classic GS has RNG utilities, WebGS internal bridge handles session/wallet/history, and New Games backend currently generates provisional/sample results. Little Gangster/8001 final owner is not
+proven.
 - **Gamesv1 validity:** PARTIAL_CANDIDATE_NOT_FINAL. The lane has meaningful support, but Crazy Rooster/7001 is not a direct release template for 8001.
 - **Game 8001 registration:** NOT_FOUND in inspected Staging source/config.
 - **GameServerRegistrar readiness:** BLOCKED. It must not generate artifacts until lane selection, scn/jcn serializer/admin process, gameId/bank route, and runtime endpoint decisions are proven.
@@ -71,4 +72,5 @@ Primary audit outputs were written under:
 
 ## Next Recommended Skill
 
-MathModelDesigner retry may proceed next, limited to v0.3 contract/result-schema/runtime-boundary refinement. It must not assume that GS registration imports executable math, and it must keep production RNG/result generation server/backend-owned.
+MathModelDesigner retry may proceed next, limited to v0.3 contract/result-schema/runtime-boundary refinement. It must not assume that GS registration imports executable math, and it must keep production RNG/result generation
+server/backend-owned.

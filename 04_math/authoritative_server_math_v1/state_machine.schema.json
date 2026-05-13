@@ -1,0 +1,41 @@
+{
+  "$schema": "[REDACTED_URL]",
+  "title": "Little Gangster Authoritative State Machine Planning Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gameKey", "schemaVersion", "states", "transitions", "browserAuthorityAllowed"],
+  "properties": {
+    "gameKey": { "const": "little-gangster" },
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "browserAuthorityAllowed": { "const": false },
+    "states": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "owner", "description"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "owner": { "enum": ["server_math", "runtime_adapter", "wallet_boundary", "history_store"] },
+          "description": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from", "to", "trigger", "rngConsumed"],
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "trigger": { "type": "string" },
+          "rngConsumed": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}
+

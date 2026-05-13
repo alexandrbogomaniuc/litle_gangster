@@ -1,6 +1,6 @@
 {
   "skill": "MathModelDesigner",
-  "sprint": "AuthoritativeSimulationConfigRefinement",
+  "sprint": "3x3 RTP/volatility calibration harness and first-pass tuning",
   "authoritative_server_math_design_completed": true,
   "authoritative_math_owner_recommended": "future Little Gangster server-side math/runtime module integrated through backend adapter and presentationPayload.gamePayload",
   "authoritative_math_owner_proven": false,
@@ -35,16 +35,14 @@
   "wallet_tests_approved": false,
   "release_approved": false,
   "unresolved_blockers": [
-    "large_scale_rtp_calibration_pending",
-    "bonus_buy_cost_ev_pending",
-    "final_symbol_weights_pending_math_calibration",
-    "final_cluster_paytable_pending_rtp_calibration",
-    "jackpot_product_decision_pending",
-    "vabs_screenshot_requirement_unverified",
-    "runtime_owner_8001_unproven"
+    "bonus_buy_ev_pending",
+    "profile_stability_large_sample_pending",
+    "max_win_tail_frequency_unproven",
+    "standard_deviation_targets_pending_large_simulation",
+    "certification_pending"
   ],
-  "suggested_next_skill": "WorkflowOrchestrator checkpoint git review/push",
-  "suggested_next_prompt_summary": "Run a checkpoint git review/push sprint if user approves. Validate local artifacts, push only after raw GitHub validation, and do not begin implementation automatically.",
+  "suggested_next_skill": "MathModelDesigner large-sample stability and bonus-buy EV decision sprint",
+  "suggested_next_prompt_summary": "Run a fast-lane MathModelDesigner large-sample stability and bonus-buy EV decision sprint for the 3x3 matrix; keep backend adapter, client, registration, wallet, DB, donor, asset, and release work blocked.",
   "math_config_completeness_audit_completed": true,
   "math_config_gl_dependency_status": "matrix_created_values_incomplete",
   "rtp_model_flexibility_status": "covered_for_96_94_92_simulation_pending",
@@ -69,5 +67,347 @@
   "registration_field_maps_created": true,
   "certification_report_templates_created": true,
   "exact_values_final": false,
-  "checkpoint_git_review_due": true
+  "checkpoint_git_review_due": true,
+  "calibration_sprint_completed": true,
+  "simulator_ran": true,
+  "rtp_models_covered": [
+    "rtp_96",
+    "rtp_94",
+    "rtp_92"
+  ],
+  "round_count_per_model": 75,
+  "rtp_smoke_results": {
+    "rtp_96": 0.132,
+    "rtp_94": 0.349547,
+    "rtp_92": 0.1044
+  },
+  "certification_claim": false,
+  "bonus_buy_ev_status": "bonus_buy_cost_ev_pending",
+  "free_spins_feature_modes_status": "blocked_pending_simulation_model",
+  "calibration_diagnostics_completed": true,
+  "simulator_sanity_status": "runs_but_not_reliable_for_calibration",
+  "simulator_bug_found": true,
+  "simulator_bug_summary": "RTP unit/denominator mismatch and missing feature/free-spin/bonus-buy EV paths block calibration.",
+  "simulator_patched": true,
+  "diagnostic_models_covered": [
+    "rtp_96",
+    "rtp_94",
+    "rtp_92"
+  ],
+  "diagnostic_seeds_per_model": 3,
+  "diagnostic_rounds_per_seed": 10000,
+  "diagnostic_total_rounds": 90000,
+  "rtp_diagnostic_results": {
+    "rtp_96": 0.205943,
+    "rtp_94": 0.208106,
+    "rtp_92": 0.198437
+  },
+  "limited_tuning_performed": false,
+  "limited_tuning_skipped_reason": "simulator sanity checks did not pass; structural model gaps must be fixed first",
+  "model_completeness_fix_completed": true,
+  "simulator_sanity_status_after_patch": "model_complete_for_local_calibration_smoke_not_certified",
+  "rtp_percent_multiplier_reporting_added": true,
+  "bet_denominator_reporting_added": true,
+  "cluster_bet_denominator_status": "present_defaultTotalBet_credits_cluster_equivalent",
+  "free_spin_smoke_path_added": true,
+  "feature_mode_smoke_path_added": true,
+  "bonus_buy_smoke_path_added": true,
+  "jackpot_status": "disabled_pending_product_decision",
+  "post_fix_run_size": {
+    "models": [
+      "rtp_96",
+      "rtp_94",
+      "rtp_92"
+    ],
+    "seeds": [
+      8101,
+      8102
+    ],
+    "roundsPerSeed": 5000,
+    "bonusBuyDisabledRuns": true,
+    "bonusBuyEnabledRuns": true,
+    "bonusBuyEnabledRunReason": "costMultiplierCandidates and bonusBuyRtp candidates exist, but EV remains pending and is reported as a blocker",
+    "jackpotEnabled": false,
+    "totalRoundRecords": 60000
+  },
+  "post_fix_summary": {
+    "bonusBuyDisabled": {
+      "rtp_96": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.2205,
+        "meanObservedRtpPercent": 22.05,
+        "minObservedReturnMultiplier": 0.21083,
+        "maxObservedReturnMultiplier": 0.23017,
+        "targetRtpPercent": 96.0,
+        "targetReturnMultiplier": 0.96,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_94": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.207443,
+        "meanObservedRtpPercent": 20.7443,
+        "minObservedReturnMultiplier": 0.196123,
+        "maxObservedReturnMultiplier": 0.218763,
+        "targetRtpPercent": 94.0,
+        "targetReturnMultiplier": 0.94,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_92": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.200875,
+        "meanObservedRtpPercent": 20.0875,
+        "minObservedReturnMultiplier": 0.196816,
+        "maxObservedReturnMultiplier": 0.204934,
+        "targetRtpPercent": 92.0,
+        "targetReturnMultiplier": 0.92,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      }
+    },
+    "bonusBuyEnabled": {
+      "rtp_96": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.005701,
+        "meanObservedRtpPercent": 0.57015,
+        "minObservedReturnMultiplier": 0.00565,
+        "maxObservedReturnMultiplier": 0.005753,
+        "targetRtpPercent": 96.0,
+        "targetReturnMultiplier": 0.96,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_94": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.005615,
+        "meanObservedRtpPercent": 0.56155,
+        "minObservedReturnMultiplier": 0.005463,
+        "maxObservedReturnMultiplier": 0.005768,
+        "targetRtpPercent": 94.0,
+        "targetReturnMultiplier": 0.94,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_92": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.005477,
+        "meanObservedRtpPercent": 0.54765,
+        "minObservedReturnMultiplier": 0.005397,
+        "maxObservedReturnMultiplier": 0.005556,
+        "targetRtpPercent": 92.0,
+        "targetReturnMultiplier": 0.92,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      }
+    }
+  },
+  "limited_calibration_tuning_completed": true,
+  "tuning_set_applied": true,
+  "tuning_set_id": "2026-05-13_rtp92_model_specific_cluster_multiplier_v1",
+  "post_spin_forced_payout_scaling_used": false,
+  "diagnostic_scale_status": "diagnostic_only_not_release_math",
+  "rtp_before_after_summary": {
+    "bonusBuyDisabled": {
+      "rtp_96": {
+        "beforeObservedReturnMultiplier": 0.2205,
+        "beforeObservedRtpPercent": 22.05,
+        "afterObservedReturnMultiplier": 0.953082,
+        "afterObservedRtpPercent": 95.308167,
+        "deltaObservedReturnMultiplier": 0.732582,
+        "deltaObservedRtpPercent": 73.258167
+      },
+      "rtp_94": {
+        "beforeObservedReturnMultiplier": 0.207443,
+        "beforeObservedRtpPercent": 20.7443,
+        "afterObservedReturnMultiplier": 0.941765,
+        "afterObservedRtpPercent": 94.176467,
+        "deltaObservedReturnMultiplier": 0.734322,
+        "deltaObservedRtpPercent": 73.432167
+      },
+      "rtp_92": {
+        "beforeObservedReturnMultiplier": 0.200875,
+        "beforeObservedRtpPercent": 20.0875,
+        "afterObservedReturnMultiplier": 0.900894,
+        "afterObservedRtpPercent": 90.0894,
+        "deltaObservedReturnMultiplier": 0.700019,
+        "deltaObservedRtpPercent": 70.0019
+      }
+    },
+    "bonusBuyEnabled": {
+      "rtp_96": {
+        "beforeObservedReturnMultiplier": 0.005701,
+        "beforeObservedRtpPercent": 0.57015,
+        "afterObservedReturnMultiplier": 0.045243,
+        "afterObservedRtpPercent": 4.5243,
+        "deltaObservedReturnMultiplier": 0.039542,
+        "deltaObservedRtpPercent": 3.95415
+      },
+      "rtp_94": {
+        "beforeObservedReturnMultiplier": 0.005615,
+        "beforeObservedRtpPercent": 0.56155,
+        "afterObservedReturnMultiplier": 0.043891,
+        "afterObservedRtpPercent": 4.3891,
+        "deltaObservedReturnMultiplier": 0.038276,
+        "deltaObservedRtpPercent": 3.82755
+      },
+      "rtp_92": {
+        "beforeObservedReturnMultiplier": 0.005477,
+        "beforeObservedRtpPercent": 0.54765,
+        "afterObservedReturnMultiplier": 0.042012,
+        "afterObservedRtpPercent": 4.2012,
+        "deltaObservedReturnMultiplier": 0.036535,
+        "deltaObservedRtpPercent": 3.65355
+      }
+    }
+  },
+  "top_tuning_levers": [
+    "cluster_paytable_multipliers",
+    "feature_trigger_probability",
+    "free_spin_count_or_feature_spin_volume"
+  ],
+  "cap_frequency_reported": true,
+  "reusable_calibration_workflow_updated": true,
+  "second_pass_calibration_completed": true,
+  "rtp92_before_after": {
+    "beforeObservedReturnMultiplier": 0.900894,
+    "beforeObservedRtpPercent": 90.0894,
+    "afterObservedReturnMultiplier": 0.909716,
+    "afterObservedRtpPercent": 90.9716,
+    "deltaObservedReturnMultiplier": 0.008822,
+    "deltaObservedRtpPercent": 0.8822
+  },
+  "rtp96_rtp94_regression_check": {
+    "rtp_96": {
+      "regressed": false,
+      "deltaObservedRtpPercent": 0.0,
+      "status": "no_regression_detected"
+    },
+    "rtp_94": {
+      "regressed": false,
+      "deltaObservedRtpPercent": 0.0,
+      "status": "no_regression_detected"
+    }
+  },
+  "bonus_buy_ev_diagnostic_result": "bonus_buy_simulation_path_incomplete",
+  "rtp_volatility_profile_framework_completed": true,
+  "rtp_levels_defined": true,
+  "volatility_levels_defined": true,
+  "profile_matrix_created": true,
+  "profile_count": 9,
+  "expected_profile_count": 9,
+  "operator_profile_selection_defined": true,
+  "vabs_history_profile_fields_defined": true,
+  "registration_mapping_defined": true,
+  "reusable_skill_guidance_updated": true,
+  "volatility_profile_design_completed": true,
+  "volatility_levers_defined": true,
+  "simulator_supports_mathProfileId": true,
+  "all_9_profiles_smoke_tested": true,
+  "profile_count_tested": 9,
+  "volatility_metrics_reported": true,
+  "volatility_smoke_run_size": {
+    "profiles": 9,
+    "seedsPerProfile": 2,
+    "roundsPerSeed": 2000,
+    "totalBaseRounds": 36000,
+    "bonusBuyEnabled": false,
+    "jackpotEnabled": false
+  },
+  "volatility_smoke_observed_metrics": {
+    "LG_8001_RTP_LOW_VOL_LOW": {
+      "rtpLevel": "LOW",
+      "volatilityLevel": "LOW",
+      "observedRtpPercent": 96.790317,
+      "hitRate": 0.32875,
+      "standardDeviation": 2.02733,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_LOW_VOL_MEDIUM": {
+      "rtpLevel": "LOW",
+      "volatilityLevel": "MEDIUM",
+      "observedRtpPercent": 91.482036,
+      "hitRate": 0.2685,
+      "standardDeviation": 2.256998,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_LOW_VOL_HIGH": {
+      "rtpLevel": "LOW",
+      "volatilityLevel": "HIGH",
+      "observedRtpPercent": 86.059328,
+      "hitRate": 0.21475,
+      "standardDeviation": 3.186073,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_MEDIUM_VOL_LOW": {
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "LOW",
+      "observedRtpPercent": 97.698377,
+      "hitRate": 0.334,
+      "standardDeviation": 1.999909,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM": {
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "MEDIUM",
+      "observedRtpPercent": 97.2648,
+      "hitRate": 0.2825,
+      "standardDeviation": 2.36398,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_MEDIUM_VOL_HIGH": {
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "HIGH",
+      "observedRtpPercent": 85.435794,
+      "hitRate": 0.2205,
+      "standardDeviation": 2.695538,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_HIGH_VOL_LOW": {
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "LOW",
+      "observedRtpPercent": 101.452114,
+      "hitRate": 0.3275,
+      "standardDeviation": 2.124725,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_HIGH_VOL_MEDIUM": {
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "MEDIUM",
+      "observedRtpPercent": 99.923125,
+      "hitRate": 0.27175,
+      "standardDeviation": 2.467303,
+      "capFrequency": 0.0
+    },
+    "LG_8001_RTP_HIGH_VOL_HIGH": {
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "HIGH",
+      "observedRtpPercent": 89.493697,
+      "hitRate": 0.22425,
+      "standardDeviation": 2.788398,
+      "capFrequency": 0.0
+    }
+  },
+  "certification_status": false,
+  "profile_calibration_completed": true,
+  "calibration_harness_created": true,
+  "profile_adjustment_overlay_created": true,
+  "profiles_tested_count": 9,
+  "expected_profiles_count": 9,
+  "profiles_within_smoke_tolerance_count": 9,
+  "profiles_outside_smoke_tolerance_count": 0,
+  "volatility_ordering_preserved": true,
+  "bonus_buy_tuned": false
 }

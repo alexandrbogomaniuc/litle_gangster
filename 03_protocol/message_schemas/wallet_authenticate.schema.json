@@ -1,0 +1,22 @@
+{
+  "$schema": "[REDACTED_URL]",
+  "$id": "wallet_authenticate.schema.json",
+  "title": "BSG Common Wallet Authenticate Request Shape",
+  "type": "object",
+  "description": "Structural helper for fixture validation only. BSG CW live transport is XML/form-style, not asserted as JSON.",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "Wallet token; never persist raw production or donor values."
+    },
+    "hash": {
+      "type": "string",
+      "description": "MD5 hex over token plus PASS_KEY."
+    }
+  },
+  "required": [
+    "token",
+    "hash"
+  ],
+  "additionalProperties": true
+}

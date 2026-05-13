@@ -1,0 +1,188 @@
+{
+  "asset_policy": {
+    "all_objects_replacement_required": true,
+    "release_assets_approved": false,
+    "scaffold_assets_release_status": "blocked_from_release",
+    "scaffold_assets_used_for_preview": true
+  },
+  "blockers": [],
+  "dependencies": {
+    "math_package": "[PROJECT_ROOT]/04_math/alternatives/v0_2_6x5_cluster/math_package.json",
+    "math_result_fields": [],
+    "math_result_schema": "[PROJECT_ROOT]/04_math/alternatives/v0_2_6x5_cluster/result_schema.json",
+    "protocol_runtime_dependencies": [],
+    "runtime_boundary": "Backend/new-games runtime expected to author results; exact owner remains unproven.",
+    "wallet_boundary": "Wallet/accounting stays separate from scene/result animation data."
+  },
+  "expected_layers": [
+    "background",
+    "foreground"
+  ],
+  "five_by_three_used_for_target_mapping": false,
+  "grid": null,
+  "metadata": {
+    "release_assets_approved": false,
+    "scaffold_assets_blocked_from_release": true,
+    "supplemental_scaffold_preview_run_id": "playwright_20260510T094437Z"
+  },
+  "objects": [
+    {
+      "animation_states": [
+        "loading_loop"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 1,
+        "unit": "normalized",
+        "width": 1,
+        "x": 0,
+        "y": 0
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_background.jpg",
+      "dimensions": "1x1 normalized",
+      "layer": "background",
+      "math_result_dependencies": [],
+      "notes": "Original loading/background art pending; reference street/car style is a clue only. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.loading.background",
+      "object_type": "background",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.loading",
+      "status": "mapped_placeholder",
+      "z_index": 0
+    },
+    {
+      "animation_states": [
+        "intro_idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.14,
+        "unit": "normalized",
+        "width": 0.36,
+        "x": 0.32,
+        "y": 0.08
+      },
+      "current_asset_reference": "02_reference_assets/authorized_raw/playwright_20260510T094437Z/iteration_3/1309_1.23.0_assets_default_common_atlas_logos.atlas",
+      "dimensions": "0.36x0.14 normalized",
+      "layer": "foreground",
+      "math_result_dependencies": [],
+      "notes": "Little Gangster logo placeholder. New original logo required. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.loading.logo",
+      "object_type": "logo",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.loading",
+      "status": "mapped_placeholder",
+      "z_index": 10
+    },
+    {
+      "animation_states": [
+        "card_idle"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.34,
+        "unit": "normalized",
+        "width": 0.68,
+        "x": 0.16,
+        "y": 0.34
+      },
+      "dimensions": "0.68x0.34 normalized",
+      "layer": "foreground",
+      "math_result_dependencies": [],
+      "notes": "Three feature-card area placeholder for intro messaging. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.loading.feature_cards",
+      "object_type": "feature_cards",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.loading",
+      "status": "mapped_placeholder",
+      "z_index": 20
+    },
+    {
+      "animation_states": [
+        "pulse"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.06,
+        "unit": "normalized",
+        "width": 0.28,
+        "x": 0.36,
+        "y": 0.78
+      },
+      "dimensions": "0.28x0.06 normalized",
+      "layer": "foreground",
+      "math_result_dependencies": [],
+      "notes": "Click/tap to continue prompt placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.loading.continue_prompt",
+      "object_type": "prompt",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.loading",
+      "status": "mapped_placeholder",
+      "z_index": 30
+    },
+    {
+      "animation_states": [
+        "progress"
+      ],
+      "asset_reference": "02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/assets_default_common_atlas_fs_splash.ktx2",
+      "asset_source": "scaffold_reference",
+      "bounds": {
+        "height": 0.035,
+        "unit": "normalized",
+        "width": 0.44,
+        "x": 0.28,
+        "y": 0.88
+      },
+      "dimensions": "0.44x0.035 normalized",
+      "layer": "foreground",
+      "math_result_dependencies": [],
+      "notes": "Loading progress indicator placeholder. Supplemental scaffold preview/reference mapped; blocked from release.",
+      "object_id": "scene.loading.progress",
+      "object_type": "progress",
+      "ownership_status": "scaffold_internal_only",
+      "release_status": "blocked_from_release",
+      "replacement_required": true,
+      "scene_id": "scene.loading",
+      "status": "mapped_placeholder",
+      "z_index": 25
+    }
+  ],
+  "purpose": "Intro/loading and click-to-continue gate.",
+  "scene_id": "scene.loading",
+  "scene_name": "Loading scene",
+  "selected_math_layout": "6x5_cluster_provisional",
+  "selected_math_model_version": "v0.3_donor_feature_parity_provisional",
+  "status": "mapped_placeholder",
+  "viewport_applicability": [
+    "desktop",
+    "mobile"
+  ],
+  "current_gs_boundary": {
+    "client_role": "renderer_only",
+    "client_does_not_generate_production_rng": true,
+    "client_does_not_calculate_authoritative_win_outcome": true,
+    "wallet_accounting_is_separate_from_animation_rendering": true,
+    "registration_metadata_is_not_animation_or_result_schema": true,
+    "current_gs_result_owner_proven": false,
+    "full_game_client_builder_blocked_until_runtime_owner_and_result_api_review": true
+  },
+  "ownership_release_status": {
+    "donor_scaffold_assets_allowed_in_release": false,
+    "scaffold_assets_release_status": "blocked_from_release",
+    "new_v0_3_objects_release_status": "pending_replacement",
+    "replacement_required": true,
+    "final_assets_approved": false
+  }
+}

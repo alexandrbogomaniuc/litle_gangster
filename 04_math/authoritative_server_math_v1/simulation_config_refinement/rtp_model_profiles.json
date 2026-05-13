@@ -29,7 +29,12 @@
       "jackpotContributionTarget": 0.0,
       "featureContributionStatus": "provisional_pending_simulation",
       "configStatus": "simulation_ready_provisional",
-      "payoutScale": 1.0
+      "payoutScale": 1.0,
+      "rtpLevel": "HIGH",
+      "targetRtpPercent": 96.0,
+      "targetReturnMultiplier": 0.96,
+      "legacyProfileNaming": true,
+      "volatilityLevelsSupported": "LOW_MEDIUM_HIGH_matrix_pending_simulation"
     },
     "rtp_94": {
       "modelId": "rtp_94",
@@ -56,7 +61,12 @@
       "jackpotContributionTarget": 0.0,
       "featureContributionStatus": "provisional_pending_simulation",
       "configStatus": "simulation_ready_provisional",
-      "payoutScale": 0.96
+      "payoutScale": 0.96,
+      "rtpLevel": "MEDIUM",
+      "targetRtpPercent": 94.0,
+      "targetReturnMultiplier": 0.94,
+      "legacyProfileNaming": true,
+      "volatilityLevelsSupported": "LOW_MEDIUM_HIGH_matrix_pending_simulation"
     },
     "rtp_92": {
       "modelId": "rtp_92",
@@ -83,12 +93,40 @@
       "jackpotContributionTarget": 0.0,
       "featureContributionStatus": "provisional_pending_simulation",
       "configStatus": "simulation_ready_provisional",
-      "payoutScale": 0.92
+      "payoutScale": 0.92,
+      "rtpLevel": "LOW",
+      "targetRtpPercent": 92.0,
+      "targetReturnMultiplier": 0.92,
+      "legacyProfileNaming": true,
+      "volatilityLevelsSupported": "LOW_MEDIUM_HIGH_matrix_pending_simulation"
     }
   },
   "blockers": [
     "large_scale_rtp_calibration_pending",
     "bonus_buy_cost_ev_pending",
     "product_volatility_confirmation_pending"
-  ]
+  ],
+  "rtpVolatilityFramework": {
+    "rtpLevels": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "volatilityLevels": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "allowedRtpRangePercent": {
+      "minimum": 92.0,
+      "maximum": 99.0
+    },
+    "legacyMapping": {
+      "rtp_92": "LOW",
+      "rtp_94": "MEDIUM",
+      "rtp_96": "HIGH"
+    },
+    "profileMatrixPath": "../rtp_volatility_profile_matrix.json",
+    "operatorSelectionPolicy": "pretested_profiles_only_no_arbitrary_values"
+  }
 }

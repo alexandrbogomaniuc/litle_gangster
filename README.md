@@ -1,50 +1,40 @@
-# Little Gangster Raw-Safe Checkpoint Export
+# Little Gangster Raw-Safe Public Checkpoint
 
-This repository is a sanitized raw-safe checkpoint export.
-It is built from selected safe text files only.
-It uses byte-preserving copy for copied project files.
-It avoids the previous public export generation pipeline.
-It avoids whitespace rewriting and minification.
-It preserves physical line breaks.
+This repository is a raw-safe sanitized review checkpoint.
+It is not a release build.
+It is not a production client package.
+It is not a backend adapter implementation.
+It is not a registration artifact package.
+It is intended for external review of planning, math, QA, and workflow artifacts.
 
-## What This Is
+This checkpoint excludes donor and scaffold asset bodies.
+It excludes screenshots, HAR files, event logs, and raw network logs.
+It excludes raw secrets, raw tokens, SIDs, signatures, private links, and emails.
+It excludes full donor URLs and tokenized URLs.
+It excludes local browser profiles and cache folders.
+It excludes build artifacts, dist folders, and production client code.
 
-This is a review checkpoint for Little Gangster planning artifacts.
-It contains selected safe documents, reports, schemas, and fixture notes.
-It includes a WorkflowOrchestrator skill snapshot for review.
-It is intended for external inspection of committed files.
-It is not intended to run the game.
+Recent checkpoint content includes fast-lane workflow updates.
+It includes MathModelDesigner calibration fast-lane guidance.
+It includes the RTP and volatility profile matrix framework.
+It includes the 9-profile RTP by volatility matrix.
+It includes volatility profile simulation design artifacts.
+It includes the 3x3 calibration harness and first-pass smoke results.
+It includes simulator model-completeness and calibration outputs.
+It includes authoritative simulation and config refinement artifacts.
+It includes current skill handoffs and the latest compact sprint report.
 
-## What This Is Not
-
-This is not a release build.
-This is not a production client.
-This is not backend runtime code.
-This is not registration output.
-This is not a wallet or launch test package.
-This is not release approval.
-
-## Safety Boundaries
-
-No donor asset bodies are included.
-No scaffold asset bodies are included.
-No screenshots are included.
-No HAR files are included.
-No raw network logs are included.
-No raw secrets are intended to be included.
-No full donor URLs are intended to be included.
-No tokenized URLs are intended to be included.
-No local browser profiles are included.
-
-## Current Gates
-
+The 3x3 RTP and volatility framework is completed for planning.
+The 3x3 smoke calibration pass completed locally.
+Exact values are not final.
+No values are certified.
+Bonus-buy EV remains blocked.
+Max-win tail frequency remains unproven.
+Large-sample stability remains pending.
 Backend adapter implementation remains blocked.
 GameClientBuilder implementation remains blocked.
 GameServerRegistrar generation remains blocked.
-Wallet and launch tests remain blocked.
-Release remains blocked.
+Release approval remains blocked.
 
-## Next Step
-
-The next sprint should be MathModelDesigner calibration only after this checkpoint validates.
-Do not proceed to backend, client, registration, wallet, or release work from this checkpoint.
+Next sprint recommendation:
+MathModelDesigner large-sample stability and bonus-buy EV decision sprint.

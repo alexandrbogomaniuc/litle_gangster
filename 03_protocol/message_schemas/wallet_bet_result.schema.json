@@ -1,0 +1,69 @@
+{
+  "$schema": "[REDACTED_URL]",
+  "$id": "wallet_bet_result.schema.json",
+  "title": "BSG Common Wallet Bet Result Request Shape",
+  "type": "object",
+  "description": "Structural helper for fixture validation only. BSG CW live transport is XML/form-style, not asserted as JSON.",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "bet": {
+      "type": "string",
+      "description": "Format: bet_amount|transactionId."
+    },
+    "win": {
+      "type": "string",
+      "description": "Format: win_amount|transactionId."
+    },
+    "roundId": {
+      "type": "string"
+    },
+    "gameId": {
+      "type": "string"
+    },
+    "gameSessionId": {
+      "type": "string"
+    },
+    "isRoundFinished": {
+      "type": [
+        "boolean",
+        "string"
+      ]
+    },
+    "hash": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "negativeBet": {
+      "type": "string"
+    },
+    "clientType": {
+      "type": "string"
+    },
+    "promoWinAmount": {
+      "type": "string"
+    },
+    "jpWin": {
+      "type": "string"
+    },
+    "jpContribution": {
+      "type": "string"
+    },
+    "jpContributionDetails": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "bet",
+    "win",
+    "roundId",
+    "gameId",
+    "gameSessionId",
+    "hash"
+  ],
+  "additionalProperties": true
+}

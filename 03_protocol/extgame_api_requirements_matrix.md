@@ -10,7 +10,8 @@ This matrix records advisory checklist items only. It is not a selected Little G
 | Checklist item | If ExtGame is later proven | Current-GS/new-games translation | Current status |
 |---|---|---|---|
 | ExtGame lane identification | Map external endpoint launch/runtime separately. | Keep ExtGame candidate while proving current lane from GS source/config. | unverified |
-| `processTransactions` | Define exact request/response, idempotency, balance, and settlement rules. | Verify reserve/settle/process-equivalent behavior through `/slot/v1/playround`, feature actions, wallet bridge, and history write. | advisory |
+| `processTransactions` | Define exact request/response, idempotency, balance, and settlement rules. | Verify reserve/settle/process-equivalent behavior through `/slot/v1/playround`, feature actions, wallet bridge, and history write. |
+advisory |
 | `gameState` | Define external-side persisted state. | Define restore-safe backend state for cascades, feature modes, cap, pending collect, and history. | advisory |
 | `roundFinishedHelper` | Define external or template helper inputs. | Verify current GS `roundFinishedHelper` / `endRoundSignature` need and map math round-complete field. | advisory |
 | `restartGame` | Define external restart endpoint. | Verify current GS `restartGame`, FRB restart, and `/slot/v1/resumegame` behavior. | advisory |

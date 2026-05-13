@@ -53,3 +53,9 @@ Validation keyword coverage:
 - volatility.
 - bonus-buy EV.
 - cap multiplier.
+
+## 2026-05-13T08:55:01Z - RTP / Volatility Matrix Generalization
+
+Future games must use LOW/MEDIUM/HIGH RTP labels and LOW/MEDIUM/HIGH volatility labels, producing nine approved `mathProfileId` values. Little Gangster maps LOW/MEDIUM/HIGH RTP provisionally to 92.00/94.00/96.00. Operator selection is
+pretested-profile-only; arbitrary RTP or volatility values are blocked. Current blocker: `gs_profile_matrix_storage_unproven`.
+

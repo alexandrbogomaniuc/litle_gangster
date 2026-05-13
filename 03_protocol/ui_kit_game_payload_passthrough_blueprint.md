@@ -5,7 +5,8 @@ Target: `Gamesv1/packages/ui-kit/src/shell/presentation/PremiumPresentationMappe
 
 ## Current Behavior
 
-`PresentationPayloadSchema.safeParse(payloadObject)` parses known generic fields. The mapper returns `RoundPresentationModel` with reels, symbol grid, counters, messages, sound cues, animation cues, and labels. It does not expose `gamePayload`.
+`PresentationPayloadSchema.safeParse(payloadObject)` parses known generic fields. The mapper returns `RoundPresentationModel` with reels, symbol grid, counters, messages, sound cues, animation cues, and labels. It does not expose
+`gamePayload`.
 
 Evidence label: PROVEN_MAPPER_GAP.
 

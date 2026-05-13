@@ -1,21 +1,22 @@
 # Public Export Notice
 
-This is a sanitized raw-safe checkpoint export.
-The export is for review only.
+This is a sanitized raw-safe public checkpoint.
+It is provided for review only.
 It is not a release build.
-It is not a production client.
-It is not backend implementation.
-It is not registration generation.
-It is not wallet approval.
-It is not release approval.
+It is not a production math package.
+It is not a backend implementation.
+It is not a client implementation.
+It is not a registration package.
 
-No donor or scaffold asset bodies are included.
-No screenshots, HAR files, or raw logs are included.
-No raw secrets are intended to be included.
-No full donor URLs are intended to be included.
-No tokenized URLs are intended to be included.
-No local browser profiles are included.
+Excluded content:
+Donor asset bodies are excluded.
+Scaffold asset bodies are excluded.
+Screenshots are excluded.
+HAR and raw network logs are excluded.
+Raw secrets and raw tokens are excluded.
+Full donor URLs and tokenized URLs are excluded.
+Private local paths are redacted.
+Binary media files are excluded.
+Build and dist folders are excluded.
 
-Unsafe files are excluded instead of sanitized in place.
-Line breaks are preserved for copied files.
-Validation must use project-local validators outside this export.
+All implementation and release gates remain closed.

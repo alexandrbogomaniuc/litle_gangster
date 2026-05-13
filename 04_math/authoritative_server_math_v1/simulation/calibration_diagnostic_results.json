@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "calibration-diagnostics-v1",
+  "createdAt": "2026-05-13T03:56:32Z",
+  "sprint": "MathModelDesigner calibration diagnostics and limited tuning",
+  "simulatorSanityStatus": "runs_but_not_reliable_for_calibration",
+  "simulatorBugFound": true,
+  "simulatorBugClassification": [
+    "target_rtp_unit_mismatch_or_uncompared_percent_vs_multiplier",
+    "cluster_bet_denominator_not_modeled",
+    "free_spin_feature_mode_bonus_buy_configs_not_integrated_into_simulation",
+    "provisional_symbol_weights_paytable_underpowered_or_unvalidated"
+  ],
+  "simulatorPatched": false,
+  "patchReason": "No tiny local implementation bug was safely isolated; defects are structural calibration/modeling gaps, so tuning was skipped.",
+  "diagnosticRunSize": {
+    "models": [
+      "rtp_96",
+      "rtp_94",
+      "rtp_92"
+    ],
+    "seedsPerModel": 3,
+    "roundsPerSeed": 10000,
+    "totalRounds": 90000,
+    "bonusBuyEnabled": false,
+    "jackpotEnabled": false,
+    "certificationClaim": false
+  },
+  "auditFindings": {
+    "targetRtpUnit": {
+      "status": "defect_for_calibration",
+      "finding": "Profiles store targetRtp as 96.0/94.0/92.0 percent-style values, while the simulator reports observedReturnMultiplierPerRound as a multiplier such as 0.205943."
+    },
+    "observedReturnFormula": {
+      "status": "documented",
+      "formula": "sum(round.totalWinMultiplier) / roundCount"
+    },
+    "totalBetDenominator": {
+      "status": "missing_for_calibration",
+      "finding": "Simulator does not load game_settings_profiles clusterBaseBetCredits/minTotalBet/defaultTotalBet/maxTotalBet and does not normalize by an explicit total bet denominator."
+    },
+    "clusterBaseBetHandling": {
+      "status": "incomplete",
+      "finding": "Cluster paytable wins are treated directly as multipliers; cluster-equivalent bet metadata is not represented in calculations."
+    },
+    "symbolGridGeneration": {
+      "status": "present",
+      "finding": "Weighted random symbol generation is deterministic by seed and profile weights."
+    },
+    "clusterDetection": {
+      "status": "present_but_simplified",
+      "finding": "Adjacent same-symbol clusters are detected with minimum size 5; wild/rainbow/coin/special are excluded and wild substitution is not modeled."
+    },
+    "clusterPaytableLookup": {
+      "status": "present_but_provisional",
+      "finding": "Lookup uses configured symbol and cluster-size ranges, but paytable values are provisional and not certified."
+    },
+    "cascadeRefillLogic": {
+      "status": "present",
+      "finding": "Winning cells are removed, columns collapse downward, and refills are generated up to the configured cascade limit."
+    },
+    "maxWinCapHandling": {
+      "status": "present_smoke_only",
+      "finding": "Cap is applied to total win multiplier, but no cap hits occurred in diagnostic runs."
+    },
+    "featureContribution": {
+      "status": "incomplete_for_calibration",
+      "finding": "Coin reveal contributes to total win, while golden/rainbow/feature mode buckets are diagnostic counters; free-spin and bonus-buy EV are not simulated."
+    },
+    "bonusBuy": {
+      "status": "blocked_pending_ev_model",
+      "finding": "bonus_buy_rules exists, but simulator run disabled bonus buy and current EV is not calibrated or certified."
+    },
+    "freeSpinsFeatureModes": {
+      "status": "blocked_pending_simulation_model",
+      "finding": "free_spin_rules and feature_mode_rules exist, but current simulator does not execute full free-spin/feature-mode loops."
+    },
+    "winTierCalculation": {
+      "status": "present_smoke_only",
+      "finding": "Win tiers are derived from total win multiplier thresholds."
+    },
+    "seedDeterminism": {
+      "status": "present",
+      "finding": "Runs are deterministic for model and seed."
+    },
+    "skeletonStatus": {
+      "status": "confirmed",
+      "finding": "Simulator is a non-production deterministic smoke simulator, not certification math."
+    }
+  },
+  "runs": [
+    {
+      "modelId": "rtp_96",
+      "seed": 96001,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.21557,
+      "targetRtpProfileValue": 96.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.237883,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 29,
+        "none": 8049,
+        "small": 1922
+      },
+      "featureContributionSummary": {
+        "baseGame": 521.7,
+        "coinReveal": 1634.0,
+        "featureModes": 202.1
+      }
+    },
+    {
+      "modelId": "rtp_96",
+      "seed": 96002,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.203985,
+      "targetRtpProfileValue": 96.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.180147,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 26,
+        "none": 8065,
+        "small": 1909
+      },
+      "featureContributionSummary": {
+        "baseGame": 542.85,
+        "coinReveal": 1497.0,
+        "featureModes": 206.25
+      }
+    },
+    {
+      "modelId": "rtp_96",
+      "seed": 96003,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.198275,
+      "targetRtpProfileValue": 96.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.099611,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 21,
+        "none": 8001,
+        "small": 1978
+      },
+      "featureContributionSummary": {
+        "baseGame": 559.75,
+        "coinReveal": 1423.0,
+        "featureModes": 209.5
+      }
+    },
+    {
+      "modelId": "rtp_94",
+      "seed": 94001,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.201627,
+      "targetRtpProfileValue": 94.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.256242,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 32,
+        "none": 8138,
+        "small": 1830
+      },
+      "featureContributionSummary": {
+        "baseGame": 514.272,
+        "coinReveal": 1502.0,
+        "featureModes": 207.75
+      }
+    },
+    {
+      "modelId": "rtp_94",
+      "seed": 94002,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.220625,
+      "targetRtpProfileValue": 94.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.229621,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 28,
+        "none": 7967,
+        "small": 2005
+      },
+      "featureContributionSummary": {
+        "baseGame": 577.248,
+        "coinReveal": 1629.0,
+        "featureModes": 211.25
+      }
+    },
+    {
+      "modelId": "rtp_94",
+      "seed": 94003,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.202065,
+      "targetRtpProfileValue": 94.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.149579,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 24,
+        "none": 8024,
+        "small": 1952
+      },
+      "featureContributionSummary": {
+        "baseGame": 549.648,
+        "coinReveal": 1471.0,
+        "featureModes": 219.45
+      }
+    },
+    {
+      "modelId": "rtp_92",
+      "seed": 92001,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.19405,
+      "targetRtpProfileValue": 92.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.091942,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 21,
+        "none": 7966,
+        "small": 2013
+      },
+      "featureContributionSummary": {
+        "baseGame": 536.498,
+        "coinReveal": 1404.0,
+        "featureModes": 214.3
+      }
+    },
+    {
+      "modelId": "rtp_92",
+      "seed": 92002,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.201531,
+      "targetRtpProfileValue": 92.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.175966,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 26,
+        "none": 8042,
+        "small": 1932
+      },
+      "featureContributionSummary": {
+        "baseGame": 513.314,
+        "coinReveal": 1502.0,
+        "featureModes": 200.35
+      }
+    },
+    {
+      "modelId": "rtp_92",
+      "seed": 92003,
+      "roundCount": 10000,
+      "observedReturnMultiplierPerRound": 0.199731,
+      "targetRtpProfileValue": 92.0,
+      "targetRtpProfileUnit": "percent_value_in_profile_96_means_96_percent",
+      "standardDeviation": 1.194849,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 27,
+        "none": 8083,
+        "small": 1890
+      },
+      "featureContributionSummary": {
+        "baseGame": 497.306,
+        "coinReveal": 1500.0,
+        "featureModes": 212.85
+      }
+    }
+  ],
+  "aggregateResults": {
+    "rtp_96": {
+      "seedCount": 3,
+      "roundsPerSeed": 10000,
+      "totalRounds": 30000,
+      "meanObservedReturnMultiplierPerRound": 0.205943,
+      "minObservedReturnMultiplierPerRound": 0.198275,
+      "maxObservedReturnMultiplierPerRound": 0.21557,
+      "sampleStandardDeviationAcrossSeeds": 0.008812,
+      "interpretation": "stable_low_smoke_return_not_explained_by_75_round_sample_size_alone"
+    },
+    "rtp_94": {
+      "seedCount": 3,
+      "roundsPerSeed": 10000,
+      "totalRounds": 30000,
+      "meanObservedReturnMultiplierPerRound": 0.208106,
+      "minObservedReturnMultiplierPerRound": 0.201627,
+      "maxObservedReturnMultiplierPerRound": 0.220625,
+      "sampleStandardDeviationAcrossSeeds": 0.010844,
+      "interpretation": "stable_low_smoke_return_not_explained_by_75_round_sample_size_alone"
+    },
+    "rtp_92": {
+      "seedCount": 3,
+      "roundsPerSeed": 10000,
+      "totalRounds": 30000,
+      "meanObservedReturnMultiplierPerRound": 0.198437,
+      "minObservedReturnMultiplierPerRound": 0.19405,
+      "maxObservedReturnMultiplierPerRound": 0.201531,
+      "sampleStandardDeviationAcrossSeeds": 0.003905,
+      "interpretation": "stable_low_smoke_return_not_explained_by_75_round_sample_size_alone"
+    }
+  },
+  "diagnosis": {
+    "tinySampleSizeOnly": false,
+    "incorrectRtpOrReturnCalculation": true,
+    "incorrectBetNormalization": true,
+    "incorrectClusterWinEvaluation": "not_proven_but_simplified_wild_and_special_handling_likely_lowers_return",
+    "missingCascadeContribution": false,
+    "missingFreeSpinFeatureContribution": true,
+    "underpoweredProvisionalWeightsPaytable": true,
+    "targetRtpUnitMismatch": true,
+    "anotherSimulatorConfigIssue": "feature and bonus-buy config files are not yet integrated into payout simulation"
+  },
+  "topBlockers": [
+    "Define and implement explicit RTP denominator: target percent vs observed multiplier and cluster-equivalent total bet.",
+    "Integrate free-spin, feature-mode, and bonus-buy EV modules before further calibration.",
+    "Validate/tune symbol weights and cluster paytable only after denominator and feature contribution model are fixed."
+  ],
+  "nextTuningActions": [
+    "Patch the non-production simulator to emit both multiplier and percent RTP using explicit total bet metadata from game_settings_profiles.",
+    "Add deterministic free-spin/feature-mode and bonus-buy EV smoke paths from existing rule JSON before paytable tuning.",
+    "Run a small A/B diagnostic after model completeness fixes; avoid artificial post-spin payout scaling for release math."
+  ],
+  "gates": {
+    "backendAdapterImplementationAllowed": false,
+    "gameServerRegistrarGenerationAllowed": false,
+    "gameClientBuilderImplementationAllowed": false,
+    "releaseApproved": false
+  }
+}

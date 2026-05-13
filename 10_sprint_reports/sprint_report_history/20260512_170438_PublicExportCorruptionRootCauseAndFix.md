@@ -56,7 +56,7 @@ Fix the public export newline-collapse/corruption trust failure and validate the
 
 - Public export corruption confirmed: yes, the external contradiction was accepted as a serious validation failure.
 - Root cause found: exact collapse mechanism not proven; validation trust-boundary failure proven.
-- Pushed commit hash: `25cbf1c3f8ce1d6f89871f11a43f40478a8e2e6c`.
+- Pushed commit hash : [REDACTED_FIXTURE]
 - Project-local raw validator passed: yes.
 - public_export_validation_passed: true for replacement commit `25cbf1c3f8ce1d6f89871f11a43f40478a8e2e6c`.
 - Release approved: false.

@@ -1,0 +1,895 @@
+{
+  "schemaVersion": "model-completeness-results-v1",
+  "createdAt": "2026-05-13T04:39:10Z",
+  "sprint": "MathModelDesigner simulator model-completeness fix",
+  "simulatorPatched": true,
+  "simulatorSanityStatusAfterPatch": "model_complete_for_local_calibration_smoke_not_certified",
+  "exactValuesFinal": false,
+  "certificationClaim": false,
+  "runSize": {
+    "models": [
+      "rtp_96",
+      "rtp_94",
+      "rtp_92"
+    ],
+    "seeds": [
+      8101,
+      8102
+    ],
+    "roundsPerSeed": 5000,
+    "bonusBuyDisabledRuns": true,
+    "bonusBuyEnabledRuns": true,
+    "bonusBuyEnabledRunReason": "costMultiplierCandidates and bonusBuyRtp candidates exist, but EV remains pending and is reported as a blocker",
+    "jackpotEnabled": false,
+    "totalRoundRecords": 60000
+  },
+  "requiredFixes": {
+    "rtpTargetUnitMismatch": "fixed_by_reporting_targetRtpPercent_and_targetReturnMultiplier",
+    "explicitRtpDenominator": "fixed_by_totalBetAmount_totalWinAmount_observedReturnMultiplier_observedRtpPercent",
+    "clusterBaseBetDenominatorModel": "fixed_by_loading_game_settings_profile_and_failing_on_missing_cluster_bet_metadata",
+    "freeSpinSmokePath": "fixed_by_feature_trigger_probability_and_startingSpins_smoke_loop",
+    "featureModeSmokePath": "fixed_by_weighted_mode_selection_from_feature_mode_rules",
+    "bonusBuyEvSmokePath": "implemented_as_smoke_path_with_cost_candidates_and_ev_pending_status",
+    "percentVsMultiplierReporting": "fixed_by_dual_fields_in_model_summary"
+  },
+  "summary": {
+    "bonusBuyDisabled": {
+      "rtp_96": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.2205,
+        "meanObservedRtpPercent": 22.05,
+        "minObservedReturnMultiplier": 0.21083,
+        "maxObservedReturnMultiplier": 0.23017,
+        "targetRtpPercent": 96.0,
+        "targetReturnMultiplier": 0.96,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_94": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.207443,
+        "meanObservedRtpPercent": 20.7443,
+        "minObservedReturnMultiplier": 0.196123,
+        "maxObservedReturnMultiplier": 0.218763,
+        "targetRtpPercent": 94.0,
+        "targetReturnMultiplier": 0.94,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_92": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.200875,
+        "meanObservedRtpPercent": 20.0875,
+        "minObservedReturnMultiplier": 0.196816,
+        "maxObservedReturnMultiplier": 0.204934,
+        "targetRtpPercent": 92.0,
+        "targetReturnMultiplier": 0.92,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      }
+    },
+    "bonusBuyEnabled": {
+      "rtp_96": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.005701,
+        "meanObservedRtpPercent": 0.57015,
+        "minObservedReturnMultiplier": 0.00565,
+        "maxObservedReturnMultiplier": 0.005753,
+        "targetRtpPercent": 96.0,
+        "targetReturnMultiplier": 0.96,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_94": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.005615,
+        "meanObservedRtpPercent": 0.56155,
+        "minObservedReturnMultiplier": 0.005463,
+        "maxObservedReturnMultiplier": 0.005768,
+        "targetRtpPercent": 94.0,
+        "targetReturnMultiplier": 0.94,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      },
+      "rtp_92": {
+        "seedCount": 2,
+        "roundsPerSeed": 5000,
+        "totalRounds": 10000,
+        "meanObservedReturnMultiplier": 0.005477,
+        "meanObservedRtpPercent": 0.54765,
+        "minObservedReturnMultiplier": 0.005397,
+        "maxObservedReturnMultiplier": 0.005556,
+        "targetRtpPercent": 92.0,
+        "targetReturnMultiplier": 0.92,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "betDenominator": 100.0
+      }
+    }
+  },
+  "runs": [
+    {
+      "runMode": "bonusBuyDisabled",
+      "seed": 8101,
+      "modelId": "rtp_96",
+      "roundCount": 5000,
+      "targetRtpPercent": 96.0,
+      "targetReturnMultiplier": 0.96,
+      "observedReturnMultiplier": 0.21083,
+      "observedRtpPercent": 21.083,
+      "totalBetAmount": 500000.0,
+      "totalWinAmount": 105415.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 5000,
+        "baseBetTotal": 500000.0,
+        "baseWinTotal": 28625.0,
+        "baseObservedReturnMultiplier": 0.05725,
+        "cascadeCount": 871,
+        "clusterHitCount": 903
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 84,
+        "featureSpins": 824,
+        "featureWinTotal": 4190.0,
+        "featureObservedReturnMultiplier": 0.00838
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 105415.0,
+      "cappedWinTotal": 105415.0,
+      "winTierDistribution": {
+        "big": 12,
+        "none": 3968,
+        "small": 1020
+      }
+    },
+    {
+      "runMode": "bonusBuyDisabled",
+      "seed": 8101,
+      "modelId": "rtp_94",
+      "roundCount": 5000,
+      "targetRtpPercent": 94.0,
+      "targetReturnMultiplier": 0.94,
+      "observedReturnMultiplier": 0.218763,
+      "observedRtpPercent": 21.87632,
+      "totalBetAmount": 500000.0,
+      "totalWinAmount": 109381.6,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 5000,
+        "baseBetTotal": 500000.0,
+        "baseWinTotal": 29265.6,
+        "baseObservedReturnMultiplier": 0.058531,
+        "cascadeCount": 924,
+        "clusterHitCount": 959
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 87,
+        "featureSpins": 852,
+        "featureWinTotal": 5616.0,
+        "featureObservedReturnMultiplier": 0.011232
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 109381.6,
+      "cappedWinTotal": 109381.6,
+      "winTierDistribution": {
+        "big": 14,
+        "none": 3918,
+        "small": 1068
+      }
+    },
+    {
+      "runMode": "bonusBuyDisabled",
+      "seed": 8101,
+      "modelId": "rtp_92",
+      "roundCount": 5000,
+      "targetRtpPercent": 92.0,
+      "targetReturnMultiplier": 0.92,
+      "observedReturnMultiplier": 0.204934,
+      "observedRtpPercent": 20.4934,
+      "totalBetAmount": 500000.0,
+      "totalWinAmount": 102467.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 5000,
+        "baseBetTotal": 500000.0,
+        "baseWinTotal": 24899.8,
+        "baseObservedReturnMultiplier": 0.0498,
+        "cascadeCount": 819,
+        "clusterHitCount": 847
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 97,
+        "featureSpins": 968,
+        "featureWinTotal": 5667.2,
+        "featureObservedReturnMultiplier": 0.011334
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 102467.0,
+      "cappedWinTotal": 102467.0,
+      "winTierDistribution": {
+        "big": 12,
+        "none": 3962,
+        "small": 1026
+      }
+    },
+    {
+      "runMode": "bonusBuyDisabled",
+      "seed": 8102,
+      "modelId": "rtp_96",
+      "roundCount": 5000,
+      "targetRtpPercent": 96.0,
+      "targetReturnMultiplier": 0.96,
+      "observedReturnMultiplier": 0.23017,
+      "observedRtpPercent": 23.017,
+      "totalBetAmount": 500000.0,
+      "totalWinAmount": 115085.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 5000,
+        "baseBetTotal": 500000.0,
+        "baseWinTotal": 29965.0,
+        "baseObservedReturnMultiplier": 0.05993,
+        "cascadeCount": 932,
+        "clusterHitCount": 968
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 87,
+        "featureSpins": 860,
+        "featureWinTotal": 4220.0,
+        "featureObservedReturnMultiplier": 0.00844
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 115085.0,
+      "cappedWinTotal": 115085.0,
+      "winTierDistribution": {
+        "big": 13,
+        "none": 3894,
+        "small": 1093
+      }
+    },
+    {
+      "runMode": "bonusBuyDisabled",
+      "seed": 8102,
+      "modelId": "rtp_94",
+      "roundCount": 5000,
+      "targetRtpPercent": 94.0,
+      "targetReturnMultiplier": 0.94,
+      "observedReturnMultiplier": 0.196123,
+      "observedRtpPercent": 19.61232,
+      "totalBetAmount": 500000.0,
+      "totalWinAmount": 98061.6,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 5000,
+        "baseBetTotal": 500000.0,
+        "baseWinTotal": 26486.4,
+        "baseObservedReturnMultiplier": 0.052973,
+        "cascadeCount": 863,
+        "clusterHitCount": 899
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 102,
+        "featureSpins": 1008,
+        "featureWinTotal": 5275.2,
+        "featureObservedReturnMultiplier": 0.01055
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 98061.6,
+      "cappedWinTotal": 98061.6,
+      "winTierDistribution": {
+        "big": 10,
+        "none": 3956,
+        "small": 1034
+      }
+    },
+    {
+      "runMode": "bonusBuyDisabled",
+      "seed": 8102,
+      "modelId": "rtp_92",
+      "roundCount": 5000,
+      "targetRtpPercent": 92.0,
+      "targetReturnMultiplier": 0.92,
+      "observedReturnMultiplier": 0.196816,
+      "observedRtpPercent": 19.68156,
+      "totalBetAmount": 500000.0,
+      "totalWinAmount": 98407.8,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 5000,
+        "baseBetTotal": 500000.0,
+        "baseWinTotal": 27600.0,
+        "baseObservedReturnMultiplier": 0.0552,
+        "cascadeCount": 916,
+        "clusterHitCount": 961
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 80,
+        "featureSpins": 804,
+        "featureWinTotal": 4107.8,
+        "featureObservedReturnMultiplier": 0.008216
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 98407.8,
+      "cappedWinTotal": 98407.8,
+      "winTierDistribution": {
+        "big": 11,
+        "none": 3919,
+        "small": 1070
+      }
+    },
+    {
+      "runMode": "bonusBuyEnabled",
+      "seed": 8101,
+      "modelId": "rtp_96",
+      "roundCount": 5000,
+      "targetRtpPercent": 96.0,
+      "targetReturnMultiplier": 0.96,
+      "observedReturnMultiplier": 0.005753,
+      "observedRtpPercent": 0.575286,
+      "totalBetAmount": 62495000.0,
+      "totalWinAmount": 359525.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 0,
+        "baseBetTotal": 0.0,
+        "baseWinTotal": 0.0,
+        "baseObservedReturnMultiplier": 0,
+        "cascadeCount": 0,
+        "clusterHitCount": 0
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 0,
+        "featureSpins": 49996,
+        "featureWinTotal": 0.0,
+        "featureObservedReturnMultiplier": 0.0
+      },
+      "bonusBuySmoke": {
+        "status": "provisional_smoke_path_ev_pending",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 62495000.0,
+        "bonusBuyWinTotal": 359525.0,
+        "bonusBuyObservedReturnMultiplier": 0.005753
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 359525.0,
+      "cappedWinTotal": 359525.0,
+      "winTierDistribution": {
+        "big": 13,
+        "none": 891,
+        "small": 4096
+      }
+    },
+    {
+      "runMode": "bonusBuyEnabled",
+      "seed": 8101,
+      "modelId": "rtp_94",
+      "roundCount": 5000,
+      "targetRtpPercent": 94.0,
+      "targetReturnMultiplier": 0.94,
+      "observedReturnMultiplier": 0.005768,
+      "observedRtpPercent": 0.57683,
+      "totalBetAmount": 62532500.0,
+      "totalWinAmount": 360706.4,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 0,
+        "baseBetTotal": 0.0,
+        "baseWinTotal": 0.0,
+        "baseObservedReturnMultiplier": 0,
+        "cascadeCount": 0,
+        "clusterHitCount": 0
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 0,
+        "featureSpins": 50026,
+        "featureWinTotal": 0.0,
+        "featureObservedReturnMultiplier": 0.0
+      },
+      "bonusBuySmoke": {
+        "status": "provisional_smoke_path_ev_pending",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 62532500.0,
+        "bonusBuyWinTotal": 360706.4,
+        "bonusBuyObservedReturnMultiplier": 0.005768
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 360706.4,
+      "cappedWinTotal": 360706.4,
+      "winTierDistribution": {
+        "big": 19,
+        "none": 895,
+        "small": 4086
+      }
+    },
+    {
+      "runMode": "bonusBuyEnabled",
+      "seed": 8101,
+      "modelId": "rtp_92",
+      "roundCount": 5000,
+      "targetRtpPercent": 92.0,
+      "targetReturnMultiplier": 0.92,
+      "observedReturnMultiplier": 0.005556,
+      "observedRtpPercent": 0.55557,
+      "totalBetAmount": 62327500.0,
+      "totalWinAmount": 346273.2,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 0,
+        "baseBetTotal": 0.0,
+        "baseWinTotal": 0.0,
+        "baseObservedReturnMultiplier": 0,
+        "cascadeCount": 0,
+        "clusterHitCount": 0
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 0,
+        "featureSpins": 49862,
+        "featureWinTotal": 0.0,
+        "featureObservedReturnMultiplier": 0.0
+      },
+      "bonusBuySmoke": {
+        "status": "provisional_smoke_path_ev_pending",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 62327500.0,
+        "bonusBuyWinTotal": 346273.2,
+        "bonusBuyObservedReturnMultiplier": 0.005556
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 346273.2,
+      "cappedWinTotal": 346273.2,
+      "winTierDistribution": {
+        "big": 18,
+        "none": 938,
+        "small": 4044
+      }
+    },
+    {
+      "runMode": "bonusBuyEnabled",
+      "seed": 8102,
+      "modelId": "rtp_96",
+      "roundCount": 5000,
+      "targetRtpPercent": 96.0,
+      "targetReturnMultiplier": 0.96,
+      "observedReturnMultiplier": 0.00565,
+      "observedRtpPercent": 0.565035,
+      "totalBetAmount": 62305000.0,
+      "totalWinAmount": 352045.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 0,
+        "baseBetTotal": 0.0,
+        "baseWinTotal": 0.0,
+        "baseObservedReturnMultiplier": 0,
+        "cascadeCount": 0,
+        "clusterHitCount": 0
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 0,
+        "featureSpins": 49844,
+        "featureWinTotal": 0.0,
+        "featureObservedReturnMultiplier": 0.0
+      },
+      "bonusBuySmoke": {
+        "status": "provisional_smoke_path_ev_pending",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 62305000.0,
+        "bonusBuyWinTotal": 352045.0,
+        "bonusBuyObservedReturnMultiplier": 0.00565
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 352045.0,
+      "cappedWinTotal": 352045.0,
+      "winTierDistribution": {
+        "big": 12,
+        "none": 897,
+        "small": 4091
+      }
+    },
+    {
+      "runMode": "bonusBuyEnabled",
+      "seed": 8102,
+      "modelId": "rtp_94",
+      "roundCount": 5000,
+      "targetRtpPercent": 94.0,
+      "targetReturnMultiplier": 0.94,
+      "observedReturnMultiplier": 0.005463,
+      "observedRtpPercent": 0.546303,
+      "totalBetAmount": 62380000.0,
+      "totalWinAmount": 340784.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 0,
+        "baseBetTotal": 0.0,
+        "baseWinTotal": 0.0,
+        "baseObservedReturnMultiplier": 0,
+        "cascadeCount": 0,
+        "clusterHitCount": 0
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 0,
+        "featureSpins": 49904,
+        "featureWinTotal": 0.0,
+        "featureObservedReturnMultiplier": 0.0
+      },
+      "bonusBuySmoke": {
+        "status": "provisional_smoke_path_ev_pending",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 62380000.0,
+        "bonusBuyWinTotal": 340784.0,
+        "bonusBuyObservedReturnMultiplier": 0.005463
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 340784.0,
+      "cappedWinTotal": 340784.0,
+      "winTierDistribution": {
+        "big": 11,
+        "none": 942,
+        "small": 4047
+      }
+    },
+    {
+      "runMode": "bonusBuyEnabled",
+      "seed": 8102,
+      "modelId": "rtp_92",
+      "roundCount": 5000,
+      "targetRtpPercent": 92.0,
+      "targetReturnMultiplier": 0.92,
+      "observedReturnMultiplier": 0.005397,
+      "observedRtpPercent": 0.539682,
+      "totalBetAmount": 62522500.0,
+      "totalWinAmount": 337422.4,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betDenominator": 100.0,
+      "baseGame": {
+        "baseRounds": 0,
+        "baseBetTotal": 0.0,
+        "baseWinTotal": 0.0,
+        "baseObservedReturnMultiplier": 0,
+        "cascadeCount": 0,
+        "clusterHitCount": 0
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 0,
+        "featureSpins": 50018,
+        "featureWinTotal": 0.0,
+        "featureObservedReturnMultiplier": 0.0
+      },
+      "bonusBuySmoke": {
+        "status": "provisional_smoke_path_ev_pending",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 62522500.0,
+        "bonusBuyWinTotal": 337422.4,
+        "bonusBuyObservedReturnMultiplier": 0.005397
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      },
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 337422.4,
+      "cappedWinTotal": 337422.4,
+      "winTierDistribution": {
+        "big": 11,
+        "none": 922,
+        "small": 4067
+      }
+    }
+  ],
+  "deterministicReplaySample": {
+    "roundId": "sample-round-rtp_96-0000",
+    "modelId": "rtp_96",
+    "seed": 8101,
+    "roundIndex": 0,
+    "startingGrid": [
+      [
+        "mid_2",
+        "high_2",
+        "high_2",
+        "low_1",
+        "low_3",
+        "low_1"
+      ],
+      [
+        "low_1",
+        "low_2",
+        "high_1",
+        "mid_1",
+        "mid_1",
+        "mid_1"
+      ],
+      [
+        "high_1",
+        "high_1",
+        "low_3",
+        "high_1",
+        "low_1",
+        "low_3"
+      ],
+      [
+        "low_3",
+        "low_3",
+        "low_3",
+        "mid_2",
+        "mid_1",
+        "wild"
+      ],
+      [
+        "low_1",
+        "high_1",
+        "low_1",
+        "mid_1",
+        "high_1",
+        "high_1"
+      ]
+    ],
+    "cascadeSteps": [],
+    "finalGrid": [
+      [
+        "mid_2",
+        "high_2",
+        "high_2",
+        "low_1",
+        "low_3",
+        "low_1"
+      ],
+      [
+        "low_1",
+        "low_2",
+        "high_1",
+        "mid_1",
+        "mid_1",
+        "mid_1"
+      ],
+      [
+        "high_1",
+        "high_1",
+        "low_3",
+        "high_1",
+        "low_1",
+        "low_3"
+      ],
+      [
+        "low_3",
+        "low_3",
+        "low_3",
+        "mid_2",
+        "mid_1",
+        "wild"
+      ],
+      [
+        "low_1",
+        "high_1",
+        "low_1",
+        "mid_1",
+        "high_1",
+        "high_1"
+      ]
+    ],
+    "totalWin": 0.0,
+    "totalBet": 100.0,
+    "observedReturnMultiplier": 0.0,
+    "winSummary": {
+      "preCapWinMultiplier": 0.0,
+      "totalWinMultiplier": 0.0,
+      "totalWinAmount": 0.0,
+      "totalBetAmount": 100.0
+    },
+    "winTier": "none",
+    "featureState": {
+      "status": "provisional_smoke_path_not_triggered",
+      "triggered": false,
+      "probabilityCandidate": 0.018,
+      "featureSpins": 0,
+      "featureWinMultiplier": 0.0
+    },
+    "bonusBuyState": {
+      "enabled": false,
+      "status": "disabled_for_run"
+    },
+    "capState": {
+      "capMultiplier": 10000.0,
+      "capped": false,
+      "preCapWinMultiplier": 0.0,
+      "cappedWinMultiplier": 0.0,
+      "preCapWinTotal": 0.0,
+      "cappedWinTotal": 0.0
+    },
+    "rngDrawReferences": [
+      {
+        "drawGroup": "feature_event_smoke",
+        "drawCount": 4,
+        "rawRngStored": false
+      }
+    ],
+    "stateVersion": 1,
+    "roundCompletion": {
+      "complete": true,
+      "reason": "smoke_round_finished"
+    },
+    "historyReplayPayload": {
+      "replayPreferred": true,
+      "screenshotRequirementStatus": "unverified",
+      "screenshotBinaryStored": false,
+      "payloadType": "deterministic_smoke_replay"
+    },
+    "replayPayload": {
+      "replayPreferred": true,
+      "screenshotRequirementStatus": "unverified",
+      "screenshotBinaryStored": false
+    },
+    "screenshotRequirementStatus": "unverified",
+    "replayPreferred": true
+  },
+  "statuses": {
+    "denominatorStatus": "present_defaultTotalBet_credits_cluster_equivalent",
+    "freeSpinFeatureModeStatus": "provisional_smoke_path_present_not_calibrated",
+    "bonusBuyStatus": "provisional_smoke_path_present_bonus_buy_cost_ev_pending",
+    "jackpotStatus": "disabled_pending_product_decision",
+    "backendAdapterImplementationAllowed": false,
+    "gameServerRegistrarGenerationAllowed": false,
+    "gameClientBuilderImplementationAllowed": false,
+    "releaseApproved": false
+  },
+  "blockers": [
+    "large_scale_rtp_calibration_pending",
+    "bonus_buy_cost_ev_pending",
+    "feature_mode_ev_tuning_pending",
+    "symbol_weights_paytable_calibration_pending",
+    "certification_pending"
+  ]
+}

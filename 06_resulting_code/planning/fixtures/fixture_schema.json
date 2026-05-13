@@ -1,0 +1,98 @@
+{
+  "$schema": "[REDACTED_URL]",
+  "$id": "little_gangster_non_production_renderer_fixture_schema",
+  "title": "Little Gangster non-production renderer fixture schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "fixtureType",
+    "gameKey",
+    "schemaVersion",
+    "fixtureId",
+    "fixtureName",
+    "purpose",
+    "runtimeEnvelope",
+    "presentationPayload",
+    "v0_3_payload",
+    "expectedSceneStates",
+    "expectedObjectStates",
+    "nonProduction",
+    "authoritativeOutcome",
+    "browserGenerated",
+    "notes",
+    "runtimeEnvelopeStatus",
+    "presentationPayloadExtensionStatus"
+  ],
+  "properties": {
+    "fixtureType": {
+      "const": "non_production_renderer_fixture"
+    },
+    "gameKey": {
+      "const": "little-gangster"
+    },
+    "schemaVersion": {
+      "const": "v0.3"
+    },
+    "runtimeEnvelopeStatus": {
+      "const": "candidate_unproven"
+    },
+    "presentationPayloadExtensionStatus": {
+      "const": "pending_schema_review"
+    },
+    "nonProduction": {
+      "const": true
+    },
+    "authoritativeOutcome": {
+      "const": false
+    },
+    "browserGenerated": {
+      "const": false
+    },
+    "runtimeEnvelope": {
+      "type": "object",
+      "required": [
+        "runtimeEnvelopeStatus",
+        "sessionId",
+        "round",
+        "presentationPayload"
+      ],
+      "properties": {
+        "runtimeEnvelopeStatus": {
+          "const": "candidate_unproven"
+        }
+      }
+    },
+    "presentationPayload": {
+      "type": "object",
+      "required": [
+        "presentationPayloadExtensionStatus",
+        "gamePayload"
+      ],
+      "properties": {
+        "presentationPayloadExtensionStatus": {
+          "const": "pending_schema_review"
+        },
+        "gamePayload": {
+          "type": "object",
+          "required": [
+            "gameKey",
+            "schemaVersion",
+            "payload"
+          ]
+        }
+      }
+    },
+    "v0_3_payload": {
+      "type": "object"
+    },
+    "expectedSceneStates": {
+      "type": "array"
+    },
+    "expectedObjectStates": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "array"
+    }
+  }
+}

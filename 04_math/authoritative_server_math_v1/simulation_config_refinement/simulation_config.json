@@ -10,6 +10,13 @@
     "rtp_92"
   ],
   "defaultModelId": "rtp_96",
+  "profileSelection": {
+    "supportsMathProfileId": true,
+    "profileMatrixPath": "../rtp_volatility_profile_matrix.json",
+    "volatilityLeversPath": "../volatility_profile_levers.json",
+    "operatorSelectionPolicy": "pretested_profiles_only_no_arbitrary_values",
+    "profileCountExpected": 9
+  },
   "rtpModelProfilesPath": "rtp_model_profiles.json",
   "gameSettingsProfilesPath": "game_settings_profiles.json",
   "ruleFiles": {

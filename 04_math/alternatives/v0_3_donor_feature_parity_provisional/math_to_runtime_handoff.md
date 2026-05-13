@@ -22,4 +22,5 @@ The runtime owner remains unproven. Candidate owners are New Games backend, clas
 
 ## Transaction/State Handoff
 
-The result must expose enough state for reserve/settle or current-GS process-equivalent accounting, history replay, reconnect recovery, and lastAction/state restoration. Do not assume Mantis `processTransactions` unless ExtGame is later proven.
+The result must expose enough state for reserve/settle or current-GS process-equivalent accounting, history replay, reconnect recovery, and lastAction/state restoration. Do not assume Mantis `processTransactions` unless ExtGame is later
+proven.

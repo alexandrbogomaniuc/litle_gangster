@@ -21,7 +21,8 @@ The shared presentation mapper consumes those fields and maps them to UI-facing 
 
 ## Existing Adapter Pattern
 
-`new-games-server/src/index.ts` builds a Crazy Rooster presentation payload from provisional sample output. `premium-slot` then maps the runtime response through a presentation mapper. This proves the adapter pattern, not the Little Gangster adapter.
+`new-games-server/src/index.ts` builds a Crazy Rooster presentation payload from provisional sample output. `premium-slot` then maps the runtime response through a presentation mapper. This proves the adapter pattern, not the Little
+Gangster adapter.
 
 ## v0.3 Compatibility Gap
 

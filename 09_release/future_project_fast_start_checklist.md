@@ -24,4 +24,5 @@ Ask these before donor work starts:
 
 ## Pause Criteria
 
-Pause and ask for review when donor feature/settings evidence is incomplete, current GS result owner is unproven, registration import boundary is unknown, math layout does not match donor/product direction, or public export validation fails.
+Pause and ask for review when donor feature/settings evidence is incomplete, current GS result owner is unproven, registration import boundary is unknown, math layout does not match donor/product direction, or public export validation
+fails.

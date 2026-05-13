@@ -4,7 +4,8 @@ Status: high-volatility provisional model.
 
 ## Evidence
 
-The simulator reports standard deviation around 10x total bet for 100,000 to 200,000-round smoke runs, with hit frequency near 27.7% and large free-spin contribution. This supports the requested high-volatility profile at workflow level only.
+The simulator reports standard deviation around 10x total bet for 100,000 to 200,000-round smoke runs, with hit frequency near 27.7% and large free-spin contribution. This supports the requested high-volatility profile at workflow level
+only.
 
 | Variant | Seed | Rounds | Target RTP | Simulated RTP | Deviation | Status | Hit frequency | Std dev x bet | Max observed |
 |---|---:|---:|---:|---:|---:|---|---:|---:|---:|

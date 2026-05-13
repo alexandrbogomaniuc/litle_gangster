@@ -1,70 +1,38 @@
-# Sprint Report: PublicExportCorruptionRootCauseAndFix
+# Sprint Report - 3x3 Profile Calibration
 
-## Sprint Identity
+Created: 2026-05-13
 
-- Sprint: PublicExportCorruptionRootCauseAndFix
-- Reporter: SprintReporter compact
-- Project: Little Gangster
+## Outcome
 
-## Goal
+3x3 RTP / volatility calibration completed in compact fast-lane mode. A reusable local calibration harness and profile-specific adjustment overlay were created. All 9 profiles ran through a bounded first-pass smoke calibration.
 
-Fix the public export newline-collapse/corruption trust failure and validate the replacement public commit through a project-local GitHub raw validator outside the public export.
+## Results
 
-## Key Findings
-
-- External contradiction for `ca854797d2d67def46f17dd989164b71ce49cc44` was recorded and treated as invalidating the previous checkpoint claim.
-- Exact collapse source was not proven from current local files; current working tree, git blob, and fresh raw fetch for that old commit were multiline when rechecked.
-- Proven failure was the validation trust boundary: an exported validator can become corrupted or no-op, so it cannot be the only validation source.
-- Replacement public export commit `25cbf1c3f8ce1d6f89871f11a43f40478a8e2e6c` was pushed and passed project-local GitHub raw validation.
-
-## Files Created
-
-- `00_skill_reports/PublicExportCorruptionRootCauseAndFix/skill_report.md`
-- `00_skill_reports/PublicExportCorruptionRootCauseAndFix/validation_checklist.md`
-- `00_skill_reports/PublicExportCorruptionRootCauseAndFix/blockers.md`
-- `00_skill_reports/PublicExportCorruptionRootCauseAndFix/handoff.json`
-- `00_skill_reports/PublicExportCorruptionRootCauseAndFix/root_cause_report.md`
-- `scripts/validate_github_raw_public_export.py`
-- `10_sprint_reports/sprint_report_history/20260512_170438_PublicExportCorruptionRootCauseAndFix.md`
-
-## Files Modified
-
-- `project_manifest.json`
-- `assumptions.md`
-- `decisions_log.md`
-- `00_skill_reports/PublicGitExport/handoff.json`
-- `00_skill_reports/CheckpointGitReviewPush/handoff.json`
-- `10_sprint_reports/sprint_report_latest.md`
-- Public export repo at `little-gangster-public-export`: replacement commit changed 116 files, including README/reviewer metadata, public validator, redacted safe artifacts, and corruption-fix reports.
-
-## Validations Run
-
-- Public export internal validator compiled and passed.
-- Public export JSON/CSV/Python parse sweeps passed.
-- Git blob line counts passed before push.
-- GitHub raw validation passed using project-local validator outside the public export.
-- Curl raw line counts passed.
-
-## Raw Line Counts
-
-- README.md: 49
-- REVIEWER_START_HERE.md: 44
-- scripts/validate_public_export.py: 193
-- _skill_suite_snapshot/WorkflowOrchestrator/SKILL.md: 67
-
-## Direct Answers
-
-- Public export corruption confirmed: yes, the external contradiction was accepted as a serious validation failure.
-- Root cause found: exact collapse mechanism not proven; validation trust-boundary failure proven.
-- Pushed commit hash: `25cbf1c3f8ce1d6f89871f11a43f40478a8e2e6c`.
-- Project-local raw validator passed: yes.
-- public_export_validation_passed: true for replacement commit `25cbf1c3f8ce1d6f89871f11a43f40478a8e2e6c`.
-- Release approved: false.
+- Profiles tested: 9 / 9.
+- Profiles within +/-2.0 percentage points: 9.
+- Profiles outside +/-2.0 percentage points: 0.
+- Volatility ordering preserved: true.
+- Calibration iterations used: 2.
+- Seeds per profile: 2.
+- Rounds per seed: 1,000.
+- Bonus buy tuned: false.
+- Jackpot enabled: false.
+- Exact values final: false.
+- Certification status: false.
 
 ## Blockers
 
-No active blocker remains for the public export corruption fix. Residual note: exact historical line-collapse source was not reproduced, so the durable mitigation is mandatory external raw validation for pushed commits.
+- `profile_stability_large_sample_pending`
+- `bonus_buy_ev_pending`
+- `max_win_tail_frequency_unproven`
+- `standard_deviation_targets_pending_large_simulation`
+- `certification_pending`
 
-## Next Recommended Sprint
+## Gates
 
-MathModelDesigner calibration sprint, using the existing simulator/config package to refine RTP, bonus-buy, free-spin, and feature values. Do not start backend/client/registration implementation automatically.
+Backend adapter implementation, GameClientBuilder implementation, GameServerRegistrar generation, wallet/API work, DB work, donor browsing, asset capture, public GitHub export, and release approval remain blocked.
+
+## Next Prompt
+
+Run a fast-lane MathModelDesigner large-sample stability and bonus-buy EV decision sprint for the 3x3 matrix; keep backend adapter, client, registration, wallet, DB, donor, asset, public GitHub, and release work blocked.
+

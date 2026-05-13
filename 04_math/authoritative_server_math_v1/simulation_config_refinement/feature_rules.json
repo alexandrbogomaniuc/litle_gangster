@@ -1,18 +1,20 @@
 {
   "schemaVersion": "feature-rules-v1",
-  "status": "provisional_pending_simulation",
+  "status": "provisional_limited_calibration_tuned_not_certified",
   "rationale": "Defines candidate feature trigger and contribution buckets.",
   "simulationImpact": "Feeds smoke feature contribution metrics.",
-  "blockerStatus": "final_feature_odds_pending_math_calibration",
+  "blockerStatus": "final_feature_odds_pending_large_simulation_and_certification",
   "exactValuesFinal": false,
   "featureTrigger": {
     "minimumScatterOrEquivalent": 3,
-    "probabilityCandidate": 0.018,
-    "status": "provisional_pending_simulation"
+    "probabilityCandidate": 0.08,
+    "status": "provisional_limited_calibration_tuned_not_certified",
+    "probabilityCandidateBeforeLimitedTuning": 0.018
   },
   "featureModes": [
     "mode_1",
     "mode_2",
     "mode_3"
-  ]
+  ],
+  "limitedCalibrationTuningSet": "2026-05-13_cluster_feature_boost_v1"
 }

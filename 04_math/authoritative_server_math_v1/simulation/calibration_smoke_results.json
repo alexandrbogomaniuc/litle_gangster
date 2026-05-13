@@ -1,0 +1,571 @@
+{
+  "schemaVersion": "calibration-smoke-results-v1",
+  "sprint": "MathModelDesigner calibration sprint",
+  "createdAt": "2026-05-12T17:42:40",
+  "simulationStatus": "deterministic_smoke_simulation",
+  "roundCountPerModel": 75,
+  "seeds": {
+    "rtp_96": 800196,
+    "rtp_94": 800194,
+    "rtp_92": 800192
+  },
+  "modelsCovered": [
+    "rtp_96",
+    "rtp_94",
+    "rtp_92"
+  ],
+  "simulatorRan": true,
+  "exactValuesFinal": false,
+  "certificationClaim": false,
+  "jackpotEnabledByDefault": false,
+  "bonusBuyEvStatus": "blocked_pending_ev_validation; simulator does not yet model purchased feature EV",
+  "freeSpinFeatureModeStatus": "represented in config/design, but exact trigger/retrigger/mode probabilities remain provisional_pending_simulation",
+  "rtpSmokeResults": {
+    "rtp_96": {
+      "roundCount": 75,
+      "observedReturnMultiplierPerRound": 0.132,
+      "targetRtp": 96.0,
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 0.28678,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "none": 56,
+        "small": 19
+      },
+      "featureContributionSummary": {
+        "baseGame": 5.9,
+        "coinReveal": 4.0,
+        "featureModes": 2.05
+      }
+    },
+    "rtp_94": {
+      "roundCount": 75,
+      "observedReturnMultiplierPerRound": 0.349547,
+      "targetRtp": 94.0,
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 2.295484,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "big": 1,
+        "none": 61,
+        "small": 13
+      },
+      "featureContributionSummary": {
+        "baseGame": 3.216,
+        "coinReveal": 23.0,
+        "featureModes": 0.7
+      }
+    },
+    "rtp_92": {
+      "roundCount": 75,
+      "observedReturnMultiplierPerRound": 0.1044,
+      "targetRtp": 92.0,
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 0.229844,
+      "capHitCount": 0,
+      "winTierDistribution": {
+        "none": 57,
+        "small": 18
+      },
+      "featureContributionSummary": {
+        "baseGame": 4.83,
+        "coinReveal": 3.0,
+        "featureModes": 2.2
+      }
+    }
+  },
+  "plausibilityAssessment": {
+    "structurePlausible": true,
+    "rtpCalibrationPlausible": false,
+    "reason": "All models run and emit deterministic summaries, but 75-round observed returns are smoke-only and not close to target RTP. Simulator reports smoke_not_calibrated."
+  },
+  "valuesStillBlocked": [
+    "large_scale_rtp_calibration_pending",
+    "bonus_buy_cost_ev_pending",
+    "final_symbol_weights_pending_math_calibration",
+    "final_cluster_paytable_pending_rtp_calibration",
+    "free_spins_feature_mode_probabilities_pending",
+    "product_volatility_confirmation_pending",
+    "cluster_registration_bet_formula_pending",
+    "frb_ocb_product_decision_pending",
+    "jackpot_product_decision_pending_disabled_by_default",
+    "runtime_owner_8001_unproven"
+  ],
+  "backendAdapterImplementationBlockedBy": [
+    "runtime_owner_8001_unproven",
+    "authoritative result owner not implemented",
+    "exact math values not final or certified",
+    "bonus-buy and feature-mode EV/probabilities pending"
+  ],
+  "gameServerRegistrarGenerationBlockedBy": [
+    "GL bet fields remain placeholder_pending_math_validation",
+    "RTP/BF_RTP values remain provisional_pending_simulation",
+    "bonus-buy cost/EV pending",
+    "cluster fixed-line compatibility mapping pending",
+    "bank/operator/release metadata placeholders remain"
+  ],
+  "settingsStatusSample": {
+    "rtp_96": [
+      {
+        "field": "RTP",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_MIN",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_WITHOUT_BF",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_MIN_WITHOUT_BF",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "BF_RTP",
+        "valueStatus": "provisional_pending_bonus_buy_ev_validation"
+      },
+      {
+        "field": "BF_RTP_MIN",
+        "valueStatus": "provisional_pending_bonus_buy_ev_validation"
+      },
+      {
+        "field": "GL_MIN_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_MAX_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_DEFAULT_BET",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_DEFAULT_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_BF_MAX_BETS",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "BF_BETS",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "DEFCOIN",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "coinDenominations",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "clusterBaseBetCredits",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "clusterBetMultiplier",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "minTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "defaultTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "maxTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "POSSIBLE_LINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "LINES_COUNT",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "DEFAULTNUMLINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "POSSIBLE_BETPERLINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "DEFAULTBETPERLINE",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "POSSIBLE_MAX_WINS",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "POSSIBLE_MAX_WINS_WITHOUT_BF",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "CAP_WIN_MULTIPLIER",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "VOLATILITY",
+        "valueStatus": "provisional_pending_large_simulation"
+      },
+      {
+        "field": "FRB_COIN",
+        "valueStatus": "blocked_pending_frb_product_decision"
+      },
+      {
+        "field": "RELEASE_TIME",
+        "valueStatus": "blocked"
+      },
+      {
+        "field": "bankId",
+        "valueStatus": "placeholder_pending_operator_configuration"
+      },
+      {
+        "field": "subCasinoId",
+        "valueStatus": "placeholder_pending_operator_configuration"
+      },
+      {
+        "field": "bonusBuyOptions.0",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyOptions.1",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyOptions.2",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyCost",
+        "valueStatus": "provisional_pending_product_or_math_decision"
+      },
+      {
+        "field": "bonusBuyEV",
+        "valueStatus": "blocked_pending_simulation"
+      },
+      {
+        "field": "jackpotContribution",
+        "valueStatus": "disabled_by_default_pending_product_decision"
+      }
+    ],
+    "rtp_94": [
+      {
+        "field": "RTP",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_MIN",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_WITHOUT_BF",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_MIN_WITHOUT_BF",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "BF_RTP",
+        "valueStatus": "provisional_pending_bonus_buy_ev_validation"
+      },
+      {
+        "field": "BF_RTP_MIN",
+        "valueStatus": "provisional_pending_bonus_buy_ev_validation"
+      },
+      {
+        "field": "GL_MIN_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_MAX_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_DEFAULT_BET",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_DEFAULT_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_BF_MAX_BETS",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "BF_BETS",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "DEFCOIN",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "coinDenominations",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "clusterBaseBetCredits",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "clusterBetMultiplier",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "minTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "defaultTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "maxTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "POSSIBLE_LINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "LINES_COUNT",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "DEFAULTNUMLINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "POSSIBLE_BETPERLINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "DEFAULTBETPERLINE",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "POSSIBLE_MAX_WINS",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "POSSIBLE_MAX_WINS_WITHOUT_BF",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "CAP_WIN_MULTIPLIER",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "VOLATILITY",
+        "valueStatus": "provisional_pending_large_simulation"
+      },
+      {
+        "field": "FRB_COIN",
+        "valueStatus": "blocked_pending_frb_product_decision"
+      },
+      {
+        "field": "RELEASE_TIME",
+        "valueStatus": "blocked"
+      },
+      {
+        "field": "bankId",
+        "valueStatus": "placeholder_pending_operator_configuration"
+      },
+      {
+        "field": "subCasinoId",
+        "valueStatus": "placeholder_pending_operator_configuration"
+      },
+      {
+        "field": "bonusBuyOptions.0",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyOptions.1",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyOptions.2",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyCost",
+        "valueStatus": "provisional_pending_product_or_math_decision"
+      },
+      {
+        "field": "bonusBuyEV",
+        "valueStatus": "blocked_pending_simulation"
+      },
+      {
+        "field": "jackpotContribution",
+        "valueStatus": "disabled_by_default_pending_product_decision"
+      }
+    ],
+    "rtp_92": [
+      {
+        "field": "RTP",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_MIN",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_WITHOUT_BF",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "RTP_MIN_WITHOUT_BF",
+        "valueStatus": "provisional_pending_simulation"
+      },
+      {
+        "field": "BF_RTP",
+        "valueStatus": "provisional_pending_bonus_buy_ev_validation"
+      },
+      {
+        "field": "BF_RTP_MIN",
+        "valueStatus": "provisional_pending_bonus_buy_ev_validation"
+      },
+      {
+        "field": "GL_MIN_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_MAX_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_DEFAULT_BET",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_DEFAULT_BET_DEFAULT",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "GL_BF_MAX_BETS",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "BF_BETS",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "DEFCOIN",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "coinDenominations",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "clusterBaseBetCredits",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "clusterBetMultiplier",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "minTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "defaultTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "maxTotalBet",
+        "valueStatus": "placeholder_pending_math_validation"
+      },
+      {
+        "field": "POSSIBLE_LINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "LINES_COUNT",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "DEFAULTNUMLINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "POSSIBLE_BETPERLINES",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "DEFAULTBETPERLINE",
+        "valueStatus": "placeholder_pending_cluster_registration_mapping"
+      },
+      {
+        "field": "POSSIBLE_MAX_WINS",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "POSSIBLE_MAX_WINS_WITHOUT_BF",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "CAP_WIN_MULTIPLIER",
+        "valueStatus": "provisional_pending_math_validation"
+      },
+      {
+        "field": "VOLATILITY",
+        "valueStatus": "provisional_pending_large_simulation"
+      },
+      {
+        "field": "FRB_COIN",
+        "valueStatus": "blocked_pending_frb_product_decision"
+      },
+      {
+        "field": "RELEASE_TIME",
+        "valueStatus": "blocked"
+      },
+      {
+        "field": "bankId",
+        "valueStatus": "placeholder_pending_operator_configuration"
+      },
+      {
+        "field": "subCasinoId",
+        "valueStatus": "placeholder_pending_operator_configuration"
+      },
+      {
+        "field": "bonusBuyOptions.0",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyOptions.1",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyOptions.2",
+        "valueStatus": "provisional_pending_ev_validation"
+      },
+      {
+        "field": "bonusBuyCost",
+        "valueStatus": "provisional_pending_product_or_math_decision"
+      },
+      {
+        "field": "bonusBuyEV",
+        "valueStatus": "blocked_pending_simulation"
+      },
+      {
+        "field": "jackpotContribution",
+        "valueStatus": "disabled_by_default_pending_product_decision"
+      }
+    ]
+  }
+}

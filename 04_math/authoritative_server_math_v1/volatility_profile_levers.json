@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "volatility-profile-levers-v1",
+  "artifactType": "planning_math_config",
+  "exactValuesFinal": false,
+  "certificationClaim": false,
+  "status": "provisional_pending_simulation",
+  "designIntent": {
+    "LOW": "Higher hit rate, smaller wins, lower top-win frequency, lower standard deviation, lower cap frequency.",
+    "MEDIUM": "Balanced hit rate, balanced feature wins, balanced standard deviation.",
+    "HIGH": "Lower hit rate, larger wins, higher top-win frequency, higher standard deviation, higher cap/max-win tail frequency."
+  },
+  "levels": {
+    "LOW": {
+      "status": "provisional_pending_simulation",
+      "description": "Smooth local-smoke profile with more low-symbol clustering and reduced tail value.",
+      "targetBands": {
+        "hitRate": {
+          "min": 0.28,
+          "max": 0.42,
+          "status": "provisional_pending_simulation"
+        },
+        "standardDeviation": {
+          "min": 0.8,
+          "max": 1.8,
+          "status": "provisional_pending_simulation"
+        },
+        "capFrequencyExpectation": "lowest"
+      },
+      "modifiers": {
+        "symbolWeightMultipliers": {
+          "low": 1.15,
+          "mid": 1.05,
+          "high": 0.75,
+          "wild": 0.85,
+          "rainbow": 0.85,
+          "coin": 0.85,
+          "special": 0.8
+        },
+        "clusterPaytableMultipliers": {
+          "smallCluster": 0.95,
+          "mediumCluster": 0.82,
+          "topCluster": 0.7
+        },
+        "featureTriggerProbabilityMultiplier": 1.15,
+        "freeSpinCountMultiplier": 0.85,
+        "featureModeWinMultiplier": 0.75,
+        "coinRevealValueMultiplier": 0.75,
+        "specialRevealProbabilityMultiplier": 0.85,
+        "specialRevealValueMultiplier": 0.75,
+        "maxWinTailFrequencyExpectationMultiplier": 0.5
+      }
+    },
+    "MEDIUM": {
+      "status": "provisional_pending_simulation",
+      "description": "Balanced local-smoke profile matching the existing provisional RTP calibration basis.",
+      "targetBands": {
+        "hitRate": {
+          "min": 0.2,
+          "max": 0.34,
+          "status": "provisional_pending_simulation"
+        },
+        "standardDeviation": {
+          "min": 1.4,
+          "max": 2.6,
+          "status": "provisional_pending_simulation"
+        },
+        "capFrequencyExpectation": "balanced"
+      },
+      "modifiers": {
+        "symbolWeightMultipliers": {
+          "low": 1.0,
+          "mid": 1.0,
+          "high": 1.0,
+          "wild": 1.0,
+          "rainbow": 1.0,
+          "coin": 1.0,
+          "special": 1.0
+        },
+        "clusterPaytableMultipliers": {
+          "smallCluster": 1.0,
+          "mediumCluster": 1.0,
+          "topCluster": 1.0
+        },
+        "featureTriggerProbabilityMultiplier": 1.0,
+        "freeSpinCountMultiplier": 1.0,
+        "featureModeWinMultiplier": 1.0,
+        "coinRevealValueMultiplier": 1.0,
+        "specialRevealProbabilityMultiplier": 1.0,
+        "specialRevealValueMultiplier": 1.0,
+        "maxWinTailFrequencyExpectationMultiplier": 1.0
+      }
+    },
+    "HIGH": {
+      "status": "provisional_pending_simulation",
+      "description": "Tail-heavy local-smoke profile with lower hit rate and larger high-end outcomes.",
+      "targetBands": {
+        "hitRate": {
+          "min": 0.12,
+          "max": 0.28,
+          "status": "provisional_pending_simulation"
+        },
+        "standardDeviation": {
+          "min": 2.0,
+          "max": 4.8,
+          "status": "provisional_pending_simulation"
+        },
+        "capFrequencyExpectation": "highest"
+      },
+      "modifiers": {
+        "symbolWeightMultipliers": {
+          "low": 0.85,
+          "mid": 0.95,
+          "high": 1.35,
+          "wild": 1.1,
+          "rainbow": 1.15,
+          "coin": 1.2,
+          "special": 1.25
+        },
+        "clusterPaytableMultipliers": {
+          "smallCluster": 0.82,
+          "mediumCluster": 1.08,
+          "topCluster": 1.55
+        },
+        "featureTriggerProbabilityMultiplier": 0.75,
+        "freeSpinCountMultiplier": 1.2,
+        "featureModeWinMultiplier": 1.35,
+        "coinRevealValueMultiplier": 1.5,
+        "specialRevealProbabilityMultiplier": 1.2,
+        "specialRevealValueMultiplier": 1.45,
+        "maxWinTailFrequencyExpectationMultiplier": 1.75
+      }
+    }
+  },
+  "blockers": [
+    "volatility_profile_specific_large_simulation_pending",
+    "standard_deviation_targets_pending_certification_scale_runs",
+    "bonus_buy_ev_pending",
+    "certification_pending"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "[REDACTED_URL]",
+  "additionalProperties": false,
+  "properties": {
+    "animationHints": {
+      "type": "array"
+    },
+    "baseGame": {
+      "additionalProperties": true,
+      "properties": {
+        "clusters": {
+          "type": "array"
+        },
+        "featureTriggers": {
+          "type": "array"
+        },
+        "grid": {
+          "description": "5 rows by 6 columns of symbol ids.",
+          "type": "array"
+        }
+      },
+      "required": [
+        "grid",
+        "clusters",
+        "featureTriggers"
+      ],
+      "type": "object"
+    },
+    "bet": {
+      "additionalProperties": true,
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "type": "object"
+    },
+    "bonusBuy": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "doubleUp": {
+      "description": "Optional placeholder only; product decision pending.",
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "freeSpins": {
+      "additionalProperties": true,
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "gameId": {
+      "const": 8001,
+      "type": "integer"
+    },
+    "jackpot": {
+      "description": "Must remain null for current no-jackpot model.",
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "mathVersion": {
+      "type": "string"
+    },
+    "operationId": {
+      "type": "string"
+    },
+    "rngDebug": {
+      "description": "Dev-only. Must not be sent to production clients.",
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "roundId": {
+      "type": "string"
+    },
+    "rtpVariant": {
+      "enum": [
+        "rtp_96",
+        "rtp_94",
+        "rtp_92"
+      ],
+      "type": "string"
+    },
+    "stateVersion": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "totalWin": {
+      "minimum": 0,
+      "type": "number"
+    },
+    "walletAccounting": {
+      "additionalProperties": true,
+      "description": "Wallet/GS-owned accounting references only; browser must not own balance impact.",
+      "type": "object"
+    }
+  },
+  "required": [
+    "gameId",
+    "roundId",
+    "bet",
+    "totalWin",
+    "baseGame",
+    "mathVersion",
+    "rtpVariant"
+  ],
+  "title": "Little Gangster 6x5 Cluster Backend Outcome Result Schema - Provisional",
+  "type": "object"
+}

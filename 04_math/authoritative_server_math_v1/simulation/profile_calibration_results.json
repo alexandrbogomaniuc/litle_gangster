@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "profile-calibration-results-v1",
+  "createdAt": "2026-05-13T09:40:42+00:00",
+  "profileCalibrationCompleted": true,
+  "calibrationHarnessCreated": true,
+  "profileAdjustmentOverlayCreated": true,
+  "calibrationIterationsUsed": 2,
+  "maxCalibrationIterations": 2,
+  "seeds": [
+    8501,
+    8502
+  ],
+  "roundsPerSeed": 1000,
+  "bonusBuyTuned": false,
+  "bonusBuyEnabled": false,
+  "jackpotEnabled": false,
+  "postSpinForcedPayoutScalingUsed": false,
+  "exactValuesFinal": false,
+  "certificationStatus": false,
+  "tolerancePercentPoints": 2.0,
+  "profilesTestedCount": 9,
+  "expectedProfilesCount": 9,
+  "profilesWithinSmokeToleranceCount": 9,
+  "profilesOutsideSmokeToleranceCount": 0,
+  "volatilityOrdering": {
+    "preserved": true,
+    "checks": {
+      "LOW": {
+        "hitRateOrderingPreserved": true,
+        "standardDeviationOrderingPreserved": true,
+        "hitRates": {
+          "LOW": 0.317,
+          "MEDIUM": 0.2835,
+          "HIGH": 0.219
+        },
+        "standardDeviations": {
+          "LOW": 1.911702,
+          "MEDIUM": 2.242763,
+          "HIGH": 2.834902
+        }
+      },
+      "MEDIUM": {
+        "hitRateOrderingPreserved": true,
+        "standardDeviationOrderingPreserved": true,
+        "hitRates": {
+          "LOW": 0.336,
+          "MEDIUM": 0.29,
+          "HIGH": 0.229
+        },
+        "standardDeviations": {
+          "LOW": 1.847374,
+          "MEDIUM": 2.211388,
+          "HIGH": 2.72014
+        }
+      },
+      "HIGH": {
+        "hitRateOrderingPreserved": true,
+        "standardDeviationOrderingPreserved": true,
+        "hitRates": {
+          "LOW": 0.3205,
+          "MEDIUM": 0.2535,
+          "HIGH": 0.214
+        },
+        "standardDeviations": {
+          "LOW": 1.982789,
+          "MEDIUM": 2.482539,
+          "HIGH": 3.207764
+        }
+      }
+    }
+  },
+  "baselineProfiles": {
+    "LG_8001_RTP_LOW_VOL_LOW": {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_LOW",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 91.473747,
+      "rtpDeltaFromTarget": -0.526253,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.317,
+      "standardDeviation": 1.911702,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "none": 1366,
+        "small": 634
+      }
+    },
+    "LG_8001_RTP_LOW_VOL_MEDIUM": {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_MEDIUM",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 99.099081,
+      "rtpDeltaFromTarget": 7.099081,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.294,
+      "standardDeviation": 2.308756,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 5,
+        "none": 1412,
+        "small": 583
+      }
+    },
+    "LG_8001_RTP_LOW_VOL_HIGH": {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_HIGH",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 77.423263,
+      "rtpDeltaFromTarget": -14.576737,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.205,
+      "standardDeviation": 2.524453,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 7,
+        "none": 1590,
+        "small": 403
+      }
+    },
+    "LG_8001_RTP_MEDIUM_VOL_LOW": {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_LOW",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 103.103817,
+      "rtpDeltaFromTarget": 9.103817,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.3265,
+      "standardDeviation": 2.158928,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 1,
+        "none": 1347,
+        "small": 652
+      }
+    },
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM": {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 96.2756,
+      "rtpDeltaFromTarget": 2.2756,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.293,
+      "standardDeviation": 2.24782,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 4,
+        "none": 1414,
+        "small": 582
+      }
+    },
+    "LG_8001_RTP_MEDIUM_VOL_HIGH": {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_HIGH",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 92.79407,
+      "rtpDeltaFromTarget": -1.20593,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.229,
+      "standardDeviation": 2.72014,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 6,
+        "none": 1542,
+        "small": 452
+      }
+    },
+    "LG_8001_RTP_HIGH_VOL_LOW": {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_LOW",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 99.962842,
+      "rtpDeltaFromTarget": 3.962842,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.3235,
+      "standardDeviation": 2.11054,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "none": 1353,
+        "small": 647
+      }
+    },
+    "LG_8001_RTP_HIGH_VOL_MEDIUM": {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_MEDIUM",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 90.41375,
+      "rtpDeltaFromTarget": -5.58625,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.2535,
+      "standardDeviation": 2.302074,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 1,
+        "none": 1493,
+        "small": 506
+      }
+    },
+    "LG_8001_RTP_HIGH_VOL_HIGH": {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_HIGH",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 79.500566,
+      "rtpDeltaFromTarget": -16.499434,
+      "withinSmokeTolerance": false,
+      "hitRate": 0.2225,
+      "standardDeviation": 2.393574,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 5,
+        "none": 1555,
+        "small": 440
+      }
+    }
+  },
+  "finalProfiles": {
+    "LG_8001_RTP_LOW_VOL_LOW": {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_LOW",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 91.473747,
+      "rtpDeltaFromTarget": -0.526253,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.317,
+      "standardDeviation": 1.911702,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "none": 1366,
+        "small": 634
+      }
+    },
+    "LG_8001_RTP_LOW_VOL_MEDIUM": {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_MEDIUM",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 91.2924,
+      "rtpDeltaFromTarget": -0.7076,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.2835,
+      "standardDeviation": 2.242763,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 7,
+        "none": 1433,
+        "small": 560
+      }
+    },
+    "LG_8001_RTP_LOW_VOL_HIGH": {
+      "mathProfileId": "LG_8001_RTP_LOW_VOL_HIGH",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 92.0,
+      "observedRtpPercent": 91.808156,
+      "rtpDeltaFromTarget": -0.191844,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.219,
+      "standardDeviation": 2.834902,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 9,
+        "none": 1562,
+        "small": 429
+      }
+    },
+    "LG_8001_RTP_MEDIUM_VOL_LOW": {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_LOW",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 94.318845,
+      "rtpDeltaFromTarget": 0.318845,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.336,
+      "standardDeviation": 1.847374,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "none": 1328,
+        "small": 672
+      }
+    },
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM": {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 93.31806,
+      "rtpDeltaFromTarget": -0.68194,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.29,
+      "standardDeviation": 2.211388,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 3,
+        "none": 1420,
+        "small": 577
+      }
+    },
+    "LG_8001_RTP_MEDIUM_VOL_HIGH": {
+      "mathProfileId": "LG_8001_RTP_MEDIUM_VOL_HIGH",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 94.0,
+      "observedRtpPercent": 92.79407,
+      "rtpDeltaFromTarget": -1.20593,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.229,
+      "standardDeviation": 2.72014,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 6,
+        "none": 1542,
+        "small": 452
+      }
+    },
+    "LG_8001_RTP_HIGH_VOL_LOW": {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_LOW",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "LOW",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 96.474596,
+      "rtpDeltaFromTarget": 0.474596,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.3205,
+      "standardDeviation": 1.982789,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "none": 1359,
+        "small": 641
+      }
+    },
+    "LG_8001_RTP_HIGH_VOL_MEDIUM": {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_MEDIUM",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "MEDIUM",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 96.731109,
+      "rtpDeltaFromTarget": 0.731109,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.2535,
+      "standardDeviation": 2.482539,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 3,
+        "none": 1493,
+        "small": 504
+      }
+    },
+    "LG_8001_RTP_HIGH_VOL_HIGH": {
+      "mathProfileId": "LG_8001_RTP_HIGH_VOL_HIGH",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "HIGH",
+      "targetRtpPercent": 96.0,
+      "observedRtpPercent": 96.236926,
+      "rtpDeltaFromTarget": 0.236926,
+      "withinSmokeTolerance": true,
+      "hitRate": 0.214,
+      "standardDeviation": 3.207764,
+      "capFrequency": 0.0,
+      "winTierDistribution": {
+        "big": 14,
+        "none": 1572,
+        "small": 414
+      }
+    }
+  },
+  "unresolvedBlockers": [
+    "bonus_buy_ev_pending",
+    "profile_stability_large_sample_pending",
+    "max_win_tail_frequency_unproven",
+    "standard_deviation_targets_pending_large_simulation",
+    "certification_pending"
+  ]
+}

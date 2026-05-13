@@ -1,6 +1,7 @@
 # Authoritative Simulation Config Refinement Skill Report
 
-This artifact is planning and local simulation material only. It is not production math, not backend adapter code, not registration output, not wallet integration, not client code, and not release approval. Exact values are not final or certified.
+This artifact is planning and local simulation material only. It is not production math, not backend adapter code, not registration output, not wallet integration, not client code, and not release approval. Exact values are not final or
+certified.
 
 
 ## Result

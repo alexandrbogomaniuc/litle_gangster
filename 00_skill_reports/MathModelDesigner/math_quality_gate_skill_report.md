@@ -44,4 +44,5 @@ ArtSceneMapper may proceed using the selected 6x5 cluster layout. Math is not re
 
 ## Forbidden Actions Confirmation
 
-No browser work, donor gameplay investigation, donor asset capture, donor asset body inspection, client build, Cassandra/DB action, wallet call, raw secret handling, full donor URL persistence, release approval, or later workflow skill was performed.
+No browser work, donor gameplay investigation, donor asset capture, donor asset body inspection, client build, Cassandra/DB action, wallet call, raw secret handling, full donor URL persistence, release approval, or later workflow skill was
+performed.

@@ -15,7 +15,17 @@
           "rtp_94",
           "rtp_92"
         ],
-        "CURRENT_MODEL": "rtp_96"
+        "CURRENT_MODEL": "rtp_96",
+        "POSSIBLE_RTP_LEVELS": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ],
+        "POSSIBLE_VOLATILITY_LEVELS": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ]
       },
       "RTP": {
         "value": 96.0,
@@ -289,7 +299,10 @@
       "historyEnabled": true,
       "lasthandReplayEnabled": true,
       "vabsEnabled": true,
-      "configStatus": "simulation_ready_provisional_not_registration_artifact"
+      "configStatus": "simulation_ready_provisional_not_registration_artifact",
+      "rtpLevel": "HIGH",
+      "volatilityLevel": "HIGH",
+      "mathProfileMatrixStatus": "legacy_rtp_profile_mapped_to_rtp_level_volatility_matrix_pending"
     },
     "rtp_94": {
       "profileId": "rtp_94",
@@ -303,7 +316,17 @@
           "rtp_94",
           "rtp_92"
         ],
-        "CURRENT_MODEL": "rtp_94"
+        "CURRENT_MODEL": "rtp_94",
+        "POSSIBLE_RTP_LEVELS": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ],
+        "POSSIBLE_VOLATILITY_LEVELS": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ]
       },
       "RTP": {
         "value": 94.0,
@@ -577,7 +600,10 @@
       "historyEnabled": true,
       "lasthandReplayEnabled": true,
       "vabsEnabled": true,
-      "configStatus": "simulation_ready_provisional_not_registration_artifact"
+      "configStatus": "simulation_ready_provisional_not_registration_artifact",
+      "rtpLevel": "MEDIUM",
+      "volatilityLevel": "HIGH",
+      "mathProfileMatrixStatus": "legacy_rtp_profile_mapped_to_rtp_level_volatility_matrix_pending"
     },
     "rtp_92": {
       "profileId": "rtp_92",
@@ -591,7 +617,17 @@
           "rtp_94",
           "rtp_92"
         ],
-        "CURRENT_MODEL": "rtp_92"
+        "CURRENT_MODEL": "rtp_92",
+        "POSSIBLE_RTP_LEVELS": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ],
+        "POSSIBLE_VOLATILITY_LEVELS": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ]
       },
       "RTP": {
         "value": 92.0,
@@ -865,7 +901,25 @@
       "historyEnabled": true,
       "lasthandReplayEnabled": true,
       "vabsEnabled": true,
-      "configStatus": "simulation_ready_provisional_not_registration_artifact"
+      "configStatus": "simulation_ready_provisional_not_registration_artifact",
+      "rtpLevel": "LOW",
+      "volatilityLevel": "HIGH",
+      "mathProfileMatrixStatus": "legacy_rtp_profile_mapped_to_rtp_level_volatility_matrix_pending"
     }
+  },
+  "rtpVolatilityProfileFramework": {
+    "rtpLevels": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "volatilityLevels": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "profileMatrixPath": "../rtp_volatility_profile_matrix.json",
+    "operatorSelectionPolicy": "pretested_profiles_only_no_arbitrary_values",
+    "blocker": "gs_profile_matrix_storage_unproven"
   }
 }

@@ -47,7 +47,8 @@ No donor browsing, asset capture, DB/Cassandra action, wallet call, or client bu
 | Signal | Status | Evidence | Meaning |
 |---|---|---|---|
 | ExtGame current source support | CANDIDATE/UNVERIFIED | `ExtGameTransport.ts:3-7` is deprecated alias; `ExtGameIds` table exists. | Does not prove selected ExtGame endpoint architecture. |
-| `processTransactions` | CANDIDATE as internal persistence processor | `TransactionDataTracker.java:253-254`; `CassandraTransactionDataPersister.java:410-422`. | This is an internal transaction-data process, not proof of Mantis external-game API. |
+| `processTransactions` | CANDIDATE as internal persistence processor | `TransactionDataTracker.java:253-254`; `CassandraTransactionDataPersister.java:410-422`. | This is an internal transaction-data process, not proof of Mantis
+external-game API. |
 | `restartGame` / FRB restart | PROVEN as GS concept | `RestartGameAction.java:18-130`; `GameServer.java:596-616`; `AbstractGameProcessor.java:78-83`. | Must be verified if FRB/OCB applies to 8001. |
 | VABS/VBA/history | PROVEN as GS concept | `GetVBAAction.java:19-65`; `struts-config.xml:362-370`, `587-590`; `NewGamesInternalApiServlet.java:301-375`. | Little Gangster history/VBA contract is still unverified. |
 | OCB / Cash Bonus flags | PROVEN as bank concepts | `BankInfo.java:972-976`, `1022-1026`. | 8001 promo support decision remains pending. |

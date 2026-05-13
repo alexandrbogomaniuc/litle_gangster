@@ -6,7 +6,8 @@ Generated: 2026-05-11
 Created sanitized internal ExtGame external-collaboration reports and patched the reusable skill suite so future workflow stages carry ExtGame lane requirements forward.
 
 ## Source Boundary
-No raw Mantis body was pasted before report generation. This sprint extracted requirements from the user's task prompt only. Raw Mantis text, raw endpoints, SIDs, signatures, tokens, passwords, emails, private links, and secrets were not persisted.
+No raw Mantis body was pasted before report generation. This sprint extracted requirements from the user's task prompt only. Raw Mantis text, raw endpoints, SIDs, signatures, tokens, passwords, emails, private links, and secrets were not
+persisted.
 
 ## Files Created
 - `03_protocol/extgame_external_collaboration_lessons.md`

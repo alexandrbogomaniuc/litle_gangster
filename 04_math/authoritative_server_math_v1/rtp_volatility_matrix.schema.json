@@ -1,0 +1,156 @@
+{
+  "$schema": "[REDACTED_URL]",
+  "title": "RTP Volatility Profile Matrix Planning Schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "gameId",
+    "gameKey",
+    "profileCount",
+    "rtpLevels",
+    "volatilityLevels",
+    "allowedRtpRangePercent",
+    "profiles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "gameId": {
+      "type": "integer"
+    },
+    "gameKey": {
+      "type": "string"
+    },
+    "profileCount": {
+      "type": "integer",
+      "const": 9
+    },
+    "rtpLevels": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "volatilityLevels": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "allowedRtpRangePercent": {
+      "type": "object",
+      "required": [
+        "minimum",
+        "maximum"
+      ],
+      "properties": {
+        "minimum": {
+          "type": "number",
+          "minimum": 92,
+          "maximum": 92
+        },
+        "maximum": {
+          "type": "number",
+          "minimum": 99,
+          "maximum": 99
+        }
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": [
+          "mathProfileId",
+          "gameId",
+          "gameKey",
+          "rtpLevel",
+          "targetRtpPercent",
+          "targetReturnMultiplier",
+          "rtpValueStatus",
+          "volatilityLevel",
+          "volatilityIndexTarget",
+          "volatilityValueStatus",
+          "rtpWithBonusBuyStatus",
+          "rtpWithoutBonusBuyStatus",
+          "bonusBuyEvStatus",
+          "maxWinCapMultiplier",
+          "possibleMaxWinCredits",
+          "modelVersion",
+          "mathVersion",
+          "ruleSetVersion",
+          "registrationModelCode",
+          "runtimeProfileCode",
+          "historyProfileCode",
+          "activeByDefault",
+          "profileApprovalStatus",
+          "simulationStatus",
+          "certificationStatus",
+          "blockerNotes"
+        ],
+        "properties": {
+          "mathProfileId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rtpLevel": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH"
+            ]
+          },
+          "targetRtpPercent": {
+            "type": "number",
+            "minimum": 92,
+            "maximum": 99
+          },
+          "targetReturnMultiplier": {
+            "type": "number",
+            "minimum": 0.92,
+            "maximum": 0.99
+          },
+          "volatilityLevel": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH"
+            ]
+          },
+          "registrationModelCode": {
+            "type": "string",
+            "minLength": 1
+          },
+          "runtimeProfileCode": {
+            "type": "string",
+            "minLength": 1
+          },
+          "historyProfileCode": {
+            "type": "string",
+            "minLength": 1
+          },
+          "profileApprovalStatus": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

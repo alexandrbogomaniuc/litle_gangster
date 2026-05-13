@@ -1,6 +1,7 @@
 {
-  "schemaVersion": "sample-simulation-report-v1",
-  "simulationStatus": "deterministic_smoke_simulation",
+  "schemaVersion": "sample-simulation-report-v2",
+  "simulationStatus": "deterministic_calibration_smoke_simulation",
+  "simulatorCompletenessStatus": "model_completeness_smoke_fixed_not_certified",
   "exactValuesFinal": false,
   "certificationClaim": false,
   "walletUsed": false,
@@ -26,59 +27,217 @@
   "models": {
     "rtp_96": {
       "roundCount": 75,
-      "observedReturnMultiplierPerRound": 0.254667,
+      "totalRounds": 75,
       "targetRtp": 96.0,
+      "targetRtpPercent": 96.0,
+      "targetReturnMultiplier": 0.96,
+      "observedReturnMultiplier": 1.303667,
+      "observedReturnMultiplierPerRound": 1.303667,
+      "observedRtpPercent": 130.366667,
+      "totalBetAmount": 7500.0,
+      "totalWinAmount": 9777.5,
+      "betDenominator": 100.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betProfile": {
+        "clusterBaseBetCredits": 20.0,
+        "clusterBetMultiplier": 1.0,
+        "minTotalBet": 20.0,
+        "defaultTotalBet": 100.0,
+        "maxTotalBet": 5000.0,
+        "betDenominator": 100.0,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "registrationBetFormulaNotes": "Cluster-equivalent metadata only. Do not treat Little Gangster as a fixed-line game without GS registration confirmation."
+      },
       "rtpCalibrationStatus": "smoke_not_calibrated",
-      "standardDeviation": 0.828701,
+      "standardDeviation": 3.020493,
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
       "capHitCount": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 9777.5,
+      "cappedWinTotal": 9777.5,
+      "winTierDistribution": {
+        "none": 54,
+        "small": 21
+      },
+      "featureContributionSummary": {
+        "baseGame": 41.925,
+        "coinReveal": 11.0,
+        "featureModes": 46.25,
+        "freeSpins": 44.85
+      },
+      "baseGame": {
+        "baseRounds": 75,
+        "baseBetTotal": 7500.0,
+        "baseWinTotal": 4192.5,
+        "baseObservedReturnMultiplier": 0.559,
+        "cascadeCount": 21,
+        "clusterHitCount": 21
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 7,
+        "featureSpins": 111,
+        "featureWinTotal": 4485.0,
+        "featureObservedReturnMultiplier": 0.598
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
+      }
+    },
+    "rtp_94": {
+      "roundCount": 75,
+      "totalRounds": 75,
+      "targetRtp": 94.0,
+      "targetRtpPercent": 94.0,
+      "targetReturnMultiplier": 0.94,
+      "observedReturnMultiplier": 0.732267,
+      "observedReturnMultiplierPerRound": 0.732267,
+      "observedRtpPercent": 73.226667,
+      "totalBetAmount": 7500.0,
+      "totalWinAmount": 5492.0,
+      "betDenominator": 100.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betProfile": {
+        "clusterBaseBetCredits": 20.0,
+        "clusterBetMultiplier": 1.0,
+        "minTotalBet": 20.0,
+        "defaultTotalBet": 100.0,
+        "maxTotalBet": 5000.0,
+        "betDenominator": 100.0,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "registrationBetFormulaNotes": "Cluster-equivalent metadata only. Do not treat Little Gangster as a fixed-line game without GS registration confirmation."
+      },
+      "rtpCalibrationStatus": "smoke_not_calibrated",
+      "standardDeviation": 1.839658,
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
+      "capHitCount": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 5492.0,
+      "cappedWinTotal": 5492.0,
       "winTierDistribution": {
         "none": 56,
         "small": 19
       },
       "featureContributionSummary": {
-        "baseGame": 6.1,
-        "coinReveal": 13.0,
-        "featureModes": 1.65
-      }
-    },
-    "rtp_94": {
-      "roundCount": 75,
-      "observedReturnMultiplierPerRound": 0.13248,
-      "targetRtp": 94.0,
-      "rtpCalibrationStatus": "smoke_not_calibrated",
-      "standardDeviation": 0.594772,
-      "capHitCount": 0,
-      "winTierDistribution": {
-        "none": 62,
-        "small": 13
+        "baseGame": 29.016,
+        "coinReveal": 5.0,
+        "featureModes": 22.504,
+        "freeSpins": 20.904
       },
-      "featureContributionSummary": {
-        "baseGame": 3.936,
-        "coinReveal": 6.0,
-        "featureModes": 1.85
+      "baseGame": {
+        "baseRounds": 75,
+        "baseBetTotal": 7500.0,
+        "baseWinTotal": 2901.6,
+        "baseObservedReturnMultiplier": 0.38688,
+        "cascadeCount": 15,
+        "clusterHitCount": 16
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 4,
+        "featureSpins": 69,
+        "featureWinTotal": 2090.4,
+        "featureObservedReturnMultiplier": 0.27872
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
       }
     },
     "rtp_92": {
       "roundCount": 75,
-      "observedReturnMultiplierPerRound": 0.06424,
+      "totalRounds": 75,
       "targetRtp": 92.0,
+      "targetRtpPercent": 92.0,
+      "targetReturnMultiplier": 0.92,
+      "observedReturnMultiplier": 1.072947,
+      "observedReturnMultiplierPerRound": 1.072947,
+      "observedRtpPercent": 107.294667,
+      "totalBetAmount": 7500.0,
+      "totalWinAmount": 8047.1,
+      "betDenominator": 100.0,
+      "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+      "betProfile": {
+        "clusterBaseBetCredits": 20.0,
+        "clusterBetMultiplier": 1.0,
+        "minTotalBet": 20.0,
+        "defaultTotalBet": 100.0,
+        "maxTotalBet": 5000.0,
+        "betDenominator": 100.0,
+        "denominatorType": "defaultTotalBet_credits_cluster_equivalent",
+        "registrationBetFormulaNotes": "Cluster-equivalent metadata only. Do not treat Little Gangster as a fixed-line game without GS registration confirmation."
+      },
       "rtpCalibrationStatus": "smoke_not_calibrated",
-      "standardDeviation": 0.170578,
+      "standardDeviation": 2.769414,
+      "maxWinCapMultiplier": 10000.0,
+      "capHits": 0,
       "capHitCount": 0,
+      "capFrequency": 0.0,
+      "preCapWinTotal": 8047.1,
+      "cappedWinTotal": 8047.1,
       "winTierDistribution": {
-        "none": 63,
-        "small": 12
+        "none": 55,
+        "small": 20
       },
       "featureContributionSummary": {
-        "baseGame": 3.818,
-        "coinReveal": 1.0,
-        "featureModes": 2.0
+        "baseGame": 26.312,
+        "coinReveal": 12.0,
+        "featureModes": 43.359,
+        "freeSpins": 42.159
+      },
+      "baseGame": {
+        "baseRounds": 75,
+        "baseBetTotal": 7500.0,
+        "baseWinTotal": 2631.2,
+        "baseObservedReturnMultiplier": 0.350827,
+        "cascadeCount": 15,
+        "clusterHitCount": 15
+      },
+      "featureModeSmoke": {
+        "status": "provisional_smoke_path",
+        "triggerCount": 8,
+        "featureSpins": 120,
+        "featureWinTotal": 4215.9,
+        "featureObservedReturnMultiplier": 0.56212
+      },
+      "bonusBuySmoke": {
+        "status": "disabled_for_run",
+        "bonusBuyEvStatus": "bonus_buy_cost_ev_pending",
+        "bonusBuyCostTotal": 0.0,
+        "bonusBuyWinTotal": 0.0,
+        "bonusBuyObservedReturnMultiplier": 0
+      },
+      "jackpot": {
+        "jackpotEnabled": false,
+        "jackpotContribution": 0,
+        "jackpotStatus": "disabled_pending_product_decision"
       }
     }
   },
   "vabsReplaySample": {
     "roundId": "sample-round-rtp_96-0000",
     "modelId": "rtp_96",
+    "seed": 8001,
+    "roundIndex": 0,
     "startingGrid": [
       [
         "mid_1",
@@ -164,34 +323,39 @@
         "low_3"
       ]
     ],
+    "totalWin": 0.0,
+    "totalBet": 100.0,
+    "observedReturnMultiplier": 0.0,
     "winSummary": {
       "preCapWinMultiplier": 0.0,
-      "totalWinMultiplier": 0.0
+      "totalWinMultiplier": 0.0,
+      "totalWinAmount": 0.0,
+      "totalBetAmount": 100.0
     },
     "winTier": "none",
+    "featureState": {
+      "status": "provisional_smoke_path_not_triggered",
+      "triggered": false,
+      "probabilityCandidate": 0.08,
+      "featureSpins": 0,
+      "featureWinMultiplier": 0.0
+    },
+    "bonusBuyState": {
+      "enabled": false,
+      "status": "disabled_for_run"
+    },
     "capState": {
       "capMultiplier": 10000.0,
       "capped": false,
       "preCapWinMultiplier": 0.0,
-      "cappedWinMultiplier": 0.0
-    },
-    "featureState": {
-      "events": [
-        {
-          "type": "golden_square",
-          "status": "candidate"
-        }
-      ],
-      "featureModesEnabled": true
-    },
-    "bonusBuyState": {
-      "bonusBuyEnabledForRun": false,
-      "authoritativePurchase": false
+      "cappedWinMultiplier": 0.0,
+      "preCapWinTotal": 0.0,
+      "cappedWinTotal": 0.0
     },
     "rngDrawReferences": [
       {
         "drawGroup": "feature_event_smoke",
-        "drawCount": 3,
+        "drawCount": 4,
         "rawRngStored": false
       }
     ],
@@ -200,11 +364,19 @@
       "complete": true,
       "reason": "smoke_round_finished"
     },
+    "historyReplayPayload": {
+      "replayPreferred": true,
+      "screenshotRequirementStatus": "unverified",
+      "screenshotBinaryStored": false,
+      "payloadType": "deterministic_smoke_replay"
+    },
     "replayPayload": {
       "replayPreferred": true,
       "screenshotRequirementStatus": "unverified",
       "screenshotBinaryStored": false
-    }
+    },
+    "screenshotRequirementStatus": "unverified",
+    "replayPreferred": true
   },
   "blockers": [
     "large_scale_rtp_calibration_pending",

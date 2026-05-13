@@ -2,11 +2,26 @@
   "schemaVersion": "sample-run-config-v1",
   "simulationStatus": "deterministic_smoke_simulation",
   "seed": 8001,
-  "roundCount": 75,
+  "seeds": [
+    8401,
+    8402
+  ],
+  "roundCount": 2000,
   "models": [
     "rtp_96",
     "rtp_94",
     "rtp_92"
+  ],
+  "mathProfiles": [
+    "LG_8001_RTP_LOW_VOL_LOW",
+    "LG_8001_RTP_LOW_VOL_MEDIUM",
+    "LG_8001_RTP_LOW_VOL_HIGH",
+    "LG_8001_RTP_MEDIUM_VOL_LOW",
+    "LG_8001_RTP_MEDIUM_VOL_MEDIUM",
+    "LG_8001_RTP_MEDIUM_VOL_HIGH",
+    "LG_8001_RTP_HIGH_VOL_LOW",
+    "LG_8001_RTP_HIGH_VOL_MEDIUM",
+    "LG_8001_RTP_HIGH_VOL_HIGH"
   ],
   "bonusBuyEnabled": false,
   "jackpotEnabled": false,

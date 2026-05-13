@@ -4,7 +4,8 @@ Generated: 2026-05-11 12:32:07
 
 ## Scope
 
-This sprint captured reusable lessons from the Little Gangster pilot and patched the reusable skill suite so future donor-based projects run faster and avoid repeated mistakes. It also checked and patched public export sanitizer/gitignore rules.
+This sprint captured reusable lessons from the Little Gangster pilot and patched the reusable skill suite so future donor-based projects run faster and avoid repeated mistakes. It also checked and patched public export sanitizer/gitignore
+rules.
 
 ## Actions
 
@@ -32,7 +33,7 @@ No gameplay/build/release approval gates were changed. GameClientBuilder remains
 - validate_public_export.py compiles: passed.
 - public .gitignore uses folder ignore patterns, not redacted placeholders: passed.
 - no donor browsing, asset capture, client/runtime/registration/DB/wallet/release action occurred: passed by action log.
-- new/updated output redaction scan for raw donor URL/token/PASS_KEY/SID/signature/email/private link/secret: passed.
+- new/updated output redaction scan for raw donor URL/token/PASS_KEY/SID/signature/email/private link/secret : [REDACTED_FIXTURE]
 - current public export validation with strengthened validator: passed.
 
 ## Next Step

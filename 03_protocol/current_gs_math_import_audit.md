@@ -2,7 +2,8 @@
 
 ## Direct Answer
 
-No evidence was found that the math model is imported into GS during game registration. Current registration evidence points to metadata/config/routing records. Executable math should live in the proven server/backend runtime owner once selected.
+No evidence was found that the math model is imported into GS during game registration. Current registration evidence points to metadata/config/routing records. Executable math should live in the proven server/backend runtime owner once
+selected.
 
 ## Evidence
 

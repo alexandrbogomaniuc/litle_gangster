@@ -1,0 +1,33 @@
+{
+  "created_or_first_seen_missing_before_write": [
+    "[PROJECT_ROOT]/06_resulting_code/planning/schema_extension_review_summary.md",
+    "[PROJECT_ROOT]/06_resulting_code/planning/static_renderer_after_schema_review.md",
+    "[PROJECT_ROOT]/06_resulting_code/planning/client_prototype_next_step_decision.md",
+    "[PROJECT_ROOT]/06_resulting_code/planning/gameclientbuilder_go_no_go_after_schema_review.md",
+    "[PROJECT_ROOT]/08_qa/schema_extension_validation_matrix.md",
+    "[PROJECT_ROOT]/08_qa/game_payload_extension_test_matrix.md",
+    "[PROJECT_ROOT]/08_qa/ui_kit_payload_mapping_test_matrix.md",
+    "[PROJECT_ROOT]/00_skill_reports/ProtocolAndSchemaMapper/schema_extension_review_skill_report.md",
+    "[PROJECT_ROOT]/00_skill_reports/ProtocolAndSchemaMapper/schema_extension_review_validation_checklist.md",
+    "[PROJECT_ROOT]/00_skill_reports/ProtocolAndSchemaMapper/schema_extension_review_blockers.md",
+    "[PROJECT_ROOT]/10_sprint_reports/sprint_report_history/20260512_081138_PresentationPayloadSchemaExtensionReview.md",
+    "[PROJECT_ROOT]/00_skill_reports/ProtocolAndSchemaMapper/schema_extension_review_file_changes.json"
+  ],
+  "modified_or_refreshed": [
+    "[PROJECT_ROOT]/03_protocol/presentation_payload_schema_review.md",
+    "[PROJECT_ROOT]/03_protocol/presentation_payload_extension_options_matrix.md",
+    "[PROJECT_ROOT]/03_protocol/recommended_game_payload_schema_change.md",
+    "[PROJECT_ROOT]/03_protocol/core_protocol_schema_patch_plan.md",
+    "[PROJECT_ROOT]/03_protocol/ui_kit_mapper_patch_plan.md",
+    "[PROJECT_ROOT]/03_protocol/new_games_server_payload_patch_plan.md",
+    "[PROJECT_ROOT]/03_protocol/little_gangster_adapter_implementation_plan.md",
+    "[PROJECT_ROOT]/03_protocol/schema_extension_test_plan.md",
+    "[PROJECT_ROOT]/03_protocol/schema_extension_blockers.md",
+    "[PROJECT_ROOT]/00_skill_reports/ProtocolAndSchemaMapper/handoff.json",
+    "[PROJECT_ROOT]/project_manifest.json",
+    "[PROJECT_ROOT]/assumptions.md",
+    "[PROJECT_ROOT]/decisions_log.md",
+    "[PROJECT_ROOT]/10_sprint_reports/sprint_report_latest.md"
+  ],
+  "generated_at": "2026-05-12 08:07:51 "
+}
