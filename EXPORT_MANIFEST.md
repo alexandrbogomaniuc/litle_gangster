@@ -14,14 +14,24 @@ Release approved: false.
 
 Included safe artifact groups:
 
-- RTP confidence and simulation scale reports.
-- Profile stability reclassification artifacts.
-- Profile calibration and RTP/volatility matrix JSON.
 - Current compact sprint report.
-- Current MathModelDesigner handoff.
-- Current WorkflowOrchestrator handoff.
-- MathModelDesigner safe skill snapshot.
-- WorkflowOrchestrator safe skill snapshot.
+- Safe project manifest summary.
+- Safe assumptions and decisions excerpts.
+- Future-game RTP range rule.
+- MathProfileCalibrator skill snapshot.
+- MathProfileCalibrator RTP validation reference.
+- MathProfileCalibrator calibration references.
+- MathProfileCalibrator validator and planner scripts.
+- MathProfileCalibrator handoff and RTP range update reports.
+
+Reusable rule highlighted in this checkpoint:
+
+- Future requested average theoretical RTP range is 91.00% to 99.70%, inclusive.
+- Every future game has exactly LOW, MEDIUM, and HIGH RTP levels.
+- RTP values must be strictly ascending: LOW < MEDIUM < HIGH.
+- Operators choose only pretested approved profiles.
+- Arbitrary runtime RTP values are not allowed.
+- Little Gangster RTP values were not changed.
 
 Excluded unsafe artifact groups:
 
@@ -31,12 +41,11 @@ Excluded unsafe artifact groups:
 - HAR files.
 - Event logs.
 - Raw network logs.
-- Playwright folders.
-- npm caches and node_modules.
-- Raw secrets and raw tokens.
-- SIDs and signatures.
-- Private links and emails.
-- Full donor URLs and tokenized URLs.
-- Media and binary donor files.
-- Build artifacts and dist folders.
-- Unapproved release assets.
+- Raw secrets.
+- Full donor URLs.
+- Tokenized URLs.
+- Local browser profiles.
+- Build artifacts.
+- Generated client/runtime code.
+- Registration artifacts.
+- DB or wallet outputs.

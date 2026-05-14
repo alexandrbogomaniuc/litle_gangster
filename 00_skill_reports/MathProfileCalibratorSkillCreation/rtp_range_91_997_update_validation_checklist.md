@@ -1,0 +1,28 @@
+# RTP Range 91.00-99.70 Update Validation Checklist
+
+- [x] project_manifest.json parses
+- [x] MathProfileCalibrator handoff parses
+- [x] validate_rtp_request.py compiles
+- [x] plan_calibration_loop.py compiles
+- [x] valid 91.00 / 96.00 / 99.70 request passes
+- [x] valid 93.24 / 96.32 / 99.30 request passes
+- [x] valid 92.50 / 95.75 / 98.90 request passes
+- [x] invalid 90.99 / 96.00 / 99.70 request fails
+- [x] invalid 91.00 / 96.00 / 99.71 request fails
+- [x] non-ascending 95.00 / 94.00 / 98.00 request fails
+- [x] duplicate 94.00 / 94.00 / 98.00 request fails
+- [x] failure reasons are machine-readable
+- [x] RTP_REQUEST_VALIDATION.md states range 91.00-99.70 inclusive
+- [x] SKILL.md states range 91.00-99.70 inclusive
+- [x] future_game_rtp_range_rule.md exists and is non-empty
+- [x] Little Gangster RTP values were not changed
+- [x] no simulations were run
+- [x] no backend adapter was implemented
+- [x] no Staging source was modified
+- [x] no client code was generated
+- [x] no registration artifact was generated
+- [x] no DB/Cassandra action occurred
+- [x] no wallet/API call occurred
+- [x] no donor browsing occurred
+- [x] no asset capture occurred
+- [x] no release approval occurred

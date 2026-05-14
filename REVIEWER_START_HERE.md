@@ -5,38 +5,39 @@ Start with these files in order.
 
 1. 10_sprint_reports/sprint_report_latest.md
 2. project_manifest.json
-3. 04_math/authoritative_server_math_v1/simulation/rtp_confidence_and_scale_report.md
-4. 04_math/authoritative_server_math_v1/simulation/rtp_confidence_estimates.json
-5. 04_math/authoritative_server_math_v1/simulation/simulation_scale_tiers.md
-6. 04_math/authoritative_server_math_v1/simulation/profile_stability_reclassification.md
-7. 04_math/authoritative_server_math_v1/simulation/large_scale_simulation_plan.md
-8. 04_math/authoritative_server_math_v1/simulation/profile_stability_triage_report.md
-9. 04_math/authoritative_server_math_v1/simulation/profile_stability_triage_results.json
-10. 04_math/authoritative_server_math_v1/rtp_volatility_profile_matrix.json
-11. 04_math/authoritative_server_math_v1/simulation/profile_calibration_results.json
-12. 00_skill_reports/MathModelDesigner/handoff.json
-13. 00_skill_reports/WorkflowOrchestrator/handoff.json
-14. _skill_suite_snapshot/MathModelDesigner/SKILL.md
-15. _skill_suite_snapshot/MathModelDesigner/references/CALIBRATION_FAST_LANE.md
-16. _skill_suite_snapshot/MathModelDesigner/references/RTP_SIMULATION_CONFIDENCE_TIERS.md
-17. _skill_suite_snapshot/MathModelDesigner/references/RTP_VOLATILITY_PROFILE_MATRIX.md
-18. _skill_suite_snapshot/WorkflowOrchestrator/SKILL.md
+3. assumptions.md
+4. decisions_log.md
+5. 09_release/future_game_rtp_range_rule.md
+6. _skill_suite_snapshot/MathProfileCalibrator/SKILL.md
+7. _skill_suite_snapshot/MathProfileCalibrator/references/RTP_REQUEST_VALIDATION.md
+8. _skill_suite_snapshot/MathProfileCalibrator/references/CALIBRATION_LOOP_POLICY.md
+9. _skill_suite_snapshot/MathProfileCalibrator/references/TRAIN_VALIDATION_SEED_POLICY.md
+10. _skill_suite_snapshot/MathProfileCalibrator/references/ADJUSTMENT_OVERLAY_POLICY.md
+11. _skill_suite_snapshot/MathProfileCalibrator/references/CALIBRATION_REPORT_REQUIREMENTS.md
+12. _skill_suite_snapshot/MathProfileCalibrator/scripts/validate_rtp_request.py
+13. _skill_suite_snapshot/MathProfileCalibrator/scripts/plan_calibration_loop.py
+14. _skill_suite_snapshot/MathProfileCalibrator/scripts/validate_calibration_report.py
+15. 00_skill_reports/MathProfileCalibratorSkillCreation/handoff.json
+16. 00_skill_reports/MathProfileCalibratorSkillCreation/rtp_range_91_997_update_skill_report.md
+17. 00_skill_reports/MathProfileCalibratorSkillCreation/rtp_range_91_997_update_validation_checklist.md
+18. 00_skill_reports/MathProfileCalibratorSkillCreation/rtp_range_91_997_update_blockers.md
 
 Review notes:
 
-- This checkpoint intentionally reclassifies small RTP samples as smoke only.
-- A 10k run is not RTP approval.
-- A 10k run is not profile rejection.
-- Confidence tiers now control interpretation.
-- Backend implementation remains blocked.
-- Client implementation remains blocked.
+- The reusable RTP request range is now 91.00% to 99.70%, inclusive.
+- LOW, MEDIUM, and HIGH are labels, not fixed reusable values.
+- Future-game RTP values must be strictly ascending.
+- Operators may choose only approved pretested math profiles.
+- Arbitrary runtime RTP entry is not allowed.
+- Little Gangster RTP values were not changed.
+- Little Gangster remains 92.00%, 94.00%, and 96.00%.
+- Bonus-buy EV remains blocked.
+- Backend adapter implementation remains blocked.
+- GameClientBuilder implementation remains blocked.
 - Registration generation remains blocked.
 - Wallet work remains blocked.
+- DB and Cassandra work remain blocked.
 - Release remains blocked.
-- Bonus-buy EV remains blocked.
-- Max-win tail behavior remains unproven.
-- Exact values remain non-final.
-- Certification is not claimed.
 
 Unsafe material is intentionally excluded.
 Do not treat this repository as a playable game package.

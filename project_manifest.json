@@ -5,40 +5,35 @@
     "gameId": "8001",
     "exportType": "raw-safe sanitized review checkpoint"
   },
-  "current_sprint": "MathModelDesigner RTP confidence and simulation-scale workflow correction",
-  "next_recommended_skill": "MathModelDesigner large-scale simulation planning or train/validation calibration design",
-  "next_recommended_prompt_summary": "Run a compact MathModelDesigner sprint to design larger train/validation simulation runs and confidence reporting before any tuning, backend adapter, or registration work.",
-  "math": {
-    "rtp_confidence_scale_status": "completed_small_sample_reclassified_inconclusive",
-    "prior_small_sample_results_reclassified": true,
-    "small_sample_status": "small_sample_profile_stability_inconclusive",
-    "simulation_tiers_defined": true,
-    "small_samples_can_approve_rtp": false,
-    "exact_values_final": false,
-    "certification_status": false,
-    "backend_adapter_implementation_allowed": false,
-    "gameclientbuilder_implementation_allowed": false,
-    "gameserverregistrar_generation_allowed": false
+  "current_sprint": "MathProfileCalibrator RTP range update to 91.00-99.70",
+  "next_recommended_skill": "WorkflowOrchestrator checkpoint review or MathProfileCalibrator future-game calibration",
+  "next_recommended_prompt_summary": "Use corrected MathProfileCalibrator 91.00-99.70 RTP request range for future games; do not change Little Gangster RTP profiles unless explicitly requested.",
+  "reusable_skill_suite_hardening": {
+    "math_profile_calibrator_rtp_range_updated": true,
+    "future_game_min_allowed_rtp": 91.0,
+    "future_game_max_allowed_rtp": 99.7,
+    "future_game_rtp_range_inclusive": true,
+    "future_game_rtp_levels_strictly_ascending": true,
+    "little_gangster_rtp_values_changed_by_range_update": false
   },
-  "approval_gates": {
+  "little_gangster_current_rtp_values": {
+    "LOW": 92.0,
+    "MEDIUM": 94.0,
+    "HIGH": 96.0,
+    "changedByThisCheckpoint": false
+  },
+  "gates": {
     "backend_adapter_implementation_allowed": false,
     "gameclientbuilder_implementation_allowed": false,
     "gameserverregistrar_generation_allowed": false,
-    "client_build_approved": false,
-    "registration_approved": false,
     "wallet_tests_approved": false,
-    "release_approved": false,
-    "final_assets_approved": false
-  },
-  "public_export_safety": {
-    "donor_assets_included": false,
-    "screenshots_har_included": false,
-    "raw_secrets_included": false,
-    "tokenized_urls_included": false,
-    "client_runtime_code_included": false,
-    "registration_artifacts_included": false,
-    "db_actions_included": false,
-    "wallet_calls_included": false,
+    "registration_approved": false,
     "release_approved": false
+  },
+  "math_blockers": {
+    "bonus_buy_ev_remains_blocked": true,
+    "tail_maxwin_cap_frequency_unproven": true,
+    "exact_values_final": false,
+    "certification_status": false
   }
 }

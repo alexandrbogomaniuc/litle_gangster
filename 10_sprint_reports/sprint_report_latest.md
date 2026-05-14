@@ -1,36 +1,38 @@
-# Sprint Report - RTP Confidence Scale Correction
+# Sprint Report - MathProfileCalibrator RTP Range Update
 
-Created: 2026-05-13
+Created: 2026-05-14
 
 ## Outcome
 
-Confidence-scale sprint completed. No simulations were run and no math values were tuned.
+Reusable future-game RTP request range updated.
 
-## Correction
+## Rule
 
-The prior 10,000-round-per-seed 3x3 profile results are reclassified as `small_sample_profile_stability_inconclusive`. The correct wording is `profiles outside small-sample smoke tolerance`, not true RTP failures.
+- Allowed RTP range: 91.00% to 99.70%, inclusive
+- RTP labels: LOW / MEDIUM / HIGH
+- RTP ordering: LOW < MEDIUM < HIGH
+- Decimal values allowed: true
+- Operators choose approved pretested profiles only: true
 
-## Simulation Tiers
+## Validation
 
-Defined tiers from wiring smoke through diagnostic smoke, calibration trend, calibration confidence, pre-certification, certification/lab scale, and tail/max-win discovery.
-
-## Confidence Estimate Summary
-
-- Worst-profile estimated rounds for +/-2.0 percentage points: 91,000 range.
-- Worst-profile estimated rounds for +/-1.0 percentage point: 363,000 range.
-- Worst-profile estimated rounds for +/-0.5 percentage point: 1.45M range.
-- Worst-profile estimated rounds for +/-0.25 percentage point: 5.8M range.
-
-These are normal-approximation estimates from smoke variance only. Tail, cap, bonus-buy, and jackpot behavior may require tens or hundreds of millions of rounds, or up to one billion rounds.
+- Valid 91.00 / 96.00 / 99.70: passed
+- Valid 93.24 / 96.32 / 99.30: passed
+- Valid 92.50 / 95.75 / 98.90: passed
+- Invalid 90.99 / 96.00 / 99.70: rejected with `below_minimum_allowed_rtp`
+- Invalid 91.00 / 96.00 / 99.71: rejected with `above_maximum_allowed_rtp`
+- Non-ascending 95.00 / 94.00 / 98.00: rejected with `rtp_levels_not_strictly_ascending`
+- Duplicate 94.00 / 94.00 / 98.00: rejected with `duplicate_rtp_levels`
 
 ## Gates
 
-- Small samples can approve RTP: false.
-- Backend adapter remains blocked: true.
-- Registration generation remains blocked: true.
-- Release remains blocked: true.
+- Little Gangster RTP values changed: false
+- No simulations run: true
+- Backend adapter implementation allowed: false
+- GameClientBuilder implementation allowed: false
+- GameServerRegistrar generation allowed: false
+- Release approved: false
 
 ## Next Prompt
 
-Run a compact MathModelDesigner sprint to design larger train/validation simulation runs and confidence reporting before any tuning, backend adapter, or registration work.
-
+Use MathProfileCalibrator with the corrected 91.00%-99.70% range for the next future-game RTP/volatility calibration request, or run a raw-safe checkpoint after review.
