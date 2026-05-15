@@ -1,56 +1,55 @@
 # Export Manifest
 
-## Export Type
+Export type: raw-safe sanitized review checkpoint.
 
-Raw-safe sanitized public review checkpoint.
+Checkpoint scope:
 
-## Checkpoint Theme
+- Reusable workflow skill changes, including ParallelMathValidator.
+- Lifecycle wrapper implementation summaries.
+- VABS visual history route implementation summaries.
+- VABS legacy alias implementation summaries.
+- GS/wallet responsibility boundary correction docs.
+- Public-safe skill snapshots and checkpoint reports.
 
-ParallelMathValidator workflow skill creation and Little Gangster lifecycle
-wrapper planning.
+Safety exclusions:
 
-## Included Groups
+- No donor/scaffold asset bodies.
+- No screenshots, HAR files, raw event logs, or captured media.
+- No raw secrets, passwords, SIDs, signatures, tokenized URLs, or private URLs.
+- No private local paths.
+- No Staging source code.
+- No production client implementation.
+- No registration artifacts.
+- No DB, Cassandra, wallet, GS, or BO/CM endpoint artifacts.
+- No release approval.
 
-- Public metadata files.
-- Public-safe project status files.
-- ParallelMathValidator skill snapshot.
-- ParallelMathValidator references and scripts.
-- Skill-suite routing snapshots.
-- ParallelMathValidator project adoption and playbook docs.
-- Lifecycle wrapper planning docs.
-- Lifecycle source-planning docs, curated to remove private local paths.
-- Lifecycle planning skill reports.
-- ParallelMathValidator skill creation reports.
+Curation notes:
 
-## Curation Notes
+- Public metadata was rewritten for readable raw-safe review.
+- Project docs were copied as public-safe copies with private paths, private
+  hosts, donor hosts, tokenized URLs, and scaffold asset body paths removed or
+  redacted.
+- Skill snapshots were copied as text-only public-safe snapshots.
+- Validator wording was updated to require accurate current status: no production
+  client implementation was generated, while non-production planning/fixture
+  materials may be documented separately.
+- Long Markdown lines were wrapped in public copies for raw readability.
 
-Project documents copied into this export are public-safe copies. Absolute local
-paths are replaced with relative or placeholder notation. Donor host references
-are removed. Tokenized URLs, private URLs, raw secrets, SIDs, signatures, emails,
-and passwords are not included.
+Included high-value paths:
 
-Skill snapshots are preserved as review snapshots where possible. If a snapshot
-contains a long Markdown line, it may be wrapped for raw-safe validation. If a
-snapshot contains unsafe private content, it is curated before export.
+- `README.md`
+- `REVIEWER_START_HERE.md`
+- `09_release/WORKFLOW_CONTENT_INTEGRITY_AUDIT.md`
+- `_skill_suite_snapshot/ParallelMathValidator/`
+- `_skill_suite_snapshot/WalletAndLaunchTester/SKILL.md`
+- `_skill_suite_snapshot/GameServerRegistrar/SKILL.md`
+- `_skill_suite_snapshot/RTPAndReleaseAuditor/SKILL.md`
+- `03_protocol/gs_wallet_accounting_responsibility_audit.md`
+- `03_protocol/8001_runtime_vs_gs_responsibility_matrix.md`
+- `08_qa/8001_wallet_launch_test_scope_correction.md`
 
-## Explicit Exclusions
+Known manifest notes:
 
-- Donor and scaffold asset bodies.
-- Screenshots, HAR files, videos, browser captures, and raw logs.
-- Staging source files.
-- Backend adapter source code from Staging.
-- Lifecycle wrapper implementation code.
-- Production client code.
-- Gamesv1/games/8001.
-- Registration artifacts.
-- DB/Cassandra apply files.
-- Wallet endpoint data.
-- Release approval or certification claim.
-
-## Blocked Gates
-
-- GameClientBuilder remains blocked.
-- GameServerRegistrar generation remains blocked.
-- WalletAndLaunchTester remains blocked.
-- RTPAndReleaseAuditor release approval remains blocked.
-- Release remains blocked.
+- Private project files not present during curation: 03_protocol/runtime_payload_adapter_gap_analysis.md
+- Reviewer references missing from export or represented as optional notes: 03_protocol/runtime_payload_adapter_gap_analysis.md,
+  09_release/WORKFLOW_CONTENT_INTEGRITY_AUDIT.md

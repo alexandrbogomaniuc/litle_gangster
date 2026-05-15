@@ -6,9 +6,9 @@ Current adapter is payload mapper only. Lifecycle wrapper is required to own 800
 
 ## Future Source Location
 
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/reconnectRecovery.ts`
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/stateMachine.ts`
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/roundCompletion.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/reconnectRecovery.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/stateMachine.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/roundCompletion.ts`
 
 ## Required Persisted State
 

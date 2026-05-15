@@ -21,12 +21,13 @@ A Little Gangster round may be marked complete only when all applicable checks a
 ## Cascades
 
 Cascade state is active until no more winning clusters, drops, new-symbol fills, feature triggers, or cap checks remain. The browser may animate
-  cascades, but completion is backend/wrapper-owned.
+cascades,
+but completion is backend/wrapper-owned.
 
 ## Free Spins
 
 Free-spin state is complete only when feature spin count reaches zero, retriggers are resolved, cascade chains from the final spin are complete, and
-  settlement state is ready.
+settlement state is ready.
 
 ## Bonus-Buy Feature
 
@@ -46,7 +47,8 @@ Cap enforcement must run before `round_complete`. If cap is reached, history mus
 ## Settlement
 
 Round completion and settlement completion are separate. The wrapper may reach `round_complete` before `settlement_complete`, but it must not expose
-  the round as fully final for wallet/history/reconnect until settlement has completed or a pending/stuck review state is recorded.
+the
+round as fully final for wallet/history/reconnect until settlement has completed or a pending/stuck review state is recorded.
 
 ## Restart Advisory Handling
 

@@ -5,8 +5,8 @@ Status: reusable skill-suite adoption note. This sprint did not run simulations 
 ## Why The Skill Exists
 
 Future game-development projects need a way to validate math profiles at larger scale without trapping the main workflow in long simulation loops.
-  ParallelMathValidator provides that lane. It can prepare safe prompts for subagents or parallel GPT threads, coordinate local or external server
-  jobs, import result packages, validate seed separation, and extract registration math fields.
+ParallelMathValidator provides that lane. It can prepare safe prompts for subagents or parallel GPT threads, coordinate local or external server jobs,
+import result packages, validate seed separation, and extract registration math fields.
 
 ## How Future Games Use It
 
@@ -22,7 +22,7 @@ Future games should still start with MathModelDesigner and MathProfileCalibrator
 ## How It Avoids Loops
 
 MathProfileCalibrator remains bounded and train-focused. If the work becomes large, slow, tail-heavy, bonus-buy-specific, FRB-specific, or
-  certification-like, the workflow routes to ParallelMathValidator instead of repeating main-thread tuning loops.
+certification-like, the workflow routes to ParallelMathValidator instead of repeating main-thread tuning loops.
 
 ## Parallel Thread And Subagent Support
 
@@ -39,9 +39,9 @@ ParallelMathValidator includes a prompt generator that restricts workers to a pa
 ## Main Workflow Impact
 
 The main workflow may continue with unrelated planning while parallel math evidence runs. It must not pass downstream gates that depend on missing
-  evidence. Real math blockers still block GameServerRegistrar generation, RTPAndReleaseAuditor approval, and release.
+evidence. Real math blockers still block GameServerRegistrar generation, RTPAndReleaseAuditor approval, and release.
 
 ## Little Gangster Status
 
 This adoption sprint created reusable skill-suite docs/scripts only. Little Gangster active math values, active bonus-buy config, RTP/volatility
-  profiles, and Staging source were not changed.
+profiles, and Staging source were not changed.

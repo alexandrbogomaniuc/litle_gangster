@@ -6,7 +6,7 @@ Crazy Rooster / 7001 is not authoritative. Current adapter history fields are pa
 
 ## Recommended Source Location
 
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/history/`
 
 ## Future Files To Create
 
@@ -17,7 +17,7 @@ Crazy Rooster / 7001 is not authoritative. Current adapter history fields are pa
 
 ## Future Route Host
 
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/index.ts`
 
 ## Candidate Routes
 

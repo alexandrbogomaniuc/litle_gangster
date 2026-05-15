@@ -1,8 +1,7 @@
 ---
 name: MathProfileCalibrator
-description: >-
-  Validate, calibrate, and gate 3x3 RTP/volatility math profile matrices using train, validation, tail, and bonus-buy evidence without backend,
-  client, registration, wallet, donor, or release work.
+description: Validate, calibrate, and gate 3x3 RTP/volatility math profile matrices using train, validation, tail, and bonus-buy evidence without
+backend, client, registration, wallet, donor, or release work.
 ---
 
 # MathProfileCalibrator

@@ -1,0 +1,20 @@
+{
+  "vabs_evidence_policy_completed": true,
+  "deterministic_replay_required": true,
+  "visual_vabs_route_required": true,
+  "screenshot_mode_supported_by_policy": true,
+  "video_mode_supported_by_policy": true,
+  "default_history_evidence_mode": "deterministic_replay_only",
+  "media_manifest_schema_created": true,
+  "game_level_settings_doc_created": true,
+  "reusable_workflow_patched": true,
+  "durable_media_storage_implemented": false,
+  "screenshot_capture_implemented": false,
+  "video_capture_implemented": false,
+  "vabs_route_implementation_allowed": false,
+  "gameclientbuilder_implementation_allowed": false,
+  "gameserverregistrar_generation_allowed": false,
+  "release_allowed": false,
+  "suggested_next_skill": "ProtocolAndSchemaMapper",
+  "suggested_next_prompt_summary": "explicitly approve 8001 VABS visual history route implementation foundation with deterministic replay and media manifest support, but no durable media capture unless separately approved"
+}

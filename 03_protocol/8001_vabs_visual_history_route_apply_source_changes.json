@@ -1,0 +1,44 @@
+{
+  "sprint": "ProtocolAndSchemaMapper 8001 VABS visual history route implementation foundation",
+  "date": "2026-05-15",
+  "staging_source_root": "[STAGING_SOURCE_ROOT_REDACTED]",
+  "allowed_scope_verified": true,
+  "source_files_created": [
+    "new-games-server/src/games/little-gangster/history/historyTypes.ts",
+    "new-games-server/src/games/little-gangster/history/historyPayloadBuilder.ts",
+    "new-games-server/src/games/little-gangster/history/historyStorageProvider.ts",
+    "new-games-server/src/games/little-gangster/history/visualReplayRenderer.ts",
+    "new-games-server/src/games/little-gangster/history/mediaManifest.ts",
+    "new-games-server/src/games/little-gangster/history/historySecurity.ts",
+    "new-games-server/src/games/little-gangster/history/historyFixtures.ts",
+    "new-games-server/src/games/little-gangster/history/historyRoutes.ts",
+    "new-games-server/src/games/little-gangster/history/index.ts",
+    "new-games-server/test/little-gangster/history-routes.test.ts",
+    "new-games-server/test/little-gangster/visual-replay-renderer.test.ts",
+    "new-games-server/test/little-gangster/history-payload-builder.test.ts",
+    "new-games-server/test/little-gangster/media-manifest.test.ts",
+    "new-games-server/test/little-gangster/history-security.test.ts",
+    "new-games-server/test/little-gangster/history-storage-provider.test.ts"
+  ],
+  "source_files_modified": [
+    "new-games-server/src/index.ts"
+  ],
+  "route_shapes_created": [
+    "POST /slot/v1/8001/history/round/:roundId",
+    "POST /slot/v1/8001/history/session/:gameSessionId",
+    "POST /slot/v1/8001/history/session/:gameSessionId?wholeSession=true",
+    "GET /slot/v1/8001/history/render/round/:roundId",
+    "GET /slot/v1/8001/history/render/session/:gameSessionId"
+  ],
+  "json_replay_response_created": true,
+  "visual_html_response_created": true,
+  "media_manifest_support_created": true,
+  "default_evidence_mode": "deterministic_replay_only",
+  "durable_storage_implemented": false,
+  "screenshot_capture_implemented": false,
+  "video_capture_implemented": false,
+  "wallet_calls_made": false,
+  "db_or_cassandra_actions_made": false,
+  "registration_artifacts_generated": false,
+  "release_approved": false
+}

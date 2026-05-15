@@ -1,0 +1,20 @@
+{
+  "vabs_route_resolution_audit_completed": true,
+  "staging_source_modified": false,
+  "legacy_source_inspected": true,
+  "new_games_source_inspected": true,
+  "gamesv1_client_source_inspected": true,
+  "registration_config_source_inspected": true,
+  "recommended_route_resolution_model": "model_e_hybrid_configured_gs_cm_route_new_games_server_visual_replay",
+  "recommended_vabs_source_location": "new-games-server/src/games/little-gangster/history/",
+  "recommended_client_history_route_strategy": "use bootstrap historyPolicy or backend-generated visual replay route; do not hardcode client route",
+  "recommended_backoffice_cm_route_strategy": "use configured or generated visual history URL with legacy-compatible VABS parameter support",
+  "registration_config_required": true,
+  "implementation_allowed": false,
+  "vabs_route_implementation_allowed": false,
+  "gameclientbuilder_implementation_allowed": false,
+  "gameserverregistrar_generation_allowed": false,
+  "release_allowed": false,
+  "suggested_next_skill": "ProtocolAndSchemaMapper",
+  "suggested_next_prompt_summary": "explicitly approve VABS visual history route implementation for 8001 using the hybrid route model and keeping registration generation blocked"
+}

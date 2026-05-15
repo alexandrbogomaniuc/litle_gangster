@@ -18,4 +18,3 @@ Record:
 - decision reason
 - expected benefit
 - whether output changed the decision
-

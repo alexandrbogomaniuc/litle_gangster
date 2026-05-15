@@ -1,0 +1,17 @@
+{
+  "vabs_alias_compatibility_audit_completed": true,
+  "staging_source_modified": false,
+  "legacy_route_shape_analyzed": true,
+  "raw_loopback_url_persisted": false,
+  "recommended_alias_decision": "legacy_alias_recommended",
+  "registration_config_required": "blocked_exact_field_shape_unproven",
+  "bo_cm_strategy": "support a guarded legacy-compatible alias or redirect to canonical 8001 visual render routes; do not claim compatibility until BO/CM tests pass",
+  "gameclient_history_strategy": "use bootstrap or backend-generated visual history URL; use legacy alias if configured; never hardcode private host",
+  "alias_implementation_allowed": false,
+  "gameclientbuilder_implementation_allowed": false,
+  "gameserverregistrar_generation_allowed": false,
+  "wallet_tests_allowed": false,
+  "release_allowed": false,
+  "suggested_next_skill": "ProtocolAndSchemaMapper",
+  "suggested_next_prompt_summary": "Explicitly approve a narrow 8001 VABS legacy alias implementation foundation that maps sanitized VIEWSESSID, GAMEID, LANG, TIMEZONE, hideClose, and optional round/wholeSession parameters to the existing 8001 visual history route foundation, with durable storage and BO/CM compatibility tests still blocked unless separately approved."
+}

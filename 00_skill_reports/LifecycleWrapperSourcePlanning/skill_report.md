@@ -20,15 +20,15 @@ Recommended wrapper option: Option 5, combined small wrapper first, then separat
 
 Recommended wrapper source location:
 
-`[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/`
+`[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/`
 
 Recommended VABS route source location:
 
-`[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/`
+`[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/history/`
 
 Route integration host:
 
-`[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts`
+`[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/index.ts`
 
 ## Guardrails Kept
 

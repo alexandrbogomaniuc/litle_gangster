@@ -1,8 +1,7 @@
 ---
 name: WorkflowOrchestrator
-description: >-
-  Decide the next safe iGaming workflow skill from manifest, handoffs, blockers, and gates; refuse unsafe implementation jumps and produce the exact
-  next prompt.
+description: Decide the next safe iGaming workflow skill from manifest, handoffs, blockers, and gates; refuse unsafe implementation jumps and produce
+the exact next prompt.
 ---
 
 # WorkflowOrchestrator
@@ -10,7 +9,7 @@ description: >-
 ## Purpose
 
 WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement game code, generate registration, call wallets, browse donor URLs,
-  capture assets, or approve release. It reads the current project state and produces one safe next step.
+capture assets, or approve release. It reads the current project state and produces one safe next step.
 
 ## Required Inputs
 
@@ -44,6 +43,11 @@ WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement
   proven.
 - Never recommend WalletAndLaunchTester unless safe test environment and secret references are available.
 - Never recommend RTPAndReleaseAuditor release approval unless all prior gates pass.
+- Never recommend WalletAndLaunchTester or GameServerRegistrar generation when GS,
+  wallet, runtime, storage, and client responsibilities are unresolved. Route to
+  ProtocolAndSchemaMapper for a responsibility boundary audit first when wallet
+  ownership, session/history ownership, pending/stuck transaction ownership, or
+  registration wallet/config ownership is unclear.
 - Route to MathProfileCalibrator when a 3x3 math profile matrix exists but
   train/validation gates are not passed, or when requested RTP/volatility
   profiles need calibration.
@@ -65,8 +69,11 @@ WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement
    downstream gate.
 4. Prefer MathProfileCalibrator over backend/client/registration work when
    profile calibration gates are open.
-5. Report the allowed next skill, blocked unsafe skills, and exact next Codex prompt.
-6. Update project reports only when the sprint asks for it.
+5. Prefer ProtocolAndSchemaMapper responsibility-boundary audit before
+   WalletAndLaunchTester when prompts imply that the browser/client or game runtime
+   owns real wallet state without current GS proof.
+6. Report the allowed next skill, blocked unsafe skills, and exact next Codex prompt.
+7. Update project reports only when the sprint asks for it.
 
 ## Output Shape
 

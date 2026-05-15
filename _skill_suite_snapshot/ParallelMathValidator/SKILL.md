@@ -1,9 +1,8 @@
 ---
 name: ParallelMathValidator
-description: >-
-  Run or coordinate parallel large-scale math validation for reusable iGaming projects, including 3x3 RTP/volatility train-validation-tail gates,
-  bonus-buy EV, FRB/promo liability, registration math field extraction, and non-certified evidence packaging without blocking the main workflow or
-  changing active configs.
+description: Run or coordinate parallel large-scale math validation for reusable iGaming projects, including 3x3 RTP/volatility train-validation-tail
+gates, bonus-buy EV, FRB/promo liability, registration math field extraction, and non-certified evidence packaging without blocking the main workflow
+or changing active configs.
 ---
 
 # ParallelMathValidator

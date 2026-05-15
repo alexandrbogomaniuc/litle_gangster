@@ -93,4 +93,3 @@ Small samples can prove wiring, denominator sanity, deterministic routing,
 obvious broken logic, and impossible configs. They cannot prove true RTP,
 high-volatility convergence, bonus-buy EV, jackpot behavior, cap frequency, or
 release readiness.
-

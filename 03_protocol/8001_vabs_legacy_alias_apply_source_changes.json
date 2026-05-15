@@ -1,0 +1,37 @@
+{
+  "sprint": "ProtocolAndSchemaMapper 8001 VABS legacy alias implementation foundation",
+  "date": "2026-05-15",
+  "staging_source_root": "[STAGING_SOURCE_ROOT_REDACTED]",
+  "allowed_scope_verified": true,
+  "source_files_created": [
+    "new-games-server/src/games/little-gangster/history/legacyAliasTypes.ts",
+    "new-games-server/src/games/little-gangster/history/legacyAliasMapper.ts",
+    "new-games-server/src/games/little-gangster/history/legacyAliasRoutes.ts",
+    "new-games-server/src/games/little-gangster/history/legacyAliasSecurity.ts",
+    "new-games-server/test/little-gangster/vabs-legacy-alias-routes.test.ts",
+    "new-games-server/test/little-gangster/vabs-legacy-alias-mapper.test.ts",
+    "new-games-server/test/little-gangster/vabs-legacy-alias-security.test.ts"
+  ],
+  "source_files_modified": [
+    "new-games-server/src/games/little-gangster/history/index.ts",
+    "new-games-server/src/index.ts"
+  ],
+  "root_alias_supported": true,
+  "scoped_alias_supported": true,
+  "alias_route_shapes": [
+    "GET /vabs/show.jsp",
+    "GET /slot/v1/8001/legacy/vabs/show.jsp"
+  ],
+  "canonical_routes_preserved": true,
+  "view_session_id_equivalence_status": "unproven",
+  "bo_cm_alias_acceptance_tested": false,
+  "durable_storage_implemented": false,
+  "durable_media_storage_implemented": false,
+  "screenshot_capture_implemented": false,
+  "video_capture_implemented": false,
+  "wallet_calls_made": false,
+  "db_or_cassandra_actions_made": false,
+  "registration_artifacts_generated": false,
+  "release_approved": false,
+  "certification_status": false
+}

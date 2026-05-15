@@ -30,42 +30,25 @@
   "rtpLevel": {
     "type": "string",
     "required": true,
-    "allowedValues": [
-      "LOW",
-      "MEDIUM",
-      "HIGH"
-    ]
+    "allowedValues": ["LOW", "MEDIUM", "HIGH"]
   },
   "volatilityLevel": {
     "type": "string",
     "required": true,
-    "allowedValues": [
-      "LOW",
-      "MEDIUM",
-      "HIGH"
-    ]
+    "allowedValues": ["LOW", "MEDIUM", "HIGH"]
   },
   "baseRtpTarget": {
     "type": "number",
     "required": true
   },
   "declaredBfRtpTarget": {
-    "type": [
-      "number",
-      "null"
-    ],
+    "type": ["number", "null"],
     "required": "when bonus buy is available or represented"
   },
   "bonusBuyCostMultiplier": {
-    "type": [
-      "integer",
-      "null"
-    ],
+    "type": ["integer", "null"],
     "required": "when bonus buy purchase or result is present",
-    "allowedValues": [
-      100,
-      null
-    ]
+    "allowedValues": [100, null]
   },
   "actionSequence": {
     "type": "array",

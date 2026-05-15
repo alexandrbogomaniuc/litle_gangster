@@ -31,4 +31,3 @@ later sprint explicitly scopes that work.
 - Do not use post-spin payout scaling.
 - Keep volatility ordering visible in reports.
 - Record unchanged profiles explicitly when doing targeted adjustments.
-

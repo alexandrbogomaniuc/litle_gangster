@@ -1,0 +1,28 @@
+{
+  "vabs_visual_history_source_planning_completed": true,
+  "staging_source_modified": false,
+  "recommended_vabs_route_source_location": "new-games-server/src/games/little-gangster/history/",
+  "recommended_route_shapes": [
+    "POST /slot/v1/8001/history/round/:roundId",
+    "POST /slot/v1/8001/history/session/:gameSessionId",
+    "POST /slot/v1/8001/history/session/:gameSessionId?wholeSession=true",
+    "GET /slot/v1/8001/history/render/round/:roundId",
+    "GET /slot/v1/8001/history/render/session/:gameSessionId",
+    "GET /slot/v1/8001/history/render/session/:gameSessionId?wholeSession=true"
+  ],
+  "json_replay_response_planned": true,
+  "visual_html_response_planned": true,
+  "backoffice_cm_access_planned": true,
+  "in_game_history_button_planned": true,
+  "storage_contract_created": true,
+  "response_schema_created": true,
+  "security_privacy_doc_created": true,
+  "reusable_workflow_patched": true,
+  "vabs_route_implementation_allowed": false,
+  "gameclientbuilder_implementation_allowed": false,
+  "gameserverregistrar_generation_allowed": false,
+  "wallet_tests_allowed": false,
+  "release_allowed": false,
+  "suggested_next_skill": "ProtocolAndSchemaMapper",
+  "suggested_next_prompt_summary": "Explicitly approve VABS/VBA/Lasthands visual history route implementation for Little Gangster 8001, or keep the route blocked and move to another non-release planning lane."
+}

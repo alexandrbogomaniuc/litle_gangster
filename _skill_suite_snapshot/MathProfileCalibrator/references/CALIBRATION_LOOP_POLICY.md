@@ -39,4 +39,3 @@ approved, purchase state is authoritative, and EV denominator is proven.
 
 Do not tune jackpot contribution unless jackpot is enabled, modeled, and
 approved for the current game.
-

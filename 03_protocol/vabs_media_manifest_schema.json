@@ -1,0 +1,168 @@
+{
+  "$schema": "[REDACTED_URL_REMOVED]",
+  "$id": "vabs-media-manifest.schema.json",
+  "title": "VABS Evidence Media Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "gameId",
+    "gameKey",
+    "roundId",
+    "gameSessionId",
+    "actionId",
+    "actionType",
+    "mathProfileId",
+    "rtpLevel",
+    "volatilityLevel",
+    "winAmount",
+    "winRatio",
+    "capState",
+    "evidenceMode",
+    "replayPayloadRef",
+    "visualRoute",
+    "screenshotRefs",
+    "videoRefs",
+    "checksums",
+    "storageProvider",
+    "createdAt",
+    "retentionExpiresAt",
+    "schemaVersion",
+    "nonProduction"
+  ],
+  "properties": {
+    "gameId": {
+      "type": "integer"
+    },
+    "gameKey": {
+      "type": "string"
+    },
+    "roundId": {
+      "type": "string"
+    },
+    "gameSessionId": {
+      "type": "string"
+    },
+    "playerSessionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actionId": {
+      "type": "string"
+    },
+    "actionType": {
+      "type": "string"
+    },
+    "mathProfileId": {
+      "type": "string"
+    },
+    "rtpLevel": {
+      "type": "string"
+    },
+    "volatilityLevel": {
+      "type": "string"
+    },
+    "bonusBuyCostMultiplier": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "winAmount": {
+      "type": "number"
+    },
+    "winRatio": {
+      "type": "number"
+    },
+    "capState": {
+      "type": "object"
+    },
+    "evidenceMode": {
+      "type": "string",
+      "enum": [
+        "deterministic_replay_only",
+        "replay_plus_screenshots",
+        "replay_plus_feature_video",
+        "replay_plus_full_video"
+      ]
+    },
+    "replayPayloadRef": {
+      "type": "string"
+    },
+    "visualRoute": {
+      "type": "string"
+    },
+    "screenshotRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mediaRef"
+      }
+    },
+    "videoRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mediaRef"
+      }
+    },
+    "checksums": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "storageProvider": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "retentionExpiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "schemaVersion": {
+      "type": "string"
+    },
+    "nonProduction": {
+      "type": "boolean"
+    }
+  },
+  "$defs": {
+    "mediaRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "mediaType",
+        "bytes",
+        "checksumKey",
+        "createdAt"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string"
+        },
+        "mediaType": {
+          "type": "string",
+          "enum": [
+            "screenshot",
+            "video"
+          ]
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "checksumKey": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

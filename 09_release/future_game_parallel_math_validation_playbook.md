@@ -34,7 +34,7 @@ Operators select approved profiles only. Operators must not enter arbitrary RTP 
 ## Train Simulation Loop
 
 Use train seeds only. Adjust only from train evidence. Keep all changes in the main approved math lane; parallel workers must not modify active
-  configs.
+configs.
 
 ## Validation Gate
 
@@ -88,7 +88,7 @@ Use the extractor to produce or block:
 ## Release And Certification Evidence
 
 Parallel evidence is non-certified by default. A certification evidence package may be assembled, but release remains blocked until the final
-  release/lab gate approves it.
+release/lab gate approves it.
 
 ## Hard Rules
 

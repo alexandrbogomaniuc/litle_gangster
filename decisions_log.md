@@ -59,7 +59,7 @@ Created: 2026-05-07T09:42:35+0100
 - Required features: free spins, bonus buy, double up, autoplay, turbo, video capture.
 - Not required: jackpot, reality check/history.
 - Known client stack: PIXI.js Legacy, Vue.js 2.6, Webpack 4, Babel, Mustache, Node.js v16.20.2.
-- Game Server docs source: uploaded docs and generated suite references under `_skill_suite_snapshot/references`.
+- Game Server docs source: uploaded docs and generated suite references under `[REDACTED_LOCAL_PATH]
 
 ## Safe Defaults Applied
 
@@ -91,14 +91,10 @@ Created: 2026-05-07T09:42:35+0100
 - Donor/reference URL remains stored only as a redacted URL; full tokenized URL was not persisted.
 - Asset capture allowed remains `true`, but this AuthorizedReferenceResearcher sprint may record observation evidence and sanitized metadata only.
   Real donor asset body download, hashing, and classification are deferred to ReferenceAssetInventory.
-- Client source root candidate verified by path existence/readability:
-  `[DEV_ROOT_REMOVED]/_worktrees/7000-release-pack-skeleton-20260322-1858/Gamesv1/games/7001`.
-- Portal/preloader client source root candidate verified by path existence/readability:
-  `[DEV_ROOT_REMOVED]/_worktrees/7000-release-pack-skeleton-20260322-1858/new-games-client`.
-- Game Server source root candidate verified by path existence/readability:
-  `[DEV_ROOT_REMOVED]/_worktrees/7000-release-pack-skeleton-20260322-1858/gs-server`.
-- Template game path candidate verified by path existence/readability:
-  `[DEV_ROOT_REMOVED]/_worktrees/7000-release-pack-skeleton-20260322-1858/Gamesv1/games/premium-slot`.
+- Client source root candidate verified by path existence/readability: `[REDACTED_LOCAL_PATH]
+- Portal/preloader client source root candidate verified by path existence/readability: `[REDACTED_LOCAL_PATH]
+- Game Server source root candidate verified by path existence/readability: `[REDACTED_LOCAL_PATH]
+- Template game path candidate verified by path existence/readability: `[REDACTED_LOCAL_PATH]
 - Launch template/routing path candidates were verified by path existence/readability only; detailed protocol inspection is deferred to
   ProtocolAndSchemaMapper.
 - Cassandra/config path candidates were verified by path existence/readability only; no Cassandra execution or DB changes were performed.
@@ -168,7 +164,7 @@ Created: 2026-05-07T09:42:35+0100
   wallet/API/auth/balance response bodies, and no full donor URLs/tokens.
 - Only ReferenceAssetInventory and SprintReporter were run.
 - Captured 29 static reference asset files from observed static asset paths only.
-- Captured files were saved under `./02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/`.
+- Captured files were saved under `[REDACTED_LOCAL_PATH]
 - No RGS/wallet/API/auth/balance response bodies were saved.
 - No full donor launch URL or token value was persisted.
 - Every captured asset was classified as `scaffold_internal_only`, `blocked_from_release`, and `replacement_required=true`.
@@ -264,7 +260,7 @@ Created: 2026-05-07T09:42:35+0100
 - Next recommended skill remains ArtSceneMapper with limitations: use the 6x5 selected layout, keep math unapproved for release, and preserve
   runtime/source/asset/wallet blockers.
 - Durable source-root note: user stated Staging is now canonical for GS/New Games/Crazy Rooster work. This math sprint did not inspect Staging paths;
-  future source-inspection skills must update/verify manifest paths against `[DEV_ROOT_REMOVED]/Staging` and not use old worktrees as source of truth.
+  future source-inspection skills must update/verify manifest paths against `[REDACTED_LOCAL_PATH] and not use old worktrees as source of truth.
 
 ## ArtSceneMapper Sprint 2026-05-09T00:00:00+0100
 
@@ -302,7 +298,7 @@ Created: 2026-05-07T09:42:35+0100
 - User provided a donor URL for the Little Gangster project and asked to keep using it until a new project starts. The full URL remains in-memory only
   and is not persisted.
 - Decision: run AuthorizedReferenceResearcher, ReferenceAssetInventory, ArtSceneMapper, and SprintReporter only.
-- Decision: save allowed scaffold asset types under `02_reference_assets/authorized_raw/playwright_20260510T094437Z/` only.
+- Decision: save allowed scaffold asset types under `02_reference_assets/authorized_raw/[REDACTED_ASSET_FILE] only.
 - Decision: keep every scaffold/reference asset `scaffold_internal_only`, `replacement_required=true`, and `blocked_from_release`.
 - Result: 3 capture iterations ran; 113 new scaffold files were saved; 142 total scaffold files are now inventoried; 135 of 140 scene objects have
   scaffold preview references.
@@ -327,7 +323,7 @@ Created: 2026-05-07T09:42:35+0100
 
 ## Public Git Export - 2026-05-10 20:54:42 BST
 
-- Decision: create a sanitized public review snapshot at `.-public-export`.
+- Decision: create a sanitized public review snapshot at `[REDACTED_LOCAL_PATH]
 - Decision: push the sanitized export to `https://github.com/alexandrbogomaniuc/litle_gangster` on branch `main` using existing local Git
   authentication only.
 - Decision: exclude donor asset bodies, screenshots, HAR/network logs, Playwright/browser folders, node modules, binaries/media, PDFs/ZIPs, raw
@@ -419,25 +415,25 @@ Created: 2026-05-07T09:42:35+0100
 ## ArtSceneMapper v0.3 Update Decision
 
 Decision: ArtSceneMapper v0.3 update completed with object count 140 -> 288. Cascades, golden-square state, rainbow activation, coin/special reveals,
-  three feature modes, bonus-buy mode selection, max-win cap, win tiers, round completion, and state persistence are mapped for planning.
+three feature modes, bonus-buy mode selection, max-win cap, win tiers, round completion, and state persistence are mapped for planning.
 
 Full GameClientBuilder remains blocked until runtime result owner and result API contract are reviewed. No release approval, registration approval,
-  wallet test approval, math approval, client build approval, donor browsing, or asset capture occurred.
+wallet test approval, math approval, client build approval, donor browsing, or asset capture occurred.
 ## Public Export After ArtSceneMapper v0.3
 
 Decision: push sanitized public review snapshot after ArtSceneMapper v0.3 update. Validation passed and commit
-  6127bdc2f982038e043d5b2585cbcc46b447a1d8 was pushed to https://github.com/alexandrbogomaniuc/litle_gangster on branch main. No release, client
-  build, registration, wallet, DB, donor browsing, or asset capture approval was made.
+6127bdc2f982038e043d5b2585cbcc46b447a1d8 was pushed to https://github.com/alexandrbogomaniuc/litle_gangster on branch main. No release, client build,
+registration, wallet, DB, donor browsing, or asset capture approval was made.
 ## v0.3 Contract Consistency Audit
 
 Decision: patch only safe documentation/schema naming mismatches before GameClientBuilder planning. Result schema was not changed. Scene/art
-  references and HTML inspector field labels were canonicalized. Mismatches found: 61; patched: 47; unresolved: 7. Full GameClientBuilder remains
-  blocked.
+references and HTML inspector field labels were canonicalized. Mismatches found: 61; patched: 47; unresolved: 7. Full GameClientBuilder remains
+blocked.
 ## Public Export After v0.3 Contract Consistency Audit
 
 Decision: push sanitized public review snapshot after v0.3 contract consistency audit. Validation passed and commit
-  6b79e4617d9c2faabdb8a2be8ef1da96da830815 was pushed to https://github.com/alexandrbogomaniuc/litle_gangster on branch main. No release, client
-  build, registration, wallet, DB, donor browsing, or asset capture approval was made.
+6b79e4617d9c2faabdb8a2be8ef1da96da830815 was pushed to https://github.com/alexandrbogomaniuc/litle_gangster on branch main. No release, client build,
+registration, wallet, DB, donor browsing, or asset capture approval was made.
 
 
 
@@ -1103,7 +1099,7 @@ Outcome:
 ## 2026-05-14 - Bonus-Buy BF_RTP Policy Decision
 
 Decision: allow Little Gangster bonus-buy BF_RTP to differ from base RTP as a planning policy, provided the separate BF_RTP values are
-  product-approved, disclosed, validated, and registered separately.
+product-approved, disclosed, validated, and registered separately.
 
 Rationale:
 - Bonus-buy RTP is a separate product/math value from base-game RTP in many slot models.
@@ -1121,7 +1117,7 @@ Outcome:
 ## 2026-05-14 - Bonus-Buy 100x Declared BF_RTP Validation Decision
 
 Decision: mark bonus-buy 100x validation as passed against declared BF_RTP planning targets and move bonus buy to product approval review, while
-  keeping backend adapter and registration generation blocked.
+keeping backend adapter and registration generation blocked.
 
 Rationale:
 - The validation-seed run tested all 9 profiles at 25000 purchased-feature simulations per profile.
@@ -1164,7 +1160,7 @@ Outcome:
 ## 2026-05-15 - Backend Adapter Representation Planning Decision
 
 Decision: create backend adapter representation planning for Little Gangster, including base results, cascades/features, the approved-for-planning
-  100x bonus-buy payload, and VABS/Lasthands/history fields.
+100x bonus-buy payload, and VABS/Lasthands/history fields.
 
 Outcome:
 - Created backend adapter representation plan, payload field map, 100x bonus-buy payload plan, VABS/Lasthands/history plan, blocker doc, and
@@ -1188,8 +1184,8 @@ Outcome:
 ## 2026-05-15 - Lifecycle Wrapper Source Planning Decision
 
 Decision: select Option 5 for future lifecycle wrapper source shape: a small Little Gangster-specific lifecycle wrapper under
-  `new-games-server/src/games/little-gangster/lifecycle/`, plus a separate visual history module under
-  `new-games-server/src/games/little-gangster/history/`, integrated through guarded gameId `8001` route calls in `new-games-server/src/index.ts`.
+`new-games-server/src/games/little-gangster/lifecycle/`, plus a separate visual history module under
+`new-games-server/src/games/little-gangster/history/`, integrated through guarded gameId `8001` route calls in `new-games-server/src/index.ts`.
 
 Rationale:
 - Current 8001 adapter is a payload mapper only and should not become the full runtime owner.
@@ -1208,7 +1204,7 @@ Outcome:
 ## 2026-05-15 - ParallelMathValidator Skill Creation Decision
 
 Decision: create a reusable `ParallelMathValidator` skill and patch workflow routing/downstream awareness so large-scale math validation can run in a
-  parallel lane while the main workflow continues where safe.
+parallel lane while the main workflow continues where safe.
 
 Rationale:
 - MathProfileCalibrator should remain bounded and train-focused rather than becoming an endless large simulation loop.
@@ -1238,3 +1234,176 @@ Outcome:
 - No push was attempted.
 - GitHub raw validation was not run.
 - A follow-up raw-safe export curation sprint is required before publishing this checkpoint.
+
+## 2026-05-15 - Raw-Safe Curation Checkpoint Push Decision
+
+Decision: curate and push the ParallelMathValidator/lifecycle raw-safe public checkpoint.
+
+Rationale:
+- The previous checkpoint failed before commit because prepared public files still contained long Markdown lines, private local paths, and a donor
+  host reference.
+- Public review needs a checkpoint for the reusable ParallelMathValidator workflow and lifecycle wrapper planning, but only after raw-safe validation
+  passes.
+
+Outcome:
+- Created public-safe metadata and a slim public-safe `project_manifest.json`.
+- Curated copied project docs to remove private paths and donor host values.
+- Wrapped long Markdown lines without weakening the validator.
+- Local raw-safe validation passed.
+- Git blob validation passed.
+- Pushed commit `cdf0606603c6b576989de6210e160f8f2f8a559a` to public `main`.
+- GitHub raw validation passed.
+- Release, certification, GameClientBuilder, GameServerRegistrar generation, wallet/DB work, lifecycle wrapper implementation, and VABS route
+  implementation remain blocked.
+
+## 2026-05-15 - Lifecycle Wrapper Apply Decision
+
+Decision: apply the Little Gangster 8001 lifecycle wrapper in Staging source under the explicitly approved implementation scope.
+
+Outcome:
+- Created the `new-games-server/src/games/little-gangster/lifecycle/` wrapper module.
+- Added lifecycle state, action/accounting representation, round completion, state persistence, reconnect recovery, and active blocker propagation
+  around the existing `presentationPayload.gamePayload` mapper.
+- Updated only the guarded gameId `8001` branch in `new-games-server/src/index.ts` to call the lifecycle wrapper for base spin and
+  approved-for-planning 100x bonus-buy representation.
+- VABS/VBA/Lasthands visual history route implementation remains blocked and was not created.
+- Targeted Little Gangster tests passed 13/13, and isolated Little Gangster lifecycle TypeScript passed.
+- GameClientBuilder, GameServerRegistrar generation, registration artifacts, DB/Cassandra, wallet/API calls, donor browsing, asset capture,
+  certification, and release remain blocked.
+
+## 2026-05-15 - VABS Visual History Source Planning Decision
+
+Decision: plan Little Gangster 8001 VABS/VBA/Lasthands visual history routes and patch reusable workflow guidance for future games.
+
+Outcome:
+- Recommended `new-games-server/src/games/little-gangster/history/` as the 8001 visual history source module location.
+- Recommended guarded route registration in `new-games-server/src/index.ts`.
+- Planned JSON round/session/whole-session replay routes and visual round/session/whole-session render routes.
+- Planned in-game History button and Casino Manager/backoffice access paths.
+- Created response schema, storage contract, security/privacy contract, test plan, implementation gate, source target map, and blockers.
+- Patched ProtocolAndSchemaMapper, WalletAndLaunchTester, GameClientBuilder, and RTPAndReleaseAuditor guidance so future games must implement or
+  explicitly block visual history before release.
+- No Staging source, VABS route code, backend adapter code, client code, registration artifacts, DB/Cassandra, wallet/API calls, donor browsing, asset
+  capture, certification, or release approval occurred.
+
+## 2026-05-15 - VABS Route Resolution Audit Decision
+
+Decision: select a hybrid VABS/VBA/Lasthands route-resolution model before implementing
+Little Gangster 8001 visual history.
+
+Rationale:
+- Legacy GS proves visual VABS access through `/vabs/show.jsp` style routes, helper
+  actions, history list URLs, and CM/backoffice-facing visual links.
+- New-games proves JSON `/slot/v1/gethistory` and 8001 replay payloads, but not a visual
+  render route.
+- Gamesv1/client evidence does not prove a generic visual VABS renderer or completed
+  History button route.
+- Registration/bootstrap config must carry or derive the visual route, but exact
+  GameServerRegistrar field shape remains unproven.
+
+Outcome:
+- Recommended model: `model_e_hybrid_configured_gs_cm_route_new_games_server_visual_replay`.
+- Recommended VABS source location: `new-games-server/src/games/little-gangster/history/`.
+- GameClientBuilder, GameServerRegistrar generation, wallet/history tests, VABS route
+  implementation, certification, and release remain blocked.
+
+## 2026-05-15 - VABS Evidence Policy Decision
+
+Decision: define a reusable VABS/VBA/Lasthands evidence policy with three layers:
+deterministic replay, required visual HTML/render route, and optional screenshot/video
+media controlled by game-level settings.
+
+Rationale:
+- Deterministic replay is the only acceptable authoritative source for round/session
+  reconstruction.
+- Visual VABS route is still required for History and CM/backoffice workflows unless
+  current GS evidence proves otherwise.
+- Screenshots and videos can support audit/dispute workflows, but full video for every
+  spin is storage-heavy and not a safe default.
+
+Outcome:
+- Default `historyEvidenceMode`: `deterministic_replay_only`.
+- Screenshot and video modes are supported by policy but not implemented.
+- Media manifest schema, game-level settings plan, QA matrix, and release gate were
+  created.
+- Durable media storage, screenshot capture, video capture, route implementation,
+  registration generation, wallet/API calls, certification, and release remain blocked.
+
+## 2026-05-15 - VABS Visual History Route Apply Decision
+
+Decision: apply the Little Gangster 8001 VABS/VBA/Lasthands visual history route
+foundation in Staging source under the explicitly approved limited implementation
+scope.
+
+Outcome:
+- Created `new-games-server/src/games/little-gangster/history/`.
+- Added deterministic replay payload building, safe visual HTML rendering, media
+  manifest support, history security helpers, non-production fixture storage, and
+  guarded 8001 history route registration.
+- Added targeted tests for history routes, visual rendering, payload building, media
+  manifest defaults, security, and storage provider behavior.
+- Targeted history route tests passed 6/6.
+- Durable storage, screenshot capture, video capture, wallet/API calls, registration
+  generation, client code, certification, and release remain blocked.
+
+## 2026-05-15 - VABS Alias Compatibility Audit Decision
+
+Decision: recommend `legacy_alias_recommended` for Little Gangster 8001.
+
+Rationale:
+- Legacy GS/source evidence proves `/vabs/show.jsp` style VBA/VABS visual history
+  semantics for round/session and BO/support history flows.
+- Current 8001 canonical `/slot/v1/8001/history/...` routes provide JSON/render
+  foundation but do not prove BO/CM compatibility alone.
+- Registration/bootstrap route configuration is required as a concept, but exact field
+  shape remains blocked.
+
+Outcome:
+- Created alias compatibility audit, evidence, route decision, route contract,
+  registration config audit, History button plan, QA plan, implementation gate, blockers,
+  and skill reports.
+- No Staging source, alias implementation, client code, registration artifact,
+  DB/Cassandra action, wallet/API call, donor browsing, asset capture, certification, or
+  release approval occurred.
+
+## 2026-05-15 - VABS Legacy Alias Apply Decision
+
+Decision: apply the Little Gangster 8001 VABS legacy alias foundation in Staging source.
+
+Outcome:
+- Created `legacyAliasTypes.ts`, `legacyAliasMapper.ts`, `legacyAliasRoutes.ts`, and
+  `legacyAliasSecurity.ts`.
+- Registered guarded root and scoped alias routes:
+  `/vabs/show.jsp` and `/slot/v1/8001/legacy/vabs/show.jsp`.
+- Preserved canonical 8001 new-games history routes.
+- Added targeted mapper, security, alias route foundation, and canonical preservation
+  tests.
+- Targeted tests passed 9/9.
+- Durable storage, media storage, screenshot/video capture, BO/CM acceptance,
+  GameClientBuilder, GameServerRegistrar generation, wallet/API calls, DB/Cassandra,
+  registration artifacts, certification, and release remain blocked.
+
+## 2026-05-15 - GS Responsibility Boundary Audit Decision
+
+Decision: treat wallet/accounting/session/history responsibility as GS/platform-owned
+unless current source proves runtime ownership. The browser/client is display/request
+orchestration only; Little Gangster runtime/lifecycle is representation and coordination
+only for wallet references, state, idempotency, result/history payload, and blockers.
+
+Rationale:
+- BankInfo/common-wallet source proves wallet manager/config ownership in GS.
+- GS internal new-games bridge proves wallet reserve/settle and history write/read
+  belong behind GS session/account context.
+- Cassandra persisters prove durable session, bet, round, wallet-operation, and pending
+  operation storage surfaces.
+- Gamesv1 client transport proves the client calls GS runtime endpoints and displays
+  envelope state rather than owning provider settlement.
+
+Outcome:
+- Created GS responsibility audit, responsibility matrix, wallet boundary contract,
+  pending/stuck ownership doc, WalletAndLaunchTester scope correction, test matrix,
+  registration dependency doc, future-game boundary gate, and prompt correction.
+- Patched reusable ProtocolAndSchemaMapper, WalletAndLaunchTester,
+  WorkflowOrchestrator, GameServerRegistrar, and RTPAndReleaseAuditor guidance.
+- Wallet/GS/BO endpoint calls, DB/Cassandra actions, implementation, registration
+  generation, GameClientBuilder, certification, and release remain blocked.

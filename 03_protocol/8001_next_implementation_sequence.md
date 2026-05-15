@@ -28,5 +28,5 @@ Date: 2026-05-15
 ## Current Recommendation
 
 Next prompt should ask for ProtocolAndSchemaMapper lifecycle wrapper source planning or explicitly approved lifecycle wrapper implementation apply.
-  Keep VABS implementation, GameClientBuilder, GameServerRegistrar, wallet endpoints, DB/Cassandra, and release blocked unless explicitly opened by
-  the user.
+Keep
+VABS implementation, GameClientBuilder, GameServerRegistrar, wallet endpoints, DB/Cassandra, and release blocked unless explicitly opened by the user.

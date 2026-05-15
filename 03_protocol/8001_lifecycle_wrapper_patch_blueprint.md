@@ -10,7 +10,7 @@ Option 5: combined small wrapper first, then separate route later.
 
 ## Future Files To Create
 
-Under `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/`:
+Under `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/`:
 
 - `types.ts`
 - `stateMachine.ts`
@@ -22,7 +22,7 @@ Under `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycl
 
 ## Future Existing Files To Modify
 
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/index.ts`
 
 Modification should be minimal and guarded by `gameId === 8001`.
 

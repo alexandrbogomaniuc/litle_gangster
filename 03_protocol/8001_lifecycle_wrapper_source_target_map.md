@@ -6,9 +6,9 @@ Crazy Rooster / 7001 is not authoritative. Current 8001 adapter is payload mappe
 
 ## Recommended Locations
 
-- Wrapper: `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/`
-- VABS/history: `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/`
-- Route integration: `[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts`
+- Wrapper: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/`
+- VABS/history: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/history/`
+- Route integration: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/index.ts`
 
 ## Target Classes
 
@@ -23,7 +23,7 @@ Crazy Rooster / 7001 is not authoritative. Current 8001 adapter is payload mappe
 | `new-games-server/src/games/little-gangster/lifecycle/roundCompletion.ts` | likely target | Create future completion/restart/cap owner. |
 | `new-games-server/src/games/little-gangster/history/historyPayload.ts` | likely target | Create future deterministic history payload builder. |
 | `new-games-server/src/games/little-gangster/history/vabsVisualHistoryRoutes.ts` | likely target | Create future round/session/whole-session route
-  handlers. |
+handlers. |
 | `Gamesv1/packages/core-protocol/src/schemas.ts` | proven target if needed | Extend only if new route schemas must be shared. |
 | `Gamesv1/packages/core-protocol/src/http/GsHttpRuntimeTransport.ts` | candidate later | Touch only with approved client/transport scope. |
 | `Gamesv1/packages/ui-kit/` | candidate later blocked | Client route/view integration remains blocked. |

@@ -6,7 +6,8 @@ Status: planning only, generation blocked
 ## Summary
 
 GameServerRegistrar generation remains blocked. The lifecycle wrapper and VABS route plan do not resolve registration settings. They make the
-  dependencies more explicit.
+dependencies
+more explicit.
 
 ## Required Dependencies
 
@@ -41,4 +42,5 @@ GameServerRegistrar generation remains blocked. The lifecycle wrapper and VABS r
 GameServerRegistrar generation allowed: false.
 
 Generate-only registration may be reconsidered only after lifecycle wrapper contract acceptance, VABS route planning acceptance, settings key mapping
-  proof, wallet/history tests, and explicit user approval.
+proof,
+wallet/history tests, and explicit user approval.

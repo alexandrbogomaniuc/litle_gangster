@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-05-15",
+  "stagingSourceModified": false,
+  "recommendedRouteResolutionModel": "model_e_hybrid_configured_gs_cm_route_new_games_server_visual_replay",
+  "targets": [
+    {
+      "path": "new-games-server/src/games/little-gangster/history/",
+      "purpose": "Game-specific 8001 visual history builder, JSON replay mapper, and render response helpers.",
+      "evidenceLabel": "CANDIDATE_SOURCE",
+      "risk": "medium",
+      "gameSpecific": true,
+      "implementationAllowed": false
+    },
+    {
+      "path": "new-games-server/src/index.ts",
+      "purpose": "Guarded 8001 route registration host for modern history JSON/render routes and possible legacy-compatible resolver.",
+      "evidenceLabel": "PROVEN_SOURCE",
+      "risk": "medium",
+      "gameSpecific": false,
+      "implementationAllowed": false
+    },
+    {
+      "path": "new-games-server/src/games/little-gangster/historyMapper.ts",
+      "purpose": "Existing 8001 replay/VABS payload source to feed visual reconstruction.",
+      "evidenceLabel": "PROVEN_SOURCE",
+      "risk": "low",
+      "gameSpecific": true,
+      "implementationAllowed": false
+    },
+    {
+      "path": "new-games-server/src/games/little-gangster/lifecycle/",
+      "purpose": "Existing lifecycle state, accounting refs, persistence, reconnect, and blocker data source.",
+      "evidenceLabel": "PROVEN_SOURCE",
+      "risk": "low",
+      "gameSpecific": true,
+      "implementationAllowed": false
+    },
+    {
+      "path": "Gamesv1/packages/core-protocol/src/",
+      "purpose": "Existing gethistory JSON protocol; possible future visual route contract if implementation proves reusable need.",
+      "evidenceLabel": "PROVEN_SOURCE",
+      "risk": "medium",
+      "gameSpecific": false,
+      "implementationAllowed": false
+    },
+    {
+      "path": "Gamesv1 game client History button integration",
+      "purpose": "Future client wiring to bootstrap/configured or backend-generated visual route.",
+      "evidenceLabel": "CANDIDATE_SOURCE",
+      "risk": "high",
+      "gameSpecific": true,
+      "implementationAllowed": false
+    },
+    {
+      "path": "GameServerRegistrar registration/settings mapping",
+      "purpose": "Map visual history route into bootstrap/history policy or documented registration field.",
+      "evidenceLabel": "BLOCKED",
+      "risk": "high",
+      "gameSpecific": false,
+      "implementationAllowed": false
+    },
+    {
+      "path": "legacy /vabs/show.jsp compatibility layer",
+      "purpose": "Compatibility route/redirect semantics for CM/backoffice and round/session/whole-session access.",
+      "evidenceLabel": "PROVEN_SOURCE",
+      "risk": "medium",
+      "gameSpecific": false,
+      "implementationAllowed": false
+    }
+  ],
+  "blockedItems": [
+    "exact_registration_config_field_shape_unproven",
+    "cm_backoffice_route_acceptance_unproven",
+    "gamesv1_visual_renderer_not_found",
+    "lasthands_route_resolution_not_found",
+    "vabs_route_implementation_not_approved"
+  ]
+}

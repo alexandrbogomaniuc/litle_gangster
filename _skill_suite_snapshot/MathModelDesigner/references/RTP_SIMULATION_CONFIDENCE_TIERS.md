@@ -36,4 +36,3 @@ Use these tiers before interpreting RTP simulation output.
 - Feature contribution and bonus-buy contribution separately.
 - Cap/max-win/tail observation status.
 - Clear gate statement for backend, registration, and release.
-

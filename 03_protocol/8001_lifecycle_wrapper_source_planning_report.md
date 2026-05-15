@@ -5,37 +5,42 @@ Status: planning only. No Staging source was modified.
 ## Executive Summary
 
 Little Gangster 8001 should continue to use the current Staging adapter as a guarded `presentationPayload.gamePayload` mapper only. It should not be
-  treated as the full GS lifecycle owner.
+treated
+as the full GS lifecycle owner.
 
 Recommended wrapper option: Option 5, combined small wrapper first, then separate visual history route later.
 
-- Wrapper source location: `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/`
-- VABS/VBA/Lasthands route source location: `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/`
-- Route integration host: `[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts`
-- Current adapter dependency: `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/adapter.ts`
+- Wrapper source location: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/`
+- VABS/VBA/Lasthands route source location: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/history/`
+- Route integration host: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/index.ts`
+- Current adapter dependency: `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/adapter.ts`
 
 Crazy Rooster / game 7001 is not authoritative. It is weak candidate reference only.
 
 ## Source Evidence
 
 Current `new-games-server/src/index.ts` is the proven route host for `/slot/v1/bootstrap`, `/slot/v1/opengame`, `/slot/v1/playround`,
-  `/slot/v1/featureaction`, `/slot/v1/resumegame`, `/slot/v1/gethistory`, and `/slot/v1/closegame`. It already includes wallet reserve/settle bridge
-  helpers, local session/round/history maps, idempotency fields, and guarded 8001 adapter calls for base spin and 100x bonus-buy presentation
-  payloads.
+`/slot/v1/featureaction`, `/slot/v1/resumegame`, `/slot/v1/gethistory`, and `/slot/v1/closegame`. It already includes wallet reserve/settle bridge
+helpers,
+local session/round/history maps, idempotency fields, and guarded 8001 adapter calls for base spin and 100x bonus-buy presentation payloads.
 
 Current Little Gangster files under `new-games-server/src/games/little-gangster/` are payload mapper files. They create result, presentation,
-  persistence, fixture, and history payload shapes, but they do not own launch/session, wallet settlement, pending transaction recovery, close
-  session, restart/FRB transitions, or visual history routing.
+persistence,
+fixture, and history payload shapes, but they do not own launch/session, wallet settlement, pending transaction recovery, close session, restart/FRB
+transitions, or visual history routing.
 
 Current `Gamesv1/packages/core-protocol/src/` already defines runtime envelope, request counter, idempotency, client operation, resume, close, get
-  history, and `presentationPayload.gamePayload` support. This makes it a likely schema target only if future wrapper or visual-history routes need
-  typed expansion.
+history,
+and `presentationPayload.gamePayload` support. This makes it a likely schema target only if future wrapper or visual-history routes need typed
+expansion.
 
 UI-kit evidence shows history UI and `gamePayload` passthrough support, but no proven Little Gangster VABS/VBA/Lasthands visual replay route. Treat
-  visual history route support as required and not yet implemented.
+visual
+history route support as required and not yet implemented.
 
 Legacy GS evidence shows independent launch/session, restart/FRB, close/reconnect, lasthand/VABS/VBA, wallet pending operation, game template/config,
-  and max-win/FRB message paths. These are lifecycle requirements around the adapter, not behavior proven by the current 8001 mapper.
+and
+max-win/FRB message paths. These are lifecycle requirements around the adapter, not behavior proven by the current 8001 mapper.
 
 ## Source Target Map Summary
 
@@ -78,7 +83,7 @@ Use Option 5:
 5. Defer any UI-kit, Gamesv1 game package, legacy JSP, or registration changes until separately approved.
 
 This is safer than putting lifecycle logic into `adapter.ts`, and smaller than refactoring the global route host before Little Gangster-specific tests
-  exist.
+exist.
 
 ## VABS/VBA Route Shape
 
@@ -134,7 +139,8 @@ The current adapter has render payload persistence fields, but it is not the lif
 ## Accounting Boundary
 
 The wrapper must not call wallet endpoints directly. It should call existing route-level wallet/accounting bridge helpers or receive their results
-  from the route host.
+from the
+route host.
 
 Required accounting representation:
 
@@ -178,9 +184,9 @@ Future tests should live under:
 - `new-games-server/test/little-gangster/pending-stuck-recovery.test.ts`
 
 Tests must cover route orchestration, state/reconnect, accounting boundaries, VABS route payloads, last hand, whole-session replay, and pending/stuck
-  transactions.
+transactions.
 
 ## Recommendation
 
 Proceed next only with an explicitly approved lifecycle wrapper implementation apply sprint. Keep VABS visual history route implementation,
-  GameClientBuilder, GameServerRegistrar generation, wallet endpoints, DB/Cassandra, and release blocked unless separately approved.
+GameClientBuilder, GameServerRegistrar generation, wallet endpoints, DB/Cassandra, and release blocked unless separately approved.

@@ -41,4 +41,3 @@ status.
 Use `outside_tolerance`, `outside_smoke_tolerance`, or
 `inconclusive_due_variance` as appropriate. Do not call a profile truly failed
 unless the sample size and confidence interval justify that statement.
-

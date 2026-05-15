@@ -16,4 +16,3 @@ Use this reference when the user asks for faster workflow, routing, or next-spri
 12. Never start implementation unless gate allows it and the user explicitly approves.
 13. If validation contradicts a report, fix validation before continuing.
 14. If scope expands, stop and record a blocker.
-

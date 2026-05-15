@@ -1,0 +1,48 @@
+{
+  "createdAt": "2026-05-15",
+  "stagingSourceModified": true,
+  "allowedStagingRoot": "[STAGING_SOURCE_ROOT_REDACTED]",
+  "createdFiles": [
+    "new-games-server/src/games/little-gangster/lifecycle/lifecycleTypes.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/lifecycleStateMachine.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/actionAccounting.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/roundCompletion.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/statePersistence.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/reconnectRecovery.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/blockerPropagation.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/lifecycleWrapper.ts",
+    "new-games-server/src/games/little-gangster/lifecycle/index.ts",
+    "new-games-server/test/little-gangster/lifecycle-wrapper.test.ts",
+    "new-games-server/test/little-gangster/lifecycle-state-machine.test.ts",
+    "new-games-server/test/little-gangster/action-accounting.test.ts",
+    "new-games-server/test/little-gangster/round-completion-reconnect.test.ts",
+    "new-games-server/test/little-gangster/blocker-propagation.test.ts"
+  ],
+  "modifiedFiles": [
+    "new-games-server/src/index.ts"
+  ],
+  "adapterTsModified": false,
+  "guarded8001BranchUpdated": true,
+  "vabsVisualRouteImplemented": false,
+  "gameClientBuilderImplementationCreated": false,
+  "gamesv1Game8001Created": false,
+  "registrationArtifactGenerated": false,
+  "dbCassandraActionOccurred": false,
+  "walletApiCallOccurred": false,
+  "donorBrowsingOccurred": false,
+  "assetCaptureOccurred": false,
+  "releaseApprovalOccurred": false,
+  "targetedTests": {
+    "command": "npx tsx --test test/little-gangster/*.test.ts",
+    "passed": true,
+    "tests": 13,
+    "failed": 0
+  },
+  "typecheck": {
+    "isolatedLittleGangsterLifecycle": "passed",
+    "fullIndexTypecheckStatus": "blocked_existing_checkout_dependency_and_index_strictness_issues",
+    "fullIndexTypecheckExit": 2,
+    "fullIndexTypecheckErrors": 40,
+    "lifecycleSpecificTypeErrorsRemaining": 0
+  }
+}

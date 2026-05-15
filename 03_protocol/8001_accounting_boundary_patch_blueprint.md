@@ -3,11 +3,11 @@
 Status: blueprint only. No implementation applied. No Staging source modified. No wallet/API calls occurred.
 
 Current Little Gangster adapter must not call wallet endpoints. Lifecycle wrapper should carry accounting references and use existing route-level
-  wallet/accounting bridge results.
+wallet/accounting bridge results.
 
 ## Future Source Location
 
-- `[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/actionAccounting.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/src/games/little-gangster/lifecycle/actionAccounting.ts`
 
 ## Required Accounting Representation
 

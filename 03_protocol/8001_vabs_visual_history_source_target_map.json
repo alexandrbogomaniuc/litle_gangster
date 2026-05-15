@@ -1,0 +1,81 @@
+{
+  "createdAt": "2026-05-15",
+  "stagingSourceModified": false,
+  "recommendation": {
+    "routeSourceLocation": "new-games-server/src/games/little-gangster/history/",
+    "routeHost": "new-games-server/src/index.ts",
+    "routeShape": "8001_specific_json_replay_and_visual_render_routes",
+    "implementationAllowed": false
+  },
+  "targets": [
+    {
+      "path": "new-games-server/src/index.ts",
+      "label": "proven_target",
+      "purpose": "Existing Fastify route host with /slot/v1 routes, /slot/v1/gethistory, gsHistoryRead, gsHistoryWrite, and guarded gameId 8001 branch patterns.",
+      "nextAction": "Add guarded 8001 visual history route registration only after explicit implementation approval."
+    },
+    {
+      "path": "new-games-server/src/games/little-gangster/history/",
+      "label": "likely_target",
+      "purpose": "New 8001-specific source module for route types, replay payload building, visual render wrapper, storage adapter, and route registration helpers.",
+      "nextAction": "Create in implementation sprint if approved."
+    },
+    {
+      "path": "new-games-server/src/games/little-gangster/lifecycle/",
+      "label": "proven_target",
+      "purpose": "Existing lifecycle wrapper state, reconnect, round completion, action accounting, and blocker propagation source.",
+      "nextAction": "Reuse as data source; do not duplicate lifecycle ownership."
+    },
+    {
+      "path": "new-games-server/src/games/little-gangster/historyMapper.ts",
+      "label": "proven_target",
+      "purpose": "Existing 8001 history replay and VABS field payload mapper.",
+      "nextAction": "Use as source data contract for visual history response building."
+    },
+    {
+      "path": "Gamesv1/packages/core-protocol/src/IGameTransport.ts",
+      "label": "candidate_target",
+      "purpose": "Canonical gethistory transport types exist for JSON history; visual render routes may need a separate non-mutating route contract later.",
+      "nextAction": "Patch only if GameClientBuilder/client integration requires typed visual history access."
+    },
+    {
+      "path": "Gamesv1/packages/core-protocol/src/http/GsHttpRuntimeTransport.ts",
+      "label": "candidate_target",
+      "purpose": "Existing HTTP gethistory client verifies read-only JSON history envelopes.",
+      "nextAction": "Do not modify until client route strategy is approved."
+    },
+    {
+      "path": "Gamesv1/packages/ui-kit/src/hud/PremiumTemplateHud.ts",
+      "label": "candidate_target",
+      "purpose": "History HUD button exists and may need future visual route wiring.",
+      "nextAction": "GameClientBuilder lane only; blocked this sprint."
+    },
+    {
+      "path": "legacy/current GS VBA/VABS/Lasthands backoffice source",
+      "label": "blocked_not_fully_mapped",
+      "purpose": "Evidence shows VBA/VABS/Lasthands concepts exist, but exact 8001 backoffice integration contract is not proven.",
+      "nextAction": "Confirm backoffice/CM route compatibility before release."
+    }
+  ],
+  "plannedFiles": [
+    "new-games-server/src/games/little-gangster/history/historyTypes.ts",
+    "new-games-server/src/games/little-gangster/history/historyStorage.ts",
+    "new-games-server/src/games/little-gangster/history/historyResponseBuilder.ts",
+    "new-games-server/src/games/little-gangster/history/historyRenderer.ts",
+    "new-games-server/src/games/little-gangster/history/historyRoutes.ts",
+    "new-games-server/src/games/little-gangster/history/index.ts"
+  ],
+  "plannedTests": [
+    "new-games-server/test/little-gangster/vabs-visual-history-routes.test.ts",
+    "new-games-server/test/little-gangster/vabs-visual-history-response.test.ts",
+    "new-games-server/test/little-gangster/vabs-visual-history-security.test.ts"
+  ],
+  "blockedActions": [
+    "vabs_route_implementation",
+    "gameclientbuilder_implementation",
+    "gameserverregistrar_generation",
+    "wallet_tests",
+    "db_cassandra",
+    "release"
+  ]
+}

@@ -6,7 +6,8 @@ Status: planning only
 ## Principle
 
 Every gameplay action that changes wager, feature state, win, balance, replay state, or round completion must have an action/accounting
-  representation. Browser rendering state is never accounting truth.
+representation.
+Browser rendering state is never accounting truth.
 
 ## Paid Base Spin
 
@@ -80,12 +81,13 @@ The purchased feature result requires a separate representation from the purchas
 ## Balance Rule
 
 Balance must come from the settle/process response or approved accounting result. Repeated `getBalance` must not be used as a substitute for correct
-  settlement state.
+settlement state.
 
 ## Idempotency
 
 The wrapper must treat action id, client operation id, idempotency key, round id, and purchase id as replay/retry controls. Duplicate requests must
-  not double debit, double credit, or advance feature state twice.
+not
+double debit, double credit, or advance feature state twice.
 
 ## Pending and Stuck Recovery
 

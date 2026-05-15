@@ -6,11 +6,11 @@ Crazy Rooster / 7001 is not authoritative. Current adapter is payload mapper onl
 
 ## Future Test Files
 
-- `[STAGING_SOURCE_ROOT]/new-games-server/test/little-gangster/lifecycle-wrapper.test.ts`
-- `[STAGING_SOURCE_ROOT]/new-games-server/test/little-gangster/state-reconnect.test.ts`
-- `[STAGING_SOURCE_ROOT]/new-games-server/test/little-gangster/accounting-boundary.test.ts`
-- `[STAGING_SOURCE_ROOT]/new-games-server/test/little-gangster/vabs-visual-history-route.test.ts`
-- `[STAGING_SOURCE_ROOT]/new-games-server/test/little-gangster/pending-stuck-recovery.test.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/test/little-gangster/lifecycle-wrapper.test.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/test/little-gangster/state-reconnect.test.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/test/little-gangster/accounting-boundary.test.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/test/little-gangster/vabs-visual-history-route.test.ts`
+- `[STAGING_SOURCE_ROOT_REDACTED]/new-games-server/test/little-gangster/pending-stuck-recovery.test.ts`
 
 ## Route Tests
 

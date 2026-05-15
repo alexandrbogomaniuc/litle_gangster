@@ -16,9 +16,10 @@ Mode: fast-lane planning only
 ## Decision
 
 The current adapter remains classified as payload mapper only. Lifecycle wrapper and VABS visual history route remain required. No source
-  implementation was performed.
+implementation was
+performed.
 
 ## Safety
 
 No Staging source, backend adapter code, VABS route code, client code, registration artifact, DB/Cassandra state, wallet endpoint, donor URL/asset, or
-  release approval was touched.
+release approval was touched.

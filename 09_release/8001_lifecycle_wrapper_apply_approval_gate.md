@@ -5,12 +5,14 @@ Status: implementation blocked until explicit approval. No implementation applie
 ## Current Decision
 
 Lifecycle wrapper source planning is complete. The current 8001 adapter remains payload mapper only. Lifecycle wrapper is required. VABS visual
-  history route is required.
+history
+route is required.
 
 ## Apply Gate
 
 Implementation is not allowed until a future prompt explicitly approves lifecycle wrapper implementation apply and names the allowed Staging source
-  files or directories.
+files or
+directories.
 
 ## Allowed Only After Explicit Future Approval
 

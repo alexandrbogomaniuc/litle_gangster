@@ -30,4 +30,3 @@ approach or new training seed split; do not tune from validation output.
 Tail jobs use a separate seed family. Tail evidence must report cap hits, cap
 frequency, max observed win, pre-cap/capped status when available, and whether
 possible max win is planning-only or final. Tail evidence is not certification.
-

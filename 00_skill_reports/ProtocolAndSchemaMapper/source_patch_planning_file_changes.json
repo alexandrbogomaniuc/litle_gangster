@@ -1,0 +1,62 @@
+{
+  "created": [
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]"
+  ],
+  "modified": [
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]",
+    "[REDACTED_LOCAL_PATH]"
+  ],
+  "source_files_required": [
+    "Gamesv1/docs/gs/schemas/opengame.response.schema.json",
+    "Gamesv1/docs/gs/schemas/playround.response.schema.json",
+    "Gamesv1/docs/gs/schemas/featureaction.response.schema.json",
+    "Gamesv1/docs/gs/schemas/resumegame.response.schema.json",
+    "Gamesv1/docs/gs/schemas/gethistory.response.schema.json",
+    "Gamesv1/docs/gs/schemas/closegame.response.schema.json",
+    "Gamesv1/packages/core-protocol/src/schemas.ts",
+    "Gamesv1/packages/core-protocol/src/IGameTransport.ts",
+    "Gamesv1/packages/ui-kit/src/shell/presentation/PremiumPresentationMapper.ts",
+    "new-games-server/src/index.ts"
+  ],
+  "source_files_review_only": [
+    "Gamesv1/packages/core-protocol/src/http/GsHttpRuntimeTransport.ts",
+    "Gamesv1/games/7001/src/app/runtime/RuntimeOutcomeMapper.ts",
+    "Gamesv1/games/7001/src/app/runtime/provisionalMathSource.ts",
+    "Gamesv1/tests/contract/browser-runtime.contract.test.ts",
+    "Gamesv1/tests/game/presentation-mapper.test.ts",
+    "new-games-server/test/ngs-contract.e2e.test.ts",
+    "new-games-server/test/ngs-failure-reconnect.e2e.test.ts"
+  ],
+  "generated_at": "2026-05-12T08:58:49"
+}

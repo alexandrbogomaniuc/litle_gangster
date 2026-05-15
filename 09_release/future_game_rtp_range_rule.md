@@ -68,4 +68,3 @@ Little Gangster currently remains:
 
 These values remain unchanged unless a future sprint explicitly requests a
 Little Gangster RTP profile change.
-

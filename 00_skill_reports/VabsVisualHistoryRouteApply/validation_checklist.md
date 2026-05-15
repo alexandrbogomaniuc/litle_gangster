@@ -1,0 +1,44 @@
+# VABS Visual History Route Apply Validation Checklist
+
+Date: 2026-05-15
+
+- [x] `project_manifest.json` parses.
+- [x] `VabsVisualHistoryRouteApply/handoff.json` parses.
+- [x] Route apply source changes JSON parses.
+- [x] Only allowed Staging paths were touched for this sprint.
+- [x] `historyTypes.ts` exists.
+- [x] `historyPayloadBuilder.ts` exists.
+- [x] `historyStorageProvider.ts` exists.
+- [x] `visualReplayRenderer.ts` exists.
+- [x] `mediaManifest.ts` exists.
+- [x] `historyRoutes.ts` exists.
+- [x] `historyFixtures.ts` exists.
+- [x] `historySecurity.ts` exists.
+- [x] History `index.ts` exists.
+- [x] JSON round replay response can be built.
+- [x] JSON session replay response can be built.
+- [x] Whole-session replay is represented.
+- [x] Visual HTML/render response can be built.
+- [x] Media manifest can be built.
+- [x] `screenshotRefs` exists and is empty by default.
+- [x] `videoRefs` exists and is empty by default.
+- [x] Default `evidenceMode` is `deterministic_replay_only`.
+- [x] `mathProfileId` is present.
+- [x] `bonusBuyCostMultiplier` is present.
+- [x] `declaredBfRtpTarget` is present.
+- [x] `walletAccountingRefs` placeholder is present.
+- [x] Fixture/render output safety was tested for raw token/signature/private URL leakage.
+- [x] Durable storage remains blocked and not implemented.
+- [x] Screenshot capture remains blocked and not implemented.
+- [x] Video capture remains blocked and not implemented.
+- [x] Release/certification flags remain false.
+- [x] Targeted tests ran and passed.
+- [x] Rollback plan exists.
+- [x] No GameClientBuilder implementation was created.
+- [x] No `Gamesv1/games/8001` package was created.
+- [x] No registration artifact was generated.
+- [x] No DB/Cassandra action occurred.
+- [x] No wallet/API call occurred.
+- [x] No donor browsing occurred.
+- [x] No asset capture occurred.
+- [x] No release approval occurred.

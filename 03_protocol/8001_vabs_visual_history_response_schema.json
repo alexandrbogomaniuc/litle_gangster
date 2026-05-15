@@ -1,0 +1,349 @@
+{
+  "$schema": "[REDACTED_URL_REMOVED]",
+  "$id": "little-gangster-8001-vabs-visual-history-response.schema.json",
+  "title": "Little Gangster 8001 VABS Visual History Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ok",
+    "gameId",
+    "gameKey",
+    "schemaVersion",
+    "responseType",
+    "scope",
+    "session",
+    "replay",
+    "visualReplay",
+    "security",
+    "mediaEvidence"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "gameId": {
+      "type": "integer",
+      "const": 8001
+    },
+    "gameKey": {
+      "type": "string",
+      "const": "little-gangster"
+    },
+    "schemaVersion": {
+      "type": "string"
+    },
+    "responseType": {
+      "type": "string",
+      "enum": [
+        "json_replay",
+        "visual_html",
+        "visual_wrapper",
+        "not_found",
+        "blocked"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "wholeSession"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "round",
+            "session"
+          ]
+        },
+        "wholeSession": {
+          "type": "boolean"
+        },
+        "roundId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gameSessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "playerSessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gameSessionId",
+        "language",
+        "timeZone",
+        "hideClose"
+      ],
+      "properties": {
+        "gameSessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "playerSessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": "string"
+        },
+        "timeZone": {
+          "type": "string"
+        },
+        "hideClose": {
+          "type": "boolean"
+        }
+      }
+    },
+    "replay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mathProfileId",
+        "rtpLevel",
+        "volatilityLevel",
+        "baseRtpTarget",
+        "declaredBfRtpTarget",
+        "bonusBuyCostMultiplier",
+        "actionSequence",
+        "cascadeSequence",
+        "featureState",
+        "walletAccountingRefs",
+        "lifecycleStatePersistence",
+        "roundCompletion",
+        "capState",
+        "presentationPayload"
+      ],
+      "properties": {
+        "mathProfileId": {
+          "type": "string"
+        },
+        "rtpLevel": {
+          "type": "string"
+        },
+        "volatilityLevel": {
+          "type": "string"
+        },
+        "baseRtpTarget": {
+          "type": "number"
+        },
+        "declaredBfRtpTarget": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bonusBuyCostMultiplier": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "actionSequence": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "cascadeSequence": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "featureState": {
+          "type": "object"
+        },
+        "walletAccountingRefs": {
+          "type": "object"
+        },
+        "replaySeedOrDeterministicRefs": {
+          "type": "object"
+        },
+        "lifecycleStatePersistence": {
+          "type": "object"
+        },
+        "roundCompletion": {
+          "type": "object"
+        },
+        "capState": {
+          "type": "object"
+        },
+        "presentationPayload": {
+          "type": "object"
+        }
+      }
+    },
+    "visualReplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available",
+        "format",
+        "payload",
+        "url"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "html",
+            "json",
+            "wrapper",
+            "blocked"
+          ]
+        },
+        "payload": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "renderRoute": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mediaManifestRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "screenshotRefs": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "videoRefs": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rawTokensIncluded",
+        "rawSignaturesIncluded",
+        "privateUrlsIncluded"
+      ],
+      "properties": {
+        "rawTokensIncluded": {
+          "type": "boolean",
+          "const": false
+        },
+        "rawSignaturesIncluded": {
+          "type": "boolean",
+          "const": false
+        },
+        "privateUrlsIncluded": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "mediaEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "historyEvidenceMode",
+        "historyCaptureScope",
+        "mediaManifestRef",
+        "screenshotRefs",
+        "videoRefs",
+        "checksums",
+        "storageProvider",
+        "retentionExpiresAt"
+      ],
+      "properties": {
+        "historyEvidenceMode": {
+          "type": "string",
+          "enum": [
+            "deterministic_replay_only",
+            "replay_plus_screenshots",
+            "replay_plus_feature_video",
+            "replay_plus_full_video"
+          ]
+        },
+        "historyCaptureScope": {
+          "type": "string",
+          "enum": [
+            "all_actions",
+            "paid_spins_only",
+            "feature_rounds_only",
+            "bonus_buy_only",
+            "wins_above_threshold",
+            "sampled",
+            "disputed_rounds_only"
+          ]
+        },
+        "mediaManifestRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "screenshotRefs": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "videoRefs": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "checksums": {
+          "type": "object"
+        },
+        "storageProvider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retentionExpiresAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

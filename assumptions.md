@@ -87,7 +87,7 @@
 - Asset capture was limited to static reference asset paths observed from Chrome MCP metadata.
 - Wallet/API/auth/balance response bodies were not saved.
 - Full donor launch URL and token values were not saved.
-- Captured assets are stored only under `02_reference_assets/authorized_raw/chrome_mcp_20260507_1215/`, which is gitignored by project `.gitignore`.
+- Captured assets are stored only under `02_reference_assets/authorized_raw/[REDACTED_ASSET_FILE], which is gitignored by project `.gitignore`.
 - All 29 captured files are classified as `scaffold_internal_only`, `blocked_from_release`, and `replacement_required=true`.
 - Asset inventory approval is a workflow handoff gate only. It does not approve any reference asset for release.
 - ProtocolAndSchemaMapper is the next recommended skill.
@@ -188,7 +188,7 @@
 - v0.2 secondary 100,000-round short seeds drifted outside +/-0.5 percentage-point tolerance, so full multi-seed RTP validation remains open.
 - The quality gate result is `PASS_WITH_LIMITATIONS`, not math release approval.
 - User stated Staging is now canonical for GS/New Games/Crazy Rooster work. This math sprint did not inspect Staging paths. Future source-inspection
-  skills must update/verify manifest source paths against `[DEV_ROOT_REMOVED]/Staging` and not use old worktrees as source of truth.
+  skills must update/verify manifest source paths against `[REDACTED_LOCAL_PATH] and not use old worktrees as source of truth.
 
 ## Math Quality Gate Open Blockers
 
@@ -345,25 +345,25 @@
 ## ArtSceneMapper v0.3 Update Assumptions
 
 The v0.3 scene mapping update treats `v0.3_donor_feature_parity_provisional` as a provisional planning result contract. The client is assumed to
-  render backend/runtime result payloads only; browser-side production RNG and authoritative win calculation remain forbidden. Current GS result owner
-  remains unproven. GameClientBuilder may proceed only to planning/runtime-contract review, not full implementation.
+render backend/runtime result payloads only; browser-side production RNG and authoritative win calculation remain forbidden. Current GS result owner
+remains unproven. GameClientBuilder may proceed only to planning/runtime-contract review, not full implementation.
 
 New v0.3 placeholder visual states require original replacement assets and remain pending_replacement or blocked_from_release.
 ## Public Export After ArtSceneMapper v0.3
 
 Public export was sanitized and pushed to https://github.com/alexandrbogomaniuc/litle_gangster on branch main at commit
-  6127bdc2f982038e043d5b2585cbcc46b447a1d8. The export excludes donor asset bodies, screenshots, HAR, raw secrets, SIDs, signatures, private links,
-  emails, and full donor URLs. `06_resulting_code` remains README-only.
+6127bdc2f982038e043d5b2585cbcc46b447a1d8. The export excludes donor asset bodies, screenshots, HAR, raw secrets, SIDs, signatures, private links,
+emails, and full donor URLs. `06_resulting_code` remains README-only.
 ## v0.3 Contract Consistency Audit
 
 Canonical v0.3 result field names now use `result_schema.json` paths in art/scene mapping files. Historical aliases such as
-  `feature_mode_state.spins_remaining`, `lastAction`, unprefixed `cascade_steps[]`, and bonus-buy `mode_selection` are patched or documented in
-  `result_schema_field_aliases.md`. GameClientBuilder remains planning-only; runtime result owner remains unproven.
+`feature_mode_state.spins_remaining`, `lastAction`, unprefixed `cascade_steps[]`, and bonus-buy `mode_selection` are patched or documented in
+`result_schema_field_aliases.md`. GameClientBuilder remains planning-only; runtime result owner remains unproven.
 ## Public Export After v0.3 Contract Consistency Audit
 
 Public export was sanitized and pushed to https://github.com/alexandrbogomaniuc/litle_gangster on branch main at commit
-  6b79e4617d9c2faabdb8a2be8ef1da96da830815. The export excludes donor asset bodies, screenshots, HAR, raw secrets, SIDs, signatures, private links,
-  emails, and full donor URLs. `06_resulting_code` remains README-only.
+6b79e4617d9c2faabdb8a2be8ef1da96da830815. The export excludes donor asset bodies, screenshots, HAR, raw secrets, SIDs, signatures, private links,
+emails, and full donor URLs. `06_resulting_code` remains README-only.
 
 
 
@@ -612,7 +612,7 @@ Public export was sanitized and pushed to https://github.com/alexandrbogomaniuc/
 - Public export validation is trustworthy for commit `ca854797d2d67def46f17dd989164b71ce49cc44` because working-tree, staged/index, committed blob,
   and GitHub raw checks passed.
 - Checkpoint push is no longer due after this sprint.
-- Public export remains sanitized; donor assets, screenshots/HAR/raw logs, raw secrets, full donor URLs, and tokenized URLs are excluded.
+- Public export remains sanitized; donor assets, screenshots, HAR files, and raw logs, raw secrets, full donor URLs, and tokenized URLs are excluded.
 - Implementation and release gates remain closed.
 
 ## 2026-05-12 16:59:34 - Public Export Corruption Contradiction
@@ -632,7 +632,7 @@ Public export was sanitized and pushed to https://github.com/alexandrbogomaniuc/
 ## 2026-05-12 17:24:01 - Raw-Safe Public Export
 
 - The previous public export at `25cbf1c3f8ce1d6f89871f11a43f40478a8e2e6c` was treated as still corrupted based on external raw line counts.
-- A new raw-safe export was built from scratch at `.` using selected safe files only.
+- A new raw-safe export was built from scratch at `[REDACTED_LOCAL_PATH] using selected safe files only.
 - The new public commit `e0e5a2e04b1c793bf06a586601a3778154e6be2c` passed project-local working-tree, git blob, and GitHub raw validation.
 - Future public export success should prefer raw-safe export mechanics over the abandoned old pipeline.
 
@@ -697,7 +697,7 @@ Public export was sanitized and pushed to https://github.com/alexandrbogomaniuc/
 
 - Raw-safe checkpoint commit `b7b420ba0916af6f6073f5e714ab73e1d36d4f93` passed GitHub raw validation.
 - Public checkpoint includes recent safe workflow, RTP/volatility, simulator, and calibration artifacts.
-- Public checkpoint excludes donor assets, screenshots/HAR, raw logs, raw secrets, full donor URLs, tokenized URLs, implementation code, registration
+- Public checkpoint excludes donor assets, screenshots and HAR files, raw logs, raw secrets, full donor URLs, tokenized URLs, implementation code, registration
   artifacts, DB actions, wallet calls, and release approval.
 - Checkpoint push is no longer due after this sprint.
 - Implementation and release gates remain closed.
@@ -1034,3 +1034,146 @@ Public export was sanitized and pushed to https://github.com/alexandrbogomaniuc/
 - Focused safety scanning found private local paths and one non-allowlisted redacted donor host in prepared export content.
 - No donor assets, screenshots, HAR captures, Staging source files, runtime source, client code, registration artifacts, DB/Cassandra changes,
   wallet/API calls, or release approvals were pushed.
+
+## 2026-05-15 - Raw-Safe Curation Checkpoint Assumptions
+
+- The raw-safe public export was curated before commit to remove private local paths, donor host values, tokenized URLs, and long Markdown-line
+  validator failures.
+- The public `project_manifest.json` is a slim public-safe manifest, not the private project manifest.
+- ParallelMathValidator skill snapshots and lifecycle planning docs were included as public-safe review copies.
+- Local raw-safe validation, JSON/CSV/Python sweeps, safety scans, git blob checks, push, and GitHub raw validation passed.
+- No donor assets, screenshots, HAR captures, Staging source files, client/runtime code, registration artifacts, DB/Cassandra changes, wallet/API
+  calls, or release approvals were pushed.
+
+## 2026-05-15 - Lifecycle Wrapper Apply Assumptions
+
+- Lifecycle wrapper implementation apply was explicitly approved for Staging source only.
+- The wrapper was limited to `new-games-server/src/games/little-gangster/lifecycle/` plus guarded gameId `8001` integration in
+  `new-games-server/src/index.ts`.
+- The existing 8001 adapter remains a payload mapper; the lifecycle wrapper adds lifecycle state, accounting representation, round completion, state
+  persistence, reconnect recovery, and blocker propagation.
+- VABS/VBA/Lasthands visual history route implementation was not created in this sprint.
+- 100x bonus buy remains approved for implementation planning only, not release-approved, not certified, not wallet-tested, not runtime-tested, and
+  not VABS/Lasthands-tested.
+- 125x and 150x bonus-buy tiers remain blocked.
+- No active math values, active `bonus_buy_rules.json`, RTP/volatility profiles, BF_RTP targets, registration configs, GameClientBuilder code,
+  Gamesv1/games/8001 package, registration artifacts, DB/Cassandra changes, wallet/API calls, donor browsing, asset capture, or release approval
+  occurred.
+- Targeted Little Gangster tests passed; isolated Little Gangster lifecycle TypeScript passed; broader `src/index.ts` typecheck remains blocked by
+  existing checkout dependency/strictness issues.
+
+## 2026-05-15 - VABS Visual History Source Planning Assumptions
+
+- VABS/VBA/Lasthands visual history source planning was read-only against Staging source and did not modify Staging.
+- Current `/slot/v1/gethistory` and core-protocol history support provide JSON history evidence, but not a proven 8001 visual render/backoffice route.
+- Future 8001 visual history should live under `new-games-server/src/games/little-gangster/history/` and be registered through guarded 8001 routes in
+  `new-games-server/src/index.ts`.
+- JSON replay and visual HTML/render responses are both required unless current GS/backoffice evidence proves JSON-only replay is acceptable.
+- In-game History button behavior and Casino Manager/backoffice access must both be planned/tested before release.
+- Reusable workflow guidance was patched so future games must implement or explicitly block visual history routes before release.
+- No VABS route code, lifecycle wrapper changes, backend adapter changes, client code, registration artifacts, DB/Cassandra changes, wallet/API calls,
+  donor browsing, asset capture, or release approval occurred.
+
+## 2026-05-15 - VABS Route Resolution Audit Assumptions
+
+- Legacy GS/source, new-games-server, Gamesv1/client, and registration/config sources
+  were inspected read-only for VBA/VABS/Lasthands route resolution.
+- Crazy Rooster / 7001 is not authoritative and remains weak reference evidence only.
+- Legacy GS visual history is proven around `/vabs/show.jsp` style visual routes and
+  helper actions; new-games currently proves JSON `/slot/v1/gethistory`, not visual
+  VABS completion.
+- Recommended model is hybrid: configured/generated GS/CM visual route discovery plus
+  new-games 8001 visual replay implementation.
+- Registration/config is required, but exact field shape is blocked and must not be
+  guessed.
+- No Staging source, VABS route code, lifecycle wrapper change, backend adapter change,
+  client code, registration artifact, DB/Cassandra change, wallet/API call, donor
+  browsing, asset capture, or release approval occurred.
+
+## 2026-05-15 - VABS Evidence Policy Assumptions
+
+- Deterministic replay is the authoritative source of truth for VABS/VBA/Lasthands
+  reconstruction.
+- Visual HTML/render VABS route remains required for in-game History and
+  Casino Manager/backoffice unless current GS evidence proves otherwise.
+- Screenshot and video media are optional supporting evidence, not authoritative math or
+  result sources.
+- Full video for every spin is not the default because storage, bandwidth, performance,
+  retention, and security costs are high.
+- Default `historyEvidenceMode` is `deterministic_replay_only`, with media capture
+  disabled by default.
+- The provided legacy VABS route was used only as sanitized route-shape evidence for
+  session id equivalent, game id, language, time zone, and hide-close behavior.
+- No Staging source, VABS route code, screenshot capture, video capture, durable storage,
+  lifecycle wrapper change, backend adapter change, client code, registration artifact,
+  DB/Cassandra change, wallet/API call, donor browsing, asset capture, or release
+  approval occurred.
+
+## 2026-05-15 - VABS Visual History Route Apply Assumptions
+
+- The 8001 VABS/VBA/Lasthands visual history route foundation was explicitly approved
+  for Staging source only.
+- Source changes were limited to `new-games-server/src/games/little-gangster/history/`,
+  guarded 8001 route registration in `new-games-server/src/index.ts`, and targeted
+  history route tests under `new-games-server/test/little-gangster/`.
+- Default `historyEvidenceMode` remains `deterministic_replay_only`.
+- The route foundation includes deterministic replay JSON, visual HTML shell, media
+  manifest metadata, non-production fixture storage, and explicit blockers.
+- Durable history/media storage, screenshot capture, and video capture were not
+  implemented.
+- Backoffice/CM compatibility and wallet/launch/history runtime tests remain unproven.
+- No active math values, active `bonus_buy_rules.json`, RTP/volatility profiles,
+  BF_RTP targets, registration configs, client code, registration artifacts,
+  DB/Cassandra changes, wallet/API calls, donor browsing, asset capture, certification,
+  or release approval occurred.
+
+## 2026-05-15 - VABS Alias Compatibility Audit Assumptions
+
+- The legacy VABS route shape was analyzed only in sanitized form.
+- Legacy GS/source evidence proves `/vabs/show.jsp` style visual history semantics for
+  VABS/VBA round/session flows.
+- Current Little Gangster 8001 canonical history routes do not by themselves prove
+  BO/CM compatibility.
+- Recommended alias decision is `legacy_alias_recommended`.
+- `VIEWSESSID` should map to `gameSessionId` for 8001 unless GS proves a separate
+  view-session identifier.
+- Registration/config is required as a concept, but exact 8001 field shape remains
+  blocked.
+- Staging source was inspected read-only and was not modified in this sprint.
+- No alias code, BO/CM integration code, client code, registration artifact,
+  DB/Cassandra action, wallet/API call, donor browsing, asset capture, certification,
+  or release approval occurred.
+
+## 2026-05-15 - VABS Legacy Alias Apply Assumptions
+
+- The 8001 VABS legacy alias foundation was explicitly approved for Staging source only.
+- Source changes were limited to allowed Little Gangster history alias files, history
+  module exports, guarded route registration, and targeted alias tests.
+- Root alias support is guarded by `GAMEID=8001`.
+- Scoped alias support is also available under the 8001 route namespace.
+- `VIEWSESSID` maps to `viewSessionId` and `gameSessionIdCandidate`; full equivalence to
+  `gameSessionId` remains unproven for 8001.
+- Canonical `/slot/v1/8001/history/...` routes were preserved.
+- Durable history storage, durable media storage, screenshot capture, video capture,
+  BO/CM acceptance testing, wallet calls, DB/Cassandra actions, GameClientBuilder,
+  GameServerRegistrar generation, registration artifacts, certification, and release
+  remain blocked.
+
+## 2026-05-15 - GS Responsibility Boundary Audit Assumptions
+
+- Browser/client and visual renderer are not real wallet owners.
+- Little Gangster runtime/lifecycle owns action/accounting intent, idempotency, state
+  persistence metadata, result/history payload references, and blocker flags.
+- Current GS/WebGS/common-wallet and wallet/casino provider own real wallet auth,
+  debit, credit, settlement, and balance authority unless future current-GS source
+  proves otherwise.
+- Current GS/Cassandra own durable session, bet, round, wallet-operation, last-hand, and
+  history persistence unless a future approved plan assigns a different owner.
+- Pending/stuck transaction ownership belongs to current GS wallet-operation tracking
+  and persistence; 8001 must expose pending markers and recovery references, not invent
+  a separate real-money transaction store.
+- WalletAndLaunchTester must verify boundaries and approved endpoints only after
+  explicit safe environment approval.
+- No Staging source, implementation code, endpoint call, server start, registration
+  artifact, DB/Cassandra action, wallet/API call, donor browsing, asset capture,
+  certification, or release approval occurred.

@@ -34,4 +34,5 @@ Status: gate only, no approval
 ## Required Approval Text For Next Implementation Sprint
 
 Any future implementation sprint must explicitly approve the exact Staging source root and files to modify. Without that approval, implementation
-  remains blocked.
+remains
+blocked.
