@@ -1,22 +1,16 @@
 # Public Export Notice
 
-This is a raw-safe sanitized checkpoint for review.
-It is not a release build.
-It is not a playable client package.
-It is not backend runtime code.
-It is not a registration package.
-It contains safe text and code artifacts only.
+This is a raw-safe sanitized public review checkpoint.
 
-No donor asset bodies are included.
-No scaffold asset bodies are included.
-No screenshots are included.
-No HAR files are included.
-No event logs are included.
-No raw network logs are included.
-No raw secrets are included.
-No tokenized URLs are included.
-No local private paths are included.
+It is not a release build. It is not certified. It is not release-approved. It
+contains no donor asset bodies, screenshots, HAR files, raw logs, private local
+paths, raw secrets, tokenized URLs, SIDs, signatures, emails, or passwords.
 
-The MathProfileCalibrator RTP rule now uses 91.00% to 99.70%, inclusive.
-Little Gangster RTP values were not changed by this rule update.
-Implementation and release gates remain closed.
+The export focuses on reusable workflow infrastructure and planning documents:
+ParallelMathValidator skill creation, workflow routing awareness, lifecycle
+wrapper planning, and VABS/VBA/Lasthands route planning.
+
+The current Little Gangster 8001 adapter is a payload mapper only. Lifecycle
+wrapper implementation, VABS route implementation, GameClientBuilder,
+GameServerRegistrar generation, wallet testing, DB/Cassandra work, and release
+approval remain blocked.

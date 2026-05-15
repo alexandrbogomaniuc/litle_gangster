@@ -50,7 +50,8 @@ Use this sequence before tuning math for any future game.
 - Run every RTP model with multiple deterministic seeds.
 - Compare target RTP percent, target return multiplier, observed return multiplier, and observed RTP percent.
 - Report RTP with and without bonus-buy separately.
-- Do not treat a 2k or 5k round profile smoke pass as calibration success. A 3x3 RTP/volatility matrix must pass a stability triage at larger samples before backend adapter or registration work can proceed.
+- Do not treat a 2k or 5k round profile smoke pass as calibration success. A 3x3 RTP/volatility matrix must pass a stability triage at larger samples
+  before backend adapter or registration work can proceed.
 - Do not treat 10k or 50k runs as RTP approval either; they are diagnostic smoke unless a project-specific confidence tier says otherwise.
 - Use `outside_small_sample_smoke_tolerance`, not `failed_profile`, for smoke-scale deviations.
 - Always report confidence intervals or explicitly record that confidence cannot be estimated from the available data.
@@ -60,5 +61,6 @@ Use this sequence before tuning math for any future game.
 - Only after fast-lane smoke results are plausible, run larger simulations.
 - Keep exact values non-final until certification-scale validation, volatility, cap, feature, and bonus-buy reports pass.
 - Preserve GL/registration mapping and backend result-state ownership boundaries.
-- High-volatility games, rare bonus features, jackpot hooks, and max-win tails may require tens of millions, hundreds of millions, or one billion rounds plus lab replay evidence.
+- High-volatility games, rare bonus features, jackpot hooks, and max-win tails may require tens of millions, hundreds of millions, or one billion
+  rounds plus lab replay evidence.
 - Never approve backend adapter implementation, GameServerRegistrar generation, or release from smoke-only RTP evidence.

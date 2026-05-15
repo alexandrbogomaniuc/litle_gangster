@@ -1,13 +1,16 @@
 ---
 name: WorkflowOrchestrator
-description: Decide the next safe iGaming workflow skill from manifest, handoffs, blockers, and gates; refuse unsafe implementation jumps and produce the exact next prompt.
+description: >-
+  Decide the next safe iGaming workflow skill from manifest, handoffs, blockers, and gates; refuse unsafe implementation jumps and produce the exact
+  next prompt.
 ---
 
 # WorkflowOrchestrator
 
 ## Purpose
 
-WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement game code, generate registration, call wallets, browse donor URLs, capture assets, or approve release. It reads the current project state and produces one safe next step.
+WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement game code, generate registration, call wallets, browse donor URLs,
+  capture assets, or approve release. It reads the current project state and produces one safe next step.
 
 ## Required Inputs
 
@@ -33,11 +36,22 @@ WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement
 - Use fast-lane mode for routing and optimization work: one primary purpose, compact reports by default, and no broad history re-read unless required.
 - Prefer `handoff.json`, `project_manifest.json`, and consolidation gate docs as source of truth for fast-lane decisions.
 - Checkpoint git review/push is recommended every 3-4 meaningful local sprints or at a major phase boundary, but never push automatically.
-- Subagents are optional. Use them only when the main agent decides they clearly reduce time or improve reliability, and never for writing files or source changes.
-- Never recommend GameClientBuilder implementation unless runtime owner, result API contract, approved asset strategy, and explicit client-code approval are all true.
-- Never recommend GameServerRegistrar generation unless registration lane, game ID, bank/source, serializer/workaround, and rollback strategy are proven.
+- Subagents are optional. Use them only when the main agent decides they clearly reduce time or improve reliability, and never for writing files or
+  source changes.
+- Never recommend GameClientBuilder implementation unless runtime owner, result API contract, approved asset strategy, and explicit client-code
+  approval are all true.
+- Never recommend GameServerRegistrar generation unless registration lane, game ID, bank/source, serializer/workaround, and rollback strategy are
+  proven.
 - Never recommend WalletAndLaunchTester unless safe test environment and secret references are available.
 - Never recommend RTPAndReleaseAuditor release approval unless all prior gates pass.
+- Route to MathProfileCalibrator when a 3x3 math profile matrix exists but
+  train/validation gates are not passed, or when requested RTP/volatility
+  profiles need calibration.
+- Route to ParallelMathValidator when large train/validation/tail simulation is
+  needed, bonus-buy EV needs a parallel lane, FRB/promo EV needs validation,
+  registration math fields need extracted simulation evidence, certification
+  evidence is needed, or the main workflow should continue while math validation
+  runs in parallel.
 - If the requested next skill is unsafe, refuse the jump and produce the nearest safe prompt.
 - Public export validation may be called passed only after local validation, commit, push, and fresh post-push clone validation.
 
@@ -45,8 +59,14 @@ WorkflowOrchestrator is the routing and gatekeeping skill. It does not implement
 
 1. Run or inspect `scripts/decide_next_skill.py` with the project root.
 2. If the user requested a specific skill, run `scripts/validate_next_skill_allowed.py --skill <SkillName>`.
-3. Report the allowed next skill, blocked unsafe skills, and exact next Codex prompt.
-4. Update project reports only when the sprint asks for it.
+3. Prefer ParallelMathValidator over implementation or registration work when
+   unresolved large-scale math evidence, bonus-buy EV, FRB/promo liability,
+   tail/max-win, registration math fields, or certification evidence blocks a
+   downstream gate.
+4. Prefer MathProfileCalibrator over backend/client/registration work when
+   profile calibration gates are open.
+5. Report the allowed next skill, blocked unsafe skills, and exact next Codex prompt.
+6. Update project reports only when the sprint asks for it.
 
 ## Output Shape
 

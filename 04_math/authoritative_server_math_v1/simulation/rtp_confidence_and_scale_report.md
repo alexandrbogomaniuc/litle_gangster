@@ -4,7 +4,8 @@ Created: 2026-05-13T11:16:56+00:00
 
 ## Main Correction
 
-The previous 10,000-round-per-seed 3x3 run is smoke evidence only. It is now classified as `small_sample_profile_stability_inconclusive`, not proof that 8 profiles truly fail RTP and not proof that 1 profile is approved.
+The previous 10,000-round-per-seed 3x3 run is smoke evidence only. It is now classified as `small_sample_profile_stability_inconclusive`, not proof
+  that 8 profiles truly fail RTP and not proof that 1 profile is approved.
 
 ## What Small Samples Can Prove
 
@@ -42,7 +43,8 @@ certification because cap/tail and bonus-buy paths are not represented.
 - Worst-profile required rounds for +/-0.5 percentage point: 1,455,547.
 - Worst-profile required rounds for +/-0.25 percentage point: 5,822,187.
 
-Blocker: `insufficient_tail_variance_data_for_required_round_estimate` remains because no cap hits were observed and rare feature/tail behavior is not represented.
+Blocker: `insufficient_tail_variance_data_for_required_round_estimate` remains because no cap hits were observed and rare feature/tail behavior is not
+  represented.
 
 ## Gate Policy
 

@@ -12,7 +12,8 @@ Every future game must define exactly three volatility levels:
 - MEDIUM
 - HIGH
 
-The required matrix is 3x3, for nine pretested profiles. Operators select from approved profiles only; arbitrary RTP percentages or volatility values are blocked.
+The required matrix is 3x3, for nine pretested profiles. Operators select from approved profiles only; arbitrary RTP percentages or volatility values
+  are blocked.
 
 ## RTP Range
 

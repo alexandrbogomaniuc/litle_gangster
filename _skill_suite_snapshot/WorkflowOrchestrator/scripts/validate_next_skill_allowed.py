@@ -41,6 +41,10 @@ CHECKPOINT_SKILLS = {
     "checkpoint git review/push",
 }
 
+PLANNING_SKILLS = {
+    "MathProfileCalibrator",
+}
+
 
 def load_manifest(project_root: Path) -> dict:
     return json.loads((project_root / "project_manifest.json").read_text(encoding="utf-8"))
@@ -72,6 +76,24 @@ def main() -> int:
         print(f"skill={requested}")
         print("fast_lane_mode=true")
         print("implementation_allowed=false")
+        return 0
+
+    if requested in PLANNING_SKILLS or requested.startswith("MathProfileCalibrator"):
+        print("NEXT SKILL ALLOWED")
+        print(f"skill={requested}")
+        print("planning_allowed=true")
+        print("implementation_allowed=false")
+        print("backend_client_registration_wallet_db_donor_release_blocked=true")
+        return 0
+
+    if requested.startswith("ParallelMathValidator"):
+        print("NEXT SKILL ALLOWED")
+        print(f"skill={requested}")
+        print("planning_allowed=true")
+        print("parallel_allowed=true")
+        print("implementation_allowed=false")
+        print("active_config_changes_allowed=false")
+        print("backend_client_registration_wallet_db_donor_release_blocked=true")
         return 0
 
     for skill, required_flags in IMPLEMENTATION_SKILLS.items():

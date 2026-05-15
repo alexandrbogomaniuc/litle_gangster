@@ -18,11 +18,14 @@ Use these tiers before interpreting RTP simulation output.
 
 | Tier | Approximate rounds | Purpose | Allowed decisions | Forbidden decisions |
 | --- | ---: | --- | --- | --- |
-| Wiring smoke | 2k to 10k | Check simulator starts, denominator, profile routing, obvious broken logic. | Fix wiring and config bugs. | RTP approval, profile rejection, backend, registration, release. |
+| Wiring smoke | 2k to 10k | Check simulator starts, denominator, profile routing, obvious broken logic. | Fix wiring and config bugs. | RTP approval,
+  profile rejection, backend, registration, release. |
 | Diagnostic smoke | 10k to 50k | Check contribution direction and obvious drift. | Prioritize investigation. | RTP approval or aggressive tuning. |
 | Calibration trend | 100k to 500k | Early multi-seed trend evidence. | Cautious tuning candidates. | High-volatility approval or release gates. |
-| Calibration confidence | 1M to 5M | Better confidence for model tuning. | Tune after train/validation evidence. | Certification or rare-tail approval. |
-| Pre-certification | 10M to 50M | Stronger RTP/volatility validation. | Prepare implementation-adjacent handoff if gates allow. | Final release approval. |
+| Calibration confidence | 1M to 5M | Better confidence for model tuning. | Tune after train/validation evidence. | Certification or rare-tail
+  approval. |
+| Pre-certification | 10M to 50M | Stronger RTP/volatility validation. | Prepare implementation-adjacent handoff if gates allow. | Final release
+  approval. |
 | Certification/lab scale | 100M to 1B | Rare feature, jackpot, cap, and tail behavior. | Lab package preparation. | Shortcutting formal review. |
 
 ## Required Reporting

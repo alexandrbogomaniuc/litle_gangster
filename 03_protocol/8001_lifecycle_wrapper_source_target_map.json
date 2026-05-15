@@ -1,0 +1,151 @@
+{
+  "createdAt": "2026-05-15",
+  "scope": "source_planning_only_no_staging_modification",
+  "gameId": 8001,
+  "gameKey": "little-gangster",
+  "crazyRooster7001Authoritative": false,
+  "currentAdapterRole": "payload_mapper_only",
+  "lifecycleWrapperRequired": true,
+  "wrapperOptionSelected": "option_5_combined_small_wrapper_first_then_separate_route_later",
+  "recommendedWrapperSourceLocation": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/",
+  "recommendedVabsRouteSourceLocation": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/",
+  "routeIntegrationHost": "[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts",
+  "sourceTargets": [
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/index.ts",
+      "area": "new-games-server route host",
+      "status": "proven_target",
+      "futureAction": "add minimal guarded gameId 8001 calls to lifecycle wrapper and history route modules only after explicit implementation approval",
+      "evidence": "contains /slot/v1 lifecycle routes, runtimeEnvelope helper, local session/round/history maps, wallet reserve/settle bridge helpers, gethistory route, closegame route, and existing guarded 8001 adapter invocation"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/adapter.ts",
+      "area": "current 8001 adapter",
+      "status": "proven_dependency_do_not_modify_first",
+      "futureAction": "keep as payload mapper dependency; lifecycle wrapper calls this module rather than moving lifecycle ownership into it",
+      "evidence": "exports Little Gangster adapter envelope from runtime result to presentationPayload.gamePayload"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/lifecycleWrapper.ts",
+      "area": "lifecycle wrapper",
+      "status": "likely_target_create",
+      "futureAction": "create wrapper orchestration for open, base spin, cascade, feature, bonus-buy, resume, close, pending recovery, and blocker propagation",
+      "evidence": "no existing full lifecycle owner in Little Gangster adapter folder"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/stateMachine.ts",
+      "area": "state and lifecycle transition rules",
+      "status": "likely_target_create",
+      "futureAction": "encode allowed states and transitions from 8001_lifecycle_state_machine.md",
+      "evidence": "existing route host uses generic stateVersion, but 8001-specific states are not centralized"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/actionAccounting.ts",
+      "area": "accounting boundary",
+      "status": "likely_target_create",
+      "futureAction": "represent debit/result/settlement references without direct wallet calls",
+      "evidence": "route host has wallet reserve/settle bridges; wrapper needs game-specific accounting contract"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/reconnectRecovery.ts",
+      "area": "state/reconnect",
+      "status": "likely_target_create",
+      "futureAction": "build recoverable payload and reconnect hints from persisted round/game state",
+      "evidence": "generic resumegame exists, but 8001-specific cascade/free-spin/bonus-buy recovery is not owned"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/roundCompletion.ts",
+      "area": "round completion and restart",
+      "status": "likely_target_create",
+      "futureAction": "centralize round completion, cap reached, settlement complete, and restart/FRB advisory handling",
+      "evidence": "legacy GS has restart/FRB paths; current adapter does not own completion logic"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/lifecycle/blockers.ts",
+      "area": "blocker propagation",
+      "status": "likely_target_create",
+      "futureAction": "carry runtime, wallet, VABS, tail/max-win, release, certification, and 125x/150x blockers",
+      "evidence": "blockers exist in payload mapper fixtures but lifecycle should propagate them consistently"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/historyPayload.ts",
+      "area": "VABS/history route payload",
+      "status": "likely_target_create",
+      "futureAction": "produce deterministic history payload matching 8001_history_payload_schema.json",
+      "evidence": "current mapper has history fields but no visual history route owner"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/new-games-server/src/games/little-gangster/history/vabsVisualHistoryRoutes.ts",
+      "area": "VABS/VBA/Lasthands route",
+      "status": "likely_target_create",
+      "futureAction": "define round, session, and whole-session JSON route handlers for index.ts registration after approval",
+      "evidence": "no Little Gangster VABS/VBA visual route implementation found in new-games-server"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/Gamesv1/packages/core-protocol/src/schemas.ts",
+      "area": "core protocol schemas",
+      "status": "proven_target_if_schema_extension_required",
+      "futureAction": "extend only if new route contracts require shared schema; existing gamePayload support is present",
+      "evidence": "runtime envelope and PresentationPayloadSchema include gamePayload"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/Gamesv1/packages/core-protocol/src/http/GsHttpRuntimeTransport.ts",
+      "area": "runtime transport",
+      "status": "candidate_target_later",
+      "futureAction": "touch only if client transport needs new visual-history route support; GameClientBuilder remains blocked",
+      "evidence": "transport already supports openGame, playRound, featureAction, resumeGame, closeGame, and getHistory"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/Gamesv1/packages/ui-kit/",
+      "area": "UI shell/history controls",
+      "status": "candidate_target_later_blocked",
+      "futureAction": "do not modify before GameClientBuilder/client scope is explicitly approved",
+      "evidence": "history UI and presentation mapper gamePayload passthrough exist, but visual replay integration is not proven"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/gs-server/game-server/web-gs/src/main/java/com/dgphoenix/casino/actions/enter/game/frb/RestartGameAction.java",
+      "area": "legacy restart/FRB evidence",
+      "status": "evidence_only_not_patch_target",
+      "futureAction": "use as behavior evidence for restart/FRB checklist; do not edit in first wrapper patch",
+      "evidence": "legacy restart path handles FRB-style relaunch behavior"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/gs-server/game-server/common-gs/src/main/java/com/dgphoenix/casino/gs/managers/payment/wallet/tracker/WalletTrackerTask.java",
+      "area": "wallet pending/stuck recovery evidence",
+      "status": "evidence_only_not_patch_target",
+      "futureAction": "use as behavior evidence for pending/stuck accounting tests; do not edit",
+      "evidence": "wallet tracker references pending operation and lasthand restore behavior"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/gs-server/game-server/web-gs/src/main/webapp/vabs/show.jsp",
+      "area": "legacy VABS visual route evidence",
+      "status": "blocked_not_new_games_target",
+      "futureAction": "backoffice/VABS HTML compatibility requires separate planning before any legacy JSP or proxy work",
+      "evidence": "legacy VABS JSP path exists, but no new-games Little Gangster VABS route target is proven"
+    },
+    {
+      "path": "[STAGING_SOURCE_ROOT]/gs-server/common/src/main/java/com/dgphoenix/casino/common/cache/data/game/BaseGameInfo.java",
+      "area": "registration/config evidence",
+      "status": "evidence_only_registration_blocked",
+      "futureAction": "registration generation/apply remains blocked",
+      "evidence": "game info properties include multi-value RTP fields and settings behavior"
+    }
+  ],
+  "requiredFutureTests": [
+    "new-games-server/test/little-gangster/lifecycle-wrapper.test.ts",
+    "new-games-server/test/little-gangster/state-reconnect.test.ts",
+    "new-games-server/test/little-gangster/accounting-boundary.test.ts",
+    "new-games-server/test/little-gangster/vabs-visual-history-route.test.ts",
+    "new-games-server/test/little-gangster/pending-stuck-recovery.test.ts"
+  ],
+  "blockedActions": {
+    "stagingSourceModifiedThisSprint": false,
+    "backendAdapterCodeChangedThisSprint": false,
+    "vabsRouteCodeCreatedThisSprint": false,
+    "gameClientBuilderAllowed": false,
+    "gameServerRegistrarGenerationAllowed": false,
+    "walletTestsAllowed": false,
+    "dbCassandraAllowed": false,
+    "releaseAllowed": false
+  }
+}

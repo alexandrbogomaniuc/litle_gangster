@@ -1,43 +1,43 @@
 # Reviewer Start Here
 
-This raw-safe checkpoint is intended for external review of real committed files.
-Start with these files in order.
+This checkpoint is a public-safe review export. It is intended to show the
+current reusable workflow infrastructure and the latest Little Gangster lifecycle
+planning state.
 
-1. 10_sprint_reports/sprint_report_latest.md
-2. project_manifest.json
-3. assumptions.md
-4. decisions_log.md
-5. 09_release/future_game_rtp_range_rule.md
-6. _skill_suite_snapshot/MathProfileCalibrator/SKILL.md
-7. _skill_suite_snapshot/MathProfileCalibrator/references/RTP_REQUEST_VALIDATION.md
-8. _skill_suite_snapshot/MathProfileCalibrator/references/CALIBRATION_LOOP_POLICY.md
-9. _skill_suite_snapshot/MathProfileCalibrator/references/TRAIN_VALIDATION_SEED_POLICY.md
-10. _skill_suite_snapshot/MathProfileCalibrator/references/ADJUSTMENT_OVERLAY_POLICY.md
-11. _skill_suite_snapshot/MathProfileCalibrator/references/CALIBRATION_REPORT_REQUIREMENTS.md
-12. _skill_suite_snapshot/MathProfileCalibrator/scripts/validate_rtp_request.py
-13. _skill_suite_snapshot/MathProfileCalibrator/scripts/plan_calibration_loop.py
-14. _skill_suite_snapshot/MathProfileCalibrator/scripts/validate_calibration_report.py
-15. 00_skill_reports/MathProfileCalibratorSkillCreation/handoff.json
-16. 00_skill_reports/MathProfileCalibratorSkillCreation/rtp_range_91_997_update_skill_report.md
-17. 00_skill_reports/MathProfileCalibratorSkillCreation/rtp_range_91_997_update_validation_checklist.md
-18. 00_skill_reports/MathProfileCalibratorSkillCreation/rtp_range_91_997_update_blockers.md
+It is not a release build, not a production client, not a registration package,
+and not a certification claim.
 
-Review notes:
+## Recommended Reading Order
 
-- The reusable RTP request range is now 91.00% to 99.70%, inclusive.
-- LOW, MEDIUM, and HIGH are labels, not fixed reusable values.
-- Future-game RTP values must be strictly ascending.
-- Operators may choose only approved pretested math profiles.
-- Arbitrary runtime RTP entry is not allowed.
-- Little Gangster RTP values were not changed.
-- Little Gangster remains 92.00%, 94.00%, and 96.00%.
-- Bonus-buy EV remains blocked.
-- Backend adapter implementation remains blocked.
-- GameClientBuilder implementation remains blocked.
-- Registration generation remains blocked.
-- Wallet work remains blocked.
-- DB and Cassandra work remain blocked.
+1. `10_sprint_reports/sprint_report_latest.md`
+2. `project_manifest.json`
+3. `GAME_STATUS_CURRENT.md`
+4. `09_release/parallel_math_validation_skill_adoption.md`
+5. `09_release/future_game_parallel_math_validation_playbook.md`
+6. `09_release/parallel_math_validation_gate_matrix.json`
+7. `_skill_suite_snapshot/ParallelMathValidator/SKILL.md`
+8. `_skill_suite_snapshot/ParallelMathValidator/references/PARALLEL_MATH_VALIDATION_WORKFLOW.md`
+9. `_skill_suite_snapshot/ParallelMathValidator/scripts/validate_parallel_math_request.py`
+10. `00_skill_reports/ParallelMathValidatorSkillCreation/handoff.json`
+11. `03_protocol/8001_lifecycle_wrapper_plan.md`
+12. `03_protocol/8001_vabs_visual_history_route_plan.md`
+13. `03_protocol/8001_history_payload_schema.json`
+14. `09_release/8001_lifecycle_wrapper_implementation_gate.md`
+
+## Review Notes
+
+- ParallelMathValidator is generic and not Little-Gangster-specific.
+- Future games may use LOW/MEDIUM/HIGH RTP values inside the approved range,
+  with LOW/MEDIUM/HIGH volatility and pretested profiles.
+- The current 8001 adapter remains a payload mapper only.
+- A lifecycle wrapper is required.
+- A VABS visual history route is required.
+- GameClientBuilder remains blocked.
+- GameServerRegistrar generation remains blocked.
 - Release remains blocked.
 
-Unsafe material is intentionally excluded.
-Do not treat this repository as a playable game package.
+## Public Safety Notes
+
+The export removes donor assets, screenshots, HAR files, raw logs, private local
+paths, full donor URLs, tokenized URLs, secrets, SIDs, signatures, emails, and
+passwords. Planning documents are included as public-safe copies.

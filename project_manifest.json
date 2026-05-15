@@ -1,39 +1,56 @@
 {
-  "project": {
-    "name": "little-gangster",
-    "gameName": "Little Gangster",
-    "gameId": "8001",
-    "exportType": "raw-safe sanitized review checkpoint"
+  "project": "little-gangster",
+  "gameKey": "little-gangster",
+  "gameId": 8001,
+  "exportType": "raw-safe sanitized review checkpoint",
+  "publicRepository": "https://github.com/alexandrbogomaniuc/litle_gangster",
+  "releaseBuild": false,
+  "releaseApproved": false,
+  "certificationStatus": false,
+  "parallelMathValidator": {
+    "skillCreated": true,
+    "includedInPublicExport": true,
+    "purpose": "parallel train validation tail, bonus buy, FRB/promo, registration math fields, and certification evidence coordination",
+    "activeMathChanged": false
   },
-  "current_sprint": "MathProfileCalibrator RTP range update to 91.00-99.70",
-  "next_recommended_skill": "WorkflowOrchestrator checkpoint review or MathProfileCalibrator future-game calibration",
-  "next_recommended_prompt_summary": "Use corrected MathProfileCalibrator 91.00-99.70 RTP request range for future games; do not change Little Gangster RTP profiles unless explicitly requested.",
-  "reusable_skill_suite_hardening": {
-    "math_profile_calibrator_rtp_range_updated": true,
-    "future_game_min_allowed_rtp": 91.0,
-    "future_game_max_allowed_rtp": 99.7,
-    "future_game_rtp_range_inclusive": true,
-    "future_game_rtp_levels_strictly_ascending": true,
-    "little_gangster_rtp_values_changed_by_range_update": false
+  "lifecyclePlanning": {
+    "completed": true,
+    "current8001Adapter": "payload_mapper_only",
+    "lifecycleWrapperRequired": true,
+    "vabsVisualHistoryRouteRequired": true,
+    "gameClientBuilderBlocked": true,
+    "gameServerRegistrarGenerationBlocked": true
   },
-  "little_gangster_current_rtp_values": {
-    "LOW": 92.0,
-    "MEDIUM": 94.0,
-    "HIGH": 96.0,
-    "changedByThisCheckpoint": false
+  "includedReviewPaths": [
+    "10_sprint_reports/sprint_report_latest.md",
+    "GAME_STATUS_CURRENT.md",
+    "09_release/parallel_math_validation_skill_adoption.md",
+    "09_release/future_game_parallel_math_validation_playbook.md",
+    "09_release/parallel_math_validation_gate_matrix.json",
+    "_skill_suite_snapshot/ParallelMathValidator/SKILL.md",
+    "03_protocol/8001_lifecycle_wrapper_plan.md",
+    "03_protocol/8001_vabs_visual_history_route_plan.md",
+    "03_protocol/8001_history_payload_schema.json",
+    "09_release/8001_lifecycle_wrapper_implementation_gate.md"
+  ],
+  "publicSafety": {
+    "donorAssetsIncluded": false,
+    "screenshotsHarRawLogsIncluded": false,
+    "rawSecretsIncluded": false,
+    "fullDonorUrlsIncluded": false,
+    "tokenizedUrlsIncluded": false,
+    "privateLocalPathsIncluded": false,
+    "stagingSourceIncluded": false,
+    "clientRuntimeCodeIncluded": false,
+    "registrationArtifactsIncluded": false,
+    "dbWalletActionsIncluded": false
   },
-  "gates": {
-    "backend_adapter_implementation_allowed": false,
-    "gameclientbuilder_implementation_allowed": false,
-    "gameserverregistrar_generation_allowed": false,
-    "wallet_tests_approved": false,
-    "registration_approved": false,
-    "release_approved": false
-  },
-  "math_blockers": {
-    "bonus_buy_ev_remains_blocked": true,
-    "tail_maxwin_cap_frequency_unproven": true,
-    "exact_values_final": false,
-    "certification_status": false
-  }
+  "blockedGates": [
+    "lifecycle_wrapper_implementation_not_approved",
+    "vabs_visual_history_route_implementation_not_approved",
+    "gameclientbuilder_blocked",
+    "gameserverregistrar_generation_blocked",
+    "wallet_tests_not_run",
+    "release_blocked"
+  ]
 }

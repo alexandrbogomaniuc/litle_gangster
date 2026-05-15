@@ -1,6 +1,8 @@
 ---
 name: MathProfileCalibrator
-description: Validate, calibrate, and gate 3x3 RTP/volatility math profile matrices using train, validation, tail, and bonus-buy evidence without backend, client, registration, wallet, donor, or release work.
+description: >-
+  Validate, calibrate, and gate 3x3 RTP/volatility math profile matrices using train, validation, tail, and bonus-buy evidence without backend,
+  client, registration, wallet, donor, or release work.
 ---
 
 # MathProfileCalibrator
@@ -29,6 +31,11 @@ profiles; they must not enter arbitrary RTP values at runtime.
 
 Also use this skill when train/validation gates are not passed, a user provides
 new RTP targets, or profile-specific calibration is required.
+
+When larger simulation scale, external/server jobs, tail/max-win validation,
+bonus-buy EV validation, FRB/promo liability validation, certification evidence,
+or parallel validation is needed, hand off to ParallelMathValidator instead of
+running endless large loops inside the main workflow.
 
 ## Required Reads
 
@@ -64,6 +71,23 @@ Use bundled scripts when deterministic checks are needed:
 6. Check tail/max-win and bonus-buy status before implementation-adjacent
    handoff.
 7. Produce compact reports and explicit gate states.
+
+## ParallelMathValidator Handoff
+
+MathProfileCalibrator owns bounded train-only calibration. It should not run
+open-ended large validation loops in the main workflow. Validation/certification
+evidence, large-scale tail/max-win evidence, bonus-buy EV validation, and
+FRB/promo liability evidence belong to ParallelMathValidator when they can run
+in a parallel lane or require larger scale.
+
+Handoff to ParallelMathValidator when:
+
+- a local run would block the main workflow for a long time;
+- validation or tail confidence needs larger round counts;
+- bonus-buy EV requires independent train/validation evidence;
+- FRB/promo EV or liability must be measured separately;
+- registration fields need simulation-backed extraction;
+- a lab/certification evidence package is requested.
 
 ## Gates
 

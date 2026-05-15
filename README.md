@@ -1,42 +1,58 @@
-# Little Gangster Raw-Safe Public Checkpoint
+# Little Gangster Raw-Safe Review Checkpoint
 
-This repository is a raw-safe sanitized review checkpoint.
-It is not a release build.
-It is not a production client.
-It is not a backend adapter.
-It is not a registration package.
-It contains planning, reports, schemas, and safe skill snapshots only.
+This repository is a raw-safe sanitized review checkpoint for Little Gangster.
+It is provided for public review of workflow documents, planning artifacts, and
+reusable skill-suite infrastructure.
 
-The checkpoint was updated with line-preserving file operations.
-No whitespace-collapsing public export pipeline was used.
-No Markdown or Python file was minified.
-No donor asset bodies are included.
-No scaffold asset bodies are included.
-No screenshots are included.
-No HAR files are included.
-No event logs are included.
-No raw network logs are included.
-No raw secrets are included.
-No full donor URLs are included.
-No tokenized URLs are included.
+This is not a release build. It is not a production client. It is not a game
+server registration package. It is not a certification package.
 
-Reusable MathProfileCalibrator RTP range was updated.
-Future requested average theoretical RTP range is 91.00% to 99.70%, inclusive.
-Every future game has exactly three RTP levels: LOW, MEDIUM, HIGH.
-RTP values must be strictly ascending: LOW < MEDIUM < HIGH.
-Decimal RTP values are allowed.
-Operators choose only pretested approved profiles.
-Arbitrary runtime RTP values are not allowed.
+## What Is Included
 
-Little Gangster RTP values were not changed.
-Little Gangster remains LOW 92.00%, MEDIUM 94.00%, HIGH 96.00%.
-Exact math values are not final or certified.
-Bonus-buy EV remains blocked.
-Tail and max-win cap-frequency confirmation remains unresolved.
-Backend adapter implementation is blocked.
-GameClientBuilder implementation is blocked.
-Registration generation is blocked.
-Wallet and DB actions are blocked.
-Release is blocked.
+- Public-safe Little Gangster project status documents.
+- The latest SprintReporter summary.
+- Public-safe lifecycle-wrapper planning documents for game 8001.
+- Public-safe VABS/VBA/Lasthands visual history route planning documents.
+- The new generic ParallelMathValidator skill snapshot.
+- Skill-suite routing snapshots showing downstream awareness updates.
+- Public-safe skill creation and lifecycle planning reports.
 
-Start with REVIEWER_START_HERE.md.
+## What Is Not Included
+
+- No donor or scaffold asset bodies.
+- No screenshots, HAR files, raw browser logs, or captured media.
+- No raw secrets, full donor URLs, tokenized URLs, SIDs, signatures, emails, or
+  passwords.
+- No private local paths.
+- No Staging source files.
+- No generated production client code.
+- No registration artifacts.
+- No DB or Cassandra apply files.
+- No wallet endpoint responses.
+- No release approval.
+
+## ParallelMathValidator
+
+ParallelMathValidator is a reusable workflow skill for future iGaming projects.
+It coordinates large-scale or parallel math validation without letting the main
+workflow drift into endless simulation loops.
+
+It supports train validation tail evidence, bonus buy validation, FRB or promo
+liability checks, registration math fields, and certification evidence packaging.
+It also preserves the no validation-seed tuning rule and keeps all evidence
+non-certified until a separate release gate approves it.
+
+## Lifecycle Planning Status
+
+Lifecycle-wrapper planning is complete at the document level. The current 8001
+adapter is a guarded `presentationPayload.gamePayload` payload mapper only.
+A lifecycle wrapper is required before treating the adapter as a runtime owner.
+A VABS visual history route is required before history/replay readiness.
+
+GameClientBuilder remains blocked. GameServerRegistrar generation remains
+blocked. Backend adapter and lifecycle implementation are not release-approved.
+Release remains blocked.
+
+## Start Here
+
+Read `REVIEWER_START_HERE.md` for the shortest review path.

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "little-gangster-8001-history-payload-schema-v0.1",
+  "status": "planning_only_not_implemented",
+  "gameId": {
+    "type": "integer",
+    "required": true,
+    "expectedValue": 8001
+  },
+  "gameKey": {
+    "type": "string",
+    "required": true,
+    "expectedValue": "little-gangster"
+  },
+  "gameSessionId": {
+    "type": "string",
+    "required": true
+  },
+  "playerSessionId": {
+    "type": "string",
+    "required": "if applicable to current GS route"
+  },
+  "roundId": {
+    "type": "string",
+    "required": true
+  },
+  "mathProfileId": {
+    "type": "string",
+    "required": true
+  },
+  "rtpLevel": {
+    "type": "string",
+    "required": true,
+    "allowedValues": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  "volatilityLevel": {
+    "type": "string",
+    "required": true,
+    "allowedValues": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  "baseRtpTarget": {
+    "type": "number",
+    "required": true
+  },
+  "declaredBfRtpTarget": {
+    "type": [
+      "number",
+      "null"
+    ],
+    "required": "when bonus buy is available or represented"
+  },
+  "bonusBuyCostMultiplier": {
+    "type": [
+      "integer",
+      "null"
+    ],
+    "required": "when bonus buy purchase or result is present",
+    "allowedValues": [
+      100,
+      null
+    ]
+  },
+  "actionSequence": {
+    "type": "array",
+    "required": true,
+    "items": {
+      "fields": [
+        "actionId",
+        "actionType",
+        "clientOperationId",
+        "idempotencyKey",
+        "stateBefore",
+        "stateAfter",
+        "accountingRefs"
+      ]
+    }
+  },
+  "cascadeSequence": {
+    "type": "array",
+    "required": true
+  },
+  "featureState": {
+    "type": "object",
+    "required": true
+  },
+  "walletAccountingRefs": {
+    "type": "object",
+    "required": true,
+    "fields": [
+      "reserveRef",
+      "debitRef",
+      "settleRef",
+      "creditRef",
+      "rollbackRef",
+      "accountingStatus"
+    ]
+  },
+  "replaySeedOrDeterministicRefs": {
+    "type": "object",
+    "required": true
+  },
+  "roundCompletion": {
+    "type": "object",
+    "required": true,
+    "fields": [
+      "roundFinished",
+      "roundStatus",
+      "roundFinishedHelperStatus",
+      "endRoundSignatureStatus",
+      "settlementStatus"
+    ]
+  },
+  "capState": {
+    "type": "object",
+    "required": true,
+    "fields": [
+      "capApplied",
+      "capHit",
+      "preCapWin",
+      "cappedWin",
+      "capReason"
+    ]
+  },
+  "vabsDisplay": {
+    "type": "object",
+    "required": true
+  },
+  "lasthandsDisplay": {
+    "type": "object",
+    "required": true
+  },
+  "visualReplayRoute": {
+    "type": "string",
+    "required": true
+  },
+  "wholeSessionRoute": {
+    "type": "string",
+    "required": true
+  },
+  "sessionRoute": {
+    "type": "string",
+    "required": true
+  },
+  "language": {
+    "type": "string",
+    "required": true
+  },
+  "timeZone": {
+    "type": "string",
+    "required": true
+  },
+  "createdAt": {
+    "type": "string",
+    "required": true,
+    "format": "date-time"
+  }
+}

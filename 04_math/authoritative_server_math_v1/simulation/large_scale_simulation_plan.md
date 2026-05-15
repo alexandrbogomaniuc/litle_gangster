@@ -17,7 +17,8 @@ Move from smoke evidence to confidence evidence without confusing sample varianc
 
 ## Little Gangster Next Step
 
-Do not tune immediately from the 10k smoke variance. Next, plan a train/validation calibration run at the calibration-trend tier, then decide whether the overlay needs adjustment. Bonus-buy EV and max-win tail remain separate blockers.
+Do not tune immediately from the 10k smoke variance. Next, plan a train/validation calibration run at the calibration-trend tier, then decide whether
+  the overlay needs adjustment. Bonus-buy EV and max-win tail remain separate blockers.
 
 ## Required Outputs
 
