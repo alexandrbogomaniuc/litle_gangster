@@ -1407,3 +1407,18 @@ Outcome:
   WorkflowOrchestrator, GameServerRegistrar, and RTPAndReleaseAuditor guidance.
 - Wallet/GS/BO endpoint calls, DB/Cassandra actions, implementation, registration
   generation, GameClientBuilder, certification, and release remain blocked.
+
+## VisualPrototypeSandboxBuilder Raw-Safe Checkpoint
+
+Decision: curate and validate a raw-safe public checkpoint for the reusable
+VisualPrototypeSandboxBuilder skill creation.
+
+Outcome:
+- public-safe skill snapshot included.
+- public-safe references and scripts included.
+- public-safe WorkflowOrchestrator, GameClientBuilder, MathModelDesigner,
+  RTPAndReleaseAuditor, and public-export guidance snapshots included.
+- Little Gangster adoption, playbook, gate matrix, and skill-creation reports included.
+- donor assets, donor scripts, local sandbox files, screenshots, Staging source,
+  production client code, registration artifacts, DB/Cassandra artifacts, wallet/API
+  artifacts, release approval, and certification claims excluded.

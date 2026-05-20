@@ -10,6 +10,8 @@ Checkpoint scope:
 - VABS legacy alias implementation summaries.
 - GS/wallet responsibility boundary correction docs.
 - Public-safe skill snapshots and checkpoint reports.
+- VisualPrototypeSandboxBuilder skill, references, and validator scripts.
+- Visual sandbox builder adoption and future-game playbook docs.
 
 Safety exclusions:
 
@@ -22,6 +24,8 @@ Safety exclusions:
 - No registration artifacts.
 - No DB, Cassandra, wallet, GS, or BO/CM endpoint artifacts.
 - No release approval.
+- No local visual sandbox files, donor/reference assets, sandbox screenshots, or
+  donor/reference script bodies.
 
 Curation notes:
 
@@ -44,6 +48,14 @@ Included high-value paths:
 - `_skill_suite_snapshot/WalletAndLaunchTester/SKILL.md`
 - `_skill_suite_snapshot/GameServerRegistrar/SKILL.md`
 - `_skill_suite_snapshot/RTPAndReleaseAuditor/SKILL.md`
+- `_skill_suite_snapshot/VisualPrototypeSandboxBuilder/SKILL.md`
+- `_skill_suite_snapshot/VisualPrototypeSandboxBuilder/references/`
+- `_skill_suite_snapshot/VisualPrototypeSandboxBuilder/scripts/`
+- `_skill_suite_snapshot/references/PUBLIC_EXPORT_SANITIZATION_RULES.md`
+- `09_release/visual_sandbox_builder_skill_adoption.md`
+- `09_release/future_game_visual_sandbox_builder_playbook.md`
+- `09_release/visual_sandbox_builder_gate_matrix.md`
+- `00_skill_reports/VisualPrototypeSandboxBuilderSkillCreation/`
 - `03_protocol/gs_wallet_accounting_responsibility_audit.md`
 - `03_protocol/8001_runtime_vs_gs_responsibility_matrix.md`
 - `08_qa/8001_wallet_launch_test_scope_correction.md`

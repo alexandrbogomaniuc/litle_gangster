@@ -25,6 +25,12 @@ Recommended review order:
 - `_skill_suite_snapshot/WalletAndLaunchTester/SKILL.md`
 - `_skill_suite_snapshot/GameServerRegistrar/SKILL.md`
 - `_skill_suite_snapshot/RTPAndReleaseAuditor/SKILL.md`
+- `_skill_suite_snapshot/VisualPrototypeSandboxBuilder/SKILL.md`
+- `_skill_suite_snapshot/VisualPrototypeSandboxBuilder/scripts/validate_visual_sandbox_request.py`
+- `_skill_suite_snapshot/VisualPrototypeSandboxBuilder/scripts/validate_visual_sandbox_outputs.py`
+- `09_release/visual_sandbox_builder_skill_adoption.md`
+- `09_release/future_game_visual_sandbox_builder_playbook.md`
+- `09_release/visual_sandbox_builder_gate_matrix.md`
 
 Safety notes:
 
@@ -32,6 +38,8 @@ Safety notes:
 - Backend adapter, lifecycle wrapper, VABS visual route, and legacy alias changes
   are summarized only through public-safe reports.
 - No production client implementation was generated.
+- No local visual sandbox prototype files, donor/reference assets, sandbox
+  screenshots, or donor/reference scripts are exported.
 - GameClientBuilder implementation remains blocked.
 - GameServerRegistrar generation remains blocked.
 - Wallet, launch, and history tests are missing.
@@ -50,5 +58,8 @@ Reviewer focus:
   renderer owns real casino balance.
 - Confirm VABS/Lasthands review material covers canonical routes, legacy aliases,
   durable-storage blockers, and BO/CM acceptance blockers.
+- Confirm VisualPrototypeSandboxBuilder is a sandbox-only workflow and does not
+  unlock production client implementation, registration, wallet tests, release,
+  or certification.
 - Confirm no raw private URLs, tokenized URLs, donor hosts, asset bodies, or
   source-code bundles are present.

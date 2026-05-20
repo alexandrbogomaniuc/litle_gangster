@@ -154,6 +154,70 @@ def parallel_math_validation_needed(manifest: dict, handoffs: dict[str, dict]) -
     return False
 
 
+def any_handoff_flag(handoffs: dict[str, dict], *flags: str) -> bool:
+    for handoff in handoffs.values():
+        if isinstance(handoff, dict) and any(boolish(handoff, flag) for flag in flags):
+            return True
+    return False
+
+
+def any_suggested_skill(handoffs: dict[str, dict], skill: str) -> bool:
+    return any(
+        isinstance(handoff, dict) and handoff.get("suggested_next_skill") == skill
+        for handoff in handoffs.values()
+    )
+
+
+def visual_sandbox_requested(manifest: dict, handoffs: dict[str, dict]) -> bool:
+    flags = (
+        "visual_sandbox_requested",
+        "visual_prototype_sandbox_requested",
+        "local_visual_sandbox_requested",
+        "donor_placeholder_visual_sandbox_requested",
+        "sandbox_visual_review_requested",
+        "owner_visual_review_requested",
+        "donor_assets_as_placeholders_requested",
+    )
+    if any(boolish(manifest, flag) for flag in flags):
+        return True
+    if manifest.get("requested_next_skill") == "VisualPrototypeSandboxBuilder":
+        return True
+    if manifest.get("suggested_next_skill") == "VisualPrototypeSandboxBuilder":
+        return True
+    if any_handoff_flag(handoffs, *flags):
+        return True
+    return any_suggested_skill(handoffs, "VisualPrototypeSandboxBuilder")
+
+
+def visual_sandbox_request_unsafe(manifest: dict, handoffs: dict[str, dict]) -> list[str]:
+    unsafe_flags = (
+        "production_client_code_allowed",
+        "production_client_code_generated",
+        "gameclientbuilder_implementation_allowed",
+        "allow_gameclientbuilder_implementation",
+        "registration_generation_allowed",
+        "registration_artifact_generated",
+        "wallet_endpoint_tests_allowed",
+        "gs_calls_enabled",
+        "wallet_calls_enabled",
+        "bo_cm_calls_enabled",
+        "external_calls_enabled",
+        "release_allowed",
+        "certification_status",
+        "public_export_donor_assets_allowed",
+        "donor_assets_as_production_allowed",
+        "donor_scripts_as_production_logic_allowed",
+    )
+    failures = [flag for flag in unsafe_flags if boolish(manifest, flag)]
+    for handoff_name, handoff in handoffs.items():
+        if not isinstance(handoff, dict):
+            continue
+        for flag in unsafe_flags:
+            if boolish(handoff, flag):
+                failures.append(f"{handoff_name}.{flag}")
+    return failures
+
+
 def decide(manifest: dict, handoffs: dict[str, dict]) -> dict:
     blockers: list[str] = []
 
@@ -177,6 +241,30 @@ def decide(manifest: dict, handoffs: dict[str, dict]) -> dict:
             "blocking_gates": ["implementation_gates_remain_closed"],
             "blocked_skills": ["backend adapter implementation", "GameClientBuilder implementation", "GameServerRegistrar generation", "WalletAndLaunchTester", "RTPAndReleaseAuditor"],
             "exact_next_prompt": "Run WorkflowOrchestrator checkpoint git review/push only if the user approves. Validate local artifacts, commit intentionally, push only after raw GitHub validation, and do not start implementation automatically. Stop after compact SprintReporter unless checkpoint/public validation requires full report.",
+        }
+
+    if visual_sandbox_requested(manifest, handoffs):
+        unsafe = visual_sandbox_request_unsafe(manifest, handoffs)
+        if unsafe:
+            return {
+                "next_allowed_skill": "WorkflowOrchestrator safety clarification",
+                "planning_allowed": True,
+                "implementation_allowed": False,
+                "fast_lane_mode": True,
+                "compact_report_default": True,
+                "blocking_gates": unsafe,
+                "blocked_skills": ["VisualPrototypeSandboxBuilder", "GameClientBuilder implementation", "GameServerRegistrar generation", "WalletAndLaunchTester", "RTPAndReleaseAuditor"],
+                "exact_next_prompt": "Do not run VisualPrototypeSandboxBuilder until production, endpoint, public-export, registration, and release permissions are explicitly closed. Ask for a sandbox-only prompt with all production gates false.",
+            }
+        return {
+            "next_allowed_skill": "VisualPrototypeSandboxBuilder",
+            "planning_allowed": True,
+            "implementation_allowed": False,
+            "fast_lane_mode": True,
+            "compact_report_default": True,
+            "blocking_gates": ["production_client_registration_wallet_release_gates_remain_closed"],
+            "blocked_skills": ["GameClientBuilder implementation", "GameServerRegistrar generation", "WalletAndLaunchTester endpoint tests", "RTPAndReleaseAuditor", "public donor export"],
+            "exact_next_prompt": "Run VisualPrototypeSandboxBuilder only. Create or update a project-local non-production visual sandbox under 11_prototypes using quarantined donor/reference placeholders and scripted visual outcomes; do not generate production client code, registration artifacts, endpoint calls, public export, release approval, or certification. Stop after SprintReporter.",
         }
 
     if parallel_math_validation_needed(manifest, handoffs):

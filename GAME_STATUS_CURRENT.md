@@ -310,6 +310,21 @@ Still blocked:
 - `release_not_approved`
 - `certification_false`
 
+## VisualPrototypeSandboxBuilder Raw-Safe Checkpoint
+
+Status: public-safe curation checkpoint prepared for reusable skill review.
+
+- VisualPrototypeSandboxBuilder included: yes.
+- Donor assets included: no.
+- Donor scripts included: no.
+- Local sandbox prototype files included: no.
+- Private paths and donor/private hosts removed: yes.
+- Registration generation allowed: false.
+- GameClientBuilder implementation allowed: false.
+- Wallet endpoint tests allowed: false.
+- Release allowed: false.
+- Certification status: false.
+
 ## VABS Alias Compatibility Audit Update - 2026-05-15
 
 Legacy VABS alias compatibility audit is complete. Staging source was inspected

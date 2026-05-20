@@ -1,0 +1,33 @@
+{
+  "visual_prototype_sandbox_builder_skill_created": true,
+  "skill_index_updated": true,
+  "workflow_orchestrator_routing_updated": true,
+  "gameclientbuilder_awareness_updated": true,
+  "mathmodeldesigner_awareness_updated": true,
+  "rtp_release_auditor_awareness_updated": true,
+  "rawsafepublic_export_awareness_updated": true,
+  "scripts_created": true,
+  "scripts_compile": true,
+  "valid_sample_request_passed": true,
+  "invalid_production_request_rejected": true,
+  "little_gangster_active_sandbox_changed": false,
+  "donor_assets_copied_to_skills_repo": false,
+  "donor_scripts_copied_to_skills_repo": false,
+  "registration_generation_allowed": false,
+  "gameclientbuilder_implementation_allowed": false,
+  "wallet_endpoint_tests_allowed": false,
+  "release_allowed": false,
+  "unresolved_blockers": [
+    "BF_BETS_formula_or_convention_source_owner_gate",
+    "template_MAX_WIN_confirmation_or_convention_source_owner_gate",
+    "runtime_result_API_pending",
+    "VABS_durable_storage_and_BO_CM_acceptance_pending",
+    "wallet_endpoint_tests_blocked",
+    "production_gameclientbuilder_implementation_blocked",
+    "registration_generation_blocked",
+    "release_false",
+    "certification_false"
+  ],
+  "suggested_next_skill": "WorkflowOrchestrator",
+  "suggested_next_prompt_summary": "Use VisualPrototypeSandboxBuilder for future sandbox-only visual prototype updates; keep production client, registration, wallet, public export, release, and certification gates blocked."
+}

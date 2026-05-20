@@ -45,6 +45,23 @@ PLANNING_SKILLS = {
     "MathProfileCalibrator",
 }
 
+VISUAL_SANDBOX_FORBIDDEN_FLAGS = {
+    "production_client_code_allowed",
+    "production_client_code_generated",
+    "gameclientbuilder_implementation_allowed",
+    "registration_generation_allowed",
+    "wallet_endpoint_tests_allowed",
+    "gs_calls_enabled",
+    "wallet_calls_enabled",
+    "bo_cm_calls_enabled",
+    "external_calls_enabled",
+    "release_allowed",
+    "certification_status",
+    "public_export_donor_assets_allowed",
+    "donor_assets_as_production_allowed",
+    "donor_scripts_as_production_logic_allowed",
+}
+
 
 def load_manifest(project_root: Path) -> dict:
     return json.loads((project_root / "project_manifest.json").read_text(encoding="utf-8"))
@@ -84,6 +101,26 @@ def main() -> int:
         print("planning_allowed=true")
         print("implementation_allowed=false")
         print("backend_client_registration_wallet_db_donor_release_blocked=true")
+        return 0
+
+    if requested == "VisualPrototypeSandboxBuilder" or requested.startswith("VisualPrototypeSandboxBuilder"):
+        for flag in sorted(VISUAL_SANDBOX_FORBIDDEN_FLAGS):
+            if boolish(data, flag):
+                failures.append(f"{requested} blocked because {flag}=true")
+        if failures:
+            print("NEXT SKILL BLOCKED")
+            for item in failures:
+                print(f"- {item}")
+            return 1
+        print("NEXT SKILL ALLOWED")
+        print(f"skill={requested}")
+        print("planning_allowed=true")
+        print("implementation_allowed=false")
+        print("sandbox_path_scope=11_prototypes_only")
+        print("gameclientbuilder_implementation_allowed=false")
+        print("registration_generation_allowed=false")
+        print("wallet_endpoint_tests_allowed=false")
+        print("release_allowed=false")
         return 0
 
     if requested.startswith("ParallelMathValidator"):

@@ -66,6 +66,17 @@ producing a pretested 3x3 matrix of `mathProfileId` values. Store profile
 identity in runtime and VABS/history outputs, and keep registration metadata
 separate from executable math.
 
+## Handoff To MathProfileCalibrator
+
+When an initial math package exists, a 3x3 RTP/volatility profile matrix exists,
+and a simulator or local/external runner exists, hand off profile calibration to
+`MathProfileCalibrator` unless train and validation gates are already passed.
+MathModelDesigner should design the package, denominator model, profile matrix,
+and simulator trust boundary; it must not run endless calibration loops itself.
+Use MathProfileCalibrator for requested LOW/MEDIUM/HIGH RTP values, train-only
+overlay tuning, validation-seed gates, tail/max-win status, and bonus-buy EV
+calibration decisions.
+
 ## Output Files
 `04_math/math_model_summary.md`, `math_package.json`, paytables, reels, simulations, reports, skill reports.
 
@@ -76,7 +87,8 @@ state, round-finished fields, RNG boundary, VABS/history state where relevant,
 and unresolved lane blockers.
 
 ## Handoff To Next Skill
-Next: ArtSceneMapper.
+Next: MathProfileCalibrator when profile calibration or validation remains
+open; otherwise ArtSceneMapper.
 
 ## Failure / Blocker Handling
 Missing templates, targets, or simulation tooling block release math.
@@ -92,3 +104,46 @@ audit for payout scaling, post-normalization, and forced RTP. Reject artificial
 payout scaling for release claims unless clearly labelled non-release. For
 complex donor parity, create a v0.3-style result contract with cascade/state and
 feature fields, and keep registration metadata separate from executable math.
+
+## Symbol Weight / Art Boundary
+
+For future games, symbol IDs, reels/strips, grid generators, cascade refill weights,
+feature/free-spin weights, bonus-buy start-state weights, wild/scatter weights, and
+profile-specific weight overlays must come from authoritative math/config. Donor art,
+screenshots, symbol visuals, or reference scripts are clues only and must not be used as
+release math evidence.
+
+Every future game should create a symbol/art/math mapping before client implementation.
+The mapping should state each symbol ID, role, art placeholder, source file, weight
+status, profile-specific behavior, and blockers. Missing or provisional symbol weights
+block registration/release and certification, but do not block non-production art
+planning when placeholders are clearly quarantined.
+
+## Mechanic Source-Proof Gate
+
+Before GameClientBuilder implementation, future games must prove mechanic behavior from
+authoritative math/config. This includes symbol roles, wild behavior, scatter or feature
+trigger behavior, cascade/refill behavior, paytable/cluster payouts, feature odds,
+bonus-buy start-state behavior, and profile-specific mechanic overlays.
+
+Symbol art does not prove symbol math. Donor visuals do not prove feature odds. Feature
+odds must come from source or simulation evidence, with provisional values clearly
+labelled until certification-quality validation exists.
+
+## Mechanic Acceptance / Placeholder Policy
+
+After mechanic source proof, future games should create a mechanic acceptance matrix
+before client implementation. Mechanics not source-proven must use placeholder or
+disabled-state planning only. Paytable/rules must not claim unproven mechanics, and
+feature odds must not be displayed as final without simulation/certification evidence.
+
+Placeholder mechanics do not unblock registration, wallet tests, GameClientBuilder
+implementation, release, or certification.
+
+## Visual Sandbox Math Boundary
+
+VisualPrototypeSandboxBuilder scripted outcomes are not math evidence, RTP evidence,
+feature-odds evidence, symbol-weight evidence, registration evidence, or certification
+evidence. MathModelDesigner may use sandbox scenarios only as presentation examples.
+Authoritative math still requires source/config proof and simulation evidence at the
+required confidence tier.

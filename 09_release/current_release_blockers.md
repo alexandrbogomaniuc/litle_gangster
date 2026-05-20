@@ -104,6 +104,16 @@ Still blocked:
 - `release_not_approved`
 - `certification_false`
 
+## VisualPrototypeSandboxBuilder Raw-Safe Checkpoint
+
+Status: release remains blocked.
+
+The raw-safe checkpoint includes reusable VisualPrototypeSandboxBuilder workflow
+materials only. It excludes donor/reference assets, donor/reference scripts, local
+sandbox prototype files, screenshots, Staging source, production client code,
+registration artifacts, DB/Cassandra artifacts, wallet/API artifacts, release approval,
+and certification claims.
+
 The audit confirms that browser/client is not the real wallet owner and runtime is not
 approved to own real wallet state. Release cannot proceed until wallet/launch/history
 tests are approved and passed through the correct GS/wallet/provider boundary.

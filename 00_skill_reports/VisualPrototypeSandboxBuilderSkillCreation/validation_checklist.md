@@ -1,0 +1,32 @@
+# VisualPrototypeSandboxBuilder Validation Checklist
+
+- project_manifest.json parses: yes
+- handoff.json parses: yes
+- VisualPrototypeSandboxBuilder/SKILL.md exists and is non-empty: yes
+- required references exist and are non-empty: yes
+- required scripts exist: yes
+- Python scripts compile: yes
+- valid sample visual sandbox request accepted: yes
+- invalid production client request rejected: yes
+- invalid registration generation request rejected: yes
+- invalid wallet/GS endpoint request rejected: yes
+- invalid release approval request rejected: yes
+- invalid donor production request rejected: yes
+- skill index includes VisualPrototypeSandboxBuilder: yes
+- WorkflowOrchestrator routing mentions VisualPrototypeSandboxBuilder: yes
+- GameClientBuilder states sandbox does not unlock production implementation: yes
+- MathModelDesigner states scripted outcomes are not math evidence: yes
+- RTPAndReleaseAuditor states sandbox assets are not release evidence: yes
+- donor assets copied to reusable skills repo: no
+- donor scripts copied to reusable skills repo: no
+- public export run: no
+- GitHub push occurred: no
+- Staging source modified: no
+- production client code generated: no
+- registration artifact generated: no
+- CQL generated: no
+- DB/Cassandra action occurred: no
+- wallet endpoint called: no
+- GS endpoint called: no
+- BO/CM endpoint called: no
+- release approved: no

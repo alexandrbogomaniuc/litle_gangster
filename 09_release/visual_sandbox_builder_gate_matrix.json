@@ -1,0 +1,60 @@
+{
+  "gateMatrix": [
+    {
+      "gate": "visual_sandbox_allowed",
+      "status": true,
+      "requiredState": "sandbox-only, project-local, non-production",
+      "unlocks": "internal visual review only",
+      "doesNotUnlock": [
+        "GameClientBuilder implementation",
+        "registration generation",
+        "wallet endpoint tests",
+        "release",
+        "certification"
+      ]
+    },
+    {
+      "gate": "donor_reference_assets",
+      "status": "placeholder_only",
+      "requiredState": "quarantined, non-production, blocked from release, replacement-required",
+      "unlocks": "sandbox visual reference only",
+      "doesNotUnlock": [
+        "production assets",
+        "public export",
+        "release evidence"
+      ]
+    },
+    {
+      "gate": "scripted_visual_outcomes",
+      "status": "visual_only",
+      "requiredState": "not math, RTP, wallet, registration, release, or certification evidence",
+      "unlocks": "presentation review",
+      "doesNotUnlock": [
+        "math approval",
+        "feature odds approval",
+        "certification"
+      ]
+    },
+    {
+      "gate": "public_export",
+      "status": false,
+      "requiredState": "donor/reference sandbox assets and scripts excluded unless separately curated and approved",
+      "unlocks": "nothing in this sprint",
+      "doesNotUnlock": [
+        "donor asset export",
+        "private path export",
+        "public GitHub push"
+      ]
+    },
+    {
+      "gate": "release",
+      "status": false,
+      "requiredState": "production assets, client, registration, wallet, VABS/BO-CM, math/certification, and export gates cleared",
+      "unlocks": "none",
+      "doesNotUnlock": [
+        "release approval",
+        "certification"
+      ]
+    }
+  ]
+}

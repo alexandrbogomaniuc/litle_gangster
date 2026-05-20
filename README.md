@@ -37,12 +37,17 @@ Current status:
 Reusable workflow checkpoint:
 
 - ParallelMathValidator was added to support parallel math validation evidence.
+- VisualPrototypeSandboxBuilder was added to support local non-production visual
+  sandboxes with quarantined donor/reference placeholders and scripted visual
+  outcomes while production gates remain blocked.
 - WalletAndLaunchTester guidance now requires responsibility-boundary clarity
   before real endpoint tests.
 - GameServerRegistrar guidance requires unresolved wallet/config and math fields
   to block generation.
 - RTPAndReleaseAuditor guidance checks math, VABS/Lasthands, wallet/launch, and
   release evidence before approval.
+- Public-export guidance blocks donor/reference visual sandbox assets, scripts,
+  screenshots, and local prototype files from review exports.
 
 Start with `REVIEWER_START_HERE.md`, then inspect `EXPORT_MANIFEST.md` and
 `09_release/WORKFLOW_CONTENT_INTEGRITY_AUDIT.md`.

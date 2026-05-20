@@ -15,3 +15,7 @@ Excluded from this export:
 
 Included content is limited to public-safe workflow docs, planning reports,
 checkpoint reports, and curated reusable skill snapshots.
+
+VisualPrototypeSandboxBuilder materials are included as reusable workflow
+documentation only. Local visual sandbox files, donor/reference assets, sandbox
+screenshots, and donor/reference scripts are intentionally excluded.

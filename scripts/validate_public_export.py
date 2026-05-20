@@ -24,10 +24,15 @@ MIN_LINES = {
     "_skill_suite_snapshot/WalletAndLaunchTester/SKILL.md": 40,
     "_skill_suite_snapshot/GameServerRegistrar/SKILL.md": 40,
     "_skill_suite_snapshot/RTPAndReleaseAuditor/SKILL.md": 40,
+    "_skill_suite_snapshot/VisualPrototypeSandboxBuilder/SKILL.md": 40,
+    "_skill_suite_snapshot/VisualPrototypeSandboxBuilder/scripts/validate_visual_sandbox_request.py": 40,
+    "_skill_suite_snapshot/VisualPrototypeSandboxBuilder/scripts/validate_visual_sandbox_outputs.py": 40,
     "03_protocol/gs_wallet_accounting_responsibility_audit.md": 20,
     "03_protocol/8001_runtime_vs_gs_responsibility_matrix.md": 20,
     "03_protocol/8001_vabs_legacy_alias_apply_summary.md": 15,
     "09_release/WORKFLOW_CONTENT_INTEGRITY_AUDIT.md": 30,
+    "09_release/visual_sandbox_builder_skill_adoption.md": 10,
+    "09_release/future_game_visual_sandbox_builder_playbook.md": 10,
 }
 
 TEXT_SUFFIXES = {".md", ".txt", ".json", ".jsonl", ".csv", ".py", ".js", ".css", ".html", ".toml", ".yaml", ".yml", ".xml"}
@@ -100,6 +105,10 @@ def check_file_shapes() -> None:
             fail(f"unexpected non-text file included: {rel}")
         if any(part in {"screenshots", "har", "event_logs", "videos", "node_modules", "dist", "build"} for part in path.parts):
             fail(f"unsafe generated/raw-capture directory included: {rel}")
+        if any(part in {"assets_placeholder", "scripts_reference"} for part in path.parts):
+            fail(f"visual sandbox placeholder body directory included: {rel}")
+        if "11_prototypes" in path.parts:
+            fail(f"local visual sandbox prototype file included: {rel}")
         if path.name == "package.json" and "06_resulting_code" in path.parts:
             fail(f"package manifest under resulting code is not allowed: {rel}")
 

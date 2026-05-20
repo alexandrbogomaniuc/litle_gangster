@@ -1177,3 +1177,15 @@ emails, and full donor URLs. `06_resulting_code` remains README-only.
 - No Staging source, implementation code, endpoint call, server start, registration
   artifact, DB/Cassandra action, wallet/API call, donor browsing, asset capture,
   certification, or release approval occurred.
+
+## VisualPrototypeSandboxBuilder Public Checkpoint Boundary
+
+VisualPrototypeSandboxBuilder is now the reusable route for future non-production visual
+sandbox work. Its output remains sandbox-only and does not authorize production client
+implementation, registration generation, wallet endpoint tests, public donor/reference
+asset export, release, or certification.
+
+Public export copies must exclude donor/reference sandbox assets, sandbox screenshots,
+donor/reference scripts, local sandbox prototype files, private URLs, tokens, SIDs,
+signatures, emails, secrets, Staging source, production client code, registration
+artifacts, DB/Cassandra artifacts, and wallet/API artifacts.
